@@ -3,7 +3,7 @@ title = "mermaid"
 description = "mermaid est ici un raccourci-code pour intégrer des diagrammes de séquence, flowcharts ou Gantt "
 +++
 
-[mermaid](https://knsv.github.io/mermaid/) est un éditeur pour créer des diagrammes pouvant être utilisés en raccourci-code pour intégrer de jolis diagrammes dans les pages web d'une doc ou d'un projet.
+[mermaid](https://knsv.github.io/mermaid/) est un éditeur pour créer des diagrammes. L'éditeur s'utilise sur docdock à l'aide d'un raccourci-code pour intégrer facilement de jolis diagrammes dans les pages web de votre documentation et/ou de votre projet.
 
 ## Exemple de Flowchart
 
