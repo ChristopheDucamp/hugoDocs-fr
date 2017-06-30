@@ -7,13 +7,20 @@ description = "contributeurs et packages utilisés par le thème hugo-theme-docd
 ## contributeurs github
 {{%ghcontributors "https://api.github.com/repos/vjeantet/hugo-theme-docdock/contributors?per_page=100" %}}
 
-### Autres contributeurs
+### autres contributeurs
 <div class="ghContributors">
     <div>
       <img src="https://avatars2.githubusercontent.com/u/394382?v=3" class="inline" width="32" height="32" style="height: 32px;height: 32px;margin-bottom:.25em; vertical-align:middle; ">
       <label>@<a href="https://github.com/bep">bep</a></label>
-      <span class="contributions">supports et conseils</span>
+      <span class="contributions">support et conseils</span>
     </div>
+
+<div>
+      <img src="https://avatars0.githubusercontent.com/u/174418?v=3&s=460" class="inline" width="32" height="32" style="height: 32px;height: 32px;margin-bottom:.25em; vertical-align:middle; ">
+      <label>@<a href="https://github.com/ChristopheDucamp">Christophe Ducamp</a></label>
+      <span class="contributions">traduction</span>
+    </div>
+
 </div>
 
 ## Packages et bibliothèques
@@ -22,11 +29,11 @@ description = "contributeurs et packages utilisés par le thème hugo-theme-docd
 * [font awesome](http://fontawesome.io/) - la fonte icônique et le framework CSS
 * [jQuery](https://jquery.com) - La bibliothèque JavaScript Write Less, Do More
 * [lunr](https://lunrjs.com) - Lunr vous permet de fournir une expérience de recherche géniale sans le besoin de services de recherche externes côté serveur...
-* [horsey](https://bevacqua.github.io/horsey/) - Progressive and customizable autocomplete component
+* [horsey](https://bevacqua.github.io/horsey/) - composant d'auto-complétion progressif et personnalisable
 * [clipboard.js](https://zenorocha.github.io/clipboard.js) - copier le texte dans le presse papiers.
-* [highlight.js](https://highlightjs.org) - Enlumineur de syntae Javascript
-* [modernizr](https://modernizr.com) - Une boîte à outils  JavaScript qui permet aux développeurs web d'utiliser les nouvelles fonctionnalités CSS3 et HTML5 tout en maintenant un joli niveau de contrôle sur les navigateurs qui ne les supportent pas.
-* [reveal-js](http://lab.hakim.se/reveal-js) - Le Framework de présentation HTML Presentation
+* [highlight.js](https://highlightjs.org) - Enlumineur de syntaxe Javascript
+* [modernizr](https://modernizr.com) - Une boîte à outils JavaScript qui permet aux développeurs web d'utiliser les nouvelles fonctionnalités CSS3 et HTML5 tout en maintenant un bon niveau de contrôle sur les navigateurs qui ne les supportent pas.
+* [reveal-js](http://lab.hakim.se/reveal-js) - Le framework de présentation HTML
 
 ## Outillage
 
