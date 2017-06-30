@@ -4,6 +4,8 @@ DefaultContentLanguage = "fr"
 
 title = "DocDock Hugo en Français"
 
+publishDir = "public"
+
 theme = "docdock"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
