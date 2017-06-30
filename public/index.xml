@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thème DocDock pour Hugo on DocDock Hugo en Français</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Thème DocDock pour Hugo on DocDock Hugo en Français</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 30 Jun 2017 10:21:43 +0200</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installation</title>
+      <link>http://localhost:1313/getting-start/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/getting-start/installation/</guid>
+      <description>&lt;div class=&#34;alert 
+alert-warning&#34;
+ 
+role=&#34;alert&#34;&gt;HUGO &lt;strong&gt;v0.22&lt;/strong&gt; est la version minimum requise pour utiliser ce thème&lt;/div&gt;
+
+
+&lt;p&gt;Les étapes suivantes sont là pour vous aider à initialiser votre nouveau site web. Si vous ne connaissez pas du tout Hugo, nous vous suggérons vraiment de vous entraîner en suivant cette &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;doc géniale pour les débutants&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>http://localhost:1313/getting-start/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/getting-start/configuration/</guid>
+      <description>&lt;p&gt;Au moment de construire le site web, vous pouvez régler un thème en utilisant l&amp;rsquo;option &lt;code&gt;--theme&lt;/code&gt;. Nous vous suggérons de modifier votre fichier de configuration et de régler le thème par défaut. Exemple avec le format &lt;code&gt;config.toml&lt;/code&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Entrées de menu supplémentaires</title>
+      <link>http://localhost:1313/content-organisation/extramenu/</link>
+      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/content-organisation/extramenu/</guid>
+      <description>Vous pouvez définir des entrées de menu supplémentaires dans le menu de navigation sans quelque lien vers le contenu.
+Modifiez la configuration du site web config.toml et ajoutez une entrée [[menu.shortcuts]] pour chaque lien que vous voulez ajouter.
+Exemple pour le site web actuel, remarquez le param pre qui vous permet d&amp;rsquo;insérer du code HTML et utilisé ici pour séparer le contenu du menu de ce menu &amp;ldquo;statique&amp;rdquo;.
+[[menu.shortcuts]] pre = &amp;quot;&amp;lt;h3&amp;gt;Plus&amp;lt;/h3&amp;gt;&amp;quot; name = &amp;quot;&amp;lt;i class=&#39;fa fa-github&#39;&amp;gt;&amp;lt;/i&amp;gt; Repo GitHub&amp;quot; identifier = &amp;quot;ds&amp;quot; url = &amp;quot;https://github.</description>
+    </item>
+    
+    <item>
+      <title>Page d&#39;Accueil</title>
+      <link>http://localhost:1313/creer-page/homepage/</link>
+      <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/creer-page/homepage/</guid>
+      <description>Pour indiquer au thème Hugo docDock de considérer une page comme un contenu de page d&amp;rsquo;accueil, créez simplement un fichier de contenu appelé _index.md dans le dossier content.</description>
+    </item>
+    
+    <item>
+      <title>Emplacement du Logo</title>
+      <link>http://localhost:1313/content-organisation/logo/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/content-organisation/logo/</guid>
+      <description>Créez une page _header.md dans le dossier content. Son contenu est ce que vous obtiendrez à l&amp;rsquo;emplacement du logo (tout en haut à gauche de l&amp;rsquo;écran).
+Truc : vous pouvez ajouter une image, une combobox avec des liens vers une autre documentation&amp;hellip; Considération pour l&amp;rsquo;emplacement du logo Ne réglez pas [menu.main] dans le frontmatter de votre fichier _header.md  Truc 2 : regardez Entrées de menu statiques supplémentaires si vous voulez ajouter des liens vers un autre site web dans cette barre latérale </description>
+    </item>
+    
+    <item>
+      <title>Ma Slide ! plein-écran</title>
+      <link>http://localhost:1313/creer-page/myslide/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/creer-page/myslide/</guid>
+      <description> Le matin Lever  Couper le réveil Sortir du lit  Petit-déjeuner  Manger des oeufs Boire du café  Soirée Dîner  Manger des spaghetti Boire du vin  Aller dormir  Aller au lit Compter les moutons  </description>
+    </item>
+    
+    <item>
+      <title>Présenter une Slide</title>
+      <link>http://localhost:1313/creer-page/page-slide/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/creer-page/page-slide/</guid>
+      <description>Une page basique de contenu md peut être restituée comme une présentation plein écran reveal.js.
+Vous pouvez aussi, embarquer une présentation dans une page sous forme de petite boîte, en utilisant le raccourci de code (shortcode) revealjs dans votre fichier md. Mise en Page Utilisez votre syntaxe commune Markdown que vous utilisez dans Hugo, n&amp;rsquo;oubliez pas que vous pouvez aussi placer des balises HTML.
+Une syntaxe spéciale (en commentaire html) est disponible pour ajouter des attribut aux éléments Markdown.</description>
+    </item>
+    
+    <item>
+      <title>header</title>
+      <link>http://localhost:1313/_header/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/_header/</guid>
+      <description> JAMStactic : DocDock pour GoHugo </description>
+    </item>
+    
+    <item>
+      <title>À Propos des Images</title>
+      <link>http://localhost:1313/creer-page/page-images/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>http://localhost:1313/creer-page/page-images/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crédits</title>
+      <link>http://localhost:1313/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/credits/</guid>
+      <description>contributeurs github .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 130 commits   @matcornic 49 commits   @gwleclerc 17 commits   @lierdakil 16 commits   @Xipas 5 commits   @altinnadmin 4 commits   @Thiht 2 commits   @erikjasiak 1 commits   @giuliov 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   autres contributeurs  @bep support et conseils   @Christophe Ducamp traduction</description>
+    </item>
+    
+    <item>
+      <title>Sites construits avec Docdock</title>
+      <link>http://localhost:1313/showcase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/showcase/</guid>
+      <description> https://invincible.site/ par @shazic </description>
+    </item>
+    
+    <item>
+      <title>Variantes de thèmes</title>
+      <link>http://localhost:1313/content-organisation/customize-style/theme-variants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/content-organisation/customize-style/theme-variants/</guid>
+      <description>Dans le fichier de configuration du site, vous pouvez régler un nom de variante de ce thème pour charger une css spécifique, avec différentes spécifications de couleurs.
+ajoutez un param themeVariant = &amp;quot;NOM_VARIANTe&amp;quot; dans votre fichier config.toml.
+La variantes disponibles ne modifient que les couleurs pour l&amp;rsquo;instant Variante &amp;ldquo;gray&amp;rdquo; themeVariant = &amp;quot;gray&amp;quot;
+Variante &amp;ldquo;gold&amp;rdquo; themeVariant = &amp;quot;gold&amp;quot;
+Variant &amp;ldquo;green&amp;rdquo; themeVariant = &amp;quot;green&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>alert</title>
+      <link>http://localhost:1313/shortcodes/alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/alert/</guid>
+      <description>Le raccourci-code alert vous permet de surligner l&amp;rsquo;information dans votre page. Il crée une boîte coloré entourant votre texte, comme ceci :
+Ceci est une alerte ! Usage    Paramètre Par défaut Description     theme info success, info,warning,danger    Trucs : régler uniquement le thème comme argument fonctionne aussi : {{%alert warning%}} au lieu de {{%alert theme=&amp;quot;warning&amp;quot;%}}
+ Exemples basiques {{% alert theme=&amp;quot;info&amp;quot; %}}**ceci** est une info texte{{% /alert %}} {{% alert theme=&amp;quot;success&amp;quot; %}}**Yeahhh !</description>
+    </item>
+    
+    <item>
+      <title>attachments</title>
+      <link>http://localhost:1313/shortcodes/attachments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/attachments/</guid>
+      <description>Le raccourci-code attachments affiche une liste de fichiers joints à une page.
+Exemple   Documents attachés   BachGavotteShort.mp3  (357 ko)   Carroll_AliceAuPaysDesMerveilles.pdf  (175 ko)   adivorciarsetoca00cape.pdf  (361 ko)   hugo.png  (17 ko)   movieselectricsheep-flock-244-32500-2.mp4  (340 ko)    Usage Le raccouric-code liste les fichiers trouvés dans un dossier spécifique. Actuellement, il supporte deux implémentations pour les pages</description>
+    </item>
+    
+    <item>
+      <title>button</title>
+      <link>http://localhost:1313/shortcodes/button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/button/</guid>
+      <description>Affiche un bouton actionnable dans votre page.
+ Ceci est un bouton d&#39;avertissement   Usage    Paramètre Par défaut Description     href &amp;rdquo;&amp;rdquo; L&amp;rsquo;endroit où href pointe   align &amp;ldquo;center&amp;rdquo; aligement horizontal du bouton sur la page   theme primary default, primary , success, info, warning, danger    Le texte à l&amp;rsquo;intérieur du texte que vous placez en raccourci-code sera affiché comme texte de bouton.</description>
+    </item>
+    
+    <item>
+      <title>excerpt</title>
+      <link>http://localhost:1313/shortcodes/excerpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/excerpt/</guid>
+      <description>Le raccourci-code excerpt est utilisé pour marquer une partie du contenu d&amp;rsquo;une page pour réutilisation. La définition d&amp;rsquo;un extrait permet à d&amp;rsquo;autres raccourcis-code, tels que le raccourci de code excerpt-include, d&amp;rsquo;afficher le contenu marqué ailleurs.
+Vous ne pouvez définir qu&amp;rsquo;un seul extrait par page. En d&amp;rsquo;autres mots, vous ne pouvez ajouter qu&amp;rsquo;un seul raccourci-code Excerpt par page. Usage    Param par défaut Description     hidden &amp;ldquo;false&amp;rdquo; Vérifie si le contenu de la page contenu dans le gardien de place du raccourci-code Excerpt est affiché sur la page.</description>
+    </item>
+    
+    <item>
+      <title>excerpt-include</title>
+      <link>http://localhost:1313/shortcodes/excerpt-include/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/excerpt-include/</guid>
+      <description>Le raccourci-code Excerpt Include s&amp;rsquo;utilise pour afficher une extraction de contenu (ce qui veut dire un segment de) provenant d&amp;rsquo;une page dans une autre. Avant de pouvoir utiliser ce raccourci-code, l&amp;rsquo;extrait doit avoir été défini en utilisant le raccouric-code Excerpt. Notez que vous pouvez avoir plus d&amp;rsquo;un raccourci-code Excerpt Include sur une page (même si vous ne pouvez avoir qu&amp;rsquo;un seul raccourci-code Excerpt sur une page). Usage    Paramètre valeur par défaut Description     filename requis Tapez le nom de fichier de la page qui contient l&amp;rsquo;extrait à afficher.</description>
+    </item>
+    
+    <item>
+      <title>expand</title>
+      <link>http://localhost:1313/shortcodes/expand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/expand/</guid>
+      <description>Le raccourci-code Expand affiche une section de texte extensible ou pliable sur votre page. Voici un exemple
+  déplie-moi   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+    </item>
+    
+    <item>
+      <title>icon</title>
+      <link>http://localhost:1313/shortcodes/icon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/icon/</guid>
+      <description>Affiche une icône comme   
+Cela utilise :
+ la bibliothèque glyphicons (bootstrap).plus d&amp;rsquo;infos ici la bibliothèque fontawesome plus d&amp;rsquo;infos ici  Ce raccourci-code icon affichera une icône dans votre page.
+Usage    Paramètre Valeur par défaut Description     name requis nom de l&amp;rsquo;icône (voir au-dessous)   size none taille de l&amp;rsquo;icône, medium, xx-small, x-small, small, large, x-large, xx-large, 11px, 2em, 20%&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>image</title>
+      <link>http://localhost:1313/shortcodes/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/image/</guid>
+      <description>Les images ont une syntaxe similaire aux liens mais sont précédées d&amp;rsquo;un point d&amp;rsquo;exclamation
+![agence](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg)  Retailler une image Ajoutez les paramètres HTTP width et/ou height au lien image pour retailler l&amp;rsquo;image. Les valeurs sont des valeurs CSS (par défaut réglé sur auto).
+![Hackathon](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?height=80px)  Ajouter des classes CSS Ajouter un paramètre HTTP classes au lien image pour ajouter des classes. shadow et border sont disponibles mais vous pourriez en définir d&amp;rsquo;autres.</description>
+    </item>
+    
+    <item>
+      <title>mermaid</title>
+      <link>http://localhost:1313/shortcodes/mermaid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/mermaid/</guid>
+      <description>mermaid est un éditeur pour créer des diagrammes pouvant être utilisés en raccourci-code pour intégrer de jolis diagrammes dans les pages web d&amp;rsquo;une doc ou d&amp;rsquo;un projet.
+Exemple de Flowchart   Afficher le code ...   {{&amp;lt;mermaid align=&amp;quot;left&amp;quot;&amp;gt;}} graph LR; A[Bords carrés] --&amp;gt;|Lien texte| B(Bords Rounds) B --&amp;gt; C{Décision} C --&amp;gt;|Un| D[Résultat un] C --&amp;gt;|Deux| E[Résultat deux] {{&amp;lt; /mermaid &amp;gt;}}    graph LR; A[Bords carrés] --|Lien texte| B(Bords Rounds) B -- C{Décision} C --|Un| D[Résultat un] C --|Deux| E[Résultat deux]  Exemples de diagramme séquence Transaction croisées sequenceDiagram participant Barbara participant Christophe Barbara-Christophe: Salut Christophe, comment va ?</description>
+    </item>
+    
+    <item>
+      <title>notice</title>
+      <link>http://localhost:1313/shortcodes/notice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/notice/</guid>
+      <description>Le raccourci-code notice présente 4 types d&amp;rsquo;avertissements pour vous aider à structurer votre page.
+Note {{% notice note %}} Une clause de non-responsabilité {{% /notice %}}  s&amp;rsquo;affiche comme
+Une clause de non-responsabilité
+ Info {{% notice info %}} Une clause de non-responsabilité {{% /notice %}}  affichera
+Une clause de non-responsabilité
+ Truc {{% notice tip %}} Tiens un truc {{% /notice %}}  s&amp;rsquo;affiche comme
+Tiens un tip.</description>
+    </item>
+    
+    <item>
+      <title>page test</title>
+      <link>http://localhost:1313/shortcodes/children/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/children/test/</guid>
+      <description>Ceci est une page test enfant pour démo</description>
+    </item>
+    
+    <item>
+      <title>page test 3</title>
+      <link>http://localhost:1313/shortcodes/children/children-2/test3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/children/children-2/test3/</guid>
+      <description>Ceci est un 3ème test de démo de page enfant</description>
+    </item>
+    
+    <item>
+      <title>panel</title>
+      <link>http://localhost:1313/shortcodes/panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/panel/</guid>
+      <description>Le raccourci panel Vous permet de mettre en évidence les informations ou de les mettre dans une boîte. Il crée une boîte colorée entourant votre texte.  Usage    Paramètre Par défaut Description     header aucun Le titre du panneau. Si spécifié, ce titre sera affiché dans sa propre ligne d&amp;rsquo;en-tête.   footer aucun le pied de page du panneau. Si spécifié, ce texte sera affiché dans sa propre ligne   theme primary default,primary,info,success,warning,danger    Exemple basique Par défaut :</description>
+    </item>
+    
+    <item>
+      <title>revealjs</title>
+      <link>http://localhost:1313/shortcodes/revealjs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/shortcodes/revealjs/</guid>
+      <description>Page en chantier - à raffiner avec ce diaporama stratégique  Ce raccourci-code mettra en forme le markdown entouré pour le restituer avec reveal.js sur la runtime (côté-client)
+Pour en savoir plus, regardez le repo github revealjs.
+Usage revealjs peut utiliser les paramètres nommés suivants :
+ theme transition controls progress history center  Important Même si le contenu joint est du markdown, utilisez le &amp;lt; raccourci-code au lieu de la notation %  Mise en forme du contenu et délimiteurs de slides cliquez ici pour en savoir plus ici</description>
+    </item>
+    
+  </channel>
+</rss>

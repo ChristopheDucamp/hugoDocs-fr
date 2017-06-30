@@ -38,3 +38,6 @@ weight = 20
 name = "<i class='fa fa-bullhorn'></i> Crédits"
 url = "/credits"
 weight = 30
+
+[context.production.environment]
+  HUGO_VERSION = "0.24"

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:1313/getting-start/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/getting-start/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/getting-start/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/creer-page/</loc>
+    <lastmod>2017-06-30T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/content-organisation/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/search/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2017-06-30T10:21:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/content-organisation/extramenu/</loc>
+    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/creer-page/homepage/</loc>
+    <lastmod>2017-04-28T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/content-organisation/logo/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/creer-page/myslide/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/creer-page/page-slide/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/_header/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/creer-page/page-images/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/creation/</loc>
+    <lastmod>2017-06-30T18:36:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cr%C3%A9ation/</loc>
+    <lastmod>2017-04-28T18:36:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/credits/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/page/</loc>
+    <lastmod>2017-06-30T18:36:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/content-organisation/customize-style/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/showcase/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2017-06-30T18:36:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/content-organisation/customize-style/theme-variants/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/alert/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/attachments/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/button/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/excerpt/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/excerpt-include/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/expand/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/icon/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/image/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/mermaid/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/notice/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-1/children-1-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/test/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/children/children-2/test3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/panel/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/shortcodes/revealjs/</loc>
+  </url>
+  
+</urlset>
