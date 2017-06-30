@@ -44,5 +44,5 @@ description = "contributeurs et packages utilisés par le thème hugo-theme-docd
 
 ## Outillage
 
-* [Netlify](https://www.netlify.com) - Déploiement continu et hébegement de cette documentation
+* [Netlify](https://www.netlify.com) - Déploiement continu et hébergement de cette documentation. Sans oublier le support humain de Chris & Gérald.
 * [Hugo](https://gohugo.io/) {{%icon "fa-smile-o"%}}
