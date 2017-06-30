@@ -10,7 +10,7 @@ Exemple
 
 ## Usage
 
-Le raccouric-code liste les fichiers trouvés dans un **dossier spécifique**.
+Le raccourci-code liste les fichiers trouvés dans un **dossier spécifique**.
 Actuellement, il supporte deux implémentations pour les pages
 
 1. Si votre page est un fichier markdown, les pièces-jointes doivent être placées dans un **dossier** appelé comme votre page et finissant par **.files**.
@@ -21,7 +21,7 @@ Actuellement, il supporte deux implémentations pour les pages
     >      * piece-jointe.pdf
     >   * page.md
 
-2. Si votre page est un **dossier**, les pièces jointes doivent être placée dans un dossier **'files'** imbriqué.
+2. Si votre page est un **dossier**, les pièces jointes doivent être placées dans un dossier **'files'** imbriqué.
 
     > * content
     >   * _index.md
