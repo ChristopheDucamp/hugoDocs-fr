@@ -1,0 +1,40 @@
+baseURL = "http://localhost:1313"
+languageCode = "fr-fr"
+DefaultContentLanguage = "fr"
+
+title = "DocDock Hugo en Français"
+
+theme = "docdock"
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+editURL = "https://github.com/ChristopheDucamp/hugo-docdock-fr/edit/master/exemple-Site/content/"
+noHomeIcon = false # default is false
+noSearch = false # default is false
+showVisitedLinks = true # default is false
+themeVariant = "gray" # choisir la variante du theme "green", "gold" , "gray", "blue" (blue par defaut)
+
+
+[[menu.shortcuts]]
+pre = "<h3>Plus</h3>"
+name = "<i class='fa fa-github'></i> Repo Github"
+identifier = "ds"
+url = "https://github.com/ChristopheDucamp/hugo-docdock-fr"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-camera'></i> Showcases"
+url = "/showcase"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bookmark'></i> Documentation Hugo"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i> Crédits"
+url = "/credits"
+weight = 30
