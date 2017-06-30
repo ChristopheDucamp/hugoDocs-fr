@@ -12,9 +12,16 @@ description = "contributeurs et packages utilisés par le thème hugo-theme-docd
     <div>
       <img src="https://avatars2.githubusercontent.com/u/394382?v=3" class="inline" width="32" height="32" style="height: 32px;height: 32px;margin-bottom:.25em; vertical-align:middle; ">
       <label>@<a href="https://github.com/bep">bep</a></label>
-      <span class="contributions">support et conseils</span>
+      <span class="contributions">support et conseils en français</span>
     </div>
 
+<div>
+      <img src="https://avatars2.githubusercontent.com/u/17439288?v=3&s=200" class="inline" width="32" height="32" style="height: 32px;height: 32px;margin-bottom:.25em; vertical-align:middle; ">
+      <label>@<a href="https://github.com/jamstatic">Jamstatic</a></label>
+      <span class="contributions">support et conseil en français</span>
+    </div>
+    
+    
 <div>
       <img src="https://avatars0.githubusercontent.com/u/174418?v=3&s=460" class="inline" width="32" height="32" style="height: 32px;height: 32px;margin-bottom:.25em; vertical-align:middle; ">
       <label>@<a href="https://github.com/ChristopheDucamp">Christophe Ducamp</a></label>
