@@ -27,7 +27,7 @@ graph LR;
 
 ## Exemples de diagramme séquence
 
-### Transaction croisées
+### Transactions simples
 {{<mermaid>}}
 sequenceDiagram
     participant Barbara
