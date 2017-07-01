@@ -4,11 +4,9 @@ title = "C'est qui Hugo ?"
 description = "Une rapide introduction à Hugo par son auteur"
 weight = 1
 +++
-
-[Source](https://gohugo.io/overview/introduction/ "Permalink to Hugo - Introduction to Hugo") - traduction en cours ouverte à toutes vos modifications.
-
-- Auteur : Steve Francia (auteur d’Hugo)
-
+{{% notice note %}}
+[Source "Introduction to Hugo" par Steve Francia (auteur d'Hugo)](https://gohugo.io/overview/introduction/ "Permalink to Hugo - Introduction to Hugo") - traduction en cours ouverte à toutes vos modifications.
+{{% /notice %}}
 
 ## C’est Quoi Hugo ?
 
@@ -16,7 +14,7 @@ Hugo est un framework de site Web généraliste. Techniquement parlant, Hugo est
 
 Les sites construits avec Hugo sont extrêmement rapides et très sécurisés. Les sites Hugo peuvent être hébergés n'importe où, y compris chez [Heroku][1], [GoDaddy][2], [DreamHost][3], [GitHub Pages][4], [Netlify][5], [Surge][6] , [Aerobatic][7], [Firebase Hosting][8], [Google Cloud Storage][9], [Amazon S3][10] et [CloudFront][11], et fonctionnent bien avec les CDN. Les sites Hugo s'exécutent sans dépendances aux runtimes coûteuses comme Ruby, Python ou PHP et sans dépendances aux bases de données.
 
-Nous pensons que Hugo est l'outil de création de site idéal. Avec des temps de construction presque instantanés et la possibilité de reconstruire à chaque fois qu'un changement est effectué, Hugo fournit une boucle de rétroaction très rapide. Ceci est essentiel lorsque vous concevez des sites Web, mais aussi très utile lors de la création de contenu.
+Nous pensons que Hugo est l'outil de création de site idéal. Avec des temps de construction presque instantanés et la possibilité de reconstruire à chaque fois qu'un changement est effectué, Hugo fournit une boucle de rétroaction très rapide. Ceci est essentiel lorsque vous concevez des sites Web, mais c'est aussi très utile lors de la création de contenu.
 
 ## Qu'est-ce qui fait que Hugo est si différent ?
 
@@ -39,7 +37,8 @@ Le deuxième composant est utilisé lorsque vous êtes prêt à publier votre si
 
 ## La rapidité d’Hugo ?
 
-vidéo benchmark 
+Une vidéo benchmark qui démontre la vélocité moteur 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CdiDYZ51a2o" frameborder="0" allowfullscreen></iframe>
 
 ## Que fait Hugo ?
@@ -48,10 +47,10 @@ En termes techniques, Hugo prend un dossier source de fichiers et de modèles, p
 
 Hugo a les caractéristiques suivantes :
 
-### Générale 
+### Général
 
-* Temps de construction extrêmement rapide ((~1 ms par page)
-* Ouvert sur toutes les plates-formes : fonctionne sur __ macOS, __ Linux, __ Windows, et plus encore !
+* Temps de construction extrêmement rapide (~1 ms par page)
+* Ouvert sur toutes les plates-formes : fonctionne sur macOS, Linux, Windows, et plus encore !
 * [Installation facile ][12]
 * Rendu des modification [à la volée][13] avec [LiveReload][14] pendant que vous développez
 * Support complet des thèmes 
@@ -59,11 +58,39 @@ Hugo a les caractéristiques suivantes :
 
 ### Organisation
 
+* [Organisation du contenu](https://gohugo.io/content/organization/) immédiate
+* Support pour les [sections de sites web](https://gohugo.io/content/sections/)
+* [URLs](https://gohugo.io/extras/urls/) complètement personnalisables
+* Support pour [taxonomies](https://gohugo.io/taxonomies/overview/) configurables qui comprennent les catégories et tags. Créez votre propre organisation de contenu.
+* Capacité à [trier le contenu](https://gohugo.io/content/ordering/) comme vous le désirez
+* Génération de [tables des matières](https://gohugo.io/extras/toc/) automatique 
+* Création dynamique des menus
+* Support pour de [Jolies URLs](https://gohugo.io/extras/urls/) 
+* [Permalien](https://gohugo.io/extras/permalinks/) pattern support
+* [Alias](https://gohugo.io/extras/aliases/) (redirectios)
+
 ### Contenu
+
+* Support natif du contenu écrit en [Markdown](https://gohugo.io/content/example/)
+* Support pour d'autres langages à travers des _external helpers_, voir [formats supportés](https://gohugo.io/content/supported-formats)
+* Support pour métadonnées TOML, YAML et JSON metadata dans le  [frontmatter](https://gohugo.io/content/front-matter/)
+* [Page d'accueil complètement personnalisable](https://gohugo.io/layout/homepage/)
+* Support pour plusieurs [types de contenus](https://gohugo.io/content/types/)
+* [Résumés](https://gohugo.io/content/summaries/) automatiques et définies par l'utilisateur
+* [Shortcodes](https://gohugo.io/extras/shortcodes/) pour permettre le contenu riche dans Markdown
+* Fonctionnalité [“Minutes to Read”](https://gohugo.io/layout/variables/) 
+* [“Compteur de mots”](https://gohugo.io/layout/variables/) functionality
+
 
 ### Fonctionnalités supplémentaires 
 
-Regardez ce qui drive bientôt dans la [roadmap][15].
+* Support commentaires [Disqus](https://disqus.com/) intégré
+* Support intégré des [Google Analytics](https://google-analytics.com/)
+* Création automatique de [RSS](https://gohugo.io/layout/rss/) creation
+* Support pour les modèles HTML [Go](http://golang.org/pkg/html/template/), [Amber](https://github.com/eknkc/amber) et [Ace](https://github.com/yosssi/ace) 
+* [Enluminure de Syntaxe](https://gohugo.io/extras/highlighting/) motorisée par [Pygments](http://pygments.org/)
+
+Regardez ce qui arrive bientôt dans la [roadmap][15].
 
 ## Qui devrait utiliser Hugo ?
 
@@ -85,8 +112,9 @@ Je voulais développer un framework de site Web rapide et complet sans aucune d�
 
 ## Prochaines étapes 
 
-* [Installer Hugo](https://gohugo.io/overview/installing/)
-* [Démarrage rapide](/quickstart/)
+* [Installer Hugo](https://gohugo.io/overview/installing/) et le thème [docDock]({{%relref "installation.md"%}}) 
+
+* [Démarrage rapide](/quickstart/) si vous êtes perdu.e
 * [Rejoignez la liste de discussion](https://gohugo.io/community/mailing-list/)
 * [Star us on GitHub](https://github.com/gohugoio/hugo)
 * [Forum de discussion](https://discourse.gohugo.io/)
