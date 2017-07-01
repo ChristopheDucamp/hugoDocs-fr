@@ -1,8 +1,8 @@
-baseURL = "http://localhost:1313"
+baseURL = "https://docdock-hugo.netlify.com"
 languageCode = "fr-fr"
 DefaultContentLanguage = "fr"
 
-title = "DocDock Hugo en Français"
+title = "Une documentation du thème DocDock pour Hugo"
 
 publishDir = "public"
 

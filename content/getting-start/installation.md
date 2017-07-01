@@ -6,7 +6,7 @@ weight = 1
 
 {{% alert theme="warning" %}}HUGO **v0.22** est la version minimum requise pour utiliser ce thème{{%/alert%}}
 
-Les étapes suivantes sont là pour vous aider à initialiser votre nouveau site web. Si vous ne connaissez pas du tout Hugo, nous vous suggérons vraiment de vous entraîner en suivant cette [doc géniale pour les débutants](https://gohugo.io/overview/quickstart/).
+Les étapes suivantes sont là pour vous aider à initialiser votre nouveau site web. Si vous ne connaissez pas du tout Hugo, nous vous suggérons vraiment de vous entraîner en suivant cette [doc géniale pour les débutants]({{%relref "quickstart.md"%}})
 <!--more-->
 
 ## Créez votre Documentation
