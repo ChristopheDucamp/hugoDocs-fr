@@ -12,7 +12,7 @@ theme = "docdock"
 
 ## Génération de l'index de recherche
 
-Ajoutez la ligne suivante dan le même fichier `config.toml`.
+Ajoutez la ligne suivante dans le même fichier `config.toml`.
 
 ```
 [outputs]
