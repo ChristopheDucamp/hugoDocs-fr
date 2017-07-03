@@ -11,15 +11,15 @@ weight = 2
 
 Dans ce guide de démarrage, nous allons construire une bibliothèque qui listera les livres et leurs critiques.
 
-> _Note : Ce guide dépend de fonctionnalités présentées dans la version Hugo v0.15. Si vous avez une version précédente d'Hugo,  [mettez à jour][1] avant de démarrer._
+> _Note : Ce guide dépend de fonctionnalités présentées dans la version Hugo v0.15. Si vous avez une version précédente d'Hugo,  [mettez à jour]({{% relref "installer-hugo.md" %}}) avant de démarrer._
 
-## Étape 1. Installer Hugo
+## Étape 1. Installez Hugo
 
-Foncez sur les [Hugo Releases][2] et téléchargez la version qui correspondra à votre système d'exploitation et à votre architecture.
+Foncez sur les [Versions Hugo][2] et téléchargez la version qui correspondra à votre système d'exploitation et à votre architecture.
 
 Sauvegardez l'exécutable choisi sous `hugo` (ou `hugo.exe` sur Windows) quelque part dans votre `PATH` car nous devrons l'utiliser pour la prochaine étape.
 
-Des instructions plus détaillées sont disponibles sur [Installing Hugo][1]. (NDT à traduire)
+Des instructions plus détaillées sont disponibles sur [Installing Hugo][1].
 
 Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash][3] (aussi connu comme Git pour Windows). Par conséquent, toutes les commandes démarreront avec le caractère d'invitation Bash (qui est `$`).
 
@@ -79,10 +79,9 @@ Comme précisé dans la commande, le dossier `bibliotheque` comprend 6 sous-doss
 * **static** : Ce dossier s'utilise pour stocker tout le contenu statique dont aura besoin votre site web comme des images, CSS, JavaScript ou tout autre contenu statique.
 * **themes** : C'est l'endroit où vous stockerez les thèmes utilisés par votre site. Les thèmes fournissent la mise en page et les modèles qui restituent le contenu. Il existe une grande variété de thèmes open-source disponibles que vous vous pouvez télécharger et utiliser mais rien ne vous empêche de créer le vôtre.
 
-## Étape 3. Ajouter du Contenu
+## Étape 3. Ajoutez du Contenu
 
-Ajoutons maintenant un post à notre site  `bibliotheque`. Nous utiliserons la commande `hugo new` pour ajouter un post. En janvier, j'ai lu le livre [Good To Great][6], aussi nous commencerons par la création d'un billet pour ce livre. **Assurez-vous de bien être dans le dossier `bibliotheque`.**
-
+Ajoutons maintenant un article à notre site  `bibliotheque`. Nous utiliserons la commande `hugo new` pour ajouter un article. En janvier, j'ai lu le livre [Good To Great][6], aussi nous commencerons par la création d'un billet pour ce livre. **Assurez-vous de bien être dans le dossier `bibliotheque`.**
 
 
     $ hugo new post/good-to-great.md
@@ -130,7 +129,7 @@ Ajoutons une petite critque pour le livre **Good to Great** :
     J'ai lu **Good to Great en janvier 2016**. Une analyse merveilleuse décrivant avec acuité comment les grandes sociétés enchantent le monde.
     
 
-## Étape 4. Servir le contenu
+## Étape 4. Servez le contenu
 
 Hugo a un serveur intégré qui peut servir le contenu de votre site web afin que vous puissiez le prévisualiser. Vous pouvez aussi utiliser le serveur intégré d'Hugo en production. Pour servir le contenu, lancez la commande suivante à l'intérieur de votre répertoire `bibliotheque` :
     
@@ -308,9 +307,9 @@ Outre la visualisation, vous retrouverez la même chose renvoyée dans les journ
     0 categories created
     total in 24 ms    
 
-## Étape 8. Personnaliser le thème robust
+## Étape 8. Personnalisez le thème robust
 
-Le thème `robust` est un bon départ pour notre bibliothèque en ligne mais nous voulons le personnaliser afin de le rapprocher de nos besoins pour une bibliothèque. Hugo facilite la personnalisation des thèmes. Vous pouvez aussi créer vos propres thèmes, mais nous ne le ferons pas aujourd'hui. Si vous souhaitez créer votre propre thème, vous devriez vous référer à la [documentation Hugo documentation] [10].
+Le thème `robust` est un bon départ pour notre bibliothèque en ligne mais nous voulons le personnaliser afin de le rapprocher de nos besoins pour une bibliothèque. Hugo facilite la personnalisation des thèmes. Vous pouvez aussi créer vos propres thèmes, mais nous ne le ferons pas aujourd'hui. Si vous souhaitez créer votre propre thème, vous devriez vous référer à la [documentation Hugo][10].
 
 La première modification à produire, c'est d'utiliser une image par défaut différente de celle utilisée dans le thème. L'image par défaut du thème utilisée dans la liste et de la page de visualisation unique se trouve à l'intérieur de `themes/hugo_theme_robust/static/images/default.jpg`. Nous pouvons facilement l'annuler en créant une structure de répertoire simple dans le répertoire `static` du dossier.
 
@@ -369,7 +368,7 @@ Nous devons aussi enlever la barre latérale à droite. Copiez le fichier `index
     +++
     date = "2017-07-01T16:11:58+05:30"
     draft = true
-    title = "Good to Great Book Review"
+    title = "Crituque du Livre Good to Great"
     image = "good-to-great.jpg"
     +++
     
@@ -382,7 +381,7 @@ Après avoir ajouté quelques autres livres à notre étagère de bibliothèque,
 
 ![image à refaire en français](https://d33wubrfki0l68.cloudfront.net/e03165bd6db7ba50f0bb728074b50809562fb050/ae4e7/img/quickstart/bookshelf.png)
 
-## Étape 9. Rendre les posts publics
+## Étape 9. Rendez les posts publics
 
 À ce stade, tous les posts que nous avons écrits sont en statut draft (ébauche). Afin de faire qu'un draft soit public, vous pouvez soit lancer une commande ou modifier manuellement le statut draft dans le post en `false`.
 
@@ -394,6 +393,8 @@ Maintenant, vous pouvez lancer le serveur sans l'option `buildDrafts`.
 
     $ hugo server --theme=hugo_theme_robust
 
+## Étape 10. Ajoutez des commentaires
+
 Disqus vous permet d'intégrer des commentaires dans votre blog statique. Pour activer Disqus, il suffit de définir `disqusShortname` dans votre fichier de configuration `config.toml comme indiqué ci-dessous.
 
     [Params]
@@ -404,7 +405,7 @@ Maintenant, le commentaire sera activé sur votre blog.
 
 ![commentaire Disqus](https://monosnap.com/file/AsSseCEoy7WDogFwmyof1OVgTK2uta.png)
 
-## Étape 11. Générer le Site Web
+## Étape 11. Générez le Site Web
 
 Pour générer la source du site web Hugo, vous pouvez utiliser pour déployer votre site web le service GitHub Pages. Modifiez d'abord dans votre fichier de configuration `bibliotheque/config.toml`, la ligne `baseURL` en :
 

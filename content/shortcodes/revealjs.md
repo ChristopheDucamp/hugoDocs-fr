@@ -23,7 +23,7 @@ Pour en savoir plus, regardez le [repo github revealjs](https://github.com/hakim
 * center
 
 
-{{%warning title="Important" %}}Même si le contenu joint est du markdown, utilisez le `<` raccourci-code au lieu de la notation `%` {{%/warning %}}
+{{%warning title="Important" %}}Même si le contenu joint est du markdown, utilisez le raccourci-code `<` au lieu de la notation `%`{{%/warning %}}
 
 ### Mise en forme du contenu et délimiteurs de slides
 
@@ -31,42 +31,49 @@ Pour en savoir plus, regardez le [repo github revealjs](https://github.com/hakim
 
 ## Démo
 
+## Demo
+
 {{<revealjs theme="moon" progress="true">}}
 
-# Le matin
+# In the morning
 
 ___
 
 
-## Me Lever
+## Getting up
 
-- Désactiver le réveil
-- Sortir du lit
+- Turn off alarm
+- Get out of bed
 
 ___
 
-## Petit-déjeuner
+## Breakfast
 
-- Manger des oeufs
-- Boire du thé
+- Eat eggs
+- Drink coffee
 
 ---
 
-# Dans la soirée
+# In the evening
 
 ___
 
-## Dîner
+## Dinner
 
-- Manger des spaghettis
-- Boire du Vin
+- Eat spaghetti
+- Drink wine
 
 ___
 
-## Aller dormir
+## Going to sleep
 
-- Aller au lit
-- Compter les moutons
+- Get in bed
+- Count sheep
 
 {{</revealjs>}}
+
+## Source :
+
+* [{{%icon "sunglasses" %}} clliquez ici pour visualiser le contenu brut](https://github.com/ChristopheDucamp/Doc-DocDock-Hugo/edit/master/content/shortcodes/revealjs.md)
+editURL
 
