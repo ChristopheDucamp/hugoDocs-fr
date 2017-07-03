@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.24.1" />
-    <meta name="description" content="">
+    <meta name="description" content=".">
 
 
-    <title>page 2 :: Une documentation du thème DocDock pour Hugo</title>
+    <title>Utiliser Hugo :: Une documentation du thème DocDock pour Hugo</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     
 
   </head>
-  <body class="" data-url="/shortcodes/children/children-2/">
+  <body class="" data-url="/getting-start/doc-hugo-en-cours/utiliser-hugo/">
     <nav id="sidebar" class="showVisitedLinks">
   <div id="header-wrapper">
     <div id="header">
@@ -80,7 +80,7 @@
 
 
 <li data-nav-id="/getting-start/" class="dd-item 
-
+parent
 
 parent
 ">
@@ -123,7 +123,7 @@ parent
 
 
 <li data-nav-id="/getting-start/doc-hugo-en-cours/" class="dd-item 
-
+parent
 
 
 ">
@@ -131,7 +131,7 @@ parent
     <span>Documentation Hugo</span>
 
     
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
     
     
     <i style="color:grey" class="fa fa-check read-icon"></i>
@@ -173,7 +173,7 @@ parent
         
          
           <li data-nav-id="/getting-start/doc-hugo-en-cours/utiliser-hugo/" class="dd-item
-         
+         active
           ">
             <a href="/getting-start/doc-hugo-en-cours/utiliser-hugo/">
             <span>Utiliser Hugo</span> 
@@ -339,7 +339,7 @@ parent
 
 
 <li data-nav-id="/shortcodes/" class="dd-item 
-parent
+
 
 
 ">
@@ -347,7 +347,7 @@ parent
     <span>Raccourcis-code</span>
 
     
-    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
     
     
     <i style="color:grey" class="fa fa-check read-icon"></i>
@@ -492,7 +492,7 @@ parent
 
 
 <li data-nav-id="/shortcodes/children/" class="dd-item 
-parent
+
 
 
 ">
@@ -500,7 +500,7 @@ parent
     <span>children</span>
 
     
-    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
     
     
     <i style="color:grey" class="fa fa-check read-icon"></i>
@@ -649,15 +649,15 @@ parent
 
 
 <li data-nav-id="/shortcodes/children/children-2/" class="dd-item 
-parent
-active
+
+
 
 ">
   <a href="/shortcodes/children/children-2/">
     <span>page 2</span>
 
     
-    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
     
     
     <i style="color:grey" class="fa fa-check read-icon"></i>
@@ -836,7 +836,7 @@ active
               
               
             <div id="top-github-link">
-              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-DocDock-Hugo/edit/master/content/shortcodes/children/children-2/_index.md" target="blank">
+              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-DocDock-Hugo/edit/master/content/getting-start/Doc%20Hugo%20%28en%20cours%29/Utiliser-hugo.md" target="blank">
                 <i class="fa fa-code-fork"></i>
                 Modifier
               </a>
@@ -863,7 +863,7 @@ active
 
 
 
- <a href='/'>Thème DocDock pour Hugo</a> > <a href='/shortcodes/'>Raccourcis-code</a> > <a href='/shortcodes/children/'>children</a> > page 2
+ <a href='/'>Thème DocDock pour Hugo</a> > <a href='/getting-start/'>Démarrage</a> > <a href='/getting-start/doc-hugo-en-cours/'>Documentation Hugo</a> > Utiliser Hugo
 
  
 
@@ -876,7 +876,15 @@ active
             </div>
             <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#common-usage-example">Common Usage Example</a></li>
+<li><a href="#instant-feedback-as-you-develop-your-web-site">Instant feedback as you develop your web site</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -885,25 +893,111 @@ active
         
         <div id="body-inner">
           
-            <h1>page 2</h1>
+            <h1>Utiliser Hugo</h1>
           
 
 
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+<div class="notices note" ><p><a href="http://gohugo.io/overview/usage/" title="Permalink vers Hugo - Using Hugo">Source &ldquo;Using Hugo</a> - documentation officielle Hugo, demeurant le seul lien de référence.</p>
+</div>
+
+
+<p>Assurez-vous que Hugo est dans votre <code>PATH</code> (ou fournissez un chemin). Testez en lançant :</p>
+
+<pre><code>$ hugo help
+hugo is the main command, used to build your Hugo site.
+
+Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.
+
+Complete documentation is available at http://gohugo.io/.
+
+Usage:
+hugo [flags]
+hugo [command]
+
+
+Available Commands:
+  benchmark   Benchmark Hugo by building a site a number of times.
+  check       Contains some verification checks
+  config      Print the site configuration
+  convert     Convert your content to different formats
+  env         Print Hugo version and environment info
+  gen         A collection of several useful generators.
+  help        Help about any commanD
+  import      Import your site from others.
+  list        Listing out various types of content
+  new         Create new content for your site
+  server      A high performance webserver
+  undraft     Undraft changes the content's draft status from 'True' to 'False'
+  version     Print the version number of Hugo
+
+Flags:
+  -b, --baseURL string             hostname (and path) to the root, e.g. http://spf13.com/
+  -D, --buildDrafts                include content marked as draft
+  -E, --buildExpired               include expired content
+  -F, --buildFuture                include content with publishdate in the future
+      --cacheDir string            filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+      --canonifyURLs               if true, all relative URLs will be canonicalized using baseURL
+      --cleanDestinationDir        remove files from destination not found in static directories
+      --config string              config file (default is path/config.yaml|json|toml)
+  -c, --contentDir string          filesystem path to content directory
+  -d, --destination string         filesystem path to write files to
+     --disable404                 do not render 404 page
+     --disableKinds stringSlice   disable different kind of pages (home, RSS etc.)
+     --disableRSS                 do not build RSS files
+     --disableSitemap             do not build Sitemap file
+     --enableGitInfo              add Git revision, date and author info to the pages
+     --forceSyncStatic            copy all files when static is changed.
+-h, --help                       help for hugo
+     --i18n-warnings              print missing translations
+     --ignoreCache                ignores the cache directory
+ -l, --layoutDir string           filesystem path to layout directory
+     --log                        enable Logging
+     --logFile string             log File path (if set, logging enabled automatically)
+     --noChmod                    don't sync permission mode of files
+     --noTimes                    don't sync modification time of files
+     --pluralizeListTitles        pluralize titles in lists using inflect (default true)
+     --preserveTaxonomyNames      preserve taxonomy names as written (&quot;Gérard Depardieu&quot; vs &quot;gerard-depardieu&quot;)
+     --quiet                      build in quiet mode
+     --renderToMemory             render to memory (only useful for benchmark testing)
+-s, --source string              filesystem path to read files relative from
+    --stepAnalysis               display memory and timing of different steps of the program
+-t, --theme string               theme to use (located in /themes/THEMENAME/)
+    --themesDir string           filesystem path to themes directory
+    --uglyURLs                   if true, use /filename.html instead of /filename/
+-v, --verbose                    verbose output
+    --verboseLog                 verbose logging
+-w, --watch                      watch filesystem for changes and recreate as needed
+
+Use &quot;hugo [command] --help&quot; for more information about a command.
+</code></pre>
+
+<h2 id="common-usage-example">Common Usage Example</h2>
+
+<p>L&rsquo;utilisation la plus commune est probablement de lancer <code>hugo</code> avec votre répertoire en cours étant le répertoire d&rsquo;input :</p>
+
+<pre><code>$ hugo
+0 draft content
+0 future content
+99 pages created
+0 paginator pages created
+16 tags created
+0 groups created
+in 120 ms
+</code></pre>
+
+<p>This generates your web site to the <code>public/</code> directory, ready to be deployed to your web server.</p>
+
+<h2 id="instant-feedback-as-you-develop-your-web-site">Instant feedback as you develop your web site</h2>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -932,8 +1026,6 @@ active
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -943,16 +1035,6 @@ active
             
                 
                     
-                
-                
-                
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -964,6 +1046,9 @@ active
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -993,6 +1078,18 @@ active
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
                 
             
         
@@ -1002,55 +1099,8 @@ active
             
                 
                     
-                
-                
-                
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-                
-            
-        
-                    
-                
-                    
-            
-            
-                
-                    
-                
-                
-                
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-                
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1078,14 +1128,6 @@ active
                 
                 
                 
-                    
-            
-            
-                
-                    
-                
-                
-                
             
         
                     
@@ -1100,7 +1142,8 @@ active
             
         
                     
-                
+                        
+            
             
         
                     
@@ -1132,7 +1175,6 @@ active
             
                 
                     
-                    
                 
                 
                 
@@ -1140,79 +1182,6 @@ active
             
             
                 
-                    
-                    
-                
-                
-                
-                    
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-                
-                    
-            
-            
-                
-                    
-                
-                
-                
-                    
-            
-            
-                
-                    
-                
-                
-                
-                    
-            
-            
-                
-                    
-                
-                
-                
-                    
-            
-            
-                
-                    
-                
-                
-                
-            
-        
-                    
-                
-            
-        
-                    
-                
-            
-        
-                    
-                
-            
-        
-                    
-                
-            
-        
-                    
-                
-                    
-            
-            
-                
-                    
                     
                 
                 
@@ -1225,8 +1194,130 @@ active
             
                 
                     
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+                    
+                
+            
+        
+                    
+                
+            
+        
+                    
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1423,10 +1514,10 @@ active
 
 
         
-            <a class="nav nav-prev" href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" title="page 1-1-1-1-1"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/getting-start/doc-hugo-en-cours/installer-hugo/" title="Installer Hugo"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/shortcodes/children/children-2/test3/" title="page test 3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/getting-start/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1453,3 +1544,4 @@ active
 
   </body>
 </html>
+

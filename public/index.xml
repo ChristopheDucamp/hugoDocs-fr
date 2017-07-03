@@ -1,48 +1,93 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Thème DocDock pour Hugo on DocDock Hugo en Français</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Thème DocDock pour Hugo on DocDock Hugo en Français</description>
+    <title>Thème DocDock pour Hugo on Une documentation du thème DocDock pour Hugo</title>
+    <link>https://docdock-hugo.netlify.com/</link>
+    <description>Recent content in Thème DocDock pour Hugo on Une documentation du thème DocDock pour Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <lastBuildDate>Fri, 30 Jun 2017 10:21:43 +0200</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docdock-hugo.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Installation</title>
-      <link>http://localhost:1313/getting-start/installation/</link>
+      <title>C&#39;est qui Hugo ?</title>
+      <link>https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/intro-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/getting-start/installation/</guid>
+      <guid>https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/intro-hugo/</guid>
+      <description>Source &amp;ldquo;Introduction to Hugo&amp;rdquo; par Steve Francia (auteur d&amp;rsquo;Hugo) - traduction en cours ouverte à toutes vos modifications.
+ C’est Quoi Hugo ? Hugo est un framework de site Web généraliste. Techniquement parlant, Hugo est un générateur de site statique. Contrairement à d&amp;rsquo;autres systèmes qui créent dynamiquement une page chaque fois qu&amp;rsquo;un visiteur en fait la demande, Hugo lance la construction lorsque vous créez votre contenu. Étant donné que les sites Web sont affichés beaucoup plus souvent qu&amp;rsquo;ils ne sont édités, Hugo est optimisé pour l&amp;rsquo;affichage du site tout en offrant une excellente expérience d&amp;rsquo;écriture.</description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://docdock-hugo.netlify.com/getting-start/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docdock-hugo.netlify.com/getting-start/installation/</guid>
       <description>&lt;div class=&#34;alert 
 alert-warning&#34;
  
 role=&#34;alert&#34;&gt;HUGO &lt;strong&gt;v0.22&lt;/strong&gt; est la version minimum requise pour utiliser ce thème&lt;/div&gt;
 
 
-&lt;p&gt;Les étapes suivantes sont là pour vous aider à initialiser votre nouveau site web. Si vous ne connaissez pas du tout Hugo, nous vous suggérons vraiment de vous entraîner en suivant cette &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;doc géniale pour les débutants&lt;/a&gt;.
+&lt;p&gt;Les étapes suivantes sont là pour vous aider à initialiser votre nouveau site web. Si vous ne connaissez pas du tout Hugo, nous vous suggérons vraiment de vous entraîner en suivant cette &lt;a href=&#34;https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/quickstart/&#34;&gt;doc géniale pour les débutants&lt;/a&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>http://localhost:1313/getting-start/configuration/</link>
+      <link>https://docdock-hugo.netlify.com/getting-start/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/getting-start/configuration/</guid>
+      <guid>https://docdock-hugo.netlify.com/getting-start/configuration/</guid>
       <description>&lt;p&gt;Au moment de construire le site web, vous pouvez régler un thème en utilisant l&amp;rsquo;option &lt;code&gt;--theme&lt;/code&gt;. Nous vous suggérons de modifier votre fichier de configuration et de régler le thème par défaut. Exemple avec le format &lt;code&gt;config.toml&lt;/code&gt;.
 &lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Hugo QuickStart</title>
+      <link>https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/quickstart/</guid>
+      <description>Source originale
+Construire une Bibliothèque Dans ce guide de démarrage, nous allons construire une bibliothèque qui listera les livres et leurs critiques.
+ Note : Ce guide dépend de fonctionnalités présentées dans la version Hugo v0.15. Si vous avez une version précédente d&amp;rsquo;Hugo, mettez à jour avant de démarrer.
+ Étape 1. Installer Hugo Foncez sur les Hugo Releases et téléchargez la version qui correspondra à votre système d&amp;rsquo;exploitation et à votre architecture.</description>
+    </item>
+    
+    <item>
+      <title>Installer Hugo</title>
+      <link>https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/installer-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/installer-hugo/</guid>
+      <description>Source &amp;ldquo;Installing Hugo - documentation officielle Hugo, demeurant le seul lien de référence.
+ Hugo est écrit en Go avec le support de nombreuses plates-formes.
+La dernière version peut être trouvée sur Hugo Releases. Nous proposons actuellement des binaires pré-construits pour  Windows,  Linux, FreeBSD et  OS X (Darwin) pour les architectures x64, i386 et ARM.
+Hugo peut également être compilé à partir de la source partout où la chaîne d&amp;rsquo;outils du compilateur Go peut s&amp;rsquo;exécuter, par ex.</description>
+    </item>
+    
+    <item>
+      <title>Utiliser Hugo</title>
+      <link>https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/utiliser-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/utiliser-hugo/</guid>
+      <description>Source &amp;ldquo;Using Hugo - documentation officielle Hugo, demeurant le seul lien de référence.
+ Assurez-vous que Hugo est dans votre PATH (ou fournissez un chemin). Testez en lançant :
+$ hugo help hugo is the main command, used to build your Hugo site. Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io/. Usage: hugo [flags] hugo [command] Available Commands: benchmark Benchmark Hugo by building a site a number of times.</description>
+    </item>
+    
+    <item>
       <title>Entrées de menu supplémentaires</title>
-      <link>http://localhost:1313/content-organisation/extramenu/</link>
+      <link>https://docdock-hugo.netlify.com/content-organisation/extramenu/</link>
       <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>http://localhost:1313/content-organisation/extramenu/</guid>
+      <guid>https://docdock-hugo.netlify.com/content-organisation/extramenu/</guid>
       <description>Vous pouvez définir des entrées de menu supplémentaires dans le menu de navigation sans quelque lien vers le contenu.
 Modifiez la configuration du site web config.toml et ajoutez une entrée [[menu.shortcuts]] pour chaque lien que vous voulez ajouter.
 Exemple pour le site web actuel, remarquez le param pre qui vous permet d&amp;rsquo;insérer du code HTML et utilisé ici pour séparer le contenu du menu de ce menu &amp;ldquo;statique&amp;rdquo;.
@@ -51,38 +96,38 @@ Exemple pour le site web actuel, remarquez le param pre qui vous permet d&amp;rs
     
     <item>
       <title>Page d&#39;Accueil</title>
-      <link>http://localhost:1313/creer-page/homepage/</link>
+      <link>https://docdock-hugo.netlify.com/creer-page/homepage/</link>
       <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>http://localhost:1313/creer-page/homepage/</guid>
+      <guid>https://docdock-hugo.netlify.com/creer-page/homepage/</guid>
       <description>Pour indiquer au thème Hugo docDock de considérer une page comme un contenu de page d&amp;rsquo;accueil, créez simplement un fichier de contenu appelé _index.md dans le dossier content.</description>
     </item>
     
     <item>
       <title>Emplacement du Logo</title>
-      <link>http://localhost:1313/content-organisation/logo/</link>
+      <link>https://docdock-hugo.netlify.com/content-organisation/logo/</link>
       <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>http://localhost:1313/content-organisation/logo/</guid>
+      <guid>https://docdock-hugo.netlify.com/content-organisation/logo/</guid>
       <description>Créez une page _header.md dans le dossier content. Son contenu est ce que vous obtiendrez à l&amp;rsquo;emplacement du logo (tout en haut à gauche de l&amp;rsquo;écran).
 Truc : vous pouvez ajouter une image, une combobox avec des liens vers une autre documentation&amp;hellip; Considération pour l&amp;rsquo;emplacement du logo Ne réglez pas [menu.main] dans le frontmatter de votre fichier _header.md  Truc 2 : regardez Entrées de menu statiques supplémentaires si vous voulez ajouter des liens vers un autre site web dans cette barre latérale </description>
     </item>
     
     <item>
       <title>Ma Slide ! plein-écran</title>
-      <link>http://localhost:1313/creer-page/myslide/</link>
+      <link>https://docdock-hugo.netlify.com/creer-page/myslide/</link>
       <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>http://localhost:1313/creer-page/myslide/</guid>
+      <guid>https://docdock-hugo.netlify.com/creer-page/myslide/</guid>
       <description> Le matin Lever  Couper le réveil Sortir du lit  Petit-déjeuner  Manger des oeufs Boire du café  Soirée Dîner  Manger des spaghetti Boire du vin  Aller dormir  Aller au lit Compter les moutons  </description>
     </item>
     
     <item>
       <title>Présenter une Slide</title>
-      <link>http://localhost:1313/creer-page/page-slide/</link>
+      <link>https://docdock-hugo.netlify.com/creer-page/page-slide/</link>
       <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>http://localhost:1313/creer-page/page-slide/</guid>
+      <guid>https://docdock-hugo.netlify.com/creer-page/page-slide/</guid>
       <description>Une page basique de contenu md peut être restituée comme une présentation plein écran reveal.js.
 Vous pouvez aussi, embarquer une présentation dans une page sous forme de petite boîte, en utilisant le raccourci de code (shortcode) revealjs dans votre fichier md. Mise en Page Utilisez votre syntaxe commune Markdown que vous utilisez dans Hugo, n&amp;rsquo;oubliez pas que vous pouvez aussi placer des balises HTML.
 Une syntaxe spéciale (en commentaire html) est disponible pour ajouter des attribut aux éléments Markdown.</description>
@@ -90,46 +135,46 @@ Une syntaxe spéciale (en commentaire html) est disponible pour ajouter des attr
     
     <item>
       <title>header</title>
-      <link>http://localhost:1313/_header/</link>
+      <link>https://docdock-hugo.netlify.com/_header/</link>
       <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>http://localhost:1313/_header/</guid>
-      <description> JAMStactic : DocDock pour GoHugo </description>
+      <guid>https://docdock-hugo.netlify.com/_header/</guid>
+      <description>JAMStack : DocDock pour GoHugo un superbe thème pour héberger une documentation.</description>
     </item>
     
     <item>
       <title>À Propos des Images</title>
-      <link>http://localhost:1313/creer-page/page-images/</link>
+      <link>https://docdock-hugo.netlify.com/creer-page/page-images/</link>
       <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>http://localhost:1313/creer-page/page-images/</guid>
+      <guid>https://docdock-hugo.netlify.com/creer-page/page-images/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Crédits</title>
-      <link>http://localhost:1313/credits/</link>
+      <link>https://docdock-hugo.netlify.com/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/credits/</guid>
-      <description>contributeurs github .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 130 commits   @matcornic 49 commits   @gwleclerc 17 commits   @lierdakil 16 commits   @Xipas 5 commits   @altinnadmin 4 commits   @Thiht 2 commits   @erikjasiak 1 commits   @giuliov 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   autres contributeurs  @bep support et conseils   @Christophe Ducamp traduction</description>
+      <guid>https://docdock-hugo.netlify.com/credits/</guid>
+      <description>contributeurs github .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 133 commits   @matcornic 49 commits   @gwleclerc 17 commits   @lierdakil 16 commits   @Xipas 5 commits   @altinnadmin 4 commits   @Thiht 2 commits   @erikjasiak 1 commits   @giuliov 1 commits   @tarpdalton 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @shazic 1 commits   @uweschaefer 1 commits   @justin-yan 1 commits   autres contributeurs  @bep support et conseils en français   @Jamstatic support et conseil en français   @Christophe Ducamp traduction</description>
     </item>
     
     <item>
       <title>Sites construits avec Docdock</title>
-      <link>http://localhost:1313/showcase/</link>
+      <link>https://docdock-hugo.netlify.com/showcase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/showcase/</guid>
+      <guid>https://docdock-hugo.netlify.com/showcase/</guid>
       <description> https://invincible.site/ par @shazic </description>
     </item>
     
     <item>
       <title>Variantes de thèmes</title>
-      <link>http://localhost:1313/content-organisation/customize-style/theme-variants/</link>
+      <link>https://docdock-hugo.netlify.com/content-organisation/customize-style/theme-variants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/content-organisation/customize-style/theme-variants/</guid>
+      <guid>https://docdock-hugo.netlify.com/content-organisation/customize-style/theme-variants/</guid>
       <description>Dans le fichier de configuration du site, vous pouvez régler un nom de variante de ce thème pour charger une css spécifique, avec différentes spécifications de couleurs.
 ajoutez un param themeVariant = &amp;quot;NOM_VARIANTe&amp;quot; dans votre fichier config.toml.
 La variantes disponibles ne modifient que les couleurs pour l&amp;rsquo;instant Variante &amp;ldquo;gray&amp;rdquo; themeVariant = &amp;quot;gray&amp;quot;
@@ -139,10 +184,10 @@ Variant &amp;ldquo;green&amp;rdquo; themeVariant = &amp;quot;green&amp;quot;</de
     
     <item>
       <title>alert</title>
-      <link>http://localhost:1313/shortcodes/alert/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/alert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/alert/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/alert/</guid>
       <description>Le raccourci-code alert vous permet de surligner l&amp;rsquo;information dans votre page. Il crée une boîte coloré entourant votre texte, comme ceci :
 Ceci est une alerte ! Usage    Paramètre Par défaut Description     theme info success, info,warning,danger    Trucs : régler uniquement le thème comme argument fonctionne aussi : {{%alert warning%}} au lieu de {{%alert theme=&amp;quot;warning&amp;quot;%}}
  Exemples basiques {{% alert theme=&amp;quot;info&amp;quot; %}}**ceci** est une info texte{{% /alert %}} {{% alert theme=&amp;quot;success&amp;quot; %}}**Yeahhh !</description>
@@ -150,59 +195,59 @@ Ceci est une alerte ! Usage    Paramètre Par défaut Description     theme info
     
     <item>
       <title>attachments</title>
-      <link>http://localhost:1313/shortcodes/attachments/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/attachments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/attachments/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/attachments/</guid>
       <description>Le raccourci-code attachments affiche une liste de fichiers joints à une page.
-Exemple   Documents attachés   BachGavotteShort.mp3  (357 ko)   Carroll_AliceAuPaysDesMerveilles.pdf  (175 ko)   adivorciarsetoca00cape.pdf  (361 ko)   hugo.png  (17 ko)   movieselectricsheep-flock-244-32500-2.mp4  (340 ko)    Usage Le raccouric-code liste les fichiers trouvés dans un dossier spécifique. Actuellement, il supporte deux implémentations pour les pages</description>
+Exemple   Documents attachés   BachGavotteShort.mp3  (357 ko)   Carroll_AliceAuPaysDesMerveilles.pdf  (175 ko)   adivorciarsetoca00cape.pdf  (361 ko)   hugo.png  (17 ko)   movieselectricsheep-flock-244-32500-2.mp4  (340 ko)    Usage Le raccourci-code liste les fichiers trouvés dans un dossier spécifique. Actuellement, il supporte deux implémentations pour les pages</description>
     </item>
     
     <item>
       <title>button</title>
-      <link>http://localhost:1313/shortcodes/button/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/button/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/button/</guid>
       <description>Affiche un bouton actionnable dans votre page.
  Ceci est un bouton d&#39;avertissement   Usage    Paramètre Par défaut Description     href &amp;rdquo;&amp;rdquo; L&amp;rsquo;endroit où href pointe   align &amp;ldquo;center&amp;rdquo; aligement horizontal du bouton sur la page   theme primary default, primary , success, info, warning, danger    Le texte à l&amp;rsquo;intérieur du texte que vous placez en raccourci-code sera affiché comme texte de bouton.</description>
     </item>
     
     <item>
       <title>excerpt</title>
-      <link>http://localhost:1313/shortcodes/excerpt/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/excerpt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/excerpt/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/excerpt/</guid>
       <description>Le raccourci-code excerpt est utilisé pour marquer une partie du contenu d&amp;rsquo;une page pour réutilisation. La définition d&amp;rsquo;un extrait permet à d&amp;rsquo;autres raccourcis-code, tels que le raccourci de code excerpt-include, d&amp;rsquo;afficher le contenu marqué ailleurs.
 Vous ne pouvez définir qu&amp;rsquo;un seul extrait par page. En d&amp;rsquo;autres mots, vous ne pouvez ajouter qu&amp;rsquo;un seul raccourci-code Excerpt par page. Usage    Param par défaut Description     hidden &amp;ldquo;false&amp;rdquo; Vérifie si le contenu de la page contenu dans le gardien de place du raccourci-code Excerpt est affiché sur la page.</description>
     </item>
     
     <item>
       <title>excerpt-include</title>
-      <link>http://localhost:1313/shortcodes/excerpt-include/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/excerpt-include/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/excerpt-include/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/excerpt-include/</guid>
       <description>Le raccourci-code Excerpt Include s&amp;rsquo;utilise pour afficher une extraction de contenu (ce qui veut dire un segment de) provenant d&amp;rsquo;une page dans une autre. Avant de pouvoir utiliser ce raccourci-code, l&amp;rsquo;extrait doit avoir été défini en utilisant le raccouric-code Excerpt. Notez que vous pouvez avoir plus d&amp;rsquo;un raccourci-code Excerpt Include sur une page (même si vous ne pouvez avoir qu&amp;rsquo;un seul raccourci-code Excerpt sur une page). Usage    Paramètre valeur par défaut Description     filename requis Tapez le nom de fichier de la page qui contient l&amp;rsquo;extrait à afficher.</description>
     </item>
     
     <item>
       <title>expand</title>
-      <link>http://localhost:1313/shortcodes/expand/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/expand/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/expand/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/expand/</guid>
       <description>Le raccourci-code Expand affiche une section de texte extensible ou pliable sur votre page. Voici un exemple
   déplie-moi   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
     </item>
     
     <item>
       <title>icon</title>
-      <link>http://localhost:1313/shortcodes/icon/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/icon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/icon/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/icon/</guid>
       <description>Affiche une icône comme   
 Cela utilise :
  la bibliothèque glyphicons (bootstrap).plus d&amp;rsquo;infos ici la bibliothèque fontawesome plus d&amp;rsquo;infos ici  Ce raccourci-code icon affichera une icône dans votre page.
@@ -211,10 +256,10 @@ Usage    Paramètre Valeur par défaut Description     name requis nom de l&amp;
     
     <item>
       <title>image</title>
-      <link>http://localhost:1313/shortcodes/image/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/image/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/image/</guid>
       <description>Les images ont une syntaxe similaire aux liens mais sont précédées d&amp;rsquo;un point d&amp;rsquo;exclamation
 ![agence](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg)  Retailler une image Ajoutez les paramètres HTTP width et/ou height au lien image pour retailler l&amp;rsquo;image. Les valeurs sont des valeurs CSS (par défaut réglé sur auto).
 ![Hackathon](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?height=80px)  Ajouter des classes CSS Ajouter un paramètre HTTP classes au lien image pour ajouter des classes. shadow et border sont disponibles mais vous pourriez en définir d&amp;rsquo;autres.</description>
@@ -222,20 +267,20 @@ Usage    Paramètre Valeur par défaut Description     name requis nom de l&amp;
     
     <item>
       <title>mermaid</title>
-      <link>http://localhost:1313/shortcodes/mermaid/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/mermaid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/mermaid/</guid>
-      <description>mermaid est un éditeur pour créer des diagrammes pouvant être utilisés en raccourci-code pour intégrer de jolis diagrammes dans les pages web d&amp;rsquo;une doc ou d&amp;rsquo;un projet.
-Exemple de Flowchart   Afficher le code ...   {{&amp;lt;mermaid align=&amp;quot;left&amp;quot;&amp;gt;}} graph LR; A[Bords carrés] --&amp;gt;|Lien texte| B(Bords Rounds) B --&amp;gt; C{Décision} C --&amp;gt;|Un| D[Résultat un] C --&amp;gt;|Deux| E[Résultat deux] {{&amp;lt; /mermaid &amp;gt;}}    graph LR; A[Bords carrés] --|Lien texte| B(Bords Rounds) B -- C{Décision} C --|Un| D[Résultat un] C --|Deux| E[Résultat deux]  Exemples de diagramme séquence Transaction croisées sequenceDiagram participant Barbara participant Christophe Barbara-Christophe: Salut Christophe, comment va ?</description>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/mermaid/</guid>
+      <description>mermaid est un éditeur pour créer des diagrammes. L&amp;rsquo;éditeur s&amp;rsquo;utilise sur docdock à l&amp;rsquo;aide d&amp;rsquo;un raccourci-code pour intégrer facilement de jolis diagrammes dans les pages web de votre documentation et/ou de votre projet.
+Exemple de Flowchart   Afficher le code ...   {{&amp;lt;mermaid align=&amp;quot;left&amp;quot;&amp;gt;}} graph LR; A[Bords carrés] --&amp;gt;|Lien texte| B(Bords Rounds) B --&amp;gt; C{Décision} C --&amp;gt;|Un| D[Résultat un] C --&amp;gt;|Deux| E[Résultat deux] {{&amp;lt; /mermaid &amp;gt;}}    graph LR; A[Bords carrés] --|Lien texte| B(Bords Rounds) B -- C{Décision} C --|Un| D[Résultat un] C --|Deux| E[Résultat deux]  Exemples de diagramme séquence Transactions simples sequenceDiagram participant Barbara participant Christophe Barbara-Christophe: Salut Christophe, comment va ?</description>
     </item>
     
     <item>
       <title>notice</title>
-      <link>http://localhost:1313/shortcodes/notice/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/notice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/notice/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/notice/</guid>
       <description>Le raccourci-code notice présente 4 types d&amp;rsquo;avertissements pour vous aider à structurer votre page.
 Note {{% notice note %}} Une clause de non-responsabilité {{% /notice %}}  s&amp;rsquo;affiche comme
 Une clause de non-responsabilité
@@ -247,37 +292,37 @@ Tiens un tip.</description>
     
     <item>
       <title>page test</title>
-      <link>http://localhost:1313/shortcodes/children/test/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/children/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/children/test/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/children/test/</guid>
       <description>Ceci est une page test enfant pour démo</description>
     </item>
     
     <item>
       <title>page test 3</title>
-      <link>http://localhost:1313/shortcodes/children/children-2/test3/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/children/children-2/test3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/children/children-2/test3/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/children/children-2/test3/</guid>
       <description>Ceci est un 3ème test de démo de page enfant</description>
     </item>
     
     <item>
       <title>panel</title>
-      <link>http://localhost:1313/shortcodes/panel/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/panel/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/panel/</guid>
       <description>Le raccourci panel Vous permet de mettre en évidence les informations ou de les mettre dans une boîte. Il crée une boîte colorée entourant votre texte.  Usage    Paramètre Par défaut Description     header aucun Le titre du panneau. Si spécifié, ce titre sera affiché dans sa propre ligne d&amp;rsquo;en-tête.   footer aucun le pied de page du panneau. Si spécifié, ce texte sera affiché dans sa propre ligne   theme primary default,primary,info,success,warning,danger    Exemple basique Par défaut :</description>
     </item>
     
     <item>
       <title>revealjs</title>
-      <link>http://localhost:1313/shortcodes/revealjs/</link>
+      <link>https://docdock-hugo.netlify.com/shortcodes/revealjs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/shortcodes/revealjs/</guid>
+      <guid>https://docdock-hugo.netlify.com/shortcodes/revealjs/</guid>
       <description>Page en chantier - à raffiner avec ce diaporama stratégique  Ce raccourci-code mettra en forme le markdown entouré pour le restituer avec reveal.js sur la runtime (côté-client)
 Pour en savoir plus, regardez le repo github revealjs.
 Usage revealjs peut utiliser les paramètres nommés suivants :
