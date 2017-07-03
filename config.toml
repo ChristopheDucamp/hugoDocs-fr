@@ -1,4 +1,4 @@
-baseURL = "https://docdock-hugo.netlify.com"
+baseURL = "https://docdock-hugo.christopheducamp.com"
 languageCode = "fr-fr"
 DefaultContentLanguage = "fr"
 
@@ -22,7 +22,7 @@ themeVariant = "gold" # choisir la variante du theme "green", "gold" , "gray", "
 pre = "<h3>Plus</h3>"
 name = "<i class='fa fa-github'></i> Repo Github"
 identifier = "ds"
-url = "https://github.com/ChristopheDucamp/hugo-docdock-fr"
+url = "https://github.com/ChristopheDucamp/Doc-DocDock-Hugo"
 weight = 10
 
 [[menu.shortcuts]]
@@ -40,6 +40,3 @@ weight = 20
 name = "<i class='fa fa-bullhorn'></i> Crédits"
 url = "/credits"
 weight = 30
-
-[context.production.environment]
-  HUGO_VERSION = "0.24"

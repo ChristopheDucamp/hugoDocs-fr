@@ -1,6 +1,7 @@
 +++
 title = "image"
 description = "Les images ont une syntaxe similaire aux liens mais sont précédées d'un point d'exclamation. Vous pouvez les retailler et y ajouter des classes CSS."
+
 +++
 
 Les images ont une syntaxe similaire aux liens mais sont précédées d'un point d'exclamation

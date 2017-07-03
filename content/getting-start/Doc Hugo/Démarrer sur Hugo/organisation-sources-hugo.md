@@ -1,14 +1,14 @@
 +++
-title = "Organisation des Sources"
-description = "."
+title = "Organisation des Sources Hugo"
+description = "La structure de répertoire Hugo"
 weight = 6
 +++
 
 {{% notice note %}}
-[Source "Configuring Hugo](http://gohugo.io/overview/source-directory/ "Permalink vers Hugo - Source Organization") - documentation officielle Hugo, demeurant le seul lien de référence.
+[Source "Source Organization"](http://gohugo.io/overview/source-directory/ "Permalien vers Hugo - Source Organization") - documentation officielle Hugo, demeurant le seul lien de référence.
 {{% /notice %}}
 
-Hugo prend un dossir unique et l'utiliser comme l'input pour créer un site web complet.
+Hugo prend un dossier unique et l'utilise comme l'input pour créer un site web complet.
 
 Le niveau supérieur d'un répertoire source aura généralement les éléments suivants :
     
@@ -22,9 +22,9 @@ Le niveau supérieur d'un répertoire source aura généralement les éléments 
       config.toml
     
 
-Apprenez-en plus sur les différents dossiers et quels sont leur objectifs 
+Apprenez-en plus sur les différents dossiers et quels sont leurs objectifs 
 
-  * [config](configuration.md)
+  * [config]({{%relref "configurer-hugo.md"%}})
   * [data](http://gohugo.io/extras/datafiles/)
   * [i18n](http://gohugo.io/content/multilingual/#translation-of-strings)
   * [archetypes](http://gohugo.io/content/archetypes/)
@@ -90,17 +90,18 @@ Cette structure de répertoire nous en dit beaucoup sur ce site :
   2. il appliquera aussi deux taxonomies différentes à ce contenu : _categories_ et _tags_.
   3. il affichera le contenu dans trois vues différentes : une liste, un résumé et une vue pleine page.
   
- ## Contenu pour la page d'accueil et d'autres pages de listes
+  
+## Contenu pour la page d'accueil et d'autres pages de listes
  
-Depuis Hugo 0.18, “tout” est une `Page` qui peut avoir du contenu et des métadonnées, comme `.Params`, attachés à elle – et partager le même ensemble de [variables de page](http://gohugo.io/templates/variables/).
+Depuis Hugo 0.18, “tout” est une `Page` qui peut avoir du contenu et des métadonnées, comme les `.Params` qui lui sont attachés – et partager le même ensemble de [variables de page](http://gohugo.io/templates/variables/) (en).
 
 Pour ajouter du contenu et un front matter à la page d'accueil, une section, une taxonomie ou une liste de termes de taxonomie, ajoutez un fichier markdown avec le même nom de base `_index` au bon endroit dans le système de fichiers.
 
 Pour le contenu par défaut Markdown, le nom de fichier sera `_index.md`.
 
-Voir  the example directory tree below.
+Voir l'arbre exemple de répertoire ci-dessous.
 
-**Note that you don’t have to create `_index` file for every section, taxonomy and similar, a default page will be created if not present, but with no content and default values for `.Title` etc.**
+**Notez que vous ne devez pas créer de fichier `_index` pour chaque section, taxonomie et similaires, une page par défaut sera créée si elle n'est pas présente, mais sans contenu et sans valeurs par défaut pour `.Title` etc.**
 
 
 ****
@@ -120,7 +121,7 @@ Voir  the example directory tree below.
                 └── _index.md
     
 
-Last revision: May 11, 2017 | [](https://github.com/gohugoio/hugoDocs/commit/5176e52b38ffc1d9f2804dbd9d9371092e2c785a)
+[Dernière révision du 11 mai 2017](https://github.com/gohugoio/hugoDocs/commit/5176e52b38ffc1d9f2804dbd9d9371092e2c785a)
 
 
   

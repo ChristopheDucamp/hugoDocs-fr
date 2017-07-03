@@ -1,6 +1,6 @@
 +++
 title = "Documentation Hugo"
-description = "Un aperçu global pour démarrer rapidement sur Hugo"
+description = "Etude en cours de la documentation officielle Hugo"
 weight = 1
 alwaysopen = false
 +++
@@ -16,4 +16,4 @@ Si vous avez d'autres liens à recommander, je reste preneur. -
 [xtof](http://twitter.com/xtof_party)
 {{% /notice %}}
 
-{{%children style="h2" description="true"%}}
+{{% children style="h2" depth="3" description="true" %}}

@@ -10,7 +10,7 @@ Au moment de construire le site web, vous pouvez régler un thème en utilisant 
 theme = "docdock"
 ```
 
-## Génération de l'Index de Recherche
+## Génération de l'index de recherche
 
 Ajoutez la ligne suivante dan le même fichier `config.toml`.
 

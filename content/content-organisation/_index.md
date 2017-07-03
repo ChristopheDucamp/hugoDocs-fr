@@ -6,9 +6,9 @@ weight = 20
 
 Avec **Hugo**, les pages sont le coeur de votre site. Organisez votre site comme tout autre projet Hugo. **La magie opère avec l'implémentation des sections réalisée dans la v0.22 de Hugo (bravo @bep)**.
 
-Avec docDock, **Chaque page de contenu compose le menu**, elles façonnent la structure de votre site web.
+Avec docDock, **chaque page de contenu compose le menu**. Les pages de contenus façonnent la structure de votre site web.
 
-Pour relier les pages les unes aux autres, placez les dans une hiérarchie de dossiers 
+Pour relier les pages les unes aux autres, placez-les dans une hiérarchie de dossiers. 
 
 ```
 content
@@ -42,16 +42,16 @@ content
 
 ### Ajoutez une icône à une entrée de menu
 
-Dans le front matter de la page, ajoutez un param `pre` pour insérer tout code HTML avant l'étiquette du menu : 
+Dans le front matter de la page, ajoutez un paramètre `pre` pour insérer tout code HTML avant l'étiquette du menu : 
 
-exemple pour afficher une icône github
+exemple pour afficher une icône github :
 
 	+++
 	title = "repo Github"
 	pre ="<i class='fa fa-github'></i> "
 	+++
 
-![dsf](/menu-entry-icon.png?height=40px&classes=shadow)
+![dsf](https://monosnap.com/file/5QFj1mxo5R4N8bkGX6BTsgoGhsx0H7.png)
 
 <!-- ### Customize menu entry label
 
@@ -65,8 +65,8 @@ Add a `name` param next to `[menu.main]`
 	name = "Github repo"
 	+++ -->
 
-<!-- ### Create a page redirector
-Add a `url` param next to `[menu.main]`
+<!-- ### Créer une redirection de page
+Ajoutez un paramètre `url` à côté de `[menu.main]`
 
 	+++
 	[menu.main]
