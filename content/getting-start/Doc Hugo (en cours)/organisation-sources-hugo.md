@@ -1,5 +1,4 @@
 +++
-draft: true
 title = "Organisation des Sources"
 description = "."
 weight = 6
