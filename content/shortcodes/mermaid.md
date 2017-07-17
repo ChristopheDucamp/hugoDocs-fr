@@ -25,7 +25,7 @@ graph LR;
    C -->|Deux| E[Résultat deux]
 {{< /mermaid >}}
 
-## Exemples de diagramme séquence
+## Exemples de diagramme-séquence
 
 ### Transactions simples
 {{<mermaid>}}
@@ -42,14 +42,15 @@ sequenceDiagram
 	sequenceDiagram
 	    participant Alice
 	    participant Bruno
-	    Alice->>Jean: Salut Jean, comment vas-tu ?
-	    loop Healthcheck
-	        Jean->Jean: Je lutte contre l'hypocondrie
+	    participant Christophe
+	    Alice->>Christophe : Salut Christophe, comment vas-tu ?
+	    boucle Santé mentale
+	        Christophe->CHristophe: Je lutte contre l'hypocondrie
 	    end
-	    Note right of John: Rational thoughts <br/>prevail...
-	    John-->Alice: Great!
-	    John->Bob: How about you?
-	    Bob-->John: Jolly good!
+	    Note right of John: Pensées rationnelles <br/>qui reprennent le dessus...
+	    Christophe-->Alice: Génial!
+	    Christophe ->Bruno: Et toi ?
+	    Bruno-->Christophe: Vraiment bien !
 	{{</* /mermaid */>}}
 {{%/expand%}}
 
@@ -57,7 +58,7 @@ sequenceDiagram
 sequenceDiagram
     participant Alice
     participant Bruno
-    Alice->> Christophe: Salut Christophe, ça va ?
+    Alice->> Christophe: Salut tof comment vas-tu ?
     loop santé mentale
         Christophe->Christophe: Lutte contre hypochondrie
     end

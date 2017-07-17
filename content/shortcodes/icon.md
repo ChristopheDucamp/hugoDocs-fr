@@ -7,7 +7,7 @@ Affiche une icône comme `{{% icon glass %}}`
 
 Cela utilise :
 
-* la bibliothèque glyphicons (bootstrap).[plus d'infos ici](http://getbootstrap.com/components/#glyphicons)
+* la bibliothèque glyphicons (bootstrap). [Plus d'infos ici](http://getbootstrap.com/components/#glyphicons)
 * la bibliothèque fontawesome [plus d'infos ici](http://fontawesome.io/)
 
 Ce raccourci-code `icon` affichera une icône dans votre page.
@@ -24,7 +24,7 @@ Ce raccourci-code `icon` affichera une icône dans votre page.
 régler uniquement le nom comme argument fonctionne aussi : `{{</*icon film*/>}}` au lieu de  `{{</*icon name="film"*/>}}`
 {{%/alert%}}
 
-# Demo
+# Démo
 	
 	{{</* icon name="film" size="large" */>}}
 

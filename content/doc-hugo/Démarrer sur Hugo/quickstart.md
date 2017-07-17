@@ -1,29 +1,27 @@
 +++
 
 title = "Hugo QuickStart"
-description = "Avant de se lancer dans la construction d'une documentation... un guide simple pour créer une bibliothèque en ligne."
+description = "Avant de vous lancer dans la construction d'une documentation, un guide simple pour créer une bibliothèque en ligne. Une occasion de taper dans ligne de commande Hugo, la structure du répertoire, la configuration et l'installation d'un thème."
 weight = 2
 +++
 
-[Source originale](https://gohugo.io/overview/quickstart/ "Permalink to Hugo - Hugo Quickstart Guide")
+[Source originale](https://gohugo.io/getting-started/quick-start/)
+
+{{% note %}} Ce guide de démarrage rapide a été initialement écrit par Shekhar Gulati dans sa série "[52 Technologies in 2016](https://github.com/shekhargulati/52-technologies-in-2016)" mais a été largement modifié pour inclure les nouvelles fonctionnalités et modifications apportées à Hugo.{{% /note %}}
 
 ## Construire une Bibliothèque
 
 Dans ce guide de démarrage, nous allons construire une bibliothèque qui listera les livres et leurs critiques.
 
-> _Note : Ce guide dépend de fonctionnalités présentées dans la version Hugo v0.15. Si vous avez une version précédente d'Hugo,  [mettez à jour]({{% relref "installer-hugo.md" %}}) avant de démarrer._
 
 ## Étape 1. Installez Hugo
 
-Foncez sur les [Versions Hugo][2] et téléchargez la version qui correspondra à votre système d'exploitation et à votre architecture.
+[Installez Hugo]({{%relref "installer-hugo.md" %}}). Si vous installez à partir des [Versions Hugo][2], vous devrez sauvegarder l'exécutable principal sous `hugo`(ou `hugo.exe` sur Windows) quelque part dans votre `PATH`. Vous aurez besoin de la commande `hugo`pour les étapes suivantes.
 
-Sauvegardez l'exécutable choisi sous `hugo` (ou `hugo.exe` sur Windows) quelque part dans votre `PATH` car nous devrons l'utiliser pour la prochaine étape.
 
-Des instructions plus détaillées sont disponibles sur [Installing Hugo][1].
+{{% note "Utilisateurs Windows et Git Bash" %}} Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash][3] (aussi connu comme Git pour Windows). Par conséquent, toutes les commandes démarreront avec le caractère d'invitation Bash (qui est `$`).{{% /note %}}
 
-Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash][3] (aussi connu comme Git pour Windows). Par conséquent, toutes les commandes démarreront avec le caractère d'invitation Bash (qui est `$`).
-
-Une fois installé `hugo`, assurez-vous de lancer la commande `help` afin de vérifier l'installation de `hugo`. Ci-dessous, vous pouvez voir une partie traduite de l'output de la commande `help`.
+Une fois `hugo` intallé, assurez-vous de lancer la commande `help` pour vérifier l'installation de `hugo`. Ci-dessous, vous pouvez voir une partie traduite de l'output de la commande `help`.
     
     
     $ hugo help
@@ -38,21 +36,20 @@ Vous pouvez vérifier la version de  `hugo` en utilisant la commande en dessous.
     
     $ hugo version
     
-    Hugo Static Site Generator v0.15 BuildDate: 2015-11-26T11:59:00+05:30
+    Hugo Static Site Generator v0.25 darwin/amd64 BuildDate: 2017-07-07T19:09:03+02:00
     
 
 ## Étape 2. Échafaudez le site de la Bibliothèque avec Hugo 
 
 Hugo dispose de commmandes qui nous permettent d'échafauder rapidement un site web géré avec Hugo. Naviguez vers un endroit qui vous plaira sur votre système de fichiers, et créez un nouveau site `bibliotheque` en exécutant la commande qui suit : 
-    
-    
+
     $ hugo new site bibliotheque
-    
-Changez de répertoire vers `bibliotheque` 
+        
+Changez de répertoire vers le nouveau répertoire  `bibliotheque` 
 
     $ cd bibliotheque 
 
-lancez la commande `tree -a` pour visualiser  l'arbre de votre répertoire :
+Lancez la commande `tree -a` pour visualiser  le contenu de votre répertoire :
 
 
     $ tree -a
@@ -69,60 +66,66 @@ lancez la commande `tree -a` pour visualiser  l'arbre de votre répertoire :
     
     6 directories, 2 files    
 
-Comme précisé dans la commande, le dossier `bibliotheque` comprend 6 sous-dossiers et 2 fichiers. Jetons un oeil à chacun d'eux.
+Vous verrez le dossier `bibliotheque` qui comprend 6 sous-dossiers et 2 fichiers. Jetons un oeil à chacun d'eux.
 
-* **archetypes** : Vous pouvez créer de nouveaux fichiers de contenu dans Hugo en utilisant la commande `hugo new`. Quand vous lancez cette commande, elle ajoute de nouvelles propriétés de configuration au post comme la date et le titre. L'[archétype][4] vous permet de définir vos propres propriétés de configuration qui seront ajoutées à l'en-tête (front matter) de votre post à chaque fois que la commande `hugo new` sera utilisée. 
-* **config.toml** : Chaque site web devrait avoir un fichier de configuration à sa racine. Par défaut, le fichier de configuration utilise le format `TOML` mais vous pouvez aussi utiliser tout aussi bien les formats `YAML` ou `JSON`. [TOML][5] est le format minimal de fichier de configuration qui reste facile à lire. Les réglages de configuration cités dans le `config.toml` s'appliquent à l'ensemble  du site. Ces réglages de configuration comprennent les URLs de base et titre (`baseURL` et `title`) du site web.
-* **content** : C'est là où vous stockerez le contenu du site web. Dans le dossier `content`, vous créerez des sous-répertoires pour différentes sections. Supposons que votre site web dispose de trois sections  – `blog`, `articles` et `tutoriel`. Vous aurez alors trois dossiers de sections différentes  pour chacune d'entre elles à l'intérieur du dossier `content`. Le nom de la section, à savoir `blog`, `articles`, ou `tutoriel` sera utilisé par Hugo pour s'appliquer à une mise en page (layout) spécifique applicable à cette section.
-* **data** : Ce dossier est utilisé pour stocker les fichiers de configuration pouvant être utilisés par Hugo au moment de générer votre site web. Vous pouvez écrire ces fichiers en format YAML, JSON, ou TOML.
-* **layouts** : Le contenu dans ce dossier est utilisé pour spécifier comment votre contenu sera converti à l'intérieur du site web statique.
-* **static** : Ce dossier s'utilise pour stocker tout le contenu statique dont aura besoin votre site web comme des images, CSS, JavaScript ou tout autre contenu statique.
-* **themes** : C'est l'endroit où vous stockerez les thèmes utilisés par votre site. Les thèmes fournissent la mise en page et les modèles qui restituent le contenu. Il existe une grande variété de thèmes open-source disponibles que vous vous pouvez télécharger et utiliser mais rien ne vous empêche de créer le vôtre.
+* **archetypes** : [Archetypes](https://gohugo.io/content-management/archetypes/) vous permet de pré-configurer le front-matter pour les fichiers de contenu dans Hugo pour un meilleur échafaudage du contenu en utilisant la commande `hugo new`. 
+* **config.toml** : Hugo utilise `.toml`pour son propre format de configuration. mais il accepte aussi bien les formats `.yml` ou `.json`. Les réglages de configuration mentionnés dans le fichier `config.toml`s'appliquent à l'ensemble du site web et comprennent des variables globales importantes telles que la `baseURL` et le `title` de votre site web. (Voir [configuration](configurer-hugo.md))
+* **content** : Ce dossier unique abrite tous les contenus de votre site web. Chaque sous-répertoire dans content s'appelle une section. Si votre site web dispose de sections pour les articles, événements et tutoriels, vous pourriez créer `content/posts`, `content/events` et `content/tutoriels`.
+* **data** : Ce dossier est utilisé pour stocker les fichiers de données en séries (YAML, JSON, ou TOML) qui peuvent être utilisés dans les [data templates](https://gohugo.io/templates/data-templates/) et votre [menu de site web](https://gohugo.io/content-management/menus/).
+* **layouts** : C'est le carrefour pour tous vos [modèles](https://gohugo.io/templates/introduction/), incluant les [modèles de listes et sections](https://gohugo.io/templates/lists/) et [shortcodes](https://gohugo.io/templates/shortcode-templates/).
+* **static** : Ce dossier accueille tout le contenu statique ; par exemple les images, JavaScript et CSS. Tout ce qui est dans `/static` est copié tel quel vers votre site web fini.
+* **themes** : C'est l'endroit où vous stockerez les thèmes Hugo. Vous pouvez voir une galrie de tous les thèmes sur [http://themes.gohugo.io](https://themes.gohugo.io)
 
 ## Étape 3. Ajoutez du Contenu
 
-Ajoutons maintenant un article à notre site  `bibliotheque`. Nous utiliserons la commande `hugo new` pour ajouter un article. En janvier, j'ai lu le livre [Good To Great][6], aussi nous commencerons par la création d'un billet pour ce livre. **Assurez-vous de bien être dans le dossier `bibliotheque`.**
+Ajoutons maintenant un article à notre   `bibliotheque`. Nous utiliserons la commande `hugo new` pour ajouter un article. Ce premier post sera sur le livre [Good To Great][6]. **Assurez-vous de bien être dans le dossier `bibliotheque`.** Et lancez la commande : 
 
 
     $ hugo new post/good-to-great.md
     
-    /Users/xtof/Sites/Tuto-Quickstart-Hugo/bibliotheque/content/post/good-to-great.md created
+    
+Vous devriez voir s'afficher ce qui suit : 
 
-La commande au-dessus crée un nouveau dossier `post` à l'intérieur du dossier  `bibliotheque/content` et crée à l'intérieur un fichier `good-to-great.md`.
+    /Users/votrenomutilisateur/bibliotheque/content/post/good-to-great.md created
+
+La commande au-dessus crée un nouveau dossier `post`  à l'intérieur du dossier `content` et crée `content/post/good-to-great.md`. Le répertoire pour votre projet Hugo ressemblera maintenant à ce qui suit : 
     
-    
-    $ tree -a content
-    
-    content
-    └── post
-    └── good-to-great.md
-    
-    1 directory, 1 file
+    .
+    ├── archetypes
+    ├── config.toml
+    ├── content
+    │   └── post
+    │       └── good-to-great.md
+    ├── data
+    ├── layouts
+    ├── static
+    └── themes
     
 
-Le contenu à l'intérieur du fichier `good-to-great.md` ressemble à ce qui s'affiche en dessous : 
+
+Ouvrez `good-to-great.md` dans votre éditeur de texte préféré : 
 
 
-    ---
+    +++
     title: "Good To Great"
     date: 2017-07-01T14:31:19+02:00
     draft: true
-    ---
+    +++
 
 
-Le contenu placé entre les signes `+++` est la configuration TOML du billet. Cette configuration s'appelle le **front matter**. Il vous permet de définir la configuration de votre billet avec son contenu. Par défaut, chaque billet aura les trois propriétés de configuration présentées au-dessus. 
+Le contenu encadré entre les signes `+++` est le front matter TOML pour le contenu. Le front matter vous permet de définir des méta-données embarquées qui voyage avec le fichier de contenu. Parce que nous n'avons pas configuré quelque archetype pour notre projet, Hugo a utilisé propriétés de configuration natives et présentées au-dessous :  
 
 * **title** spécifie le titre du billet.
 * **date** spécifie la date et l'horaire à laquelle le billet a été créé.
-* **draft** spécifie que ce post n'est pas prêt pour la publication, il n'apparaîtra donc pas dans le fichier généré.
+* **draft** quant il est réglé sur `true`, dit à Hugo que ce post n'est pas prêt pour la publication.
 
-Ajoutons une petite critque pour le livre **Good to Great** :     
+Ajoutons une petite critique pour le livre **Good to Great** :     
 
-    ---
+    +++
     title: "Good To Great"
     date: 2017-07-01T14:31:19+02:00
     draft: true
-    ---
+    +++
 
 
     
@@ -131,11 +134,12 @@ Ajoutons une petite critque pour le livre **Good to Great** :
 
 ## Étape 4. Servez le contenu
 
-Hugo a un serveur intégré qui peut servir le contenu de votre site web afin que vous puissiez le prévisualiser. Vous pouvez aussi utiliser le serveur intégré d'Hugo en production. Pour servir le contenu, lancez la commande suivante à l'intérieur de votre répertoire `bibliotheque` :
-    
-    
+Hugo a un serveur intégré qui peut servir le contenu de votre site web afin que vous puissiez le prévisualiser et développer. Pour servir le contenu, lancez la commande suivante à l'intérieur de votre répertoire `bibliotheque` :
+
     $ hugo server
     
+Vous devriez voir quelque chose de similaire à ce qui suit : 
+
     Started building sites ...
     Built site for language en:
     0 of 1 draft rendered
@@ -155,14 +159,16 @@ Hugo a un serveur intégré qui peut servir le contenu de votre site web afin qu
     Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
     Press Ctrl+C to stop
 
-Cette commande lancera le serveur sur le port port `1313`. Vous pourrez regarder votre blog à l'adresse <http://localhost:1313/>. Vous allez sur le lien et ne verrez rien ! Deux raisons à cela : 
+Cette commande lancera le serveur sur le port `1313`. Vous pourrez regarder votre blog à l'adresse <http://localhost:1313/>. Cependant, si vous allez sur le lien, vous ne verrez rien ! Deux raisons à cela : 
 
-1. Comme vous pouvez le voir dans la sortie de commande `hugo server`, Hugo n'a pas produit le draf. Hugo ne produira les drafts (ébauches) que si vous passez le flag `buildDrafts` sur la commande `hugo server`.
-2. Nous n'avons pas spécifié comment le contenu Markdown devrait être produit. Nous devons spécifier un thème à utiliser par Huto. Nous ferons ça à l'étape suivante.
+1. Comme vous pouvez le voir dans la sortie de commande `hugo server`, Hugo n'a pas produit le draft. Hugo ne produira les drafts (ébauches) que si vous passez le flag `buildDrafts` sur la commande `hugo server`.
+2. Nous n'avons pas spécifié comment le contenu Markdown devrait être produit. Nous devons spécifier un thème à utiliser par Hugo. Nous ferons ça à l'étape suivante.
 
 Pour produire les drafts (ébauches), relancez le serveur avec la commande ci-dessous : 
     
     `$ hugo server --buildDrafts
+
+Vous devriez voir quelque chose de similaire à ce qui suit : 
     
     Started building sites ...
     Built site for language en:
@@ -181,40 +187,30 @@ Pour produire les drafts (ébauches), relancez le serveur avec la commande ci-de
     Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
     Press Ctrl+C to stop
 
-Si vous tapez l'adresse <http://localhost:1313/>, vous ne verrez encore ein car nous n'avons pas toujours spécifié de thème à utiliser par Hugo.
+Bien, maintenant nous avons notre page unique "build", mais noue ne voyons rien dans le navigateur  à l'adresse <http://localhost:1313/>. Ceci n'était fait que pour démontrer l'utilité du flag `--buildDrafts`.
 
 ## Étape 5. Ajoutez un thème
 
-Les thèmes fournissent la mise en page et les modèles qui seront utilisés par Hugo pour la production de votre site Web. Il existe de nombreux thèmes open-source disponibles que vous pouvez utiliser sur <https://themes.gohugo.io/>.
+Les [thèmes](https://gohugo.io/themes/) fournissent à Hugo la mise en page et les modèles pour produire votre site Web. Vous pouvez voir la sélection complète de thèmes open source sur <https://themes.gohugo.io/>.
 
-> **Hugo n'est toujours pas livré à ce jour avec un thème `default`, permettant à l'utilisateur de choisir le thème qui conviendra le mieux à son projet.**
+> **Hugo n'est toujours pas livré à ce jour avec un thème par défaut, permettant ainsi à l'utilisateur de choisir le thème qui conviendra le mieux à son projet.**
 
-Les thèmes doivent être ajoutés dans le dossier `themes` à l'intérieur de la racine de votre dossier.
-
-Lancez la commande :     
+Les thèmes doivent être ajoutés dans le dossier `themes`, l'un des dossiers échafaudés avec la commande `hugo new site`que nous avons utilisée pour démarrer notre projet Hugo. Pour installer nos thèmes, modifions tout d'abord à l'intérieur du répertoire `themes` 
     
     $ cd themes
 
-Désormais, vous pouvez cloner un ou plusieurs thèmes à l'intérieur de votre dossier `themes`. Nous utiliserons ici le thème `robust`, mais avec un point d'arrêt (dans son historique) qui fonctionne pour ce guide de démarrage rapide.
+Vous pouvez cloner un ou plusieurs thèmes à l'intérieur de votre dossier `themes`. Nous utiliserons ici le [thème `robust`](https://github.com/dim0627/hugo_theme_robust), mais avec un point d'arrêt (dans son historique) qui fonctionne pour ce guide de démarrage rapide.
   
-    $ git clone https://github.com/dim0627/hugo_theme_robust.git
-    $ (cd hugo_theme_robust; git checkout b8ce466)
-    
 
-Oubliez les détails pour le moment de la fenêtre du terminal et quittez le dossier `themes`.
+    git clone https://github.com/dim0627/hugo_theme_robust.git && cd hugo_theme_robust && git checkout 3baae29 && cd ../..
 
-Lancez la commande : 
-
-    $ cd ..
-    
-
-Redémarrez le serveur 
+Maintenant redémarrons le serveur Hugo mais avec l'ajout du flag `--theme` pour Robust : 
     
     
     $ hugo server --theme=hugo_theme_robust --buildDrafts
     
-    
-    Started building sites ...
+Vous devriez voir un output de console similaire à ce qui suit : 
+
     Built site for language en:
     1 of 1 draft rendered
     0 future content
@@ -237,19 +233,42 @@ Redémarrez le serveur
 
 Pour voir votre site web, rendez-vous maintenant sur <http://localhost:1313/>. Vous verrez ce qui s'affiche ci-dessous.
 
-![][7]
+![](https://d33wubrfki0l68.cloudfront.net/e988e7a93df69093c8c0dda7c05098536b8462e8/88604/images/quickstart/bookshelf-robust-theme.png)
 
-Essayons de comprendre la mise en forme du thème. Un thème comporte les éléments suivants :
+Similaire à ce que nous avons observé lors de l'échafaudage pour notre nouveau site web Hugo, jetons un oeil à ce que comprend un thème Hugo typique. Ce qui suit n'est qu'une sélection de ce que vous verriez si vous listiez les contenus du répertoire du thème Robust. Il y a aussi quelques-uns des fichiers par défaut créés par Hugo v0.23. (Voir [Créer un Thème](https://gohugo.io/themes/creating/))
+    
+    .
+    ├── LICENSE.md
+    ├── archetypes
+    │   └── default.md
+    ├── layouts
+    │   ├── 404.html
+    │   ├── _default
+    │   │   ├── list.html
+    │   │   └── single.html
+    │   ├── index.html
+    │   └── partials
+    │       ├── footer.html
+    │       └── header.html
+    ├── static
+    │   ├── css
+    │   └── js
+    └── theme.toml
 
-* **theme.toml** est le fichier de configuration du thème qui vous donne l'information sur le thème comme le nom et la description du thème, les détails de l'auteur et la licence du thème.
-* **images** est un dossier qui comprend deux images – `screenshot.png` et `tn.png`. `screenshot.png` est l'image de la vue en liste et `tn.png` est la visualisation d'eun billet unique..
-* **layouts** est le dossier qui contient difféentes vues pour différents types de contenus. Chaque type de contenu devrait avoir deux fichiers `single.html` et `list.html`. `single.html` s'utilise pour produire un morceau unique de contenu. `list.html` s'utilise pour visualiser une liste d'items de contenus. Par exemple, vous utilisez `list.html` pour voir tous les posts qui ont le tag `programmation`.
-* **static** est le dossier qui stocke tous les actifs statiques utilisés par le modèle. Les bibliothèques JavaScript comme  jQuery ou les styles CSS ou les images, ou tout autre contenu statique. Ce dossier sera copié à l'intérieur du site final au moment de la production.
+* **theme.toml** est le fichier de configuration du thème qui vous donne l'information sur le thème comme le nom et la description du thème, les détails de l'auteur, la licence du thème, la version minimum d'Hugo qui sera par défaut votre version d'Hugo localement installée.
+* **layouts** contient différentes vues (cad. templates) pour différents types de contenus. Dans ce guide de démarrage,  nous voyons que chaque type de contenu a un fichier `single.html` et un fichier  `list.html`. `single.html` s'utilise pour produire un morceau unique de contenu. `list.html` s'utilise pour visualiser `*.md*` dans la section posts. Penez à `list.html` comme `exemple.com/posts` et `single.html` comme `exemple.com/posts/mon-post-unique/`.
+* **static** a le même objectif que celui du `static`dans notre échafaudage original. Ce dossier  stocke tous les actifs statiques utilisés par le thème et il est copié tel quel au moment du *build*.
 
 ## Étape 6. Utilisez plusieurs thèmes
 
-Vous pouvez facilement tester différentes configurations en alternant entre différents thèmes. Supposons que nous voulions essayer le thème `bleak`. Nous clonons le thème `bleak` dans le répertoire `bibliotheque/themes`.
+Vous pouvez facilement tester différentes configurations en alternant entre différents thèmes. dans Hugo. Supposons que nous voulions essayer le [thème `bleak`.](http://themes.gohugo.io/bleak/) Tuez le serveur Hugo si vous êtes encore en train de le faire fonctionner à la ligne de commande. 
 
+À partir de la racine de votre projet, vous pouvez utiliser cette commande à une ligne à changer à l'intérieur de `themes`, clonez Bleak et revenez à la racine de votre projet. 
+
+    cd themes && git clone https://github.com/Zenithar/hugo-theme-bleak.git && cd ..
+
+
+Ou en détails à la ligne de commande :
 Replacez-vous dans le dossier `themes`
 
     cd themes
@@ -265,20 +284,20 @@ Redémarrez le serveur en utilisant le thème `hugo-theme-bleak` comme affiché 
     $ hugo server --theme=hugo-theme-bleak --buildDrafts
     
 
-Désormais, le site web utilise le thème `bleak` et s'affiche différemment comme ci-dessous 
+... Désormais, notre site web utilise le thème `bleak` sur [http://localhost:1313](http://localhost:1313) et s'affiche différemment comme ci-dessous 
 
 ![Bibliothèque avec le thème Bleak](https://monosnap.com/file/rSwnbQN1sEzIPE450E3KQ9oOH4opHl.png)
 
-## Étape 7. Mise à jour de config.toml et rechargement live en action
+## Étape 7. Mise à jourde votre configuration
 
-Maintenant, arrêtez si besoin (Ctrl + C) pour redémarrer le serveur avec le thème `robust`, car nous allons l'utiliser pour ce guide démarrage rapide.
+Maintenant, arrêtez si besoin (Ctrl + C) pour redémarrer le serveur avec le thème `robust`, car nous allons l'utiliser pour ce guide de démarrage rapide : 
         
     $ hugo server --theme=hugo_theme_robust --buildDrafts
     
+### Mise à jour de `config.toml`
 
-Le site web utilise les valeurs stupides spécifiées dans le fichier de configuration `bibliotheque/config.toml`. Mettons à jour la configuration.
-    
-    
+Notre site web utilise actuellement les valeurs stupides spécifiées dans le fichier de configuration `bibliotheque/config.toml`, qui a été auto-généré avec `hugo new site bibliotheque`. Mettons à jour la configuration.
+        
     baseURL = "http://exemple.org/"
     languageCode = "fr-fr"
     title = "Critiques de Livres par Shekhar Gulati"
@@ -286,14 +305,15 @@ Le site web utilise les valeurs stupides spécifiées dans le fichier de configu
     [Params]
       Author = "Shekhar Gulati"
     
+### Regardez votre site se recharger instantanément 
 
-Hugo supporte le rechargement en live. Par conséquent, dès que nous sauvegardons nos modifications, elles s'appliqueront et rechargeront la page web. Vous verrez les modifications s'afficher en dessous.
+Hugo supporte nativement le rechargement en live. Ce qui veut dire que Hugo reconstruira et rechargera votre site à chaque fois que vous sauvegarderez une modification d'un contenu, template, asset statique et même votre fichier de configuration. Vous devriez voir quelque chose de similaire à l'impression-écran qui suit sur <http://localhost:1313> une fois que vous sauvegarderez les modifications ci-dessus dans votre fichier `config.toml` : 
 
 ![Fichier config.toml mis à jour. (titre du site et nom de l'auteur)](https://monosnap.com/file/UbJoG3jvblTgmwRk1fO7Ymc8dLIg7l.png)
 
-Outre la visualisation, vous retrouverez la même chose renvoyée dans les journaux du serveur Hugo. Dès que vous avez modifié le fichier de configuration, Hugo a appliqué ces modifications aux pages concernées     
+Outre la visualisation, vous retrouverez la modification dans la console. Dès que vous avez modifié le fichier de configuration, Hugo a appliqué ces modifications aux pages concernées et reconstruit le site :     
     
-    Config file changed: /Users/xtof/Sites/Tuto-Quickstart-Hugo/bibliotheque/config.toml
+    Config file changed: /Users/votrenomutilisateur/bibliotheque/config.toml
     Started building sites ...
     Built site for language en:
     1 of 1 draft rendered
@@ -309,22 +329,23 @@ Outre la visualisation, vous retrouverez la même chose renvoyée dans les journ
 
 ## Étape 8. Personnalisez le thème robust
 
-Le thème `robust` est un bon départ pour notre bibliothèque en ligne mais nous voulons le personnaliser afin de le rapprocher de nos besoins pour une bibliothèque. Hugo facilite la personnalisation des thèmes. Vous pouvez aussi créer vos propres thèmes, mais nous ne le ferons pas aujourd'hui. Si vous souhaitez créer votre propre thème, vous devriez vous référer à la [documentation Hugo][10].
+Le thème `robust` est un bon départ pour notre bibliothèque en ligne mais nous voulons le personnaliser afin de le rapprocher de nos besoins pour une bibliothèque. Hugo [facilite la personnalisation des thèmes. Vous pouvez aussi créer vos propres thèmes](https://gohugo.io/themes/). Pour ce guide nous nous concentrerons sur la personnalisation.
 
-La première modification à produire, c'est d'utiliser une image par défaut différente de celle utilisée dans le thème. L'image par défaut du thème utilisée dans la liste et de la page de visualisation unique se trouve à l'intérieur de `themes/hugo_theme_robust/static/images/default.jpg`. Nous pouvons facilement l'annuler en créant une structure de répertoire simple dans le répertoire `static` du dossier.
+La première modification à produire, c'est d'utiliser une image par défaut différente de celle utilisée dans le thème. L'image par défaut du thème utilisée à la fois dans le fichier `list.html`et `single.html` se trouve à l'intérieur de `themes/hugo_theme_robust/static/images/default.jpg`. Nous pouvons facilement l'annuler en créant une structure de répertoire simple dans le répertoire `static` du dossier.
 
-Créez un dossier `images`dans le répertoire `bibliotheque/static` et copiez une image avec le nom `default.jpg`. Nous utiliserons par défaut l'image affichée en dessous.
+Créez un dossier `images` dans le répertoire `bibliotheque/static` et copiez dedans une image avec le nom `default.jpg`. Nous utiliserons par défaut l'image affichée en dessous.
 
 ![image `default.jpg` à copier dans votre dossier `bibliotheque/static/images`][11]
 
-Hugo synchronisera les modifications et rechargera le site web pour utiliser cette nouvelle image comme affichée en dessous.
+Hugo synchronisera les modifications et rechargera le site web pour utiliser cette nouvelle image 
 
 ![Nouvelle image par défaut](https://monosnap.com/file/VsZKPzYi4vydK1787jnuwRBTexV7yE.png)
 
-Maintenant, nous devons modifier le layout de la page index afin que seules les images soient affichées au lieu du texte. Le fichier `index.html` dans le dossier layouts du thème fait référence au partiel `li` qui produit la vue en liste ci-dessous.    
-    
-    <article class="li">
-      <a href="" class="clearfix">
+Maintenant, nous devons modifier le layout de la page index afin que seules les images soient affichées au lieu du texte. Le fichier `themes/hugo-theme_robust/layouts/index.html` fait référence au partiel `li` qui produit la vue en liste ci-dessous.    
+
+```
+<article class="li">
+      <a href="{{ .Permalink }}" class="clearfix">
         <div class="image" style="background-image: url({{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});"></div>
         <div class="detail">
           <time>{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}</time>
@@ -333,47 +354,58 @@ Maintenant, nous devons modifier le layout de la page index afin que seules les 
         </div>
       </a>
     </article>
-    
+```    
 
-Créez un nouveau fichier li.html à l'intérieur du dossier  `bibliotheque/layouts/_default`. Copiez le contenu affiché en dessous dans le fichier `li.html`. Nous y avons enlevé les détails du livre, aussi seule l'image s'affiche.
-    
-    
-    <article class="li">
-      <a href="" class="clearfix">
-        <div class="image" style="background-image: url({{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});"></div>
-      </a>
-    </article>
-    
+Créez un nouveau fichier `li.html` à l'intérieur du dossier `bibliotheque/layouts/_default`. Si vous êtes à la racine de votre projet, vous pouvez utiliser la commande-en-une-ligne qui suit pour créer à la fois le fichier et revenir à la racine : 
 
-Maintenant, le site web ressemblera à ce qui s'affiche en-desous 
+    cd layouts && mkdir _default && cd _default && touch li.html && cd ../..
+
+Copiez le contenu affiché en dessous dans le nouveau fichier `li.html`. Si vous comparez ça avec le `li.html`livré avec le thème Robust, vous remarquerez que nous avons enlevé les détails du livre, afin que seule l'image s'affiche.
+
+
+```
+<article class="li">
+  <a href="{{ .Permalink }}" class="clearfix">
+    <div class="image" style="background-image: url({{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});"></div>
+  </a>
+</article>
+```    
+
+Maintenant, le site web devrait ressembler à ce qui s'affiche en-desous 
 
 ![... image sans détails.](https://monosnap.com/file/GgqLdZrcGQu87neTAWQQGN4VBxLjOl.png)
 
-Ensuite, nous voulons retirer l'information présente en pied de page conceranant le thème. Pour faire ainsi, créez un nouveau dossier `partials` à l'intérieur de `bibliotheque/layouts`. Dans ce dossier, créez un nouveau fichier, `default_foot.html` avec le contenu copié à partir du `layouts/partials/default_foot.html` du thème. Remplacez la section footer avec celle en dessous.
-    
-    
-     <footer class="site">
-         <p>{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params "Author" }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</p>
-         <p>Motorisé par <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a></p>
-     </footer>
-    
-Nous devons aussi enlever la barre latérale à droite. Copiez le fichier `index.html` dans le dossier `layouts` du thème vers le dossier `bibliotheque/layouts`. Retirez la section en rapport avec la barre latérale du HTML :
+Ensuite, nous voulons retirer l'information présente en pied de page concernant le thème. Pour faire ainsi, créez un nouveau dossier sur `bibliotheque/layouts/partials`. Celui-ci détiendra notre nouveau fichier appelé `default_foot.html`
 
-    <div class="col-sm-3">
-      {{ partial "sidebar.html" . }}
-    </div>
+Ceci est un nouveau [template partial](https://gohugo.io/templates/partials/). Si vous êtes encore à la racine du répertoire de votre projet, vous pouvez utilisez la commande-en-une-linge qui suit pour créer le partial avant de de revenir à la racine du projet : 
 
-À ce stade, nous utilisons l'image par défaut, mais nous aimerions utiliser l'image du livre que nous pourrions relier au livre. Chaque critique de livre définira un réglage de configuration dans son front matter. Mettez à jour l'article  `good-to-great.md` comme indiqué ci-dessous.
+
+    cd layouts && mkdir partials && cd partials && touch default_foot.html && cd ../..
     
-    +++
-    date = "2017-07-01T16:11:58+05:30"
-    draft = true
-    title = "Crituque du Livre Good to Great"
-    image = "good-to-great.jpg"
-    +++
+
+Ajoutez maintenant ce qui suit à notre nouveau template partial `default_foot.html` : 
+
     
-    J'ai lu **Good to Great en janvier 2016**. Une analyse merveilleuse décrivant avec acuité comment les grandes sociétés enchantent le monde.
+    <footer class="site">
+      <p>{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params "Author" }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</p>
+      <p>Motorisé par <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+    </footer>
     
+
+A ce stade nous utilisons l'image par défaut mais nous aimerions utiliser l'image du livre que nous pourrions rattacher au livre. Chaque critique de livre définira un réglage de configuration dans son front matter. Mettez à jour le contenu et le front matter de `good-to-great.md` comme affiché ci-dessous :  
+
+```
++++
+date = "2017-02-19T21:09:05-06:00"
+draft = true
+title = "Good to Great Book Review"
+image = "good-to-great.jpg"
++++
+
+I read **Good to Great in January 2016**. An awesome read sharing detailed analysis on how good companies became great. Although this book is about how companies became great but we could apply a lot of the learnings on ourselves. Concepts like level 5 leader, hedgehog concept, the stockdale paradox are equally applicable to individuals.
+
+```
+
 
 Piquez quelque part (légal SVP) une image, appelez-la `good-to-great.jpg`, et placez-la dans le dossier `bibliotheque/static/images`.
 
@@ -381,37 +413,42 @@ Après avoir ajouté quelques autres livres à notre étagère de bibliothèque,
 
 ![image à refaire en français](https://d33wubrfki0l68.cloudfront.net/e03165bd6db7ba50f0bb728074b50809562fb050/ae4e7/img/quickstart/bookshelf.png)
 
+
+Dernier raffinage... Nous devons aussi enlever la barre latérale à droite. Copiez le fichier `index.html` dans le dossier `layouts` du thème vers le dossier `bibliotheque/layouts`. Retirez la section en rapport avec la barre latérale du HTML :
+
+    <div class="col-sm-3">
+      {{ partial "sidebar.html" . }}
+    </div>
+
+
+
 ## Étape 9. Rendez les posts publics
 
-À ce stade, tous les posts que nous avons écrits sont en statut draft (ébauche). Afin de faire qu'un draft soit public, vous pouvez soit lancer une commande ou modifier manuellement le statut draft dans le post en `false`.
-
-Lancez la commande     
+À ce stade, tous les posts que nous avons écrits sont en statut draft, c'est à dire `draft=true` (ébauche). Afin de faire qu'un draft soit public, vous pouvez soit lancer une commande ou modifier manuellement le statut draft dans le post en `false`. Hugo fournit une commande pratique appelée `undraft`pour faire ça :
 
     $ hugo undraft content/post/good-to-great.md
 
-Maintenant, vous pouvez lancer le serveur sans l'option `buildDrafts`.
+Si nous vérifions le front matter de `good-to-great.md` après avoir lancé cette commande, nous remarquons que Hugo a écrit la modification du statut draft au fichier : 
+
+    +++
+    date = "2017-02-19T22:42:53-06:00"
+    draft = false
+    title = "Good to Great Book Review"
+    image = "good-to-great.jpg"
+    +++
+    
+
+Maintenant, nous pouvons lancer le serveur sans l'option `buildDrafts`.
 
     $ hugo server --theme=hugo_theme_robust
 
-## Étape 10. Ajoutez des commentaires
+## Étape 10. Construire votre site Web 
 
-Disqus vous permet d'intégrer des commentaires dans votre blog statique. Pour activer Disqus, il suffit de définir `disqusShortname` dans votre fichier de configuration `config.toml comme indiqué ci-dessous.
-
-    [Params]
-      Author = "votre prenom et nom"
-      disqusShortname = <votre nomutilisateur Disqus>
-
-Maintenant, le commentaire sera activé sur votre blog.
-
-![commentaire Disqus](https://monosnap.com/file/AsSseCEoy7WDogFwmyof1OVgTK2uta.png)
-
-## Étape 11. Générez le Site Web
-
-Pour générer la source du site web Hugo, vous pouvez utiliser pour déployer votre site web le service GitHub Pages. Modifiez d'abord dans votre fichier de configuration `bibliotheque/config.toml`, la ligne `baseURL` en :
+Pour générer la source du site web Hugo, qui peut être déployé vers GitHub Pages. nous avons besoin de modifier la ligne `baseURL` dans notre configuration comme suit :
 
     baseURL = "https://<votre nomutilisateur GitHub>.github.io/bibliotheque/"
 
-Puis lancez la commande suivante.
+Puis lancez la commande suivante à partir du répertoire racine de votre projet Hugo : 
 
     $ hugo --theme=hugo_theme_robust
     
@@ -433,7 +470,19 @@ Après avoir lancé la commande `hugo`, un répertoire  `bibliotheque/public` es
 
 P.S. En passant, (si vous avez essayé), le site web n'est pas accessible proprement via le protocole `file:///`.
 
-## Étape 12. Déployez le site bibliotheque sur GitHub pages
+
+## Étape 11. Et après ?[ ](https://gohugo.io/getting-started/quick-start/#step-11-what-next)
+
+**Bravo !** Votre nouveau répertoire public `bibliothèque`/ est un site web Hugo entièrement généré et déployable. Du fait que tous vos fichiers sont _statiques_, vous avez d'innombrables options d'hébergement, et votre nouvelle structure de répertoire et votre format de contenu simple vont améliorer grandement votre site web.
+
+Voic ce que vous pourriez regardez ensuite : 
+
+  1. [Voir les options d'hébergement et de déploiement](https://gohugo.io/hosting-and-deployment/) pour partager votre nouveau site web Hugo avec le monde.
+  2. [Apprenez en plus sur le templating puissant d'Hugo](https://gohugo.io/templates/introduction/) pour personnaliser votre site web Hugo à vos besoins spécifiques et pour le faire grandir.
+  3. [Visitez le Forum de discussion Hugo](https://discourse.gohugo.io) pour poser des questions, répondre aux questions, et devenir un membre actif de la communauté Hugo.
+
+
+## (Option) Étape 12. Déployez le site bibliotheque sur GitHub pages
 
 Lançons le contôle de version de votre bibliotheque : 
 
@@ -479,7 +528,7 @@ A tout moment, vous pouvez régénérer votre site avec :
 
 Ce tutoriel rapide a été initialement écrit par [Shekhar Gulati][16] dans sa série de blog [52 Technologies in 2016][17].
 
-[1]: https://gohugo.io/overview/installing/
+
 [2]: https://github.com/gohugoio/hugo/releases
 [3]: https://git-for-windows.github.io/
 [4]: https://gohugo.io/content/archetypes/
