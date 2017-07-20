@@ -1,75 +1,56 @@
 +++
 
 title = "Configurer Hugo"
-description = "Les variables de configuration Hugo."
+description = "Souvent les réglages par défaut sont suffisamment bons, mais le fichier de configuration peut fournir un haut niveau de contrôle sur la façon dont votre site est rendu."
 weight = 5
 +++
 
 {{% notice note %}}
-[Source "Configuring Hugo](http://gohugo.io/overview/configuration/ "Permalien vers Hugo - Configuring Hugo") - documentation officielle Hugo, demeurant le seul lien de référence.
+[Source "Configuring Hugo](https://gohugo.io/getting-started/configuration/) - documentation officielle Hugo, demeurant le seul lien de référence.
 {{% /notice %}}
 
-La structure de répertoire d'un site Web Hugo - ou plus précisément, des fichiers source contenant son contenu et ses modèles - fournit la plupart des informations de configuration dont Hugo a besoin. Ce qui fait que par essence, de nombreux sites Web n'auraient pas besoin d'un tel fichier de configuration. Et ceci parce que Hugo est conçu pour reconnaître certains modèles d'utilisation typiques (et il les attend par défaut).
+La [structure de répertoire](https://gohugo.io/getting-started/directory-structure) d'un site Web Hugo - ou plus précisément, l'organisation source des fichiers contenant le contenu du site web et ses modèles - fournit la plupart des informations de configuration dont Hugo a besoin pour générer un site web fini. 
 
-Néanmoins, Hugo recherche un fichier de configuration portant un nom particulier à la racine du répertoire source de votre site web. Tout d'abord, il recherche un fichier `./config.toml`. S'il  n'est pas présent, il recherchera un fichier `./config.yaml`, suivi d'un fichier `./config.json`.
+Ce qui fait que par essence, de nombreux sites Web n'auraient pas besoin d'un tel fichier de configuration. Et ceci parce que Hugo est conçu pour reconnaître certains modèles d'utilisation typiques (et il les attend par défaut).
 
-Dans ce fichier de `config` pour votre site Web, vous pouvez placer des indications précises pour Hugo concernant la manière avec laquelle Hugo produira votre site, tout comme la définition des menus et d'autres paramètres divers du site.
+### Ordre de recherche de configuration
 
-Une autre façon de réaliser la configuration du site Web peut se faire dans les variables de l'environnement du système d'exploitation. Par exemple, la commande suivante fonctionnera sur des systèmes similaires à Unix : elle définit le titre d'un site Web
 
-    $ env HUGO_TITLE="Un Titre" hugo
-    
-(**Note :** de tels noms de variables d'environnement doivent être préfixés par `HUGO_`.)
+Similaire à l'ordre de recherche de modèle, Hugo a un ensemble de règles par défaut pour la recherche d'un fichier de configuration dans la racine du répertoire source de votre site web avec un comportement par défaut :
 
-## Exemples
+1. `./config.toml`
+2. `./config.yaml`
+3. `./config.json`
 
-Ce qui suit est un exemple typique de fichier de configuration YAML. Trois points finissent le document :
-    
-    ---
-    baseURL: "http://votresite.exemple.com/"
-    ...
-    
+Dans votre fichier de configuration, vous pouvez indiquer à Hugo comment vous souhaitez que votre site Web soit rendu, contrôler les menus de votre site Web et définir arbitrairement les paramètres spécifiques à votre projet.
 
-Ce qui suit est un exemple du fichier de config TOML avec quelques valeurs par défaut. Les valeurs `[params]` rempliront la variable `.Site.Params` pour utilisation dans les modèles :
-    
-    contentDir = "content"
-    layoutDir = "layouts"
-    publishDir = "public"
-    buildDrafts = false
-    baseURL = "http://votresite.exemple.com/"
-    canonifyURLs = true
-    
-    [taxonomies]
-      category = "categories"
-      tag = "tags"
-    
-    [params]
-      description = "Merveilleux Site Hugo de Tesla"
-      author = "Nikola Tesla"
-    
+### Configuration YAML
 
-Voici un fichier de configuration YAML qui règle un peu plus d'options : 
-    
-    ---
-    baseURL: "http://votresite.exemple.com/"
-    title: "Widget Blog Yoyodyne"
-    footnoteReturnLinkContents: "↩"
-    permalinks:
-      post: /:year/:month/:title/
-    params:
-      Subtitle: "Spinning the cogs in the widgets"
-      AuthorName: "Jean Dupont"
-      GitHubUser: "spf13"
-      ListOfFoo:
-        - "foo1"
-        - "foo2"
-      SidebarRecentLimit: 5
-    ...
-    
 
-## Variables de configuration
+Voici un exemple typique d'un fichier de configuration YAML. Notez que le document s'ouvre avec 3 traits d'union et se ferme avec 3 périodes. Les valeurs imbriquées dans les `params:` remplissent la variable `.Site.Params` à utiliser dans les [modèles](https://gohugo.io/templates/) :
 
-Ce qui suit est une liste de variables définies-par-Hugo que vous pouvez configurer, avec leurs valeurs actuelles par défaut : 
+```
+---
+baseURL: "https://votresite.exemple.com/"
+title: "Mon Site Hugo"
+footnoteReturnLinkContents: "↩"
+permalinks:
+  post: /:year/:month/:title/
+params:
+  Subtitle: "Hugo is Absurdly Fast!"
+  AuthorName: "Jon Doe"
+  GitHubUser: "spf13"
+  ListOfFoo:
+    - "foo1"
+    - "foo2"
+  SidebarRecentLimit: 5
+...
+```
+
+
+## Toutes les variables, YAML
+
+Ce qui suit est une liste de variables définies-par-Hugo dans un fichier exemple YAML. Les valeurs que fournies dans cet exemple représentent les valeurs par défaut utilisées par Hugo.
 
     
     ---
@@ -173,8 +154,147 @@ Ce qui suit est une liste de variables définies-par-Hugo que vous pouvez config
     verboseLog:                 false
     # regarde le système de fichiers pour les modifications et recrée au besoin
     watch:                      true
+    taxonomies:
+      - category:               "categories"
+      - tag:                    "tags"
+
     ---
     
+
+
+## Toutes les Variables, TOML
+
+Ce qui suit est la liste complète des variables définis par Hug dans un exemple de fichier TOML. Les valeurs fournies dans cet exemple représenteent les valeurs par défaut utilisées par Hugo.
+
+```
++++
+archetypeDir =                "archetypes"
+# hostname (and path) to the root, e.g. http://spf13.com/
+baseURL =                     ""
+# include content marked as draft
+buildDrafts =                 false
+# include content with publishdate in the future
+buildFuture =                 false
+# include content already expired
+buildExpired =                false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs =                false
+canonifyURLs =                false
+# config file (default is path/config.yaml|json|toml)
+config =                     "config.toml"
+contentDir =                  "content"
+dataDir =                     "data"
+defaultExtension =            "html"
+defaultLayout =               "post"
+# Missing translations will default to this content language
+defaultContentLanguage =      "en"
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir =  false
+disableLiveReload =           false
+# Do not build RSS files
+disableRSS =                  false
+# Do not build Sitemap file
+disableSitemap =              false
+# Enable GitInfo feature
+enableGitInfo =               false
+# Build robots.txt file
+enableRobotsTXT =             false
+# Do not render 404 page
+disable404 =                  false
+# Do not inject generator meta tag on homepage
+disableHugoGeneratorInject =  false
+# Allows you to disable all page types and will render nothing related to 'kind';
+# values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
+disableKinds = []
+# Do not make the url/path to lowercase
+disablePathToLower =          false
+# Enable Emoji emoticons support for page content; see emoji-cheat-sheet.com
+enableEmoji =                 false
+# Show a placeholder instead of the default value or an empty string if a translation is missing
+enableMissingTranslationPlaceholders = false
+footnoteAnchorPrefix =        ""
+footnoteReturnLinkContents =  ""
+# google analytics tracking id
+googleAnalytics =             ""
+# if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
+hasCJKLanguage =              false
+languageCode =                ""
+layoutDir =                   "layouts"
+# Enable Logging
+log =                         false
+# Log File path (if set, logging enabled automatically)
+logFile =
+# maximum number of items in the RSS feed
+rssLimit =                    15
+# "toml","yaml", or "json"
+metaDataFormat =              "toml"
+newContentEditor =            ""
+# Don't sync permission mode of files
+noChmod =                     false
+# Don't sync modification time of files
+noTimes =                     false
+# Pagination
+paginate =                    10
+paginatePath =                "page"
+# See "content-management/permalinks"
+permalinks =
+# Pluralize titles in lists using inflect
+pluralizeListTitles =         true
+# Preserve special characters in taxonomy names ("Gérard Depardieu" vs "Gerard Depardieu")
+preserveTaxonomyNames =       false
+# filesystem path to write files to
+publishDir =                  "public"
+# enables syntax guessing for code fences without specified language
+pygmentsCodeFencesGuessSyntax = false
+# color-codes for highlighting derived from this style
+pygmentsStyle =               "monokai"
+# true: use pygments-css or false: color-codes directly
+pygmentsUseClasses =          false
+# see "Section Menu for Lazy Bloggers", /templates/menu-templates for more info
+SectionPagesMenu =
+# default sitemap configuration map
+sitemap =
+# filesystem path to read files relative from
+source =                      ""
+staticDir =                   "static"
+# display memory and timing of different steps of the program
+stepAnalysis =                false
+# theme to use (located by default in /themes/THEMENAME/)
+themesDir =                   "themes"
+theme =                       ""
+title =                       ""
+# if true, use /filename.html instead of /filename/
+uglyURLs =                    false
+# verbose output
+verbose =                     false
+# verbose logging
+verboseLog =                  false
+# watch filesystem for changes and recreate as needed
+watch =                       true
+[taxonomies]
+  category = "categories"
+  tag = "tags"
++++
+
+```
+
+
+> Si vous développez votre site sur une machine *nix, voici un raccourci pratique pour trouver l'option de configuration à partir de la ligne de commande :
+    
+    ~/sites/votresitehugo 
+    hugo config | grep emoji
+    enableemoji: true
+    
+## Variables environementales 
+
+En plus des 3 options de configuration mentionnées au-dessus, les valeurs-clés de configuration peuvent être définies à travers les variables d'environnement de votre OS.
+
+Par exemple, la commande qui suit réglera le titre d'un site web sur des systèmes Unix 
+    
+    $ env HUGO_TITLE="Some Title" hugo
+    
+
+Les noms doivent être précédés avec `HUGO_` et la clé de configuration doit être en capitale au moment de régler les variables d'environnement du système d'exploitation.
 
 ## Ignorer différents fichiers lors du rendu
 
@@ -241,3 +361,13 @@ Cependant, si vous avez des besoins inhabituels concernant  Markdown, Hugo expos
         plainIDAnchors: true
         extensions:
            - hardLineBreak |
+
+
+## Configurer des Formats Output supplémentaires
+
+Hugo v0.20 a introduit la capacité de restituer votre contenu vers plusieurs formats output (par ex., vers JSON, AMP html, ou CSV). Voir  [Output Formats](https://gohugo.io/templates/output-formats/) pour savoir comment ajouter ces valeurs à votre fichier de configuration de projet Hugo.
+
+## Specs Configuration Format
+  * [TOML Spec](https://github.com/toml-lang/toml)
+  * [YAML Spec](http://yaml.org/spec/)
+  * [JSON Spec](https://gohugo.io/documents/ecma-404-json-spec.pdf)

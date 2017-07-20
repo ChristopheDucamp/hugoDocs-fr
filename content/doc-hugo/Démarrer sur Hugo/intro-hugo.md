@@ -1,11 +1,11 @@
 +++
 
-title = "C'est qui Hugo ?"
+title = "C'est quoi Hugo ?"
 description = "Une rapide introduction à Hugo par son auteur"
 weight = 1
 +++
 {{% notice note %}}
-[Source "Introduction to Hugo" par Steve Francia (auteur d'Hugo)](https://gohugo.io/overview/introduction/ "Permalink to Hugo - Introduction to Hugo") - traduction en cours ouverte à toutes vos modifications.
+[Source "Introduction to Hugo" par Steve Francia (auteur d'Hugo)](https://gohugo.io/overview/introduction/) - traduction en cours ouverte à toutes vos améliorations.
 {{% /notice %}}
 
 ## C’est Quoi Hugo ?

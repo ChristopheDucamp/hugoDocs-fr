@@ -371,7 +371,7 @@ Copiez le contenu affiché en dessous dans le nouveau fichier `li.html`. Si vous
 </article>
 ```    
 
-Maintenant, le site web devrait ressembler à ce qui s'affiche en-desous 
+Maintenant, le site web devrait ressembler à ce qui s'affiche en-dessous 
 
 ![... image sans détails.](https://monosnap.com/file/GgqLdZrcGQu87neTAWQQGN4VBxLjOl.png)
 
