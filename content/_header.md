@@ -4,6 +4,8 @@ description = ""
 date = "2017-04-24T18:36:24+02:00"
 +++
 
-### [JAMStack](https://jamstack.org) : DocDock pour GoHugo
+![logo hugo](/static/imstile-150x150.png)
 
-un superbe thème pour héberger une documentation.
+### Doc Hugo en français
+
+Chantier en cours.

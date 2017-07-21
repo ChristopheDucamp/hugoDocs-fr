@@ -1,16 +1,16 @@
-# hugo-docdock-fr
-Localisation en français de la documentation du thème Docdock dédié à la gestion de documentation sur Hugo. 
+Chantier personnel de traduction des contenus de la doc Hugo et déposés sur le thème hugo-docdock.
 
+# hugo-docdock-fr
 Source https://github.com/vjeantet/hugo-theme-docdock - [Valere Jeantet aka @vjeantet](https://github.com/vjeantet)
 
 # Thème Hugo docDock
 
 Ce repository est basé sur la motorisation [Hugo](https://gohugo.io/), et les travaux géniaux de [Matcornic Learn theme](https://github.com/matcornic/hugo-theme-learn/) et Valère Jeantet (@vjeantet). 
-Le thème original peut être trouvé sur Source https://github.com/vjeantet/hugo-theme-docdock
+Le thème docdock original peut être trouvé sur <https://github.com/vjeantet/hugo-theme-docdock>
 
 Visitez la [documentation du thème]([https://docdock-hugo.netlify.com/getting-start/doc-hugo-en-cours/quickstart/) pour voir comment ça fonctionne. Elle a été construite avec ce thème.
 
-# Principales fonctionnalités
+# Principales fonctionnalités du thème docdock
 
 - Recherche 
 * **Pas de limites pour les niveaux de menu**
@@ -37,4 +37,4 @@ Vérifiez que votre version Hugo soit au minimum à `0.22` avec  `hugo version`.
 
 ## Usage
 
-- [Visitez la documentation en français](http://docdock-hugo.netlify.com/) 
+- [Visitez la documentation en français- traduction en cours](http://docdock-hugo.netlify.com/) 

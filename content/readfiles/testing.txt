@@ -1,0 +1,3 @@
+##### Hello World!
+
+Test un, **deux**, *trois*. N'effacez pas ce fichier échantillon utilisé dans la section [templates](/templates/) de la documentation Hugo.
