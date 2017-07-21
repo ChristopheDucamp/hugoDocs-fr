@@ -20,5 +20,7 @@ L'une des plus grandes forces de Hugo est que c'est une communauté ---et toujou
 
 [Voir la popularité de Hugo par rapport à d'autres générateurs de sites statiques.][staticgen]
 
+{{% children style="h2" depth="1" description="true" %}}
+
 [staticgen]: https://staticgen.com
-[syntax]: /tools/syntax-highlighting/
+[syntax]: /outils/syntax-highlighting/

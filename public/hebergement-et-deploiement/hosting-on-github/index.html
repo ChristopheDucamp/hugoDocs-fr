@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.25" />
-    <meta name="description" content="Deploy Hugo as a GitHub Pages project or personal/organizational site and automate the whole process with a simple shell script.">
+    <meta name="description" content="Déployer Hugo en tant que projet GitHub Pages ou site personnel/organisation et automatiser tout le processus avec un simple script shell.">
 
 
-    <title>Hosting on GitHub :: Une documentation en français pour Hugo</title>
+    <title>GitHub :: Une documentation en français pour Hugo</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/nucleus.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
 <script type="text/javascript" src="/js/lunr.min.js"></script>
 <script type="text/javascript" src="/js/horsey.js"></script>
 <script type="text/javascript">
-    var baseurl = "https:\/\/dochugo.christopheducamp.com";
+    var baseurl = "\/";
 </script>
 <script type="text/javascript" src="/js/search.js"></script>
 
@@ -200,10 +200,10 @@
          
         
          
-          <li data-nav-id="/commands/hugo_check/" class="dd-item
+          <li data-nav-id="/commandes/hugo_check/" class="dd-item
          
           ">
-            <a href="/commands/hugo_check/">
+            <a href="/commandes/hugo_check/">
             <span>hugo check</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
@@ -1128,7 +1128,7 @@
 
 ">
   <a href="/contribuer/">
-    <span>Contribuer au Projet Hugo</span>
+    <span>Contribuer</span>
 
     
     <i class="fa fa-angle-right fa-lg category-icon"></i>
@@ -2317,22 +2317,22 @@ parent
     <ul>
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-netlify/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-netlify/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-netlify/">
-            <span>Hosting on Netlify</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-netlify/">
+            <span>Netlify</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
          
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-firebase/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-firebase/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-firebase/">
-            <span>Hosting on Firebase</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-firebase/">
+            <span>Firebase</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
@@ -2343,18 +2343,18 @@ parent
          active
           ">
             <a href="/hebergement-et-deploiement/hosting-on-github/">
-            <span>Hosting on GitHub</span> 
+            <span>GitHub</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
          
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-gitlab/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-gitlab/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-gitlab/">
-            <span>Hosting on GitLab</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-gitlab/">
+            <span>GitLab</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
@@ -2940,7 +2940,7 @@ parent
             
                 <li class="" role="">
                     <h3>Plus</h3>
-                    <a href="https://github.com/ChristopheDucamp/Doc-Hugo"><i class='fa fa-github'></i> Repo Github</a>
+                    <a href="https://github.com/ChristopheDucamp/Doc-DocDock-Hugo"><i class='fa fa-github'></i> Repo Github</a>
                     
                 </li>
             
@@ -2997,7 +2997,7 @@ parent
               
               
             <div id="top-github-link">
-              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-Hugo/edit/master/content/hebergement-et-deploiement/hosting-on-github.md" target="blank">
+              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-DocDock-Hugo/edit/master/content/hebergement-et-deploiement/hosting-on-github.md" target="blank">
                 <i class="fa fa-code-fork"></i>
                 
               </a>
@@ -3021,7 +3021,7 @@ parent
 
 
 
- <a href='/'>Documentation Hugo</a> > <a href='/hebergement-et-deploiement/'>Hébergement & Déploiement</a> > Hosting on GitHub
+ <a href='/'>Documentation Hugo</a> > <a href='/hebergement-et-deploiement/'>Hébergement & Déploiement</a> > GitHub
 
  
 
@@ -3036,30 +3036,30 @@ parent
 <ul>
 <li>
 <ul>
-<li><a href="#assumptions">Assumptions</a></li>
-<li><a href="#deployment-via-docs-folder-on-master-branch">Deployment via <code>/docs</code> Folder on Master Branch</a></li>
-<li><a href="#deployment-from-your-gh-pages-branch">Deployment From Your <code>gh-pages</code> Branch</a>
+<li><a href="#hypothèses">Hypothèses</a></li>
+<li><a href="#déploiement-via-le-dossier-docs-sur-la-branche-master">Déploiement via le dossier <code>/docs</code> sur la Branche Master</a></li>
+<li><a href="#déploiement-à-partir-de-votre-branche-gh-pages">Déploiement à partir de votre Branche <code>gh-pages</code></a>
 <ul>
-<li><a href="#preparations-for-gh-pages-branch">Preparations for <code>gh-pages</code> Branch</a>
+<li><a href="#préparations-pour-la-branche-gh-pages">Préparations pour la branche <code>gh-pages</code></a>
 <ul>
-<li><a href="#add-the-public-folder">Add the Public Folder</a></li>
-<li><a href="#initialize-your-gh-pages-branch">Initialize Your <code>gh-pages</code> Branch</a></li>
+<li><a href="#ajoutez-le-dossier-public">Ajoutez le dossier public</a></li>
+<li><a href="#initialisez-votre-branche-gh-pages">Initialisez votre branche <code>gh-pages</code></a></li>
 </ul></li>
-<li><a href="#build-and-deployment">Build and Deployment</a>
+<li><a href="#construction-et-déploiement">Construction et Déploiement</a>
 <ul>
-<li><a href="#set-gh-pages-as-your-publish-branch">Set <code>gh-pages</code> as Your Publish Branch</a></li>
+<li><a href="#réglez-gh-pages-comme-votre-branche-publique">Réglez <code>gh-pages</code> comme votre Branche Publique</a></li>
 </ul></li>
-<li><a href="#put-it-into-a-script">Put it Into a Script</a></li>
+<li><a href="#placez-le-dans-un-script">Placez-le dans un Script</a></li>
 </ul></li>
-<li><a href="#deployment-from-your-master-branch">Deployment From Your <code>master</code> Branch</a></li>
-<li><a href="#host-github-user-or-organization-pages">Host GitHub User or Organization Pages</a>
+<li><a href="#déploiement-à-partir-de-votre-branche-master">Déploiement à partir de Votre Branche <code>master</code></a></li>
+<li><a href="#héberger-des-pages-utilisateur-github-ou-des-pages-organisation">Héberger des Pages Utilisateur GitHub ou des Pages Organisation</a>
 <ul>
-<li><a href="#step-by-step-instructions">Step-by-step Instructions</a>
+<li><a href="#instructions-étapes-par-étapes">Instructions étapes par étapes</a>
 <ul>
-<li><a href="#put-it-into-a-script-1">Put it Into a Script</a></li>
+<li><a href="#placez-ça-dans-un-script">Placez ça dans un Script</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#use-a-custom-domain">Use a Custom Domain</a></li>
+<li><a href="#utiliser-un-domaine-personnalisé">Utiliser un Domaine Personnalisé</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -3071,7 +3071,7 @@ parent
         
         <div id="body-inner">
           
-            <h1>Hosting on GitHub</h1>
+            <h1>GitHub</h1>
           
 
 
@@ -3079,32 +3079,25 @@ parent
 
 
 
-<p>GitHub provides free and fast static hosting over SSL for personal, organization, or project pages directly from a GitHub repository via its <a href="https://help.github.com/articles/what-is-github-pages/">GitHub Pages service</a>.</p>
+<p>GitHub fournit un hébergement statique gratuit et rapide sur SSL pour les personnes, organisations ou pages de projet directement à partir d&rsquo;un repo GitHub via son [service GitHub Pages][].</p>
 
-<h2 id="assumptions">Assumptions</h2>
+<h2 id="hypothèses">Hypothèses</h2>
 
 <ol>
-<li>You have Git 2.5 or greater <a href="https://git-scm.com/downloads">installed on your machine</a>.</li>
-<li>You have a GitHub account. <a href="https://github.com/join">Signing up</a> for GitHub is free.</li>
-<li>You have a ready-to-publish Hugo website or have at least completed the <a href="/getting-started/quick-start/">Quick Start</a>.</li>
+<li>Vous avez Git 2.5 ou +  <a href="https://git-scm.com/downloads">installé sur votre machine</a>.</li>
+<li>Vous avez un compte GitHub. <a href="https://github.com/join">S&rsquo;enregistrer</a> sur GitHub est gratuit.</li>
+<li>Vous avez un site web Hugo prêt-à-publier ou avez au moins terminé le <a href="/getting-started/quick-start/">Quick Start</a>.</li>
 </ol>
 
-<p>If you are working within an Organization account or want to set up a User website on GitHub and would like more information, refer to the <a href="https://help.github.com/articles/user-organization-and-project-pages/#user--organization-pages">GitHub Pages documentation</a>.</p>
+<p>Si vous travaillez dans un compte Organisation ou si vous voulez régler un site web d&rsquo;utilisateur sur GitHub et souhaiteriez plus d&rsquo;informations, visitez la <a href="https://help.github.com/articles/user-organization-and-project-pages/#user--organization-pages">documentation GitHub Pages</a>.</p>
 
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>Make sure your <code>baseURL</code> key-value in your <a href="/getting-started/configuration/">site configuration</a> reflects the full URL of your GitHub pages repository if you&rsquo;re using the default GH Pages URL (e.g., <code>username.github.io/myprojectname/</code>) and not a custom domain.</p>
+<div class="notices note" ><p>Assurez-vous que votre valeur-clé <code>baseURL</code> dans votre <a href="/demarrage/configuration/">fichier de configuration de site</a> soit l&rsquo;URL complète de votre repository GitHub Page si vous utilisez l&rsquo;URL par défaut GH Pages (par ex. <code>votrenomutilisateur.github.io/monnomprojet/</code>) et non un domaine personnalisé.</p>
 </div>
-</aside>
 
 
-<h2 id="deployment-via-docs-folder-on-master-branch">Deployment via <code>/docs</code> Folder on Master Branch</h2>
+<h2 id="déploiement-via-le-dossier-docs-sur-la-branche-master">Déploiement via le dossier <code>/docs</code> sur la Branche Master</h2>
 
-<p><a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch">As described in the GitHub Pages documentation</a>, you can deploy from a folder called <code>docs/</code> on your master branch. To effectively use this feature with Hugo, you need to change the Hugo publish directory in your <a href="/getting-started/configuration/">site&rsquo;s</a> <code>config.toml</code> and <code>config.yaml</code>, respectively:</p>
+<p><a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch">Comme décrit dans la documentation GitHub Pages</a>, vous pouvez déployer à partir d&rsquo;un dossier appelé <code>docs/</code> sur votre branche master. Pour utiliser efficacement cette fonctionnalité avec Hugo, vous devrez modifier le répertoire de publication de Hugo dans le fichier de <a href="/demarrage/configuration/">configuration de votre site</a> <code>config.toml</code> et <code>config.yaml</code>, respectivement :</p>
 
 <pre><code class="language-yaml">publishDir: docs
 </code></pre>
@@ -3112,47 +3105,40 @@ parent
 <pre><code class="language-toml">publishDir = &quot;docs&quot;
 </code></pre>
 
-<p>After running <code>hugo</code>, push your master branch to the remote repository and choose the <code>docs/</code> folder as the website source of your repo. Do the following from within your GitHub project:</p>
+<p>Après avoir lancé <code>hugo</code>, poussez votre branche master vers le repo distant et choisissez le dossier <code>docs/</code> comme le site web source de votre repo. Faites ce qui suit à partir de l&rsquo;intérieur  de votre projet GitHub :</p>
 
 <ol>
-<li>Go to <strong>Settings</strong> &rarr; <strong>GitHub Pages</strong></li>
-<li>From <strong>Source</strong>,  select &ldquo;master branch /docs folder&rdquo;. If the option isn&rsquo;t enabled, you likely do not have a <code>docs/</code> folder in the root of your project.</li>
+<li>Allez sur <strong>Settings</strong> &rarr; <strong>GitHub Pages</strong></li>
+<li>À partir de <strong>Source</strong>,  sélectionnez &ldquo;master branch /docs folder&rdquo;. Si l&rsquo;option n&rsquo;est pas activée, vous n&rsquo;avez probablement pas de dossier <code>docs/</code> à la racine de votre projet.</li>
 </ol>
 
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
-	
-	
-	<div class="admonition-content"><p>The <code>docs/</code> option is the simplest approach but requires you set a publish directory in your site configuration. You cannot currently configure GitHub pages to publish from another directory on master, and not everyone prefers the output site live concomitantly with source files in version control.</p>
+<div class="notices note" ><p>L&rsquo;option <code>docs/</code> est l&rsquo;approche la plus simple mais requiert que vous réglez un répertoire de publication dans votre configuration de site. Vous ne pouvez actuellement pas configurer GitHub pages pour publier à partir d&rsquo;un autre répertoire sur master, et tout le monde et tout le monde n&rsquo;apprécie pas d&rsquo;avoir le site de sortie en même temps que les fichiers source dans le contrôle de la version.</p>
 </div>
-</aside>
 
 
-<h2 id="deployment-from-your-gh-pages-branch">Deployment From Your <code>gh-pages</code> Branch</h2>
+<h2 id="déploiement-à-partir-de-votre-branche-gh-pages">Déploiement à partir de votre Branche <code>gh-pages</code></h2>
 
-<p>You can also tell GitHub pages to treat your <code>master</code> branch as the published site or point to a separate <code>gh-pages</code> branch. The latter approach is a bit more complex but has some advantages:</p>
+<p>Vous pouvez également indiquer à GitHub Pages de traiter votre branche <code>master</code> comme le site publié ou pointer vers une branche <code>gh-pages</code> séparée. Cette dernière approche est un peu plus complexe mais présente des avantages :</p>
 
 <ul>
-<li>It keeps your source and generated website in different branches and therefore maintains version control history for both.</li>
-<li>Unlike the preceding <code>docs/</code> option, it uses the default <code>public</code> folder.</li>
+<li>Elle conserve votre site source et généré dans différentes branches et maintient donc l&rsquo;historique de contrôle de version pour les deux.</li>
+<li>Contrairement à l&rsquo;option <code>docs/</code> précédente, elle utilise le dossier <code>public</code> par défaut.</li>
 </ul>
 
-<h3 id="preparations-for-gh-pages-branch">Preparations for <code>gh-pages</code> Branch</h3>
+<h3 id="préparations-pour-la-branche-gh-pages">Préparations pour la branche <code>gh-pages</code></h3>
 
-<p>These steps only need to be done once. Replace <code>upstream</code> with the name of your remote; e.g., <code>origin</code>:</p>
+<p>Ces étapes ne doivent être effectuées qu&rsquo;une seule fois. Remplacez <code>upstream</code> par le nom de votre remote ; par exemple, <code>origin</code> :</p>
 
-<h4 id="add-the-public-folder">Add the Public Folder</h4>
+<h4 id="ajoutez-le-dossier-public">Ajoutez le dossier public</h4>
 
-<p>First, add the <code>public</code> folder to your <code>.gitignore</code> file at the project root so that the directory is ignored on the master branch:</p>
+<p>Tout d&rsquo;abord, ajoutez le dossier <code>public</code> à votre fichier <code>.gitignore</code> à la racine du projet afin que le répertoire soit ignoré sur la branche principale :</p>
 
 <pre><code class="language-bash">echo &quot;public&quot; &gt;&gt; .gitignore
 </code></pre>
 
-<h4 id="initialize-your-gh-pages-branch">Initialize Your <code>gh-pages</code> Branch</h4>
+<h4 id="initialisez-votre-branche-gh-pages">Initialisez votre branche <code>gh-pages</code></h4>
 
-<p>You can now initialize your <code>gh-pages</code> branch as an empty <a href="https://git-scm.com/docs/git-checkout/#git-checkout---orphanltnewbranchgt">orphan branch</a>:</p>
+<p>Vous pouvez maintenant initialiser votre branche <code>gh-pages</code> comme une [branche orpheline][] vide :</p>
 
 <pre><code class="language-bash">git checkout --orphan gh-pages
 git reset --hard
@@ -3161,15 +3147,15 @@ git push upstream gh-pages
 git checkout master
 </code></pre>
 
-<h3 id="build-and-deployment">Build and Deployment</h3>
+<h3 id="construction-et-déploiement">Construction et Déploiement</h3>
 
-<p>Now check out the <code>gh-pages</code> branch into your <code>public</code> folder using git&rsquo;s <a href="https://git-scm.com/docs/git-worktree">worktree feature</a>. Essentially, the worktree allows you to have multiple branches of the same local repository to be checked out in different directories:</p>
+<p>Maintenant, vérifiez la branche <code>gh-pages</code> dans votre dossier <code>public</code> à l&rsquo;aide de [la fonction Worktree][] de git. En fait, le worktree vous permet d&rsquo;avoir plusieurs branches du même repo  local à vérifier dans différents répertoires :</p>
 
 <pre><code class="language-sh">rm -rf public
 git worktree add -B gh-pages public upstream/gh-pages
 </code></pre>
 
-<p>Regenerate the site using the <code>hugo</code> command and commit the generated files on the <code>gh-pages</code> branch:</p>
+<p>Régénérez le site en utilisant la commande <code>hugo</code> et commitez  les fichiers générés sur la branche <code>gh-pages</code> :</p>
 
 <div class="code relative bg-primary-color moon-gray" id="commit-gh-pages-files.sh"><div class="filename san-serif f6 dib lh-solid pl2 pv2">commit-gh-pages-files.sh</div>
 		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
@@ -3177,32 +3163,32 @@ git worktree add -B gh-pages public upstream/gh-pages
 		
 	
 	<div class="code-copy-content nt3" ><pre><code class="language-bash">hugo
-cd public &amp;&amp; git add --all &amp;&amp; git commit -m &quot;Publishing to gh-pages&quot; &amp;&amp; cd ..
+cd public &amp;&amp; git add --all &amp;&amp; git commit -m &quot;Publier sur gh-pages&quot; &amp;&amp; cd ..
 </code></pre>
 </div>
 
 </div>
 
 
-<p>If the changes in your local <code>gh-pages</code> branch look alright, push them to the remote repo:</p>
+<p>Si les modifications apportées à votre branche locale <code>gh-pages</code> semblent bien, poussez-les sur le repo distant :</p>
 
 <pre><code class="language-bash">git push upstream gh-pages
 </code></pre>
 
-<h4 id="set-gh-pages-as-your-publish-branch">Set <code>gh-pages</code> as Your Publish Branch</h4>
+<h4 id="réglez-gh-pages-comme-votre-branche-publique">Réglez <code>gh-pages</code> comme votre Branche Publique</h4>
 
-<p>In order to use your <code>gh-pages</code> branch as your publishing branch, you&rsquo;ll need to configure the repository within the GitHub UI. This will likely happen automatically once GitHub realizes you&rsquo;ve created this branch. You can also set the branch manually from within your GitHub project:</p>
+<p>Pour utiliser votre branche <code>gh-pages</code> en tant que branche de publication, vous devrez configurer le dépôt dans l&rsquo;IU GitHub. Cela se produira probablement automatiquement une fois que GitHub réalisera que vous avez créé cette branche. Vous pouvez également configurer la branche manuellement à partir de votre projet GitHub :</p>
 
 <ol>
-<li>Go to <strong>Settings</strong> &rarr; <strong>GitHub Pages</strong></li>
-<li>From <strong>Source</strong>,  select &ldquo;gh-pages branch&rdquo; and then <strong>Save</strong>. If the option isn&rsquo;t enabled, you likely have not created the branch yet OR you have not pushed the branch from your local machine to the hosted repository on GitHub.</li>
+<li>Accédez sur <strong>Settings</strong> &rarr; <strong>Github Pages</strong></li>
+<li>À partir de <strong>Source</strong>, sélectionnez &ldquo;gh-pages branch&rdquo;, puis <strong>Save</strong>. Si l&rsquo;option n&rsquo;est pas activée, vous n&rsquo;avez probablement pas encore créé la branche OU vous n&rsquo;avez pas poussé la branche de votre machine locale vers le dépôt hébergé sur GitHub.</li>
 </ol>
 
-<p>After a short while, you&rsquo;ll see the updated contents on your GitHub Pages site.</p>
+<p>Après un court moment, vous verrez les contenus actualisés sur votre site GitHub Pages.</p>
 
-<h3 id="put-it-into-a-script">Put it Into a Script</h3>
+<h3 id="placez-le-dans-un-script">Placez-le dans un Script</h3>
 
-<p>To automate these steps, you can create a script with the following contents:</p>
+<p>Pour automatiser ces étapes, vous pouvez créer un script avec les contenus suivants :</p>
 
 <div class="code relative bg-primary-color moon-gray" id="publish_to_ghpages.sh"><div class="filename san-serif f6 dib lh-solid pl2 pv2">publish_to_ghpages.sh</div>
 		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
@@ -3244,51 +3230,51 @@ cd public &amp;&amp; git add --all &amp;&amp; git commit -m &quot;Publishing to 
 </div>
 
 
-<p>This will abort if there are pending changes in the working directory and also makes sure that all previously existing output files are removed. Adjust the script to taste, e.g. to include the final push to the remote repository if you don&rsquo;t need to take a look at the gh-pages branch before pushing. Or adding <code>echo yourdomainname.com &gt;&gt; CNAME</code> if you set up for your gh-pages to use customize domain.</p>
+<p>Cela annulera s&rsquo;il y a des modifications en attente dans le répertoire de travail et assurera également que tous les fichiers output précédemment existants soient supprimés. Ajustez le script à votre goût, par ex. pour inclure le push final vers le repo distant si vous n&rsquo;avez pas besoin de jeter un coup d&rsquo;œil à la branche gh-pages avant de pousser. Ou ajouter <code>echo votrenomdomaine.com &gt;&gt; CNAME</code> si vous configurez vos &ldquo;gh-pages&rdquo; pour utiliser le domaine personnalisé.</p>
 
-<h2 id="deployment-from-your-master-branch">Deployment From Your <code>master</code> Branch</h2>
+<h2 id="déploiement-à-partir-de-votre-branche-master">Déploiement à partir de Votre Branche <code>master</code></h2>
 
-<p>To use <code>master</code> as your publishing branch, you&rsquo;ll need your rendered website to live at the root of the GitHub repository. Steps should be similar to that of the <code>gh-pages</code> branch, with the exception that you will create your GitHub repository with the <code>public</code> directory as the root. Note that this does not provide the same benefits of the <code>gh-pages</code> branch in keeping your source and output in separate, but version controlled, branches within the same repo.</p>
+<p>Pour utiliser <code>master</code> comme votre branche de publicaiton, vous aurez besoin que votre site Web rendu vive à la racine du dépôt GitHub. Les étapes doivent être similaires à celles de la branche <code>gh-pages</code>, à l&rsquo;exception que vous allez créer votre repo GitHub avec le répertoire <code>public</code> comme racine. Notez que cela ne fournit pas les mêmes avantages que la branche <code>gh-pages</code> pour maintenir votre source et votre sortie séparément, mais contrôlées par version, dans le même compte.</p>
 
-<p>You will also need to set <code>master</code> as your publishable branch from within the GitHub UI:</p>
+<p>Vous devrez également définir <code>master</code> comme votre branche publiable à partir de l&rsquo;interface utilisateur GitHub :</p>
 
 <ol>
-<li>Go to <strong>Settings</strong> &rarr; <strong>GitHub Pages</strong></li>
-<li>From <strong>Source</strong>,  select &ldquo;master branch&rdquo; and then <strong>Save</strong>.</li>
+<li>Allez sur <strong>Settings</strong> &rarr; <strong>GitHub Pages</strong></li>
+<li>À partir de <strong>Source</strong>, sélectionnez &ldquo;master branch&rdquo; et puis <strong>Save</strong>.</li>
 </ol>
 
-<h2 id="host-github-user-or-organization-pages">Host GitHub User or Organization Pages</h2>
+<h2 id="héberger-des-pages-utilisateur-github-ou-des-pages-organisation">Héberger des Pages Utilisateur GitHub ou des Pages Organisation</h2>
 
-<p>As mentioned <a href="https://help.github.com/articles/user-organization-and-project-pages/">in this GitHub Help article</a>, you can host a user/organization page in addition to project pages. Here are the key differences in GitHub Pages websites for Users and Organizations:</p>
+<p>Comme mentionné <a href="https://help.github.com/articles/user-organization-and-project-pages/">dans cet article GitHub Help</a>, vous pouvez héberger une page utilisateur/organisation en plus de vos pages projet. Voici les différences-clés dans les sites web GitHub Pages pour les Utilisateurs et Organisations :</p>
 
 <ol>
-<li>You must use the <code>&lt;USERNAME&gt;.github.io</code> naming scheme for your GitHub repo.</li>
-<li>Content from the <code>master</code> branch will be used to publish your GitHub Pages site.</li>
+<li>Vous devez utiliser le schéma de nommage <code>&lt;USERNAME&gt;.github.io</code> pour votre repo GitHub.</li>
+<li>Le contenu provenant de la branche <code>master</code> sera utilisé pour publier votre site GitHub Pages.</li>
 </ol>
 
-<p>It becomes much simpler in this case: we&rsquo;ll create two separate repos, one for Hugo&rsquo;s content, and a git submodule with the <code>public</code> folder&rsquo;s content in it.</p>
+<p>Cela devient beaucoup plus simple dans ce cas: nous allons créer deux repos distincts, l&rsquo;un pour le contenu de Hugo et un sous-module git avec le contenu du dossier <code>public</code>.</p>
 
-<h3 id="step-by-step-instructions">Step-by-step Instructions</h3>
+<h3 id="instructions-étapes-par-étapes">Instructions étapes par étapes</h3>
 
 <ol>
-<li>Create a <code>&lt;YOUR-PROJECT&gt;</code> git repository on GitHub. This repository will contain Hugo&rsquo;s content and other source files.</li>
-<li>Create a <code>&lt;USERNAME&gt;.github.io</code> GitHub repository. This is the repository that will contain the fully rendered version of your Hugo website.</li>
-<li><code>git clone &lt;YOUR-PROJECT-URL&gt; &amp;&amp; cd &lt;YOUR-PROJECT&gt;</code></li>
-<li>Make your website work locally (<code>hugo server</code> or <code>hugo server -t &lt;YOURTHEME&gt;</code>) and open your browser to <a href="http://localhost:1313">http://localhost:1313</a>.</li>
-<li>Once you are happy with the results:
+<li>Créez un repository git <code>&lt;VOTRE-PROJET&gt;</code> sur GitHub. Ce  repository contiendra le contenu d&rsquo;Hugo et d&rsquo;autres fichiers source.</li>
+<li>Créez un repository GitHub <code>&lt;NOMUTILISATEUR&gt;.github.io</code>. Ceci est le repository qui contiendra la version complètement rendue de votre site web Hugo.</li>
+<li><code>git clone &lt;VOTRE-PROJET-URL&gt; &amp;&amp; cd &lt;YOUR-PROJECT&gt;</code></li>
+<li>Faites fonctionner votre site web localement (<code>hugo server</code> ou <code>hugo server -t &lt;VOTRETHEME&gt;</code>) et ouvrez votre navigateur sur  <a href="http://localhost:1313">http://localhost:1313</a>.</li>
+<li>Une fois que vous êtes satisfait des résultats :
 
 <ul>
-<li>Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to kill the server</li>
-<li><code>rm -rf public</code> to completely remove the <code>public</code> directory if there</li>
+<li>Pressez <kbd>Ctrl</kbd>+<kbd>C</kbd> pour éteindre le serveur</li>
+<li><code>rm -rf public</code> pour retirer complètement le dossier <code>public</code> s&rsquo;il y en a un</li>
 </ul></li>
-<li><code>git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code>. This creates a git <a href="https://github.com/blog/2104-working-with-submodules">submodule</a>. Now when you run the <code>hugo</code> command to build your site to <code>public</code>, the created <code>public</code> directory will have a different remote origin (i.e. hosted GitHub repository). You can automate some of these steps with the following script.</li>
+<li><code>git submodule add -b master git@github.com:&lt;NOMUTILISATEUR&gt;/&lt;NOMUTILISATEUR&gt;.github.io.git public</code>. Ceci crée un <a href="https://github.com/blog/2104-working-with-submodules">submodule</a> git. Maintenant quand vous lancez la commande <code>hugo</code> pour construire votre site vers <code>public</code>, le dossier <code>public</code> créé aura un &ldquo;remote origin&rdquo; différent (c&rsquo;est-à-dire un repository hébergé GitHub). Vous pouvez automatiser certaines de ces étapes avec le script suivant.</li>
 </ol>
 
-<h4 id="put-it-into-a-script-1">Put it Into a Script</h4>
+<h4 id="placez-ça-dans-un-script">Placez ça dans un Script</h4>
 
-<p>You&rsquo;re almost done. You can also add a <code>deploy.sh</code> script to automate the preceding steps for you. You can also make it executable with <code>chmod +x deploy.sh</code>.</p>
+<p>Vous avez presque fini. Vous pouvez maintenant ajouter un script  <code>deploy.sh</code> pour automatiser les étapes qui précédent. Vous pouvez aussi faire un exécutable avec <code>chmod +x deploy.sh</code>.</p>
 
-<p>The following are the contents of the <code>deploy.sh</code> script:</p>
+<p>Ce qui suit sont les contenus du script <code>deploy.sh</code> :</p>
 
 <pre><code class="language-sh">#!/bin/bash
 
@@ -3316,15 +3302,15 @@ git push origin master
 cd ..
 </code></pre>
 
-<p>You can then run <code>./deploy.sh &quot;Your optional commit message&quot;</code> to send changes to <code>&lt;USERNAME&gt;.github.io</code>. Note that you likely will want to commit changes to your <code>&lt;YOUR-PROJECDT&gt;</code> repository as well.</p>
+<p>Vous pouvez alors lancer la commande <code>./deploy.sh &quot;Votre message de commit facultatif&quot;</code> pour envoyer les modifications à  <code>&lt;NOMUTILISATEUR&gt;.github.io</code>. Notez que vous voudrez probablement commiter aussi les modifications vers votre repository  <code>&lt;VOTRE_PROJET&gt;</code>.</p>
 
-<p>That&rsquo;s it! Your personal page should be up and running at <code>https://yourusername.github.io</code> within a couple minutes.</p>
+<p>C&rsquo;est tout ! Votre page personnelle devrait être en train de tourner sur <code>https://votrenomutilisateur.github.io</code> d&rsquo;ici quelques minutes.</p>
 
-<h2 id="use-a-custom-domain">Use a Custom Domain</h2>
+<h2 id="utiliser-un-domaine-personnalisé">Utiliser un Domaine Personnalisé</h2>
 
-<p>If you&rsquo;d like to use a custom domain for your GitHub Pages site, create a file <code>static/CNAME</code>. Your custom domain name should be the only contents inside <code>CNAME</code>. Since it&rsquo;s inside <code>static</code>, the published site will contain the CNAME file at the root of the published site, which is a requirements of GitHub Pages.</p>
+<p>Si vous souhaitez utiliser un domaine personnalisé pour votre site GitHub Pages, créez un fichier <code>static/CNAME</code>. Votre nom de domaine personnalisé devrait être le seul contenu à l&rsquo;intérieur de <code>CNAME</code>. Étant donné qu&rsquo;il est à l&rsquo;intérieur de <code>static</code>, le site publié contiendra le fichier CNAME à la racine du site publié, ce qui est une exigence de GitHub Pages.</p>
 
-<p>Refer to the <a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">official documentation for custom domains</a> for further information.</p>
+<p>Pour plus d&rsquo;informations, reportez-vous à la [documentation officielle pour les domaines personnalisés][domaines].</p>
 
 
 <footer class=" footline" >
@@ -6016,10 +6002,10 @@ cd ..
 
 
         
-            <a class="nav nav-prev" href="/hebergement-et-deploiement/hosting-on-firebase/" title="Hosting on Firebase"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/hebergement-et-deploiement/heberger-sur-firebase/" title="Firebase"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/hebergement-et-deploiement/hosting-on-gitlab/" title="Hosting on GitLab" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/hebergement-et-deploiement/heberger-sur-gitlab/" title="GitLab" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

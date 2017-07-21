@@ -56,7 +56,7 @@
 <script type="text/javascript" src="/js/lunr.min.js"></script>
 <script type="text/javascript" src="/js/horsey.js"></script>
 <script type="text/javascript">
-    var baseurl = "https:\/\/dochugo.christopheducamp.com";
+    var baseurl = "\/";
 </script>
 <script type="text/javascript" src="/js/search.js"></script>
 
@@ -200,10 +200,10 @@
          
         
          
-          <li data-nav-id="/commands/hugo_check/" class="dd-item
+          <li data-nav-id="/commandes/hugo_check/" class="dd-item
          
           ">
-            <a href="/commands/hugo_check/">
+            <a href="/commandes/hugo_check/">
             <span>hugo check</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
@@ -1128,7 +1128,7 @@
 
 ">
   <a href="/contribuer/">
-    <span>Contribuer au Projet Hugo</span>
+    <span>Contribuer</span>
 
     
     <i class="fa fa-angle-right fa-lg category-icon"></i>
@@ -2317,22 +2317,22 @@
     <ul>
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-netlify/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-netlify/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-netlify/">
-            <span>Hosting on Netlify</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-netlify/">
+            <span>Netlify</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
          
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-firebase/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-firebase/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-firebase/">
-            <span>Hosting on Firebase</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-firebase/">
+            <span>Firebase</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
@@ -2343,18 +2343,18 @@
          
           ">
             <a href="/hebergement-et-deploiement/hosting-on-github/">
-            <span>Hosting on GitHub</span> 
+            <span>GitHub</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
          
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-gitlab/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-gitlab/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-gitlab/">
-            <span>Hosting on GitLab</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-gitlab/">
+            <span>GitLab</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
@@ -2940,7 +2940,7 @@ parent
             
                 <li class="" role="">
                     <h3>Plus</h3>
-                    <a href="https://github.com/ChristopheDucamp/Doc-Hugo"><i class='fa fa-github'></i> Repo Github</a>
+                    <a href="https://github.com/ChristopheDucamp/Doc-DocDock-Hugo"><i class='fa fa-github'></i> Repo Github</a>
                     
                 </li>
             
@@ -2997,7 +2997,7 @@ parent
               
               
             <div id="top-github-link">
-              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-Hugo/edit/master/content/demarrage/quickstart.md" target="blank">
+              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-DocDock-Hugo/edit/master/content/demarrage/quickstart.md" target="blank">
                 <i class="fa fa-code-fork"></i>
                 
               </a>
@@ -3086,25 +3086,23 @@ parent
 
 <h2 id="construire-une-bibliothèque">Construire une Bibliothèque</h2>
 
-<p>Dans ce guide de démarrage, nous allons construire une bibliothèque qui listera les livres et leurs critiques.</p>
+<p>Dans ce guide de démarrage, nous allons construire une bibliothèque qui listera des livres et leurs critiques.</p>
 
 <h2 id="étape-1-installez-hugo">Étape 1. Installez Hugo</h2>
 
 <p><a href="/installer-hugo">Installez Hugo</a>. Si vous installez à partir des <a href="https://github.com/gohugoio/hugo/releases">Versions Hugo</a>, vous devrez sauvegarder l&rsquo;exécutable principal sous <code>hugo</code>(ou <code>hugo.exe</code> sur Windows) quelque part dans votre <code>PATH</code>. Vous aurez besoin de la commande <code>hugo</code>pour les étapes suivantes.</p>
 
-<aside class="admonition note">
-	<div class="note-icon">
-		
-	</div>
+<div class="panel panel-info">
+	<div class="panel-heading">Utilisateurs Windows et Git Bash</div>
+	<div class="panel-body">Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash]<a href="aussi connu comme Git pour Windows">3</a>. Par conséquent, toutes les commandes démarreront avec le caractère d&rsquo;invitation Bash (qui est <code>$</code>).</div>
 	
-	
-	<div class="admonition-content">Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash]<a href="aussi connu comme Git pour Windows">3</a>. Par conséquent, toutes les commandes démarreront avec le caractère d&rsquo;invitation Bash (qui est <code>$</code>).</div>
-</aside>
+</div>
 
 
 <p>Une fois <code>hugo</code> intallé, assurez-vous de lancer la commande <code>help</code> pour vérifier l&rsquo;installation de <code>hugo</code>. Ci-dessous, vous pouvez voir une partie traduite de l&rsquo;output de la commande <code>help</code>.</p>
 
-<pre><code>$ hugo help
+<pre><code>```bash
+$ hugo help
 
 hugo c'est la commande principale, utilisée pour construire votre site Hugo.
 
@@ -3118,6 +3116,7 @@ Une documentation complète est disponible sur http://gohugo.io/.
 <pre><code>$ hugo version
 
 Hugo Static Site Generator v0.25 darwin/amd64 BuildDate: 2017-07-07T19:09:03+02:00
+```bash
 </code></pre>
 
 <h2 id="étape-2-échafaudez-le-site-de-la-bibliothèque-avec-hugo">Étape 2. Échafaudez le site de la Bibliothèque avec Hugo</h2>
@@ -3155,8 +3154,8 @@ Hugo Static Site Generator v0.25 darwin/amd64 BuildDate: 2017-07-07T19:09:03+02:
 <li><strong>archetypes</strong> : [Archetypes][archetypes] vous permet de pré-configurer le front-matter pour les fichiers de contenu dans Hugo pour un meilleur échafaudage du contenu en utilisant la commande <code>hugo new</code>.</li>
 <li><strong>config.toml</strong> : Hugo utilise <code>.toml</code>pour son propre format de configuration. mais il accepte aussi bien les formats <code>.yml</code> ou <code>.json</code>. Les réglages de configuration mentionnés dans le fichier <code>config.toml</code>s&rsquo;appliquent à l&rsquo;ensemble du site web et comprennent des variables globales importantes telles que la <code>baseURL</code> et le <code>title</code> de votre site web. (Voir <a href="configurer-hugo.md">configuration</a>)</li>
 <li><strong>content</strong> : Ce dossier unique abrite tous les contenus de votre site web. Chaque sous-répertoire dans content s&rsquo;appelle une section. Si votre site web dispose de sections pour les articles, événements et tutoriels, vous pourriez créer <code>content/posts</code>, <code>content/events</code> et <code>content/tutoriels</code>.</li>
-<li><strong>data</strong> : Ce dossier est utilisé pour stocker les fichiers de données en séries (YAML, JSON, ou TOML) qui peuvent être utilisés dans les <a href="https://gohugo.io/templates/data-templates/">data templates</a> et votre <a href="https://gohugo.io/content-management/menus/">menu de site web</a>.</li>
-<li><strong>layouts</strong> : C&rsquo;est le carrefour pour tous vos <a href="https://gohugo.io/templates/introduction/">modèles</a>, incluant les <a href="https://gohugo.io/templates/lists/">modèles de listes et sections</a> et <a href="https://gohugo.io/templates/shortcode-templates/">shortcodes</a>.</li>
+<li><strong>data</strong> : Ce dossier est utilisé pour stocker les fichiers de données en séries (YAML, JSON, ou TOML) qui peuvent être utilisés dans les <a href="templates/data-templates/">data templates</a> et votre <a href="/gestion-contenu/menus/">menu de site web</a>.</li>
+<li><strong>layouts</strong> : C&rsquo;est le carrefour pour tous vos <a href="templates/introduction/">modèles</a>, incluant les <a href="templates/lists/">modèles de listes et sections</a> et <a href="/templates/shortcode-templates/">shortcodes</a>.</li>
 <li><strong>static</strong> : Ce dossier accueille tout le contenu statique ; par exemple les images, JavaScript et CSS. Tout ce qui est dans <code>/static</code> est copié tel quel vers votre site web fini.</li>
 <li><strong>themes</strong> : C&rsquo;est l&rsquo;endroit où vous stockerez les thèmes Hugo. Vous pouvez voir une galrie de tous les thèmes sur <a href="https://themes.gohugo.io">http://themes.gohugo.io</a></li>
 </ul>
@@ -3165,7 +3164,7 @@ Hugo Static Site Generator v0.25 darwin/amd64 BuildDate: 2017-07-07T19:09:03+02:
 
 <p>Ajoutons maintenant un article à notre   <code>bibliotheque</code>. Nous utiliserons la commande <code>hugo new</code> pour ajouter un article. Ce premier post sera sur le livre <a href="http://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996/">Good To Great</a>. <strong>Assurez-vous de bien être dans le dossier <code>bibliotheque</code>.</strong> Et lancez la commande :</p>
 
-<pre><code>$ hugo new post/good-to-great.md
+<pre><code class="language-bash">    $ hugo new post/good-to-great.md
 </code></pre>
 
 <p>Vous devriez voir s&rsquo;afficher ce qui suit :</p>
@@ -3282,7 +3281,7 @@ Press Ctrl+C to stop
 
 <h2 id="étape-5-ajoutez-un-thème">Étape 5. Ajoutez un thème</h2>
 
-<p>Les <a href="https://gohugo.io/themes/">thèmes</a> fournissent à Hugo la mise en page et les modèles pour produire votre site Web. Vous pouvez voir la sélection complète de thèmes open source sur <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.</p>
+<p>Les <a href="/themes/">thèmes</a> fournissent à Hugo la mise en page et les modèles pour produire votre site Web. Vous pouvez voir la sélection complète de thèmes open source sur <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>.</p>
 
 <blockquote>
 <p><strong>Hugo n&rsquo;est toujours pas livré à ce jour avec un thème par défaut, permettant ainsi à l&rsquo;utilisateur de choisir le thème qui conviendra le mieux à son projet.</strong></p>

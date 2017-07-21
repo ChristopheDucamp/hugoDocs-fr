@@ -3,1406 +3,1413 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/a-propos/</loc>
+    <loc>/a-propos/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commandes/</loc>
+    <loc>/commandes/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/</loc>
+    <loc>/gestion-contenu/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/</loc>
+    <loc>/templates/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/themes/</loc>
+    <loc>/themes/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/</loc>
+    <loc>/variables/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/contribuer/</loc>
+    <loc>/contribuer/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/depannage/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/depannage/</loc>
-    <lastmod>2017-07-19T00:00:00+00:00</lastmod>
+    <loc>/fonctions/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/</loc>
-    <lastmod>2017-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/documentation/</loc>
+    <loc>/documentation/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/outils/</loc>
+    <loc>/outils/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/hebergement-et-deploiement/</loc>
-    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/demarrage/intro-hugo/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/demarrage/</loc>
+    <loc>/hebergement-et-deploiement/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/demarrage/quickstart/</loc>
+    <loc>/demarrage/intro-hugo/</loc>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/demarrage/installer/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/demarrage/utiliser-hugo/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/demarrage/configurer-hugo/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/demarrage/organisation-sources-hugo/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/demarrage/structure-dossier/</loc>
+    <loc>/demarrage/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/a-propos/intro-hugo/</loc>
+    <loc>/demarrage/quickstart/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/demarrage/installer/</loc>
+  </url>
+  
+  <url>
+    <loc>/demarrage/utiliser-hugo/</loc>
+  </url>
+  
+  <url>
+    <loc>/demarrage/configurer-hugo/</loc>
+  </url>
+  
+  <url>
+    <loc>/demarrage/organisation-sources-hugo/</loc>
+  </url>
+  
+  <url>
+    <loc>/demarrage/structure-dossier/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/a-propos/intro-hugo/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/contribuer/developpement/</loc>
+    <loc>/contribuer/developpement/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/hebergement-et-deploiement/hosting-on-netlify/</loc>
-    <lastmod>2017-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/themes/installer-et-utiliser-themes/</loc>
+    <loc>/hebergement-et-deploiement/heberger-sur-netlify/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/introduction/</loc>
+    <loc>/themes/installer-et-utiliser-themes/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/templates/introduction/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/outils/migrations/</loc>
+    <loc>/outils/migrations/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/organisation/</loc>
+    <loc>/gestion-contenu/organisation/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/site/</loc>
+    <loc>/variables/site/</loc>
     <lastmod>2017-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/ordre-recherche/</loc>
+    <loc>/templates/ordre-recherche/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/formats-output/</loc>
+    <loc>/templates/formats-output/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/hebergement-et-deploiement/hosting-on-firebase/</loc>
-    <lastmod>2017-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/variables/shortcodes/</loc>
+    <loc>/hebergement-et-deploiement/heberger-sur-firebase/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/contribuer/documentation/</loc>
+    <loc>/variables/shortcodes/</loc>
+    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contribuer/documentation/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/a-propos/features/</loc>
+    <loc>/a-propos/features/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/base/</loc>
+    <loc>/templates/base/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/themes/personnaliser/</loc>
+    <loc>/themes/personnaliser/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/outils/syntax-highlighting/</loc>
+    <loc>/outils/syntax-highlighting/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/page/</loc>
+    <loc>/variables/page/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/formats/</loc>
+    <loc>/gestion-contenu/formats/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/listes/</loc>
+    <loc>/templates/listes/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/outils/starter-kits/</loc>
+    <loc>/outils/starter-kits/</loc>
     <lastmod>2017-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/themes/creer/</loc>
+    <loc>/themes/creer/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/a-propos/avantages/</loc>
+    <loc>/a-propos/avantages/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/pageaccueil/</loc>
+    <loc>/templates/pageaccueil/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/taxonomy/</loc>
+    <loc>/variables/taxonomy/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/contribuer/themes/</loc>
+    <loc>/contribuer/themes/</loc>
     <lastmod>2017-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/front-matter/</loc>
+    <loc>/gestion-contenu/front-matter/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/press-and-articles/</loc>
+    <loc>/news/press-and-articles/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/hebergement-et-deploiement/hosting-on-github/</loc>
-    <lastmod>2017-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/shortcodes/</loc>
+    <loc>/hebergement-et-deploiement/hosting-on-github/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/outils/frontends/</loc>
+    <loc>/gestion-contenu/shortcodes/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/outils/frontends/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/section-templates/</loc>
+    <loc>/templates/section-templates/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/files/</loc>
+    <loc>/variables/files/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/hebergement-et-deploiement/hosting-on-gitlab/</loc>
+    <loc>/hebergement-et-deploiement/heberger-sur-gitlab/</loc>
     <lastmod>2016-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/menus/</loc>
+    <loc>/variables/menus/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/hebergement-et-deploiement/hosting-on-bitbucket/</loc>
+    <loc>/hebergement-et-deploiement/hosting-on-bitbucket/</loc>
     <lastmod>2017-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/outils/editors/</loc>
+    <loc>/outils/editors/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/taxonomie-templates/</loc>
+    <loc>/templates/taxonomie-templates/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/a-propos/roadmap/</loc>
+    <loc>/a-propos/roadmap/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/sections/</loc>
+    <loc>/gestion-contenu/sections/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/hugo/</loc>
+    <loc>/variables/hugo/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/hebergement-et-deploiement/deployment-with-wercker/</loc>
+    <loc>/hebergement-et-deploiement/deployment-with-wercker/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/single-page-templates/</loc>
+    <loc>/templates/single-page-templates/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/outils/search/</loc>
+    <loc>/outils/search/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/types/</loc>
+    <loc>/gestion-contenu/types/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/a-propos/licence/</loc>
+    <loc>/a-propos/licence/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/git/</loc>
+    <loc>/variables/git/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/archetypes/</loc>
+    <loc>/gestion-contenu/archetypes/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/hebergement-et-deploiement/deployment-with-rsync/</loc>
+    <loc>/hebergement-et-deploiement/deployment-with-rsync/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/views/</loc>
+    <loc>/templates/views/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/outils/other/</loc>
+    <loc>/outils/other/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/variables/sitemap/</loc>
+    <loc>/variables/sitemap/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/data-templates/</loc>
+    <loc>/templates/data-templates/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/taxonomies/</loc>
+    <loc>/gestion-contenu/taxonomies/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/partials/</loc>
+    <loc>/templates/partials/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/resumes/</loc>
+    <loc>/gestion-contenu/resumes/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/</loc>
+    <loc>/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/shortcode-templates/</loc>
+    <loc>/templates/shortcode-templates/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/cross-references/</loc>
+    <loc>/gestion-contenu/cross-references/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/urls/</loc>
+    <loc>/gestion-contenu/urls/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/files/</loc>
+    <loc>/templates/files/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/menus/</loc>
+    <loc>/gestion-contenu/menus/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/404/</loc>
+    <loc>/templates/404/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/menus/</loc>
+    <loc>/templates/menus/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/toc/</loc>
+    <loc>/gestion-contenu/toc/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/commentaires/</loc>
+    <loc>/gestion-contenu/commentaires/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/pagination/</loc>
+    <loc>/templates/pagination/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/rss/</loc>
+    <loc>/templates/rss/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/gestion-contenu/multilingue/</loc>
+    <loc>/gestion-contenu/multilingue/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/sitemap-template/</loc>
+    <loc>/templates/sitemap-template/</loc>
     <lastmod>2017-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/robots/</loc>
+    <loc>/templates/robots/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/internal/</loc>
+    <loc>/templates/internal/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/alternatives/</loc>
+    <loc>/templates/alternatives/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/templates/template-debugging/</loc>
+    <loc>/templates/template-debugging/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/chantier-doc-hugo/hcard/</loc>
+    <loc>/chantier-doc-hugo/hcard/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/chantier-doc-hugo/</loc>
+    <loc>/chantier-doc-hugo/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo/</loc>
+    <loc>/commands/hugo/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commandes/hugo_benchmark/</loc>
+    <loc>/commandes/hugo_benchmark/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_check/</loc>
+    <loc>/commandes/hugo_check/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/commands/hugo_check_ulimit/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_check_ulimit/</loc>
+    <loc>/commands/hugo_config/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_config/</loc>
+    <loc>/commands/hugo_convert/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_convert/</loc>
+    <loc>/commands/hugo_convert_tojson/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_convert_tojson/</loc>
+    <loc>/commands/hugo_convert_totoml/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_convert_totoml/</loc>
+    <loc>/commands/hugo_convert_toyaml/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_convert_toyaml/</loc>
+    <loc>/commands/hugo_env/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_env/</loc>
+    <loc>/commands/hugo_gen/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_gen/</loc>
+    <loc>/commands/hugo_gen_autocomplete/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_gen_autocomplete/</loc>
+    <loc>/commands/hugo_gen_doc/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_gen_doc/</loc>
+    <loc>/commands/hugo_gen_man/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_gen_man/</loc>
+    <loc>/commands/hugo_import/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_import/</loc>
+    <loc>/commands/hugo_import_jekyll/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_import_jekyll/</loc>
+    <loc>/commands/hugo_list/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_list/</loc>
+    <loc>/commands/hugo_list_drafts/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_list_drafts/</loc>
+    <loc>/commands/hugo_list_expired/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_list_expired/</loc>
+    <loc>/commands/hugo_list_future/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_list_future/</loc>
+    <loc>/commands/hugo_new/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_new/</loc>
+    <loc>/commands/hugo_new_site/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_new_site/</loc>
+    <loc>/commands/hugo_new_theme/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_new_theme/</loc>
+    <loc>/commands/hugo_server/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_server/</loc>
+    <loc>/commands/hugo_undraft/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_undraft/</loc>
+    <loc>/commands/hugo_version/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_version/</loc>
-    <lastmod>2017-07-16T23:23:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-25-1/</loc>
+    <loc>/news/0-25-1/</loc>
     <lastmod>2017-07-10T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-25/</loc>
+    <loc>/news/0-25/</loc>
     <lastmod>2017-07-07T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-24-1/</loc>
+    <loc>/news/0-24-1/</loc>
     <lastmod>2017-06-24T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-24/</loc>
+    <loc>/news/0-24/</loc>
     <lastmod>2017-06-17T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-23/</loc>
+    <loc>/news/0-23/</loc>
     <lastmod>2017-06-16T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-22-1/</loc>
+    <loc>/news/0-22-1/</loc>
     <lastmod>2017-06-13T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-22/</loc>
+    <loc>/news/0-22/</loc>
     <lastmod>2017-06-12T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-21/</loc>
+    <loc>/news/0-21/</loc>
     <lastmod>2017-05-22T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-20-7/</loc>
+    <loc>/news/0-20-7/</loc>
     <lastmod>2017-05-03T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/chantier-doc-hugo/extramenu/</loc>
+    <loc>/chantier-doc-hugo/extramenu/</loc>
     <lastmod>2017-04-29T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-20-6/</loc>
+    <loc>/news/0-20-6/</loc>
     <lastmod>2017-04-27T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-20-5/</loc>
+    <loc>/news/0-20-5/</loc>
     <lastmod>2017-04-25T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-20-4/</loc>
+    <loc>/news/0-20-4/</loc>
     <lastmod>2017-04-24T17:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-20-3/</loc>
+    <loc>/news/0-20-3/</loc>
     <lastmod>2017-04-24T13:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/chantier-doc-hugo/logo-draft/</loc>
+    <loc>/chantier-doc-hugo/logo-draft/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/_header/</loc>
+    <loc>/_header/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-20-2/</loc>
+    <loc>/news/0-20-2/</loc>
     <lastmod>2017-04-16T13:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-20-1/</loc>
+    <loc>/news/0-20-1/</loc>
     <lastmod>2017-04-13T13:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-20/</loc>
+    <loc>/news/0-20/</loc>
     <lastmod>2017-04-10T13:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-19/</loc>
+    <loc>/news/0-19/</loc>
     <lastmod>2017-02-27T13:53:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/adddate/</loc>
+    <loc>/fonctions/adddate/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/format/</loc>
+    <loc>/fonctions/format/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/get/</loc>
+    <loc>/fonctions/get/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/getpage/</loc>
+    <loc>/fonctions/getpage/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/param/</loc>
+    <loc>/fonctions/param/</loc>
     <lastmod>2017-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/scratch/</loc>
+    <loc>/fonctions/scratch/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/unix/</loc>
+    <loc>/fonctions/unix/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/depannage/accented-characters-in-urls/</loc>
+    <loc>/depannage/accented-characters-in-urls/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/depannage/eof-error/</loc>
+    <loc>/depannage/eof-error/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/math/</loc>
+    <loc>/fonctions/math/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/abslangurl/</loc>
+    <loc>/fonctions/abslangurl/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/absurl/</loc>
+    <loc>/fonctions/absurl/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/after/</loc>
+    <loc>/fonctions/after/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/apply/</loc>
+    <loc>/fonctions/apply/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/base64/</loc>
+    <loc>/fonctions/base64/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/chomp/</loc>
+    <loc>/fonctions/chomp/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/countrunes/</loc>
+    <loc>/fonctions/countrunes/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/countwords/</loc>
+    <loc>/fonctions/countwords/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/dateformat/</loc>
+    <loc>/fonctions/dateformat/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/default/</loc>
+    <loc>/fonctions/default/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/delimit/</loc>
+    <loc>/fonctions/delimit/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/dict/</loc>
+    <loc>/fonctions/dict/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/echoparam/</loc>
+    <loc>/fonctions/echoparam/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/emojify/</loc>
+    <loc>/fonctions/emojify/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/eq/</loc>
+    <loc>/fonctions/eq/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/findre/</loc>
+    <loc>/fonctions/findre/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/first/</loc>
+    <loc>/fonctions/first/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/getenv/</loc>
+    <loc>/fonctions/getenv/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/hasprefix/</loc>
+    <loc>/fonctions/hasprefix/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/highlight/</loc>
+    <loc>/fonctions/highlight/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/htmlescape/</loc>
+    <loc>/fonctions/htmlescape/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/htmlunescape/</loc>
+    <loc>/fonctions/htmlunescape/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/humanize/</loc>
+    <loc>/fonctions/humanize/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/i18n/</loc>
+    <loc>/fonctions/i18n/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/imageconfig/</loc>
+    <loc>/fonctions/imageconfig/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/in/</loc>
+    <loc>/fonctions/in/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/index-function/</loc>
+    <loc>/fonctions/index-function/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/int/</loc>
+    <loc>/fonctions/int/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/intersect/</loc>
+    <loc>/fonctions/intersect/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/isset/</loc>
+    <loc>/fonctions/isset/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/jsonify/</loc>
+    <loc>/fonctions/jsonify/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/numfmt/</loc>
+    <loc>/fonctions/numfmt/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/last/</loc>
+    <loc>/fonctions/last/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/len/</loc>
+    <loc>/fonctions/len/</loc>
     <lastmod>2017-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/lower/</loc>
+    <loc>/fonctions/lower/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/markdownify/</loc>
+    <loc>/fonctions/markdownify/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/md5/</loc>
+    <loc>/fonctions/md5/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/now/</loc>
+    <loc>/fonctions/now/</loc>
     <lastmod>2017-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/partialcached/</loc>
+    <loc>/fonctions/partialcached/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/plainify/</loc>
+    <loc>/fonctions/plainify/</loc>
     <lastmod>2017-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/pluralize/</loc>
+    <loc>/fonctions/pluralize/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/printf/</loc>
+    <loc>/fonctions/printf/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/querify/</loc>
+    <loc>/fonctions/querify/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/range/</loc>
+    <loc>/fonctions/range/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/readdir/</loc>
+    <loc>/fonctions/readdir/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/readfile/</loc>
+    <loc>/fonctions/readfile/</loc>
     <lastmod>2017-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/ref/</loc>
+    <loc>/fonctions/ref/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/rellangurl/</loc>
+    <loc>/fonctions/rellangurl/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/relurl/</loc>
+    <loc>/fonctions/relurl/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/relref/</loc>
+    <loc>/fonctions/relref/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/render/</loc>
+    <loc>/fonctions/render/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/replace/</loc>
+    <loc>/fonctions/replace/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/replacere/</loc>
+    <loc>/fonctions/replacere/</loc>
     <lastmod>2017-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/safecss/</loc>
+    <loc>/fonctions/safecss/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/safehtml/</loc>
+    <loc>/fonctions/safehtml/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/safehtmlattr/</loc>
+    <loc>/fonctions/safehtmlattr/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/safejs/</loc>
+    <loc>/fonctions/safejs/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/safeurl/</loc>
+    <loc>/fonctions/safeurl/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/seq/</loc>
+    <loc>/fonctions/seq/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/sha/</loc>
+    <loc>/fonctions/sha/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/shuffle/</loc>
+    <loc>/fonctions/shuffle/</loc>
     <lastmod>2017-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/singularize/</loc>
+    <loc>/fonctions/singularize/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/slice/</loc>
+    <loc>/fonctions/slice/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/slicestr/</loc>
+    <loc>/fonctions/slicestr/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/sort/</loc>
+    <loc>/fonctions/sort/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/split/</loc>
+    <loc>/fonctions/split/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/string/</loc>
+    <loc>/fonctions/string/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/substr/</loc>
+    <loc>/fonctions/substr/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/time/</loc>
+    <loc>/fonctions/time/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/title/</loc>
+    <loc>/fonctions/title/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/trim/</loc>
+    <loc>/fonctions/trim/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/truncate/</loc>
+    <loc>/fonctions/truncate/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/union/</loc>
+    <loc>/fonctions/union/</loc>
     <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/uniq/</loc>
+    <loc>/fonctions/uniq/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/upper/</loc>
+    <loc>/fonctions/upper/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/urlize/</loc>
+    <loc>/fonctions/urlize/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/where/</loc>
+    <loc>/fonctions/where/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/fonctions/with/</loc>
+    <loc>/fonctions/with/</loc>
     <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-18/</loc>
+    <loc>/news/0-18/</loc>
     <lastmod>2016-12-30T13:54:02-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-17/</loc>
+    <loc>/news/0-17/</loc>
     <lastmod>2016-10-07T13:54:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/0-16/</loc>
+    <loc>/news/0-16/</loc>
     <lastmod>2016-06-06T13:54:06-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/release-notes/</loc>
+    <loc>/news/release-notes/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/readfiles/readme/</loc>
+    <loc>/readfiles/readme/</loc>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/readfiles/bfconfig/</loc>
+    <loc>/readfiles/bfconfig/</loc>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/readfiles/dateformatting/</loc>
+    <loc>/readfiles/dateformatting/</loc>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/readfiles/menuvars/</loc>
+    <loc>/readfiles/menuvars/</loc>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/about-hugo/</loc>
+    <loc>/categories/about-hugo/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/about-hugo-%C3%A0-propos-dhugo/</loc>
+    <loc>/categories/about-hugo-%C3%A0-propos-dhugo/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/actualit%C3%A9s-et-articles/</loc>
+    <loc>/categories/actualit%C3%A9s-et-articles/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/news/</loc>
+    <loc>/news/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/commandes/</loc>
+    <loc>/categories/commandes/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/commands/</loc>
+    <loc>/categories/commands/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/content-management/</loc>
+    <loc>/categories/content-management/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/contribuer/</loc>
-    <lastmod>2017-07-19T00:00:00+00:00</lastmod>
+    <loc>/categories/contribuer/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/contribute/</loc>
+    <loc>/categories/contribute/</loc>
     <lastmod>2017-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/credits/</loc>
+    <loc>/credits/</loc>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/developer-tools/</loc>
+    <loc>/categories/developer-tools/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/fonctions/</loc>
+    <loc>/categories/fonctions/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/fondamentaux/</loc>
+    <loc>/categories/fondamentaux/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/functions/</loc>
+    <loc>/categories/functions/</loc>
     <lastmod>2017-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/fundamentals/</loc>
+    <loc>/categories/fundamentals/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/gestion-de-contenu/</loc>
+    <loc>/categories/gestion-de-contenu/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/hosting-and-deployment/</loc>
-    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/categories/h%C3%A9bergement-et-d%C3%A9ploiement/</loc>
-    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/categories/indieweb/</loc>
+    <loc>/categories/hosting-and-deployment/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/mod%C3%A8les/</loc>
+    <loc>/categories/h%C3%A9berement-et-d%C3%A9ploiement/</loc>
+    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/h%C3%A9bergement-et-d%C3%A9ploiement/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/indieweb/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/mod%C3%A8les/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/news-and-articles/</loc>
+    <loc>/categories/news-and-articles/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/organisation-de-projet/</loc>
+    <loc>/categories/organisation-de-projet/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/outils-du-d%C3%A9veloppeur/</loc>
+    <loc>/categories/outils-du-d%C3%A9veloppeur/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/outils-d%C3%A9veloppeur/</loc>
+    <loc>/categories/outils-d%C3%A9veloppeur/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/chantier-doc-hugo/customize-style/</loc>
+    <loc>/chantier-doc-hugo/customize-style/</loc>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/project-organization/</loc>
+    <loc>/categories/project-organization/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/readfiles/</loc>
+    <loc>/readfiles/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/releases/</loc>
+    <loc>/categories/releases/</loc>
     <lastmod>2017-07-10T17:53:58-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/tags/</loc>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/templates/</loc>
+    <loc>/categories/templates/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/themes/</loc>
+    <loc>/categories/themes/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/th%C3%A8mes/</loc>
+    <loc>/categories/th%C3%A8mes/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/troubleshooting/</loc>
+    <loc>/categories/troubleshooting/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/variables-and-params/</loc>
+    <loc>/categories/variables-and-params/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/variables-et-params/</loc>
+    <loc>/categories/variables-et-params/</loc>
     <lastmod>2017-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/chantier-doc-hugo/customize-style/theme-variants/</loc>
+    <loc>/chantier-doc-hugo/customize-style/theme-variants/</loc>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/%C3%A0-propos-dhugo/</loc>
+    <loc>/categories/%C3%A0-propos-dhugo/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/categories/%C3%A0-relire/</loc>
+    <loc>/categories/%C3%A0-relire/</loc>
     <lastmod>2017-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

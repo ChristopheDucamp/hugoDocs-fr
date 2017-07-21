@@ -56,7 +56,7 @@
 <script type="text/javascript" src="/js/lunr.min.js"></script>
 <script type="text/javascript" src="/js/horsey.js"></script>
 <script type="text/javascript">
-    var baseurl = "https:\/\/dochugo.christopheducamp.com";
+    var baseurl = "\/";
 </script>
 <script type="text/javascript" src="/js/search.js"></script>
 
@@ -200,10 +200,10 @@
          
         
          
-          <li data-nav-id="/commands/hugo_check/" class="dd-item
+          <li data-nav-id="/commandes/hugo_check/" class="dd-item
          
           ">
-            <a href="/commands/hugo_check/">
+            <a href="/commandes/hugo_check/">
             <span>hugo check</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
@@ -1128,7 +1128,7 @@
 
 ">
   <a href="/contribuer/">
-    <span>Contribuer au Projet Hugo</span>
+    <span>Contribuer</span>
 
     
     <i class="fa fa-angle-right fa-lg category-icon"></i>
@@ -2317,22 +2317,22 @@ active
     <ul>
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-netlify/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-netlify/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-netlify/">
-            <span>Hosting on Netlify</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-netlify/">
+            <span>Netlify</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
          
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-firebase/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-firebase/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-firebase/">
-            <span>Hosting on Firebase</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-firebase/">
+            <span>Firebase</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
@@ -2343,18 +2343,18 @@ active
          
           ">
             <a href="/hebergement-et-deploiement/hosting-on-github/">
-            <span>Hosting on GitHub</span> 
+            <span>GitHub</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
          
         
          
-          <li data-nav-id="/hebergement-et-deploiement/hosting-on-gitlab/" class="dd-item
+          <li data-nav-id="/hebergement-et-deploiement/heberger-sur-gitlab/" class="dd-item
          
           ">
-            <a href="/hebergement-et-deploiement/hosting-on-gitlab/">
-            <span>Hosting on GitLab</span> 
+            <a href="/hebergement-et-deploiement/heberger-sur-gitlab/">
+            <span>GitLab</span> 
             <i style="color:grey" class="fa fa-check read-icon"></i>
 
             </a></li>
@@ -2940,7 +2940,7 @@ active
             
                 <li class="" role="">
                     <h3>Plus</h3>
-                    <a href="https://github.com/ChristopheDucamp/Doc-Hugo"><i class='fa fa-github'></i> Repo Github</a>
+                    <a href="https://github.com/ChristopheDucamp/Doc-DocDock-Hugo"><i class='fa fa-github'></i> Repo Github</a>
                     
                 </li>
             
@@ -2997,7 +2997,7 @@ active
               
               
             <div id="top-github-link">
-              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-Hugo/edit/master/content/fonctions/_index.md" target="blank">
+              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-DocDock-Hugo/edit/master/content/fonctions/_index.md" target="blank">
                 <i class="fa fa-code-fork"></i>
                 
               </a>
@@ -3042,7 +3042,1576 @@ active
 
 
 
-<p>Les modèles Go sont légers mais extensibles. Go lui-fournit des  fonctions intégrées, y compris des opérateurs de comparaison et d&rsquo;autres outils de base. Ceux-ci sont répertoriés dans la <a href="http://golang.org/pkg/text/template/#hdr-Functions">Documentation du modèle Go</a>. Hugo a ajouté des fonctions supplémentaires à la logique du modèle de base.</p>
+<p>Les modèles Go sont légers mais extensibles. Go lui-fournit des  fonctions intégrées, y compris des opérateurs de comparaison et d&rsquo;autres outils de base. Ceux-ci sont répertoriés dans la [Documentation du modèle Go][gofuncs]. Hugo a ajouté des fonctions supplémentaires à la logique du modèle de base.</p>
+
+
+
+
+
+
+
+
+<ul class="children children-h2">
+	
+	
+
+	
+	
+		
+
+<h2>
+<a href="/fonctions/adddate/" >.AddDate</a>
+</h2>
+
+			
+				
+<p>Returns the time corresponding to adding the given number of years, months, and days passed to the function.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/format/" >.Format</a>
+</h2>
+
+			
+				
+<p>Formats built-in Hugo dates---`.Date`, `.PublishDate`, and `.LastMod`---according to Go&#39;s layout string.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/get/" >.Get</a>
+</h2>
+
+			
+				
+<p>Accesses positional and ordered parameters in shortcode declaration.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/getpage/" >.GetPage</a>
+</h2>
+
+			
+				
+<p>Gets a `Page` of a given `Kind` and `path`.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/param/" >.Param</a>
+</h2>
+
+			
+				
+<p>Calls page or site variables into your template.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/scratch/" >.Scratch</a>
+</h2>
+
+			
+				
+<p>Agis comme un &#34;scratchpad&#34; pour autoriser les variables pouvant être écrites dans la page ou le shortcode.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/unix/" >.Unix</a>
+</h2>
+
+			
+				
+<p>.Unix returns the local Time corresponding to the given Unix time, sec seconds and nsec nanoseconds since January 1, 1970 UTC.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/math/" >Math</a>
+</h2>
+
+			
+				
+<p>Hugo provides six mathematical operators in templates.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/abslangurl/" >absLangURL</a>
+</h2>
+
+			
+				
+<p>Adds the absolute URL with correct language prefix according to site configuration for multilingual.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/absurl/" >absURL</a>
+</h2>
+
+			
+				
+<p>Creates an absolute URL based on the configured baseURL.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/after/" >after</a>
+</h2>
+
+			
+				
+<p>`after` slices an array to only the items after the &lt;em&gt;N&lt;/em&gt;th item.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/apply/" >apply</a>
+</h2>
+
+			
+				
+<p>Given a map, array, or slice, `apply` returns a new slice with a function applied over it.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/base64/" >base64</a>
+</h2>
+
+			
+				
+<p>`base64Encode` and `base64Decode` let you easily decode content with a base64 encoding and vice versa through pipes.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/chomp/" >chomp</a>
+</h2>
+
+			
+				
+<p>Removes any trailing newline characters.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/countrunes/" >countrunes</a>
+</h2>
+
+			
+				
+<p>Determines the number of runes in a string excluding any whitespace.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/countwords/" >countwords</a>
+</h2>
+
+			
+				
+<p>Counts the number of words in a string.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/dateformat/" >dateFormat</a>
+</h2>
+
+			
+				
+<p>Converts the textual representation of the `datetime` into the specified format.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/default/" >default</a>
+</h2>
+
+			
+				
+<p>Allows setting a default value that can be returned if a first value is not set.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/delimit/" >delimit</a>
+</h2>
+
+			
+				
+<p>Loops through any array, slice, or map and returns a string of all the values separated by a delimiter.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/dict/" >dict</a>
+</h2>
+
+			
+				
+<p>Creates a dictionary from a list of key and value pairs.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/echoparam/" >echoParam</a>
+</h2>
+
+			
+				
+<p>Prints a parameter if it is set.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/emojify/" >emojify</a>
+</h2>
+
+			
+				
+<p>Lance une chaîne dans le processeur d&#39;émoticônes Emoji.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/eq/" >eq</a>
+</h2>
+
+			
+				
+<p>Returns true if the parameters are equal.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/findre/" >findRE</a>
+</h2>
+
+			
+				
+<p>Returns a list of strings that match the regular expression.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/first/" >first</a>
+</h2>
+
+			
+				
+<p>Slices an array to only the first _N_ elements.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/getenv/" >getenv</a>
+</h2>
+
+			
+				
+<p>Returns the value of an environment variable.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/hasprefix/" >hasprefix</a>
+</h2>
+
+			
+				
+<p>Tests whether a string begins with prefix.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/highlight/" >highlight</a>
+</h2>
+
+			
+				
+<p>Takes a string of code and language declaration and uses Pygments to return syntax-highlighted HTML with inline-styles.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/htmlescape/" >htmlEscape</a>
+</h2>
+
+			
+				
+<p>Returns the given string with the reserved HTML codes escaped.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/htmlunescape/" >htmlUnescape</a>
+</h2>
+
+			
+				
+<p>Returns the given string with HTML escape codes un-escaped.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/humanize/" >humanize</a>
+</h2>
+
+			
+				
+<p>Returns the humanized version of an argument with the first letter capitalized.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/i18n/" >i18n</a>
+</h2>
+
+			
+				
+<p>Traduit un morceau de contenu basé sur vos fichiers de configuration i18n.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/imageconfig/" ></a>
+</h2>
+
+			
+				
+<p>Parses the image and returns the height, width, and color model.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/in/" >in</a>
+</h2>
+
+			
+				
+<p>Checks if an element is in an array or slice--or a substring in a string---and returns a boolean.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/index-function/" >index</a>
+</h2>
+
+			
+				
+<p>Looks up the index(es) or key(s) of the data structure passed into it.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/int/" >int</a>
+</h2>
+
+			
+				
+<p>Creates an `int` from the argument passed into the function.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/intersect/" >intersect</a>
+</h2>
+
+			
+				
+<p>Returns the common elements of two arrays or slices.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/isset/" >isset</a>
+</h2>
+
+			
+				
+<p>Returns true if the parameter is set.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/jsonify/" >jsonify</a>
+</h2>
+
+			
+				
+<p>Encodes a given object to JSON.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/numfmt/" >lang.NumFmt</a>
+</h2>
+
+			
+				
+<p>Formats a number with a given precision using the requested `decimal`, `grouping`, and `negative` characters.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/last/" >last</a>
+</h2>
+
+			
+				
+<p>slices an array to only the last &lt;em&gt;N&lt;/em&gt;th elements.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/len/" >len</a>
+</h2>
+
+			
+				
+<p>Returns the length of a variable according to its type.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/lower/" >lower</a>
+</h2>
+
+			
+				
+<p>Converts all characters in the provided string to lowercase.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/markdownify/" >markdownify</a>
+</h2>
+
+			
+				
+<p>Runs the provided string through the Markdown processor.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/md5/" >md5</a>
+</h2>
+
+			
+				
+<p>hashes the given input and returns its MD5 checksum.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/now/" >now</a>
+</h2>
+
+			
+				
+<p>Returns the current local time</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/partialcached/" >partialCached</a>
+</h2>
+
+			
+				
+<p>Allows for caching of partials that do not need to be re-rendered on every invocation.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/plainify/" >plainify</a>
+</h2>
+
+			
+				
+<p>Strips any HTML and returns the plain text version of the provided string.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/pluralize/" >pluralize</a>
+</h2>
+
+			
+				
+<p>Pluralizes the given word according to a set of common English pluralization rules</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/printf/" >printf</a>
+</h2>
+
+			
+				
+<p>Formats a string using the standard `fmt.Sprintf` function.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/querify/" >querify</a>
+</h2>
+
+			
+				
+<p>Takes a set of key-value pairs and returns a query string to be appended to URLs.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/range/" >range</a>
+</h2>
+
+			
+				
+<p>Iterates over a map, array, or slice.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/readdir/" >readDir</a>
+</h2>
+
+			
+				
+<p>Gets a directory listing from a directory relative to the current working directory.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/readfile/" >readFile</a>
+</h2>
+
+			
+				
+<p>Reads a file from disk relative to the current project working directory and returns a string.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/ref/" >ref</a>
+</h2>
+
+			
+				
+<p>Looks up a content page by logical name.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/rellangurl/" >relLangURL</a>
+</h2>
+
+			
+				
+<p>Adds the relative URL with correct language prefix according to site configuration for multilingual.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/relurl/" >relURL</a>
+</h2>
+
+			
+				
+<p>Given a string, prepends the relative URL according to a page&#39;s position in the project directory structure.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/relref/" >relref</a>
+</h2>
+
+			
+				
+<p>Looks up a content page by relative path.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/render/" >render</a>
+</h2>
+
+			
+				
+<p>Takes a view to apply when rendering content.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/replace/" >replace</a>
+</h2>
+
+			
+				
+<p>Replaces all occurrences of the search string with the replacement string.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/replacere/" >replacere</a>
+</h2>
+
+			
+				
+<p>Replaces all occurrences of a regular expression with the replacement pattern.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/safecss/" >safeCSS</a>
+</h2>
+
+			
+				
+<p>Declares the provided string as a known &#34;safe&#34; CSS string.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/safehtml/" >safeHTML</a>
+</h2>
+
+			
+				
+<p>Declares a provided string as a &#34;safe&#34; HTML document to avoid escaping by Go templates.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/safehtmlattr/" >safeHTMLAttr</a>
+</h2>
+
+			
+				
+<p>Declares the provided string as a safe HTML attribute.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/safejs/" >safeJS</a>
+</h2>
+
+			
+				
+<p>Declares the provided string as a known safe JavaScript string.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/safeurl/" >safeURL</a>
+</h2>
+
+			
+				
+<p>Declares the provided string as a safe URL or URL substring.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/seq/" >seq</a>
+</h2>
+
+			
+				
+<p>Creates a sequence of integers.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/sha/" >sha</a>
+</h2>
+
+			
+				
+<p>Hashes the given input and returns either an SHA1 or SHA256 checksum.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/shuffle/" >shuffle</a>
+</h2>
+
+			
+				
+<p>Returns a random permutation of a given array or slice.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/singularize/" >singularize</a>
+</h2>
+
+			
+				
+<p>Converts a word according to a set of common English singularization rules.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/slice/" >slice</a>
+</h2>
+
+			
+				
+<p>Creates a alice (array) of all passed arguments.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/slicestr/" >slicestr</a>
+</h2>
+
+			
+				
+<p>Creates a slice of a half-open range, including start and end indices.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/sort/" >sort</a>
+</h2>
+
+			
+				
+<p>Sorts maps, arrays, and slices and returns a sorted slice.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/split/" >split</a>
+</h2>
+
+			
+				
+<p>splits a string into substrings separated by a delimiter</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/string/" >string</a>
+</h2>
+
+			
+				
+<p>Creates a string from the argument passed to the function</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/substr/" >substr</a>
+</h2>
+
+			
+				
+<p>Extracts parts of a string from a specified character&#39;s position and returns the specified number of characters.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/time/" >time</a>
+</h2>
+
+			
+				
+<p>Converts a timestamp string into a `time.Time` structure.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/title/" >title</a>
+</h2>
+
+			
+				
+<p>Converts all characters in the provided string to title case.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/trim/" >trim</a>
+</h2>
+
+			
+				
+<p>Returns a slice of a passed string with all leading and trailing characters from cutset removed.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/truncate/" >truncate</a>
+</h2>
+
+			
+				
+<p>Truncates a text to a max length without cutting words or leaving unclosed HTML tags.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/union/" >union</a>
+</h2>
+
+			
+				
+<p>Given two arrays or slices, returns a new array that contains the elements or objects that belong to either or both arrays/slices.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/uniq/" >uniq</a>
+</h2>
+
+			
+				
+<p>Takes in a slice or array and returns a slice with subsequent duplicate elements removed.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/upper/" >upper</a>
+</h2>
+
+			
+				
+<p>Converts all characters in a string to uppercase</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/urlize/" >urlize</a>
+</h2>
+
+			
+				
+<p>Takes a string, sanitizes it for usage in URLs, and converts spaces to hyphens.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/where/" >where</a>
+</h2>
+
+			
+				
+<p>Filters an array to only the elements containing a matching value for a given field.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+		
+
+<h2>
+<a href="/fonctions/with/" >with</a>
+</h2>
+
+			
+				
+<p>Rebinds the context (`.`) within its scope and skips the block if the variable is absent.</p>
+				
+			
+		
+
+		
+			
+
+		
+	
+	
+</ul>
+
+
+
+
+
 
 
 <footer class=" footline" >
