@@ -5,7 +5,7 @@ description: "Vous pouvez accéder aux données relatives-au-système-de-fichier
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
-categories: [variables and params,variables et params]]
+categories: [variables and params,variables et params]
 #tags: [files]
 draft: false
 menu:

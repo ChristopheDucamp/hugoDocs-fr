@@ -1,0 +1,6106 @@
+<!DOCTYPE html>
+<html lang="fr-fr" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.25" />
+    <meta name="description" content="Markdown et Emacs Mode-Org ont un support natif, et des formats supplémentaires (par ex.Asciidoc) viennent via des aides externes.">
+
+
+    <title>Formats de Contenus Supportés :: Une documentation en français pour Hugo</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/horsey.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+    <link href="/css/theme-blue.css" rel="stylesheet">
+    
+    
+
+    
+
+  </head>
+  <body class="" data-url="/gestion-contenu/formats/">
+    <nav id="sidebar" class="showVisitedLinks">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	
+
+<p><img src="/static/imstile-150x150.png" alt="logo hugo" /></p>
+
+<h3 id="doc-hugo-en-français">Doc Hugo en français</h3>
+
+<p>Chantier en cours.</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "https:\/\/dochugo.christopheducamp.com";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+    
+  </div>
+
+
+
+
+
+<div class="highlightable">
+    <ul class="topics">
+        
+        
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+
+        
+
+
+
+
+<li data-nav-id="/a-propos/" class="dd-item 
+
+
+
+">
+  <a href="/a-propos/">
+    <span>À Propos d&#39;Hugo</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/a-propos/intro-hugo/" class="dd-item
+         
+          ">
+            <a href="/a-propos/intro-hugo/">
+            <span>C&#39;est quoi Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/a-propos/features/" class="dd-item
+         
+          ">
+            <a href="/a-propos/features/">
+            <span>Les Fonctionnalités Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/a-propos/avantages/" class="dd-item
+         
+          ">
+            <a href="/a-propos/avantages/">
+            <span>Les Avantages des Générateurs de Sites Statiques</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/a-propos/roadmap/" class="dd-item
+         
+          ">
+            <a href="/a-propos/roadmap/">
+            <span>Roadmap</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/a-propos/licence/" class="dd-item
+         
+          ">
+            <a href="/a-propos/licence/">
+            <span>Licence Apache</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/gestion-contenu/" class="dd-item 
+parent
+
+
+">
+  <a href="/gestion-contenu/">
+    <span>Gestion de Contenu</span>
+
+    
+    <i class="fa fa-angle-down fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/gestion-contenu/organisation/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/organisation/">
+            <span>Organisation du Contenu</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/formats/" class="dd-item
+         active
+          ">
+            <a href="/gestion-contenu/formats/">
+            <span>Formats de Contenus Supportés</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/front-matter/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/front-matter/">
+            <span>Front Matter</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/shortcodes/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/shortcodes/">
+            <span>Shortcodes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/sections/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/sections/">
+            <span>Sections de Contenu</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/types/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/types/">
+            <span>Types de Contenus</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/archetypes/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/archetypes/">
+            <span>Archétypes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/taxonomies/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/taxonomies/">
+            <span>Taxonomies</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/resumes/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/resumes/">
+            <span>Résumés de Contenu</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/cross-references/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/cross-references/">
+            <span>Références Croisées</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/urls/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/urls/">
+            <span>Gestion des URLs</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/menus/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/menus/">
+            <span>Menus</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/toc/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/toc/">
+            <span>Table des Matières</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/commentaires/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/commentaires/">
+            <span>Commentaires</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/gestion-contenu/multilingue/" class="dd-item
+         
+          ">
+            <a href="/gestion-contenu/multilingue/">
+            <span>Mode Multilingue</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/templates/" class="dd-item 
+
+
+
+">
+  <a href="/templates/">
+    <span>Modèles</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/templates/introduction/" class="dd-item
+         
+          ">
+            <a href="/templates/introduction/">
+            <span>Introduction à la Modélisation Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/ordre-recherche/" class="dd-item
+         
+          ">
+            <a href="/templates/ordre-recherche/">
+            <span>Ordre de Recherche Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/formats-output/" class="dd-item
+         
+          ">
+            <a href="/templates/formats-output/">
+            <span>Formats de Sortie Personnalisés</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/base/" class="dd-item
+         
+          ">
+            <a href="/templates/base/">
+            <span>Modèles de Base et Blocs</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/listes/" class="dd-item
+         
+          ">
+            <a href="/templates/listes/">
+            <span>Listes de Contenu dans Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/pageaccueil/" class="dd-item
+         
+          ">
+            <a href="/templates/pageaccueil/">
+            <span>Modèle Page Accueil</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/section-templates/" class="dd-item
+         
+          ">
+            <a href="/templates/section-templates/">
+            <span>Modèles de Page de Section</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/taxonomie-templates/" class="dd-item
+         
+          ">
+            <a href="/templates/taxonomie-templates/">
+            <span>Modèles de Taxonomie</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/single-page-templates/" class="dd-item
+         
+          ">
+            <a href="/templates/single-page-templates/">
+            <span>Modèles de Page Unique</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/views/" class="dd-item
+         
+          ">
+            <a href="/templates/views/">
+            <span>Modèles de Vues de Contenu</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/data-templates/" class="dd-item
+         
+          ">
+            <a href="/templates/data-templates/">
+            <span>Modèles de Data</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/partials/" class="dd-item
+         
+          ">
+            <a href="/templates/partials/">
+            <span>Modèles Partiels</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/shortcode-templates/" class="dd-item
+         
+          ">
+            <a href="/templates/shortcode-templates/">
+            <span>Créer Vos Propres Shortcodes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/files/" class="dd-item
+         
+          ">
+            <a href="/templates/files/">
+            <span>Fichier Local</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/404/" class="dd-item
+         
+          ">
+            <a href="/templates/404/">
+            <span>Personnaliser Page 404</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/menus/" class="dd-item
+         
+          ">
+            <a href="/templates/menus/">
+            <span>Modèles de Menu</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/pagination/" class="dd-item
+         
+          ">
+            <a href="/templates/pagination/">
+            <span>Pagination</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/rss/" class="dd-item
+         
+          ">
+            <a href="/templates/rss/">
+            <span>RSS</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/sitemap-template/" class="dd-item
+         
+          ">
+            <a href="/templates/sitemap-template/">
+            <span>Sitemap</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/robots/" class="dd-item
+         
+          ">
+            <a href="/templates/robots/">
+            <span>Fichier Robots.txt File</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/internal/" class="dd-item
+         
+          ">
+            <a href="/templates/internal/">
+            <span>Modèles Internes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/alternatives/" class="dd-item
+         
+          ">
+            <a href="/templates/alternatives/">
+            <span>Alternatives de Modélisation</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/templates/template-debugging/" class="dd-item
+         
+          ">
+            <a href="/templates/template-debugging/">
+            <span>Debuguer les Modèles</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/themes/" class="dd-item 
+
+
+
+">
+  <a href="/themes/">
+    <span>Thèmes</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/themes/installer-et-utiliser-themes/" class="dd-item
+         
+          ">
+            <a href="/themes/installer-et-utiliser-themes/">
+            <span>Installer et Utiliser des Thèmes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/themes/personnaliser/" class="dd-item
+         
+          ">
+            <a href="/themes/personnaliser/">
+            <span>Personnaliser un Thème</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/themes/creer/" class="dd-item
+         
+          ">
+            <a href="/themes/creer/">
+            <span>Créer un Thème</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/variables/" class="dd-item 
+
+
+
+">
+  <a href="/variables/">
+    <span>Variables et Params</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/variables/site/" class="dd-item
+         
+          ">
+            <a href="/variables/site/">
+            <span>Site</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/variables/shortcodes/" class="dd-item
+         
+          ">
+            <a href="/variables/shortcodes/">
+            <span>Shortcode</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/variables/page/" class="dd-item
+         
+          ">
+            <a href="/variables/page/">
+            <span>Page</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/variables/taxonomy/" class="dd-item
+         
+          ">
+            <a href="/variables/taxonomy/">
+            <span>Taxonomy</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/variables/files/" class="dd-item
+         
+          ">
+            <a href="/variables/files/">
+            <span>File</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/variables/menus/" class="dd-item
+         
+          ">
+            <a href="/variables/menus/">
+            <span>Menu</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/variables/hugo/" class="dd-item
+         
+          ">
+            <a href="/variables/hugo/">
+            <span>Variables Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/variables/git/" class="dd-item
+         
+          ">
+            <a href="/variables/git/">
+            <span>Git Info Variables</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/variables/sitemap/" class="dd-item
+         
+          ">
+            <a href="/variables/sitemap/">
+            <span>Sitemap Variables</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/commandes/" class="dd-item 
+
+
+
+">
+  <a href="/commandes/">
+    <span>Référence Ligne de Commande</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/commands/hugo/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo/">
+            <span>hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_benchmark/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_benchmark/">
+            <span>hugo benchmark</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_check/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_check/">
+            <span>hugo check</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_check_ulimit/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_check_ulimit/">
+            <span>hugo check ulimit</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_config/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_config/">
+            <span>hugo config</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_convert/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_convert/">
+            <span>hugo convert</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_convert_tojson/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_convert_tojson/">
+            <span>hugo convert toJSON</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_convert_totoml/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_convert_totoml/">
+            <span>hugo convert toTOML</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_convert_toyaml/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_convert_toyaml/">
+            <span>hugo convert toYAML</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_env/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_env/">
+            <span>hugo env</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_gen/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_gen/">
+            <span>hugo gen</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_gen_autocomplete/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_gen_autocomplete/">
+            <span>hugo gen autocomplete</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_gen_doc/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_gen_doc/">
+            <span>hugo gen doc</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_gen_man/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_gen_man/">
+            <span>hugo gen man</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_import/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_import/">
+            <span>hugo import</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_import_jekyll/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_import_jekyll/">
+            <span>hugo import jekyll</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_list/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_list/">
+            <span>hugo list</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_list_drafts/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_list_drafts/">
+            <span>hugo list drafts</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_list_expired/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_list_expired/">
+            <span>hugo list expired</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_list_future/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_list_future/">
+            <span>hugo list future</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_new/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_new/">
+            <span>hugo new</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_new_site/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_new_site/">
+            <span>hugo new site</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_new_theme/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_new_theme/">
+            <span>hugo new theme</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_server/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_server/">
+            <span>hugo server</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_undraft/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_undraft/">
+            <span>hugo undraft</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/commands/hugo_version/" class="dd-item
+         
+          ">
+            <a href="/commands/hugo_version/">
+            <span>hugo version</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/contribuer/" class="dd-item 
+
+
+
+">
+  <a href="/contribuer/">
+    <span>Contribuer au Projet Hugo</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/contribuer/developpement/" class="dd-item
+         
+          ">
+            <a href="/contribuer/developpement/">
+            <span>Contribuer au Développement d&#39;Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/contribuer/documentation/" class="dd-item
+         
+          ">
+            <a href="/contribuer/documentation/">
+            <span>Contribuer à la Documentation Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/contribuer/themes/" class="dd-item
+         
+          ">
+            <a href="/contribuer/themes/">
+            <span>Add Your Hugo Theme to the Showcase</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/depannage/" class="dd-item 
+
+
+
+">
+  <a href="/depannage/">
+    <span>Dépannage</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/depannage/accented-characters-in-urls/" class="dd-item
+         
+          ">
+            <a href="/depannage/accented-characters-in-urls/">
+            <span>Caractères Accentués dans les URLs</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/depannage/eof-error/" class="dd-item
+         
+          ">
+            <a href="/depannage/eof-error/">
+            <span>Erreur EOF</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/fonctions/" class="dd-item 
+
+
+
+">
+  <a href="/fonctions/">
+    <span>Fonctions Référence Rapide</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/fonctions/adddate/" class="dd-item
+         
+          ">
+            <a href="/fonctions/adddate/">
+            <span>.AddDate</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/format/" class="dd-item
+         
+          ">
+            <a href="/fonctions/format/">
+            <span>.Format</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/get/" class="dd-item
+         
+          ">
+            <a href="/fonctions/get/">
+            <span>.Get</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/getpage/" class="dd-item
+         
+          ">
+            <a href="/fonctions/getpage/">
+            <span>.GetPage</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/param/" class="dd-item
+         
+          ">
+            <a href="/fonctions/param/">
+            <span>.Param</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/scratch/" class="dd-item
+         
+          ">
+            <a href="/fonctions/scratch/">
+            <span>.Scratch</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/unix/" class="dd-item
+         
+          ">
+            <a href="/fonctions/unix/">
+            <span>.Unix</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/math/" class="dd-item
+         
+          ">
+            <a href="/fonctions/math/">
+            <span>Math</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/abslangurl/" class="dd-item
+         
+          ">
+            <a href="/fonctions/abslangurl/">
+            <span>absLangURL</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/absurl/" class="dd-item
+         
+          ">
+            <a href="/fonctions/absurl/">
+            <span>absURL</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/after/" class="dd-item
+         
+          ">
+            <a href="/fonctions/after/">
+            <span>after</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/apply/" class="dd-item
+         
+          ">
+            <a href="/fonctions/apply/">
+            <span>apply</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/base64/" class="dd-item
+         
+          ">
+            <a href="/fonctions/base64/">
+            <span>base64</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/chomp/" class="dd-item
+         
+          ">
+            <a href="/fonctions/chomp/">
+            <span>chomp</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/countrunes/" class="dd-item
+         
+          ">
+            <a href="/fonctions/countrunes/">
+            <span>countrunes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/countwords/" class="dd-item
+         
+          ">
+            <a href="/fonctions/countwords/">
+            <span>countwords</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/dateformat/" class="dd-item
+         
+          ">
+            <a href="/fonctions/dateformat/">
+            <span>dateFormat</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/default/" class="dd-item
+         
+          ">
+            <a href="/fonctions/default/">
+            <span>default</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/delimit/" class="dd-item
+         
+          ">
+            <a href="/fonctions/delimit/">
+            <span>delimit</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/dict/" class="dd-item
+         
+          ">
+            <a href="/fonctions/dict/">
+            <span>dict</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/echoparam/" class="dd-item
+         
+          ">
+            <a href="/fonctions/echoparam/">
+            <span>echoParam</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/emojify/" class="dd-item
+         
+          ">
+            <a href="/fonctions/emojify/">
+            <span>emojify</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/eq/" class="dd-item
+         
+          ">
+            <a href="/fonctions/eq/">
+            <span>eq</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/findre/" class="dd-item
+         
+          ">
+            <a href="/fonctions/findre/">
+            <span>findRE</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/first/" class="dd-item
+         
+          ">
+            <a href="/fonctions/first/">
+            <span>first</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/getenv/" class="dd-item
+         
+          ">
+            <a href="/fonctions/getenv/">
+            <span>getenv</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/hasprefix/" class="dd-item
+         
+          ">
+            <a href="/fonctions/hasprefix/">
+            <span>hasprefix</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/highlight/" class="dd-item
+         
+          ">
+            <a href="/fonctions/highlight/">
+            <span>highlight</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/htmlescape/" class="dd-item
+         
+          ">
+            <a href="/fonctions/htmlescape/">
+            <span>htmlEscape</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/htmlunescape/" class="dd-item
+         
+          ">
+            <a href="/fonctions/htmlunescape/">
+            <span>htmlUnescape</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/humanize/" class="dd-item
+         
+          ">
+            <a href="/fonctions/humanize/">
+            <span>humanize</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/i18n/" class="dd-item
+         
+          ">
+            <a href="/fonctions/i18n/">
+            <span>i18n</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/imageconfig/" class="dd-item
+         
+          ">
+            <a href="/fonctions/imageconfig/">
+            <span></span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/in/" class="dd-item
+         
+          ">
+            <a href="/fonctions/in/">
+            <span>in</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/index-function/" class="dd-item
+         
+          ">
+            <a href="/fonctions/index-function/">
+            <span>index</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/int/" class="dd-item
+         
+          ">
+            <a href="/fonctions/int/">
+            <span>int</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/intersect/" class="dd-item
+         
+          ">
+            <a href="/fonctions/intersect/">
+            <span>intersect</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/isset/" class="dd-item
+         
+          ">
+            <a href="/fonctions/isset/">
+            <span>isset</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/jsonify/" class="dd-item
+         
+          ">
+            <a href="/fonctions/jsonify/">
+            <span>jsonify</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/numfmt/" class="dd-item
+         
+          ">
+            <a href="/fonctions/numfmt/">
+            <span>lang.NumFmt</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/last/" class="dd-item
+         
+          ">
+            <a href="/fonctions/last/">
+            <span>last</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/len/" class="dd-item
+         
+          ">
+            <a href="/fonctions/len/">
+            <span>len</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/lower/" class="dd-item
+         
+          ">
+            <a href="/fonctions/lower/">
+            <span>lower</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/markdownify/" class="dd-item
+         
+          ">
+            <a href="/fonctions/markdownify/">
+            <span>markdownify</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/md5/" class="dd-item
+         
+          ">
+            <a href="/fonctions/md5/">
+            <span>md5</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/now/" class="dd-item
+         
+          ">
+            <a href="/fonctions/now/">
+            <span>now</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/partialcached/" class="dd-item
+         
+          ">
+            <a href="/fonctions/partialcached/">
+            <span>partialCached</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/plainify/" class="dd-item
+         
+          ">
+            <a href="/fonctions/plainify/">
+            <span>plainify</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/pluralize/" class="dd-item
+         
+          ">
+            <a href="/fonctions/pluralize/">
+            <span>pluralize</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/printf/" class="dd-item
+         
+          ">
+            <a href="/fonctions/printf/">
+            <span>printf</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/querify/" class="dd-item
+         
+          ">
+            <a href="/fonctions/querify/">
+            <span>querify</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/range/" class="dd-item
+         
+          ">
+            <a href="/fonctions/range/">
+            <span>range</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/readdir/" class="dd-item
+         
+          ">
+            <a href="/fonctions/readdir/">
+            <span>readDir</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/readfile/" class="dd-item
+         
+          ">
+            <a href="/fonctions/readfile/">
+            <span>readFile</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/ref/" class="dd-item
+         
+          ">
+            <a href="/fonctions/ref/">
+            <span>ref</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/rellangurl/" class="dd-item
+         
+          ">
+            <a href="/fonctions/rellangurl/">
+            <span>relLangURL</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/relurl/" class="dd-item
+         
+          ">
+            <a href="/fonctions/relurl/">
+            <span>relURL</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/relref/" class="dd-item
+         
+          ">
+            <a href="/fonctions/relref/">
+            <span>relref</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/render/" class="dd-item
+         
+          ">
+            <a href="/fonctions/render/">
+            <span>render</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/replace/" class="dd-item
+         
+          ">
+            <a href="/fonctions/replace/">
+            <span>replace</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/replacere/" class="dd-item
+         
+          ">
+            <a href="/fonctions/replacere/">
+            <span>replacere</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/safecss/" class="dd-item
+         
+          ">
+            <a href="/fonctions/safecss/">
+            <span>safeCSS</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/safehtml/" class="dd-item
+         
+          ">
+            <a href="/fonctions/safehtml/">
+            <span>safeHTML</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/safehtmlattr/" class="dd-item
+         
+          ">
+            <a href="/fonctions/safehtmlattr/">
+            <span>safeHTMLAttr</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/safejs/" class="dd-item
+         
+          ">
+            <a href="/fonctions/safejs/">
+            <span>safeJS</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/safeurl/" class="dd-item
+         
+          ">
+            <a href="/fonctions/safeurl/">
+            <span>safeURL</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/seq/" class="dd-item
+         
+          ">
+            <a href="/fonctions/seq/">
+            <span>seq</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/sha/" class="dd-item
+         
+          ">
+            <a href="/fonctions/sha/">
+            <span>sha</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/shuffle/" class="dd-item
+         
+          ">
+            <a href="/fonctions/shuffle/">
+            <span>shuffle</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/singularize/" class="dd-item
+         
+          ">
+            <a href="/fonctions/singularize/">
+            <span>singularize</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/slice/" class="dd-item
+         
+          ">
+            <a href="/fonctions/slice/">
+            <span>slice</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/slicestr/" class="dd-item
+         
+          ">
+            <a href="/fonctions/slicestr/">
+            <span>slicestr</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/sort/" class="dd-item
+         
+          ">
+            <a href="/fonctions/sort/">
+            <span>sort</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/split/" class="dd-item
+         
+          ">
+            <a href="/fonctions/split/">
+            <span>split</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/string/" class="dd-item
+         
+          ">
+            <a href="/fonctions/string/">
+            <span>string</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/substr/" class="dd-item
+         
+          ">
+            <a href="/fonctions/substr/">
+            <span>substr</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/time/" class="dd-item
+         
+          ">
+            <a href="/fonctions/time/">
+            <span>time</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/title/" class="dd-item
+         
+          ">
+            <a href="/fonctions/title/">
+            <span>title</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/trim/" class="dd-item
+         
+          ">
+            <a href="/fonctions/trim/">
+            <span>trim</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/truncate/" class="dd-item
+         
+          ">
+            <a href="/fonctions/truncate/">
+            <span>truncate</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/union/" class="dd-item
+         
+          ">
+            <a href="/fonctions/union/">
+            <span>union</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/uniq/" class="dd-item
+         
+          ">
+            <a href="/fonctions/uniq/">
+            <span>uniq</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/upper/" class="dd-item
+         
+          ">
+            <a href="/fonctions/upper/">
+            <span>upper</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/urlize/" class="dd-item
+         
+          ">
+            <a href="/fonctions/urlize/">
+            <span>urlize</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/where/" class="dd-item
+         
+          ">
+            <a href="/fonctions/where/">
+            <span>where</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/fonctions/with/" class="dd-item
+         
+          ">
+            <a href="/fonctions/with/">
+            <span>with</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/outils/" class="dd-item 
+
+
+
+">
+  <a href="/outils/">
+    <span>Outils du Développeur</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/outils/migrations/" class="dd-item
+         
+          ">
+            <a href="/outils/migrations/">
+            <span>Migrate to Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/outils/syntax-highlighting/" class="dd-item
+         
+          ">
+            <a href="/outils/syntax-highlighting/">
+            <span>Surbrillance de Syntaxe</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/outils/starter-kits/" class="dd-item
+         
+          ">
+            <a href="/outils/starter-kits/">
+            <span>Starter Kits</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/outils/frontends/" class="dd-item
+         
+          ">
+            <a href="/outils/frontends/">
+            <span>Frontend Interfaces with Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/outils/editors/" class="dd-item
+         
+          ">
+            <a href="/outils/editors/">
+            <span>Editor Plug-ins for Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/outils/search/" class="dd-item
+         
+          ">
+            <a href="/outils/search/">
+            <span>Search for your Hugo Website</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/outils/other/" class="dd-item
+         
+          ">
+            <a href="/outils/other/">
+            <span>Other Hugo Community Projects</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/hebergement-et-deploiement/" class="dd-item 
+
+
+
+">
+  <a href="/hebergement-et-deploiement/">
+    <span>Hébergement &amp; Déploiement</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/hebergement-et-deploiement/hosting-on-netlify/" class="dd-item
+         
+          ">
+            <a href="/hebergement-et-deploiement/hosting-on-netlify/">
+            <span>Hosting on Netlify</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/hebergement-et-deploiement/hosting-on-firebase/" class="dd-item
+         
+          ">
+            <a href="/hebergement-et-deploiement/hosting-on-firebase/">
+            <span>Hosting on Firebase</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/hebergement-et-deploiement/hosting-on-github/" class="dd-item
+         
+          ">
+            <a href="/hebergement-et-deploiement/hosting-on-github/">
+            <span>Hosting on GitHub</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/hebergement-et-deploiement/hosting-on-gitlab/" class="dd-item
+         
+          ">
+            <a href="/hebergement-et-deploiement/hosting-on-gitlab/">
+            <span>Hosting on GitLab</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/hebergement-et-deploiement/hosting-on-bitbucket/" class="dd-item
+         
+          ">
+            <a href="/hebergement-et-deploiement/hosting-on-bitbucket/">
+            <span>Hosting on Bitbucket</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/hebergement-et-deploiement/deployment-with-wercker/" class="dd-item
+         
+          ">
+            <a href="/hebergement-et-deploiement/deployment-with-wercker/">
+            <span>Deployment with Wercker</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/hebergement-et-deploiement/deployment-with-rsync/" class="dd-item
+         
+          ">
+            <a href="/hebergement-et-deploiement/deployment-with-rsync/">
+            <span>Deployment with Rysnc</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/demarrage/" class="dd-item 
+
+
+
+">
+  <a href="/demarrage/">
+    <span><i class='fa fa-road'></i> Démarrer sur Hugo</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/demarrage/intro-hugo/" class="dd-item
+         
+          ">
+            <a href="/demarrage/intro-hugo/">
+            <span>C&#39;est quoi Hugo ?</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/demarrage/quickstart/" class="dd-item
+         
+          ">
+            <a href="/demarrage/quickstart/">
+            <span>Hugo QuickStart</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/demarrage/installer/" class="dd-item
+         
+          ">
+            <a href="/demarrage/installer/">
+            <span>Installer Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/demarrage/utiliser-hugo/" class="dd-item
+         
+          ">
+            <a href="/demarrage/utiliser-hugo/">
+            <span>Utiliser Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/demarrage/configurer-hugo/" class="dd-item
+         
+          ">
+            <a href="/demarrage/configurer-hugo/">
+            <span>Configurer Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/demarrage/organisation-sources-hugo/" class="dd-item
+         
+          ">
+            <a href="/demarrage/organisation-sources-hugo/">
+            <span>Organisation des Sources Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/demarrage/structure-dossier/" class="dd-item
+         
+          ">
+            <a href="/demarrage/structure-dossier/">
+            <span>Structure de Dossier</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/chantier-doc-hugo/" class="dd-item 
+
+
+
+">
+  <a href="/chantier-doc-hugo/">
+    <span>Chantier Doc Hugo : Organisation</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/chantier-doc-hugo/hcard/" class="dd-item
+         
+          ">
+            <a href="/chantier-doc-hugo/hcard/">
+            <span>Créer un Partiel h-card</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/chantier-doc-hugo/extramenu/" class="dd-item
+         
+          ">
+            <a href="/chantier-doc-hugo/extramenu/">
+            <span>Entrées de menu supplémentaires</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/chantier-doc-hugo/logo-draft/" class="dd-item
+         
+          ">
+            <a href="/chantier-doc-hugo/logo-draft/">
+            <span>Emplacement du Logo Hugo</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+<li data-nav-id="/chantier-doc-hugo/customize-style/" class="dd-item 
+
+
+
+">
+  <a href="/chantier-doc-hugo/customize-style/">
+    <span>Personnaliser le look and feel de votre site web</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/chantier-doc-hugo/customize-style/theme-variants/" class="dd-item
+         
+          ">
+            <a href="/chantier-doc-hugo/customize-style/theme-variants/">
+            <span>Variantes de thèmes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/news/" class="dd-item 
+
+
+
+">
+  <a href="/news/">
+    <span>Actualités Hugo</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/news/press-and-articles/" class="dd-item
+         
+          ">
+            <a href="/news/press-and-articles/">
+            <span>Presse et Articles</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-25-1/" class="dd-item
+         
+          ">
+            <a href="/news/0-25-1/">
+            <span>July Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-25/" class="dd-item
+         
+          ">
+            <a href="/news/0-25/">
+            <span>July Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-24-1/" class="dd-item
+         
+          ">
+            <a href="/news/0-24-1/">
+            <span>June Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-24/" class="dd-item
+         
+          ">
+            <a href="/news/0-24/">
+            <span>June Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-23/" class="dd-item
+         
+          ">
+            <a href="/news/0-23/">
+            <span>June Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-22-1/" class="dd-item
+         
+          ">
+            <a href="/news/0-22-1/">
+            <span>June Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-22/" class="dd-item
+         
+          ">
+            <a href="/news/0-22/">
+            <span>June Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-21/" class="dd-item
+         
+          ">
+            <a href="/news/0-21/">
+            <span>May Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-20-7/" class="dd-item
+         
+          ">
+            <a href="/news/0-20-7/">
+            <span>May Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-20-6/" class="dd-item
+         
+          ">
+            <a href="/news/0-20-6/">
+            <span>April Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-20-5/" class="dd-item
+         
+          ">
+            <a href="/news/0-20-5/">
+            <span>April Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-20-4/" class="dd-item
+         
+          ">
+            <a href="/news/0-20-4/">
+            <span>April Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-20-3/" class="dd-item
+         
+          ">
+            <a href="/news/0-20-3/">
+            <span>April Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-20-2/" class="dd-item
+         
+          ">
+            <a href="/news/0-20-2/">
+            <span>April Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-20-1/" class="dd-item
+         
+          ">
+            <a href="/news/0-20-1/">
+            <span>April Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-20/" class="dd-item
+         
+          ">
+            <a href="/news/0-20/">
+            <span>April Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-19/" class="dd-item
+         
+          ">
+            <a href="/news/0-19/">
+            <span>February Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-18/" class="dd-item
+         
+          ">
+            <a href="/news/0-18/">
+            <span>December Hugo Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-17/" class="dd-item
+         
+          ">
+            <a href="/news/0-17/">
+            <span>October Release: Hugo is going global</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/0-16/" class="dd-item
+         
+          ">
+            <a href="/news/0-16/">
+            <span>June Release</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/news/release-notes/" class="dd-item
+         
+          ">
+            <a href="/news/release-notes/">
+            <span>Release Notes</span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+<li data-nav-id="/readfiles/" class="dd-item 
+
+
+
+">
+  <a href="/readfiles/">
+    <span>Readfiles</span>
+
+    
+    <i class="fa fa-angle-right fa-lg category-icon"></i>
+    
+    
+    <i style="color:grey" class="fa fa-check read-icon"></i>
+  </a>
+    <ul>
+        
+         
+          <li data-nav-id="/readfiles/readme/" class="dd-item
+         
+          ">
+            <a href="/readfiles/readme/">
+            <span></span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/readfiles/bfconfig/" class="dd-item
+         
+          ">
+            <a href="/readfiles/bfconfig/">
+            <span></span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/readfiles/dateformatting/" class="dd-item
+         
+          ">
+            <a href="/readfiles/dateformatting/">
+            <span></span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+         
+          <li data-nav-id="/readfiles/menuvars/" class="dd-item
+         
+          ">
+            <a href="/readfiles/menuvars/">
+            <span></span> 
+            <i style="color:grey" class="fa fa-check read-icon"></i>
+
+            </a></li>
+         
+        
+        
+
+
+
+
+    </ul>
+</li>
+
+
+
+        
+        <section id="shortcuts">
+            
+                <li class="" role="">
+                    <h3>Plus</h3>
+                    <a href="https://github.com/ChristopheDucamp/Doc-Hugo"><i class='fa fa-github'></i> Repo Github</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="https://gohugo.io/documentation"><i class='fa fa-bookmark'></i> Documentation Hugo </a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="/credits"><i class='fa fa-bullhorn'></i> Crédits</a>
+                    
+                </li>
+            
+        </section>    
+        
+        
+            <a class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> </a>
+        
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      <center>
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-cloud-download" aria-label="Téléchargez le thème vjeantet/hugo-theme-docdock">Téléchargez</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+              
+              
+              
+            <div id="top-github-link">
+              <a class="github-link" href="https://github.com/ChristopheDucamp/Doc-Hugo/edit/master/content/gestion-contenu/formats.md" target="blank">
+                <i class="fa fa-code-fork"></i>
+                
+              </a>
+            </div>
+              
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+
+
+
+ <a href='/'>Documentation Hugo</a> > <a href='/gestion-contenu/'>Gestion de Contenu</a> > Formats de Contenus Supportés
+
+ 
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#configurer-un-rendu-markdown-blackfriday">Configurer un Rendu Markdown BlackFriday</a></li>
+<li><a href="#étendre-le-markdown">Étendre le Markdown</a>
+<ul>
+<li><a href="#listes-de-tâches">Listes de tâches</a>
+<ul>
+<li><a href="#exemple-input-de-liste-de-tâches">Exemple Input de Liste de Tâches</a></li>
+<li><a href="#exemple-output-de-liste-de-tâches">Exemple Output de Liste de Tâches</a></li>
+<li><a href="#exemple-d-affichage-d-une-liste-de-tâches">Exemple d&rsquo;Affichage d&rsquo;une Liste de Tâches</a></li>
+</ul></li>
+<li><a href="#emojis">Emojis</a></li>
+<li><a href="#shortcodes">Shortcodes</a></li>
+<li><a href="#blocs-de-code">Blocs de Code</a></li>
+</ul></li>
+<li><a href="#mmark">Mmark</a>
+<ul>
+<li><a href="#utiliser-mmark">Utiliser Mmark</a></li>
+</ul></li>
+<li><a href="#mathjax-avec-hugo">MathJax avec Hugo</a>
+<ul>
+<li><a href="#activer-mathjax">Activer MathJax</a></li>
+<li><a href="#options-et-fonctionnalités">Options et Fonctionnalités</a></li>
+<li><a href="#problèmes-avec-markdown">Problèmes avec Markdown</a></li>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#usage">Usage</a></li>
+</ul></li>
+<li><a href="#formats-supplémentaires-via-les-aides-externes">Formats Supplémentaires via les Aides Externes</a></li>
+<li><a href="#apprendre-le-markdown">Apprendre le Markdown</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>Formats de Contenus Supportés</h1>
+          
+
+
+
+
+
+
+<p><strong>Markdown est le principal format de contenu</strong> et il est livré avec deux saveurs : l&rsquo;excellent <a href="https://github.com/russross/blackfriday">projet Blackfriday</a> (nommez vos fichiers <code>*.md</code> ou réglez <code>markup = &quot;markdown&quot;</code> dans le front matter) ou son fork <a href="https://github.com/miekg/mmark">Mmark</a> (nommez vos fichiers <code>*.mmark</code> ou réglez <code>markup = &quot;mmark&quot;</code> dans le front matter), tous les deux étant deux moteurs rapides markdown écrits en Go.</p>
+
+<p>Pour les utilisateurs d&rsquo;Emacs, <a href="https://github.com/chaseadamsio/goorgeous">goorgeous</a> fournit un support natif intégré pour Org-mode (nommez vos fichiers <code>*.org</code> ou définissez <code>markup = &quot;org&quot;</code> dans le front matter).</p>
+
+<aside class="admonition note">
+	<div class="note-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>Avant de commencer l&rsquo;écriture de votre contenu dans le marquage, Blackfriday a un problème connu <a href="https://github.com/russross/blackfriday/issues/329">(# 329)</a> avec la gestion de listes profondément imbriquées. Heureusement, il y a une solution facile. Utilisez 4 espaces (c.-à-d., <kbd>tab</kbd>) plutôt que des indentations à 2 espaces.</p>
+</div>
+</aside>
+
+
+<h2 id="configurer-un-rendu-markdown-blackfriday">Configurer un Rendu Markdown BlackFriday</h2>
+
+<p>Vous pouvez configurer plusieurs aspects de Blackfriday comme indiqué dans la liste suivante. Voir la documentation sur <a href="/getting-started/configuration/">Configuration</a> pour la liste complète des instructions explicites que vous pouvez donner à Hugo lors du rendu de votre site.</p>
+
+<dl>
+<dt><code>taskLists</code></dt>
+<dd>default: <strong><code>true</code></strong><br>
+Blackfriday flag: <br>
+Purpose: <code>false</code> turns off GitHub-style automatic task/TODO list generation</dd>
+<dt><code>smartypants</code></dt>
+<dd>default: <strong><code>true</code></strong> <br>
+Blackfriday flag: <strong><code>HTML_USE_SMARTYPANTS</code></strong> <br>
+Purpose: <code>false</code> disables smart punctuation substitutions, including smart quotes, smart dashes, smart fractions, etc. If <code>true</code>, it may be fine-tuned with the <code>angledQuotes</code>, <code>fractions</code>, <code>smartDashes</code>, and <code>latexDashes</code> flags (see below).</dd>
+<dt><code>angledQuotes</code></dt>
+<dd>default: <strong><code>false</code></strong><br>
+Blackfriday flag: <strong><code>HTML_SMARTYPANTS_ANGLED_QUOTES</code></strong><br>
+Purpose: <code>true</code> enables smart, angled double quotes. Example: &ldquo;Hugo&rdquo; renders to renders to «Hugo» instead of “Hugo”.</dd>
+<dt><code>fractions</code></dt>
+<dd>default: <strong><code>true</code></strong><br>
+Blackfriday flag: <strong><code>HTML_SMARTYPANTS_FRACTIONS</code></strong> <br>
+Purpose: <code>false</code> disables smart fractions.<br>
+Example: <code>5/12</code> renders to <sup>5</sup>&frasl;<sub>12</sub>(<code>&lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;12&lt;/sub&gt;</code>).<br> <strong>Caveat:</strong> Even with <code>fractions = false</code>, Blackfriday still converts <code>1/2</code>, <code>1/4</code>, and <code>3/4</code> respectively to ½ (<code>&amp;frac12;</code>), ¼ (<code>&amp;frac14;</code>) and ¾ (<code>&amp;frac34;</code>), but only these three.</small></dd>
+<dt><code>smartDashes</code></dt>
+<dd>default: <strong><code>true</code></strong> <br>
+Blackfriday flag: <strong><code>HTML_SMARTY_DASHES</code></strong> <br>
+Purpose: <code>false</code> disables smart dashes; i.e., the conversion of multiple hyphens into an en dash or em dash. If <code>true</code>, its behavior can be modified with the <code>latexDashes</code> flag below.</dd>
+<dt><code>latexDashes</code></dt>
+<dd>default: <strong><code>true</code></strong> <br>
+Blackfriday flag: <strong><code>HTML_SMARTYPANTS_LATEX_DASHES</code></strong> <br>
+Purpose: <code>false</code> disables LaTeX-style smart dashes and selects conventional smart dashes. Assuming <code>smartDashes</code>: <br>
+If <code>true</code>, <code>--</code> is translated into &ndash; (<code>&amp;ndash;</code>), whereas <code>---</code> is translated into &mdash; (<code>&amp;mdash;</code>). <br>
+However, <em>spaced</em> single hyphen between two words is translated into an en&nbsp;dash&mdash; e.g., &ldquo;<code>12 June - 3 July</code>&rdquo; becomes <code>12 June ndash; 3 July</code> upon rendering.</dd>
+<dt><code>hrefTargetBlank</code></dt>
+<dd>default: <strong><code>false</code></strong> <br>
+Blackfriday flag: <strong><code>HTML_HREF_TARGET_BLANK</code></strong> <br>
+Purpose: <code>true</code> opens external links in a new window or tab.</dd>
+<dt><code>plainIDAnchors</code></dt>
+<dd>default <strong><code>true</code></strong> <br>
+Blackfriday flag: <strong><code>FootnoteAnchorPrefix</code> and <code>HeaderIDSuffix</code></strong> <br>
+Purpose: <code>true</code> renders any heading and footnote IDs without the document ID. <br>
+Example: renders <code>#my-heading</code> instead of <code>#my-heading:bec3ed8ba720b970</code></dd>
+<dt><code>extensions</code></dt>
+<dd>default: <strong><code>[]</code></strong> <br>
+Blackfriday flag: <strong><code>EXTENSION_*</code></strong> <br>
+Purpose: Enable one or more Blackfriday&rsquo;s Markdown extensions (if they aren&rsquo;t Hugo defaults). <br>
+Example: Include <code>hardLineBreak</code> in the list to enable Blackfriday&rsquo;s <code>EXTENSION_HARD_LINK_BREAK</code></dd>
+<dt><code>extensionsmask</code></dt>
+<dd>default: <strong><code>[]</code></strong> <br>
+Blackfriday flag: <strong><code>EXTENSION_*</code></strong> <br>
+Purpose: Enable one or more of Blackfriday&rsquo;s Markdown extensions (if they aren&rsquo;t Hugo defaults). <br>
+Example: Include <code>autoHeaderIds</code> as <code>false</code> in the list to disable Blackfriday&rsquo;s <code>EXTENSION_AUTO_HEADER_IDS</code>.</dd>
+</dl>
+
+
+<h2 id="étendre-le-markdown">Étendre le Markdown</h2>
+
+<p>Hugo fournit des méthodes pratiques pour étendre le markdown.</p>
+
+<h3 id="listes-de-tâches">Listes de tâches</h3>
+
+<p>Hugo prend en charge <a href="https://guides.github.com/features/mastering-markdown/#syntax">les listes de tâches de style GitHub (c.-à-d. Listes TODO)</a> pour le rendu markdown Blackfriday. Si vous ne souhaitez pas utiliser cette fonctionnalité, vous pouvez la désactiver dans votre configuration.</p>
+
+<h4 id="exemple-input-de-liste-de-tâches">Exemple Input de Liste de Tâches</h4>
+
+<div class="code relative bg-primary-color moon-gray" id="content/my-to-do-list.md"><div class="filename san-serif f6 dib lh-solid pl2 pv2">content/my-to-do-list.md</div>
+		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+		</button>
+		
+	
+	<div class="code-copy-content nt3" ><pre><code class="language-markdown">- [ ] un item de liste de tâche
+- [ ] syntaxe de liste exigée
+- [ ] incomplète
+- [x] complète
+</code></pre>
+</div>
+
+</div>
+
+
+<h4 id="exemple-output-de-liste-de-tâches">Exemple Output de Liste de Tâches</h4>
+
+<p>Le markdown précédent produit le HTML suivant dans votre site web produit :</p>
+
+<pre><code class="language-html">&lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li&gt;&lt;input type=&quot;checkbox&quot; disabled=&quot;&quot; class=&quot;task-list-item&quot;&gt; a task list item&lt;/li&gt;
+    &lt;li&gt;&lt;input type=&quot;checkbox&quot; disabled=&quot;&quot; class=&quot;task-list-item&quot;&gt; list syntax required&lt;/li&gt;
+    &lt;li&gt;&lt;input type=&quot;checkbox&quot; disabled=&quot;&quot; class=&quot;task-list-item&quot;&gt; incomplete&lt;/li&gt;
+    &lt;li&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot; class=&quot;task-list-item&quot;&gt; completed&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h4 id="exemple-d-affichage-d-une-liste-de-tâches">Exemple d&rsquo;Affichage d&rsquo;une Liste de Tâches</h4>
+
+<p>Ce qui suis présente comment l&rsquo;exemple de liste de tâches s&rsquo;affichera pour les utilisateurs finaux de votre site web. Notez que l&rsquo;apparence visuelle des listes ne dépend que de vous. Cette liste a été stylisée selon <a href="/css/style.css">la feuille de style Hugo Docs</a>.</p>
+
+<ul class="task-list">
+<li><input type="checkbox" disabled class="task-list-item"> un item de liste de tâche</li>
+<li><input type="checkbox" disabled class="task-list-item"> syntaxe de liste exigée</li>
+<li><input type="checkbox" disabled class="task-list-item"> incomplet</li>
+<li><input type="checkbox" checked disabled class="task-list-item"> achevé</li>
+</ul>
+
+<h3 id="emojis">Emojis</h3>
+
+<p>Pour ajouter des emojis directement au contenu, réglez  <code>enableEmoji</code> sur <code>true</code> dans votre <a href="/getting-started/configuration/">configuration de site</a>. Pour utiliser les emojis dans des modèles ou des codes courts, voir la <a href="/fonctions/emojify/">fonction <code>emojify</code></a>.</p>
+
+<p>Pour une liste complète d&rsquo;emojis, consultez l&rsquo;<a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/">anti-sèche Emoji</a>.</p>
+
+<h3 id="shortcodes">Shortcodes</h3>
+
+<p>Si vous écrivez en Markdown et que vous vous trouverez souvent en train d&rsquo;intégrer votre contenu avec du HTML brut, Hugo fournit des fonctionnalités inégrées de raccourcis-code. C&rsquo;est l&rsquo;une des fonctionnalités les plus puissantes d&rsquo;Hugo et elle vous permet de créer rapidement vos propres extensions Markdown.</p>
+
+<p>Voir <a href="/content-management/shortcodes/">Shortcodes</a> pour l&rsquo;utilisation, en particulier pour les codes courts intégrés qui sont livrés avec Hugo, et <a href="/templates/shortcode-templates/">Modélisation code court</a> pour apprendre à construire les vôtres.</p>
+
+<h3 id="blocs-de-code">Blocs de Code</h3>
+
+<p>Hugo supporte l&rsquo;usage du markdown enrichi de GitHub des trois  tiques inversées tout comme un <a href="/gestion-contenu/shortcodes/#highlight">raccourci-code imbriqué <code>highlight</code></a> pour rendre une syntaxe colorée via via <a href="http://pygments.org/">Pygments</a>. Pour des exemples d&rsquo;usage et une explication complète, regardez la <a href="/outils/syntax-highlighting/">documentation éclairage de syntaxe</a> dans les <a href="/tools/">outils du développeur</a>.</p>
+
+<h2 id="mmark">Mmark</h2>
+
+<p>Mmark est une <a href="https://github.com/miekg/mmark">bifurcation de BlackFriday</a> et un super-ensemble de markdown qui convient parfaitement à l&rsquo;écriture pour la <a href="https://tools.ietf.org/html/">documentation IETF</a>. Vous pouvez voir des exemples de la syntaxe dans <a href="https://github.com/miekg/mmark/wiki/Syntax">le référentiel Mmark GitHub</a> ou la syntaxe complète sur <a href="https://miek.nl/2016/March/05/mmark-syntax-document/">le site Web de Miek Gieben</a>.</p>
+
+<h3 id="utiliser-mmark">Utiliser Mmark</h3>
+
+<p>Comme Hugo est livré avec Mmark, l&rsquo;utilisation de la syntaxe est aussi simple que de changer l&rsquo;extension de vos fichiers de contenu de <code>.md</code> à <code>.mmark</code>.</p>
+
+<p>Dans le cas où vous souhaitez utiliser uniquement Mmark dans des fichiers spécifiques, vous pouvez également définir la syntaxe Mmark dans le front matter de votre contenu :</p>
+
+<pre><code class="language-yaml">---
+title: Mon Super Post
+date: 2017-07-18
+markdown: mmark
+---
+</code></pre>
+
+<aside class="admonition warning">
+	<div class="admonition-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>Voici quelques fonctionnalités non disponibles dans Mmark ; un exemple étant que les codes courts ne sont pas traduits lorsqu&rsquo;ils sont utilisés dans un fichier <code>.mmark</code> inclus (<a href="https://github.com/gohugoio/hugo/issues/3137">#3131</a>), et <code>EXTENSION_ABBREVIATION</code> (<a href="https://github.com/gohugoio/hugo/issues/1970">#1970</a>) et les todo-listes spécifiques mentionnées au-dessus (<a href="https://github.com/gohugoio/hugo/issues/2270">#2270</a>) ne sont pas pleinement supportées. Les contributions sont les bienvenues.</p>
+</div>
+</aside>
+
+
+<h2 id="mathjax-avec-hugo">MathJax avec Hugo</h2>
+
+<p><a href="http://www.mathjax.org/">MathJax</a> is a JavaScript library that allows the display of mathematical expressions described via a LaTeX-style syntax in the HTML (or Markdown) source of a web page. As it is a pure a JavaScript library, getting it to work within Hugo is fairly straightforward, but does have some oddities that will be discussed here.</p>
+
+<p>This is not an introduction into actually using MathJax to render typeset mathematics on your website. Instead, this page is a collection of tips and hints for one way to get MathJax working on a website built with Hugo.</p>
+
+<p><a href="http://www.mathjax.org/">MathJax</a> est une bibliothèque JavaScript qui permet d&rsquo;afficher des expressions mathématiques décrites par une syntaxe de type LaTeX dans la source HTML (ou Markdown) d&rsquo;une page Web. Comme il s&rsquo;agit d&rsquo;une pure bibliothèque JavaScript, le faire fonctionner dans Hugo est assez simple, mais il y a des bizarreries qui seront discutées ici.</p>
+
+<p>Ce n&rsquo;est pas une introduction à l&rsquo;utilisation de MathJax pour afficher les caractères mathématiques sur votre site. Au lieu de cela, cette page est une collection de conseils et d&rsquo;astuces pour une façon de faire fonctionner MathJax sur un site Web construit avec Hugo.</p>
+
+<h3 id="activer-mathjax">Activer MathJax</h3>
+
+<p>La première étape consiste à activer MathJax sur les pages où vous souhaitez avoir des caractères mathématiques. Il y a plusieurs façons de le faire (les lecteurs aventureux peuvent consulter la section <a href="http://docs.mathjax.org/en/latest/configuration.html">Chargement et Configuration</a> de la documentation MathJax pour des méthodes supplémentaires d&rsquo;inclusion de MathJax). Mais la façon la plus simple est d&rsquo;utiliser le CDN sécurisé MathJax en incluant une balise <code>&lt;script&gt;</code> pour le CDN sécurisé officiellement recommandé (<a href="https://cdnjs.com">cdn.js.com</a>) :</p>
+
+<div class="code relative bg-primary-color moon-gray" id="add-mathjax-to-page.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">add-mathjax-to-page.html</div>
+		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+		</button>
+		
+	
+	<div class="code-copy-content nt3" ><pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+</div>
+
+</div>
+
+
+<p>Une façon de s&rsquo;assurer que ce code est inclus dans toutes les pages est de le placer dans l&rsquo;un des modèles dans le répertoire <code>layouts/partials/</code>. Par exemple, je l&rsquo;ai inclus dans le bas de mon modèle <code>footer.html</code> car je sais que le pied de page sera inclus dans chaque page de mon site.</p>
+
+<h3 id="options-et-fonctionnalités">Options et Fonctionnalités</h3>
+
+<p>MathJax est une bibliothèque stable open-source avec de nombreuses fonctionnalités. J&rsquo;encourage le lecteur intéressé à regarder la <a href="http://docs.mathjax.org/en/latest/index.html">Documentation MathJax</a>, en particulier les sections sur l&rsquo;<a href="http://docs.mathjax.org/en/latest/index.html#basic-usage">Utilisation de Base</a> et les <a href="http://docs.mathjax.org/en/latest/index.html#mathjax-configuration-options">Options de Configuration MathJax</a>.</p>
+
+<h3 id="problèmes-avec-markdown">Problèmes avec Markdown</h3>
+
+<div class="notices note" ><p>Les problèmes suivants avec Markdown supposent que vous utilisez <code>.md</code> pour le contenu et BlackFriday pour l&rsquo;analyse. En utilisant <a href="#mmark">Mmark</a>, car votre format de contenu évitera la nécessité des solutions de contournement suivantes.</p>
+
+<p>Si vous utilisez Mmark avec MathJax, utilisez <code>displayMath: [['$$','$$'], ['\\[','\\]']]</code>. Voir le <a href="https://github.com/miekg/mmark/wiki/Syntax#math-blocks">Mmark <code>README.md</code></a> pour plus d&rsquo;informations. En plus de MathJax, Mmark fonctionne bien avec <a href="https://github.com/Khan/KaTeX">KaTeX</a>. Voir cet <a href="http://nosubstance.me/post/a-great-toolset-for-static-blogging/">article de blog d&rsquo;un utilisateur Hugo</a>.</p>
+</div>
+
+
+<p>Après avoir activé MathJax, toutes les entrées mathématiques  entre les marqueurs appropriés (voir la <a href="https://docs.mathjax.org/en/latest/">documentation MathJax</a>) seront traitées et restranscrites dans la page Web. Un problème se pose cependant avec Markdown : le caractère de soulignement (<code>_</code>) est interprété par Markdown comme un moyen d&rsquo;envelopper du texte dans des blocs <code>emph</code> tandis que LaTeX (MathJax) interprète le trait de soulignement comme un moyen de créer un sous-titre . Ce «double parler» du trait de soulignement peut entraîner des comportements inattendus et indésirables.</p>
+
+<h3 id="solution">Solution</h3>
+
+<p>Il existe plusieurs façons de remédier à ce problème. Une solution consiste à échapper à chaque trait de soulignement dans votre code mathématique en entrant <code>\_</code> au lieu de <code>_</code>. Cela peut devenir très fastidieux si les équations que vous entrez sont pleines d&rsquo;indices.</p>
+
+<p>Une autre option est de dire à Markdown de traiter le code MathJax comme un code textuel et de ne pas le traiter. Une façon de le faire est d&rsquo;envelopper l&rsquo;expression mathématique dans un bloc <code>&lt;div&gt;</code> <code>&lt;/div&gt;</code>. Markdown ignorera ces sections et elles seront transmises directement à MathJax et traitées correctement. Cela fonctionne bien pour les mathématiques de style d&rsquo;affichage, mais pour les expressions mathématiques en ligne, la rupture de ligne induite par <code>&lt;div&gt;</code> n&rsquo;est pas acceptable. La syntaxe pour instruire Markdown pour traiter le texte en ligne comme textuel est en l&rsquo;enveloppant dans les backticks ( `). Vous avez peut-être remarqué, cependant, que le texte inclus entre les backticks est restitué différemment du texte standard (sur ce site, il s&rsquo;agit d&rsquo;éléments mis en surbrillance en rouge). Pour contourner ce problème, nous pourrions créer une nouvelle entrée CSS qui applique un style standard pour tout texte en ligne verbatim qui inclut le code MathJax. Ci-dessous je vais montrer la source HTML et CSS qui accomplirait cette (note cette solution a été adaptée de <a href="http://doswa.com/2011/07/20/mathjax-in-markdown.html">ce blog</a> - Tous les crédits reviennent à l&rsquo;auteur original).</p>
+
+<div class="code relative bg-primary-color moon-gray" id="mathjax-markdown-solution.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">mathjax-markdown-solution.html</div>
+		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+		</button>
+		
+	
+	<div class="code-copy-content nt3" ><pre><code class="language-js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: &quot;AMS&quot; },
+         extensions: [&quot;AMSmath.js&quot;, &quot;AMSsymbols.js&quot;] }
+  }
+});
+&lt;/script&gt;
+
+&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+  MathJax.Hub.Queue(function() {
+    // Fix &lt;code&gt; tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+&lt;/script&gt;
+</code></pre>
+</div>
+
+</div>
+
+
+<p>Comme précédemment, ce contenu devrait être inclus dans la source HTML de chaque page qui utilisera MathJax. L&rsquo;extrait de code suivant contient le CSS qui est utilisé pour que les blocs MathJax textuels contiennent le même style de police que le corps de la page.</p>
+
+<div class="code relative bg-primary-color moon-gray" id="mathjax-style.css"><div class="filename san-serif f6 dib lh-solid pl2 pv2">mathjax-style.css</div>
+		<button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+		</button>
+		
+	
+	<div class="code-copy-content nt3" ><pre><code class="language-css">code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</code></pre>
+</div>
+
+</div>
+
+
+<p>Dans l&rsquo;extrait CSS, notez la ligne <code>color: #515151;</code>. <code>#515151</code> est la valeur attribuée à l&rsquo;attribut <code>color</code> de la classe <code>body</code> dans ma CSS. Pour que les équations s&rsquo;inscrivent dans le corps d&rsquo;une page Web, cette valeur devrait être identique à la couleur du corps.</p>
+
+<h3 id="usage">Usage</h3>
+
+<p>Avec cette configuration, tout est en place pour une utilisation naturelle de MathJax sur les pages générées à l&rsquo;aide d&rsquo;Hugo. Pour inclure les mathématiques en ligne, il suffit de mettre le code LaTeX entre <code>`$ TeX Code $`</code> ou <code>`\( TeX Code \)`</code>. Pour inclure le style mathématiques, placez juste le code LaTeX entre <code>&lt;div&gt;$$TeX Code$$&lt;/div&gt;</code>. Tous les maths seront correctement composés et affichés dans votre page web générée par Hugo !</p>
+
+<h2 id="formats-supplémentaires-via-les-aides-externes">Formats Supplémentaires via les Aides Externes</h2>
+
+<p>Hugo a un nouveau concept appelé «aide extérieure». Cela signifie que vous pouvez écrire votre contenu en utilisant <a href="http://asciidoc.org/">Asciidoc</a>, <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>. Si vous avez des fichiers avec des extensions associées, Hugo appellera des commandes externes pour générer le contenu. (<a href="https://github.com/gohugoio/hugo/blob/77c60a3440806067109347d04eb5368b65ea0fe8/helpers/general.go#L65">Voir le code source Hugo pour les assistants externes</a>.)</p>
+
+<p>Par exemple, pour les fichiers Asciidoc, Hugo essaiera d&rsquo;appeler la commande <code>asciidoctor</code> ou <code>asciidoc</code>. Cela signifie que vous devrez installer l&rsquo;outil associé sur votre machine pour pouvoir utiliser ces formats. (<a href="http://asciidoctor.org/docs/install-toolchain/">Voir les documents Asciidoctor pour les instructions d&rsquo;installation</a>).</p>
+
+<p>Pour utiliser ces formats, utilisez simplement l&rsquo;extension standard et le front matter exactement comme vous le feriez avec les fichiers <code>.md</code> supportés nativement.</p>
+
+<aside class="admonition warning">
+	<div class="admonition-icon">
+		
+	</div>
+	
+	
+	<div class="admonition-content"><p>Étant donné que les formats supplémentaires sont des commandes externes, les performances de génération dépendront fortement de la performance de l&rsquo;outil externe que vous utilisez. Comme cette fonctionnalité en est encore à ses débuts, les commentaires sont les bienvenus.</p>
+</div>
+</aside>
+
+
+<h2 id="apprendre-le-markdown">Apprendre le Markdown</h2>
+
+<p>La syntaxe Markdown est suffisamment simple à apprendre en une seule séance. Les ressources qui suivent sont excellentes pour vous mettre en route :</p>
+
+<ul>
+<li><a href="https://daringfireball.net/projects/markdown/">Daring Fireball: Markdown, John Gruber (Créateur du Markdown)</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Anti-sèche Markdown, Adam Pritchard</a></li>
+<li><a href="http://www.markdowntutorial.com/">Tutoriel Markdown (Interactif), Garen Torikian</a></li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+                    
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+                
+            
+        
+                    
+                
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/gestion-contenu/organisation/" title="Organisation du Contenu"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/gestion-contenu/front-matter/" title="Front Matter" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    <script src="/js/html5shiv-printshiv.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js"></script>
+    <script src="/js/learn.js"></script>
+    <script src="/js/hugo-learn.js"></script>
+
+    
+    <link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>
+
