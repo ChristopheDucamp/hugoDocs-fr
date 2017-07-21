@@ -65,10 +65,11 @@ echo "/public" >> .gitignore
 
 # committer et pousser le code sur la branche master
 git add .
-git commit -m "Initial commit"
+git commit -m "Premier commit"
 git remote add origin https://gitlab.com/VotreNomUtilisateur/votre-site-hugo.git
 git push -u origin master
 ```
+
 
 ## Attendre que votre page se Construise
 
@@ -78,5 +79,5 @@ After the build has passed, your new website is available at `https://<YourUsern
 
 ## Prochaines étapes
 
-GitLab supporte l'utilisation de CNAME's et certificats TLS personnalisés. Pour plus de détails sur GitLab Pages, regardez la [documentation de réglages GitLab Pages](https://about.gitlab.com/2016/04/07/gitlab-pages-setup/).
+GitLab supporte l'utilisation de CNAME's et des certificats TLS personnalisés. Pour plus de détails sur GitLab Pages, regardez la [documentation de réglages GitLab Pages](https://about.gitlab.com/2016/04/07/gitlab-pages-setup/).
 

@@ -5,7 +5,7 @@ description: Les variables au-niveau page sont définies dans un front matter du
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
-categories: [variables and params, variables et params]
+categories: [variables et params]
 #tags: [pages, todo]
 draft: false
 menu:
@@ -69,17 +69,16 @@ Voir [`.Scratch`](/fonctions/scratch/) pour des variables inscriptibles à l'éc
 : the meta keywords for the content.
 
 `.Kind`
-: the page's *kind*. Possible return values are `page`, `home`, `section`, `taxonomy`, or `taxonomyTerm`. Note that there are also `RSS`, `sitemap`, `robotsTXT`, and `404` kinds, but these are only available during the rendering of each of these respective page's kind and therefore *not* available in any of the `Pages` collections.
+: le *type* de page. Les valeurs de retour possibles sont `page`, `home`, `section`, `taxonomy`, ou `taxonomyTerm`. Notez qu'il existe aussi les *kind*s `RSS`, `sitemap`, `robotsTXT`, et les `404`, mais celles-ci sont uniquement disponibles durant le rendu de chacuns de ces kind respectifs de page et par conséquent *non* disponibles dans n'importe lesquelles des collections de `Pages`.
 
 `.Lang`
-: language taken from the language extension notation.
+: la langue prise à partir de le l'extenstion de notation language.
 
 `.Language`
-: a language object that points to the language's definition in the site
-`config`.
+: un objet langage quipointe vers la définition de langage dans le `config` du site.
 
 `.Lastmod`
-: the date the content was last modified; `.Lastmod` pulls from the `lastmod` field in a content's front matter. If `lastmod` is not set, Hugo will default to the `date` field. See also `.ExpiryDate`, `.Date`, and `.PublishDate`.
+: La date à laquelle le contenu a été dernièrement modifié ; `.Lastmod` extrait du champ `lastmod` dans un front matter de contenu. Si `lastmod` n'est pas réglé, Hugo prendra par défaut le champ `date`. Voir aussi `.ExpiryDate`, `.Date`, et  `.PublishDate`.
 
 `.LinkTitle`
 : access when creating links to the content. If set, Hugo will use the `linktitle` from the front matter before `title`.
@@ -180,7 +179,7 @@ Toute autre valeur définie dans la page d'accueil d'un fichier de contenu, y co
 title: Mon Premier Post
 date: date: 2017-02-20T15:26:23-06:00
 categories: [un]
-#tags: [deux,trois,quatre]
+tags: [deux,trois,quatre]
 ```
 
 Avec le front matter ci-dessus, les taxonomies `tags` et `categories` sont accessibles via les éléments suivants :

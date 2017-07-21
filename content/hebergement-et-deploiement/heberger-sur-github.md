@@ -16,7 +16,7 @@ weight: 30
 sections_weight: 30
 draft: false
 toc: true
-aliases: [/tutorials/github-pages-blog/]
+aliases: [/hebergement-et-deploiement/hosting-on-github/,/tutorials/github-pages-blog/]
 ---
 
 GitHub fournit un hébergement statique gratuit et rapide sur SSL pour les personnes, organisations ou pages de projet directement à partir d'un repo GitHub via son [service GitHub Pages][].
@@ -236,7 +236,7 @@ Pour plus d'informations, reportez-vous à la [documentation officielle pour les
 [ghorgs]: https://help.github.com/articles/user-organization-and-project-pages/#user--organization-pages
 [ghpfromdocs]: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch
 [ghsignup]: https://github.com/join
-[GitHub Pages service]: https://help.github.com/articles/what-is-github-pages/
+[service GitHub Pages]: https://help.github.com/articles/what-is-github-pages/
 [installgit]: https://git-scm.com/downloads
 [orphan branch]: https://git-scm.com/docs/git-checkout/#git-checkout---orphanltnewbranchgt
 [Quick Start]: /getting-started/quick-start/
