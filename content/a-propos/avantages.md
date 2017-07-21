@@ -8,7 +8,7 @@ lastmod: 2017-07-18
 #tags: [ssg,static,performance,security, sécurité, statique, gss]
 menu:
   docs:
-    parent: "about"
+    parent: "a-propos"
     weight: 30
 weight: 30
 sections_weight: 30

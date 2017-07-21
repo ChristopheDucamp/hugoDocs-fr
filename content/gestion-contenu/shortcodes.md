@@ -8,11 +8,11 @@ publishdate: 2017-02-01
 lastmod: 2017-07-21
 menu:
   docs:
-    parent: "content-management"
+    parent: "gestion-contenu"
     weight: 35
 weight: 35	#rem
-categories: [content management, gestion de contenu]
-#tags: [markdown,content,shortcodes, contenu]
+categories: [gestion de contenu]
+#tags: [markdown,shortcodes, contenu]
 draft: false
 aliases: [/extras/shortcodes/]
 toc: true

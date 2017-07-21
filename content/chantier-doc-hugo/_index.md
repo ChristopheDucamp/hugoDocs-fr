@@ -121,7 +121,6 @@ Organisation de Contenu **est** votre structure de dossier  `content`.
 Pour indiquer au thème Hugo docDock de considérer une page comme un contenu de page d’accueil, créez simplement un fichier de contenu appelé `_index.md` dans le dossier `content`.
 
 
-{{% children style="h2" depth="1" description="true" %}}
 
 
 

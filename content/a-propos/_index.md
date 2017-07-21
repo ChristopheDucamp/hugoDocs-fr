@@ -4,12 +4,12 @@ linktitle: Aperçu
 description: Hugo - les fonctionnalités, le plan de route, la licence et la motivation.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
+lastmod: 2017-07-21
 categories: []
 #tags: []
 menu:
   docs:
-    parent: "about"
+    parent: "a-propos"
     weight: 1
 weight: 1
 draft: false
@@ -18,5 +18,3 @@ toc: false
 ---
 
 Hugo n'est pas votre générateur de site statique moyen.
-
-{{% children style="h3" description="true" %}}

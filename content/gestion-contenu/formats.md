@@ -1,23 +1,23 @@
 ---
 title: Formats de Contenus Supportés
 linktitle: Formats de Contenus Supportés
-description: Markdown et Emacs Mode-Org ont un support natif, et des formats supplémentaires (par ex.Asciidoc) viennent via des aides externes.
+description: Markdown et Emacs Mode-Org ont un support natif, et des formats supplémentaires (par ex.Asciidoc) proviennent d'aides externes.
 date: 2017-01-10
 publishdate: 2017-01-10
-lastmod: 2017-07-18
-categories: [content management, gestion de contenu]
+lastmod: 2017-07-21
+categories: [gestion de contenu]
 #tags: [markdown,asciidoc,mmark,content format,contenu, format de contenu]
 menu:
   docs:
-    parent: "content-management"
+    parent: "gestion-contenu"
     weight: 20
 weight: 20	#rem
 draft: false
-aliases: [/content/markdown-extras/,/content/supported-formats/,/doc/supported-formats/,/tutorials/mathjax/]
+aliases: []
 toc: true
 ---
 
-**Markdown est le principal format de contenu** et il est livré avec deux saveurs : l'excellent [projet Blackfriday][blackfriday] (nommez vos fichiers `*.md` ou réglez `markup = "markdown"` dans le front matter) ou son fork [Mmark][mmark] (nommez vos fichiers `*.mmark` ou réglez `markup = "mmark"` dans le front matter), tous les deux étant deux moteurs rapides markdown écrits en Go.
+**Markdown est le principal format de contenu** et il est livré avec deux saveurs : l'excellent [projet Blackfriday][blackfriday](nommez vos fichiers `*.md` ou réglez `markup = "markdown"` dans le front matter) ou son fork [Mmark][mmark] (nommez vos fichiers `*.mmark` ou réglez `markup = "mmark"` dans le front matter), tous les deux étant deux moteurs rapides markdown écrits en Go.
 
 Pour les utilisateurs d'Emacs, [goorgeous](https://github.com/chaseadamsio/goorgeous) fournit un support natif intégré pour Org-mode (nommez vos fichiers `*.org` ou définissez `markup = "org"` dans le front matter).
 
@@ -230,7 +230,7 @@ La syntaxe Markdown est suffisamment simple à apprendre en une seule séance. L
 [bfconfig]: /demarrage/configuration/#configurer-rendu-blackfriday
 [blackfriday]: https://github.com/russross/blackfriday
 [mmark]: https://github.com/miekg/mmark
-[config]: /getting-started/configuration/
+[config]: /demarrage/configuration/
 [developer tools]: /tools/
 [emojis]: https://www.webpagefx.com/tools/emoji-cheat-sheet/
 [fireball]: https://daringfireball.net/projects/markdown/
@@ -249,5 +249,5 @@ La syntaxe Markdown est suffisamment simple à apprendre en une seule séance. L
 [org]: http://orgmode.org/
 [Pygments]: http://pygments.org/
 [rest]: http://docutils.sourceforge.net/rst.html
-[sc]: /content-management/shortcodes/
+[sc]: /gestion-contenu/shortcodes/
 [sct]: /templates/shortcode-templates/

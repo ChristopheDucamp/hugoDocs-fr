@@ -5,21 +5,21 @@ description: Hugo suppose que la même structure qui fonctionne pour organiser v
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
-categories: [content management,fundamentals, fondamentaux, gestion de contenu]
-#tags: [sections,content,organization, contenu, organisation]
+categories: [fondamentaux, gestion de contenu]
+#tags: [sections,contenu, organisation]
 menu:
   docs:
     parent: "gestion-contenu"
     weight: 10
 weight: 10	#rem
 draft: false
-aliases: [/content/sections/]
+aliases: []
 toc: true
 ---
 
-{{% notice warning %}}
+{{% note %}}
 Cette section n'est pas mise à jour avec le support de nouvelles sections imbriquées dans Hugo 0.24, voir https://github.com/gohugoio/hugoDocs/issues/36
-{{% /notice %}}
+{{% /note %}}
 {{% todo %}}
 See above
 {{% /todo %}}
@@ -34,20 +34,20 @@ Alors que Hugo prend en charge le contenu imbriqué à n'importe quel niveau, le
 .
 └── content
     └── about
-    |   └── _index.md  // <- http://yoursite.com/about/
+    |   └── _index.md  // <- http://votresite.com/about/
     ├── post
-    |   ├── firstpost.md   // <- http://yoursite.com/post/firstpost/
+    |   ├── firstpost.md   // <- http://votresite.com/post/premierpost/
     |   ├── happy
-    |   |   └── ness.md  // <- http://yoursite.com/post/happy/ness/
-    |   └── secondpost.md  // <- http://yoursite.com/post/secondpost/
-    └── quote
-        ├── first.md       // <- http://yoursite.com/quote/first/
-        └── second.md      // <- http://yoursite.com/quote/second/
+    |   |   └── ness.md  // <- http://votresite.com/post/happy/ness/
+    |   └── secondpost.md  // <- http://votresite.com/post/secondpost/
+    └── citation
+        ├── premier.md       // <- http://votresite.com/quote/first/
+        └── second.md      // <- http://votresite.com/quote/second/
 ```
 
 ## Répartition de Chemins dans Hugo
 
-Ce qui suit illustre les relations entre votre organisation de contenu et la structure d'URL de sortie pour votre site Web Hugo lorsqu'il est rendu. Ces exemples supposent que vous utilisez [l'utilisation de jolies URL][pretty], ce qui est le comportement par défaut de Hugo. Les exemples prennent également une valeur-clé de `baseurl = "http://yoursite.com"` dans le  [fichier de configuration de votre site][config].
+Ce qui suit illustre les relations entre votre organisation de contenu et la structure d'URL de sortie pour votre site Web Hugo lorsqu'il est rendu. Ces exemples supposent que vous utilisez [l'utilisation de belles URL][pretty], ce qui est le comportement par défaut de Hugo. Les exemples prennent également une valeur-clé de `baseurl = "http://votresite.com"` dans le  [fichier de configuration de votre site][config].
 
 ### Pages Index : `_index.md`
 
@@ -76,7 +76,7 @@ Lors de la compilation, cela générera la destination suivante avec les valeurs
 ⊢--------^---------⊣⊢-^-⊣
         permalink
 ⊢----------^-------------⊣
-http://yoursite.com/posts/index.html
+http://votresite.com/posts/index.html
 ```
 
 ### Pages Uniques dans les Sections
@@ -84,24 +84,24 @@ http://yoursite.com/posts/index.html
 Les fichiers de contenu unique dans chacune de vos sections vont être rendus comme [modèles de page unique][singles]. Voici un exemple d'un `post`  unique dans `posts` :
 
 ```bash
-                   path ("posts/my-first-hugo-post.md")
+                   path ("posts/mon-premier-hugo-post.md")
 .       ⊢-----------^------------⊣
 .      section        slug
 .       ⊢-^-⊣⊢--------^----------⊣
-content/posts/my-first-hugo-post.md
+content/posts/mon-premier-hugo-post.md
 ```
 
 Au moment où Hugo construit votre site, le contenu sera envoyé à la destination suivante :
 
 ```bash
 
-                               url ("/posts/my-first-hugo-post/")
+                               url ("/posts/mon-premier-hugo-post/")
                    ⊢------------^----------⊣
        baseurl     section     slug
 ⊢--------^--------⊣⊢-^--⊣⊢-------^---------⊣
                  permalink
 ⊢--------------------^---------------------⊣
-http://yoursite.com/posts/my-first-hugo-post/index.html
+http://votresite.com/posts/mon-premier-post-hugovotresite/index.html
 ```
 
 ### Section avec Répertoires Imbriqués
@@ -119,7 +119,7 @@ Pour continuer l'exemple, les éléments suivants montrent les chemins de destin
 ⊢--------^--------⊣ ⊢------^-----⊣⊢----^------⊣
                   permalink
 ⊢----------------------^-----------------------⊣
-http://yoursite.com/events/chicago/lollapalooza/
+http://votresite.com/events/chicago/lollapalooza/
 ```
 
 {{% note %}}
@@ -165,7 +165,7 @@ Les éléments suivants sont définis dans cet ordre pour une raison spécifique
 
 ### `nomfichier`
 
-Ce n'est pas dans le front matter mais c'est le nom réel du fichier moins l'extension. Ce sera le nom du fichier dans la destination (par exemple, `content/posts/my-post.md` devient `yoursite.com/posts/my-post/`).
+Ce n'est pas dans le front matter mais c'est le nom réel du fichier moins l'extension. Ce sera le nom du fichier dans la destination (par exemple, `content/posts/my-post.md` devient `votresite.com/posts/my-post/`).
 
 ### `slug`
 
@@ -183,7 +183,7 @@ slug: "nouveau-post"
 Cela rendra la destination suivante selon le comportement par défaut de Hugo :
 
 ```
-yoursite.com/posts/nouveau-post/
+votresite.com/posts/nouveau-post/
 ```
 
 ### `section`
@@ -222,10 +222,10 @@ url: /blog/nouvel-url/
 ```
 {{% /code %}}
 
-En supposant que votre `baseURL` est [configurée][config] sur `https://yoursite.com`, l'ajout de `url` dans le front matter rendra "vieil-url.md` à la destination suivante :
+En supposant que votre `baseURL` est [configurée][config] sur `https://votresite.com`, l'ajout de `url` dans le front matter rendra "vieil-url.md` à la destination suivante :
 
 ```
-https://yoursite.com/blog/nouvel-url/
+https://votresite.com/blog/nouvel-url/
 ```
 
 Vous pouvez voir plus d'informations sur la façon de contrôler les chemins de sortie dans la [Gestion des URL][urls].

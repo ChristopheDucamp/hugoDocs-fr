@@ -5,11 +5,11 @@ description: Jetez un oeil à ce qu'il y a dans le pipeline pour les futures ver
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
-categories: [à propos d'hugo, about hugo]
+categories: [à propos d'hugo]
 #tags: [about,contribute,roadmap]
 menu:
   docs:
-    parent: "about"
+    parent: "a-propos"
     weight: 50
 weight: 50
 sections_weight: 50

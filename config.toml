@@ -6,7 +6,7 @@ title = "Une documentation en français pour Hugo"
 
 publishDir = "public"
 
-theme = "docdock"
+theme = "gohugoioTheme"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 

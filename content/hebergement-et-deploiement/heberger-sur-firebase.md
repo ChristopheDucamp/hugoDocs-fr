@@ -5,12 +5,12 @@ description: Vous pouvez utiliser l'outil de Firebase pour héberger votre site 
 date: 2017-03-12
 publishdate: 2017-03-12
 lastmod: 2017-03-21
-categories: [hosting and deployment, héberement et déploiement]
-#tags: [hosting,firebase]
+categories: [hébergement et déploiement]
+#tags: [hébergement,firebase]
 authors: [Michel Racic]
 menu:
   docs:
-    parent: "hergement-et-deploiement"
+    parent: "hebergement-et-deploiement"
     weight: 20
 weight: 20
 sections_weight: 20
@@ -29,7 +29,6 @@ aliases: [/hebergement-et-deploiement/hosting-on-firebase/]
 Allez sur la [console Firebase][console] et créez un nouveau projet (à moins que vous n'ayez déjà un projet). 
 
 Vous devrez aussi installer `firebase-tools` (node.js) sur votre machine à partir de votre fenêtre de terminal, lancez la commande :
-
 
 ```sh
 npm install -g firebase-tools
@@ -91,6 +90,6 @@ firebase deploy --token $FIREBASE_DEPLOY_TOKEN
 [Quick Start]: /demarrage/quickstart/
 [Wercker]: /hebergement-et-deploiement/deployment-with-wercker/
 
-## Test du 21 Juillet 
+## Test 
 
-* Visualisez une page miroir de ce site sur <https://dochugo-edf58.firebaseapp.com/hebergement-et-deploiement/>
+* <https://dochugo-edf58.firebaseapp.com/hebergement-et-deploiement/> (2017-07-21)

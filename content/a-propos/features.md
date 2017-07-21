@@ -8,7 +8,7 @@ publishdate: 2017-02-01
 lastmod: 2017-07-19
 menu:
   docs:
-    parent: "about"
+    parent: "a-propos"
     weight: 20
 weight: 20
 sections_weight: 20

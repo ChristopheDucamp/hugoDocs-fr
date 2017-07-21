@@ -5,11 +5,11 @@ description: Hugo supporte les sites avec plusieurs types de contenu et suppose 
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-20
-categories: [content management, gestion de contenu]
-#tags: [lists,sections,content types,types,organization, organisation, listes, sections, contenu]
+categories: [gestion de contenu]
+#tags: [listes,sections,types de contenu,types,organisation, sections, contenu]
 menu:
   docs:
-    parent: "content-management"
+    parent: "gestion-contenu"
     weight: 60
 weight: 60	#rem
 draft: false

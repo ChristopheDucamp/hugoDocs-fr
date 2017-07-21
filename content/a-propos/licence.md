@@ -4,12 +4,12 @@ linktitle: Licence
 description: Les versions Hugo v0.15 et suivantes sont publiées sous la licence Apache 2.0.
 date: 2016-02-01
 publishdate: 2016-02-01
-lastmod: 2017-07-20
-categories: ["about hugo, à propos d'hugo"]
-#tags: ["License","apache","licence"]
+lastmod: 2017-07-21
+categories: [à propos d'hugo]
+tags: [Licence,apache]
 menu:
   docs:
-    parent: "about"
+    parent: "a-propos"
     weight: 60
 weight: 60
 sections_weight: 60
