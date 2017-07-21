@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://dochugo.christopheducamp.com/commandes/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dochugo.christopheducamp.com/gestion-contenu/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
@@ -25,11 +30,6 @@
   <url>
     <loc>https://dochugo.christopheducamp.com/variables/</loc>
     <lastmod>2017-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dochugo.christopheducamp.com/commandes/</loc>
-    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -328,7 +328,7 @@
   
   <url>
     <loc>https://dochugo.christopheducamp.com/variables/git/</loc>
-    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -353,7 +353,7 @@
   
   <url>
     <loc>https://dochugo.christopheducamp.com/variables/sitemap/</loc>
-    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -478,11 +478,11 @@
   
   <url>
     <loc>https://dochugo.christopheducamp.com/commands/hugo/</loc>
-    <lastmod>2017-07-16T23:23:14+02:00</lastmod>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dochugo.christopheducamp.com/commands/hugo_benchmark/</loc>
+    <loc>https://dochugo.christopheducamp.com/commandes/hugo_benchmark/</loc>
     <lastmod>2017-07-16T23:23:14+02:00</lastmod>
   </url>
   
@@ -1213,13 +1213,13 @@
   
   <url>
     <loc>https://dochugo.christopheducamp.com/categories/commandes/</loc>
-    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dochugo.christopheducamp.com/categories/commands/</loc>
-    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,8 +1,5 @@
-Chantier personnel de traduction des contenus de la doc Hugo et déposés sur le thème hugo-docdock.
-
-# hugo-docdock-fr
-Source https://github.com/vjeantet/hugo-theme-docdock - [Valere Jeantet aka @vjeantet](https://github.com/vjeantet)
-
+Chantier personnel de traduction des contenus de la doc Hugo et déposés sur le thème [hugo-docdock](https://github.com/vjeantet/hugo-theme-docdock) 
+<!--
 # Thème Hugo docDock
 
 Ce repository est basé sur la motorisation [Hugo](https://gohugo.io/), et les travaux géniaux de [Matcornic Learn theme](https://github.com/matcornic/hugo-theme-learn/) et Valère Jeantet (@vjeantet). 
@@ -38,3 +35,5 @@ Vérifiez que votre version Hugo soit au minimum à `0.22` avec  `hugo version`.
 ## Usage
 
 - [Visitez la documentation en français- traduction en cours](http://docdock-hugo.netlify.com/) 
+
+-->

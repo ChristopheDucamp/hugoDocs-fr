@@ -1,16 +1,16 @@
 ---
-title: Hosting on Netlify
-linktitle: Hosting on Netlify
-description: Netlify can host your Hugo site with CDN, continuous deployment, 1-click HTTPS, an admin GUI, and its own CLI.
+title: Netlify
+linktitle: Héberger chez Netlify
+description: Netlify peut héberger votre site Hugo avec CDN, déploiement continu, HTTPS-en-1-clic, une GUI d'admin et sa propre CLI.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-03-11
-categories: [hosting and deployment]
-#tags: [netlify,hosting,deployment]
-authors: [Ryan Watters, Seth MacLeod]
+lastmod: 2017-07-21
+categories: [hébergement et déploiement]
+#tags: [netlify,hébergement, déploiement]
+authors: [Ryan Watters, Seth MacLeod, Christophe Ducamp]
 menu:
   docs:
-    parent: "hosting-and-deployment"
+    parent: "hebergement-et-deploiement"
     weight: 10
 weight: 10
 sections_weight: 10
@@ -19,97 +19,98 @@ aliases: []
 toc: true
 ---
 
-[Netlify][netlify] provides continuous deployment services, global CDN, ultra-fast DNS, atomic deploys, instant cache invalidation, one-click SSL, a browser-based interface, a CLI, and many other features for managing your Hugo website.
+[Netlify][netlify] fournit des services de déploiement continu, un CDN global, un DNS ultra-rapide, des déploiements atomiques, une invalidation de cache instantané, un SSL en un clic, une interface basée dans le navigateur, une CLI et de nombreuses autres fonctionnalités pour la gestion de votre site web Hugo.
 
-## Assumptions
+## Hypothèses
 
-* You have an account with GitHub, GitLab, or Bitbucket.
-* You have completed the [Quick Start][] or have Hugo website you are ready to deploy and share with the world.
-* You do not already have a Netlify account.
+* Vous avez un compte chez GitHub, GitLab, ou Bitbucket.
+* Vous avez terminé le [Quick Start][] ou vous avez un site web Hugo que vous êtes prêt à déployer et partager avec le monde.
+* Vous n'avez pas encore de compte Netlify.
 
-## Create a Netlify account
+## Créez un compte Netlify
 
-Go to [app.netlify.com][] and select your preferred signup method. This will likely be a hosted Git provider, although you also have the option to sign up with an email address.
+Allez sur [app.netlify.com][] et sélectionnez votre méthode d'inscription préférée. Ce sera probablement un fournisseur Git hébergé, bien que vous ayez également la possibilité de vous inscrire avec une adresse e-mail.
 
-The following examples use GitHub, but other git providers will follow a similar process.
+Les exemples suivants utilisent GitHub, mais d'autres fournisseurs de GIT suivront un processus similaire.
 
-![Screenshot of the homepage for app.netlify.com, containing links to the most popular hosted git solutions.](/images/hosting-and-deployment/hosting-on-netlify/netlify-signup.jpg)
+![Capture-écran de la page d'accueil pour app.netlify.com, contenant les liens vers les emplacements de solutions git les plus populaires.](/images/hosting-and-deployment/hosting-on-netlify/netlify-signup.jpg)
 
-Selecting GitHub will bring up a typical modal you've seen through other application that use GitHub for authentication. Select "Authorize application."
+La sélection de GitHub permet d'afficher un mode d'utilisation typique à travers une autre application qui utilise GitHub pour l'authentification. Sélectionnez "Autorize application".
 
-![Screenshot of the authorization popup for Netlify and GitHub.](/images/hosting-and-deployment/hosting-on-netlify/netlify-first-authorize.jpg)
+![Capture-écran du popup d'autorisation pour Netlify et GitHub.](/images/hosting-and-deployment/hosting-on-netlify/netlify-first-authorize.jpg)
 
-## Create a New Site with Continuous Deployment
+## Créez un Nouveau Site avec Déploiement Continu
 
-You're now already a Netlify member and should be brought to your new dashboard. Select "New site from git."
+Vous êtes maintenant membre de Netlify et vous devriez vous retrouver dans votre nouveau tableau de bord. Sélectionnez "Nouveau site à partir de git" (NDT "New site from git").
 
-![Screenshot of the blank Netlify admin panel with no sites and highlighted 'add new site' button'](/images/hosting-and-deployment/hosting-on-netlify/netlify-add-new-site.jpg)
+![Capture-écran du tableau de boc d'admin de Netlify sans sites et un bouton 'add new site'](/images/hosting-and-deployment/hosting-on-netlify/netlify-add-new-site.jpg)
 
-Netlify will then start walking you through the steps necessary for continuous deployment. First, you'll need to select your git provider again, but this time you are giving Netlify added permissions to your repositories.
+Netlify commencera à marcher pour suivre les étapes nécessaires au déploiement continu. Tout d'abord, vous devrez sélectionner à nouveau votre fournisseur de git, mais cette fois, vous donnez à Netlify des autorisations supplémentaires pour accéder à vos dépôts.
 
-![Screenshot of step 1 of create a new site for Netlify: selecting the git provider](/images/hosting-and-deployment/hosting-on-netlify/netlify-create-new-site-step-1.jpg)
+![Capture écran de l'étape 1 de création d'un nouveau site sur  Netlify : sélectionner le fournisseur git](/images/hosting-and-deployment/hosting-on-netlify/netlify-create-new-site-step-1.jpg)
 
-And then again with the GitHub authorization modal:
+Et de nouveau avec le modèle d'autorisation GitHub :
 
-![Screenshot of step 1 of create a new site for Netlify: selecting the git provider](/images/hosting-and-deployment/hosting-on-netlify/netlify-authorize-added-permissions.jpg)
+![[Capture écran de l'étape 1 de pour créer un nouveau site sur Netlify : sélection du fournisseur git](/images/hosting-and-deployment/hosting-on-netlify/netlify-authorize-added-permissions.jpg)
 
-Select the repo you want to use for continuous deployment. If you have a large number of repositories, you can filter through them in real time using repo search:
+Sélectionnez le repo que vous voulez utiliser pour un déploiement continu. Si vous avez un grand nombre de dépôts, vous pouvez le filtrer en utilisant la recherche de repo en temps réel : 
 
 ![Screenshot of step 1 of create a new site for Netlify: selecting the git provider](/images/hosting-and-deployment/hosting-on-netlify/netlify-create-new-site-step-2.jpg)
 
-Once selected, you'll be brought to a screen for basic setup. Here you can select the branch you wanted published, your [build command][], and your publish (i.e. deploy) directory. The publish directory should mirror that of what you've set in your [site configuration][config], the default of which is `public`. The following steps assume you are publishing from the `master` branch.
+Une fois sélectionné, vous serez amené à un écran pour une installation basique. De là, vous pouvez sélectionner la branche que vous voulez publier, votre [comment build][build command], et votre répertoire de publication (c'est-à-dire celui du déploiement). Le répertoire de publication devrait correspondre à celui que vous avez réglé dans votre [configuration de site][config], la valeur par défaut de celui-ci étant `public`. Les étapes suivantes supposent que vous publiez à partir de la branche `master`.
 
-### Build with a Specific Hugo Version
+### Construire avec une Version Hugo Spécifique
 
-Setting the build command to `hugo` will build your site according to the current default Hugo version used by Netlify. You can see the full list of [available Hugo versions in Netlify's Docker file][hugoversions].
+Le réglage de la commande build sur `hugo` construira votre site selon la version de Hugo utilisée par défaut par Netlify. Vous pouvez voir la liste complète des [version Hugo disponibles dans le fichier Docker de Netlify][hugoversions].
 
-If you want to tell Netlify to build with a specific version, you can append an underscore followed by the version number to the build command:
+Si vous voulez préciser à Netlify de construire avec une version spécifique, vous pouvez ajouter un trait souligné suivi du numéro de version à la commande build : 
 
 ```bash
 hugo_0.19
 ```
 
-Your simple configuration should now look similar to the following:
+Votre configuration simple devrait maintenant ressembler à ce qui suit :
 
-![Screenshot of 3-step, basic continuous deployment setup with a new Hugo site on Netlify](/images/hosting-and-deployment/hosting-on-netlify/netlify-create-new-site-step-3.jpg)
+![Capture écran de l'étape 3, installation d'un déploiement continu basique avec un nouveau site Hugo sur Netlify](/images/hosting-and-deployment/hosting-on-netlify/netlify-create-new-site-step-3.jpg)
 
-Selecting "Deploy site" will immediately take you to a terminal for your build:.
+Sélectionnez "Deploy site" vous emmènera directement vers un terminal pour votre construction : 
 
-![Animated gif of deploying a site to Netlify, including the terminal read out for the build.](/images/hosting-and-deployment/hosting-on-netlify/netlify-deploying-site.gif)
+![gig animé du déploiement d'un site sur Netlify, comprendant la lecture du terminal pour le build.](/images/hosting-and-deployment/hosting-on-netlify/netlify-deploying-site.gif)
 
-Once the build is finished---this should only take a few seconds--you should now see a "Hero Card" at the top of your screen letting you know the deployment is successful. The Hero Card is the first element that you see in most pages. It allows you to see a quick summary of the page and gives access to the most common/pertinent actions and information. You'll see that the URL is automatically generated by Netlify. You can update the URL in "Settings."
+Une fois la construction terminée --- cela ne devrait prendre que quelques secondes - vous devriez maintenant voir une "Carte Hero" en haut de votre écran pour vous informer que le déploiement a réussi. La Carte Hero est le premier élément que vous voyez dans la plupart des pages. Elle vous permet de voir un résumé rapide de la page et donne accès aux actions et aux informations les plus courantes/pertinentes. Vous verrez que l'URL est automatiquement générée par Netlify. Vous pouvez mettre à jour l'URL dans "Settings".
 
-![Screenshot of successful deploy badge at the top of a deployments screen from within the Netlify admin.](/images/hosting-and-deployment/hosting-on-netlify/netlify-deploy-published.jpg)
+![Capture-écran d'un badge de déploiement réussi en haut de l'écran deployments à partir de l'admin Netlify.](/images/hosting-and-deployment/hosting-on-netlify/netlify-deploy-published.jpg)
 
-![Screenshot of homepage to https://hugo-netlify-example.netlify.com, which is mostly dummy text](/images/hosting-and-deployment/hosting-on-netlify/netlify-live-site.jpg)
+![Capture-écran de la page d'accueil de https://hugo-netlify-example.netlify.com, qui est essentiellemnet du faux texte](/images/hosting-and-deployment/hosting-on-netlify/netlify-live-site.jpg)
 
-[Visit the live site][visit].
+[Visitez le site en live][visit].
 
-Now every time you push changes to your hosted git repository, Netlify will rebuild and redeploy your site.
+Maintenant à chaque fois que vous pousserez des modifications sur votre repo git hébergé, Netlify reconstruira et déploirea votre site.
 
-## Use Hugo Themes with Netlify
+## Utilisez les Thèmes Hugo avec Netlify
 
-The [`git clone` method for installing themes][installthemes] is not supported by Netlify. If you were to use `git clone`, it would require you to recursively remove the `.git` subdirectory from the theme folder and would therefore prevent compatibility with future versions of the theme.
+La [`git clone` pour installer les thèmes][installthemes] n'est pas supportée par Netlify. Si vous deviez utiliser `git clone`,
+il faudrait que vous supprimiez récursivement le sous-répertoire `.git` du dossier de thème ce qui empêche donc la compatibilité avec les versions futures du thème.
 
-A *better* approach is to install a theme as a proper git submodule. You can [read the GitHub documentation for submodules][ghsm] or those found on [Git's website][gitsm] for more information, but the command is similar to that of `git clone`:
+Une *meilleure* approche consiste à installer un thème comme un sous-module Git approprié. Pour plus d'informations, vous pouvez [lire la documentation GitHub pour les sous-modules][ghsm] ou celle sur [le site web de Git][gitsm], mais la commande est similaire à celle de `git clone` : 
 
 ```bash
 cd themes
-git submodule add https://github.com/<THEMECREATOR>/<THEMENAME>
+git submodule add https://github.com/<CREATEURTHEME>/<NOMTHEME>
 ```
 
-## Next Steps
+## Prochaines étapes
 
-You now have a live website served over https, distributed through CDN, and configured for continuous deployment. Dig deeper into the Netlify documentation:
+Vous avez maintenant un site web en live seri avec https, distribué à travers un CDN et configuré pour un déploiement continu. Plongez plus à fond dans la documentation de Netlify documentation:
 
-1. [Using a Custom Domain][]
-2. [Setting up HTTPS on Custom Domains][httpscustom]
-3. [Redirects and Rewrite Rules][]
+1. [Utiliser un Nom de Domaine Personnalisé][]
+2. [Régler le HTTPS sur les Domaines Personnalisés][httpscustom]
+3. [Règles de Redirection et Rewrite][]
 
 
 [app.netlify.com]: https://app.netlify.com
 [build command]: /getting-started/usage/#the-hugo-command
-[config]: /getting-started/configuration/
+[config]: /demarrage/configuration/
 [ghsm]: https://github.com/blog/2104-working-with-submodules
 [gitsm]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 [httpscustom]: https://www.netlify.com/docs/ssl/
@@ -117,7 +118,7 @@ You now have a live website served over https, distributed through CDN, and conf
 [installthemes]: /themes/installing/
 [netlify]: https://www.netlify.com/
 [netlifysignup]: https://app.netlify.com/signup
-[Quick Start]: /getting-started/quick-start/
+[Quick Start]: /demarrage/quickstart/
 [Redirects and Rewrite Rules]: https://www.netlify.com/docs/redirects/
 [Using a Custom Domain]: https://www.netlify.com/docs/custom-domains/
 [visit]: https://hugo-netlify-example.netlify.com

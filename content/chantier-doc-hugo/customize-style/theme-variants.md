@@ -7,7 +7,7 @@ Dans le fichier de configuration du site, vous pouvez régler un nom de variante
 
 ajoutez un param `themeVariant = "NOM_VARIANTe"` dans votre fichier `config.toml`.
 
-{{%info%}}La variantes disponibles ne modifient que les couleurs pour l'instant{{%/info%}}
+{{%info%}}Pour l'instant, les variantes disponibles ne modifient que les couleurs{{%/info%}}
 
 
 ## Variante "gray"

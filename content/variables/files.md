@@ -25,24 +25,24 @@ Pour plus d'informations sur la création de shortcodes et de modèles qui utili
 L'objet `.File` contient les champs suivants :
 
 `.File.Path`
-: the original relative path of the page (e.g., `content/posts/foo.en.md`)
+: le chemin relatif origiinal de la page (par ex., `content/posts/foo.en.md`)
 
 `.File.LogicalName`
-: the name of the content file that represents a page (e.g., `foo.en.md`)
+: le nom du fichier de contenu qui représente une page (par ex., `foo.en.md`)
 
 `.File.TranslationBaseName`
-: the filename without extension or optional language identifier (e.g., `foo`)
+: le nom de fichier sans l'extenion ou l'identifiant facultatif de langue (e.g., `foo`)
 
 `.File.BaseFileName`
-: the filename without extension (e.g., `foo.en`)
+: le nom de ficier sans l'extension (par ex., `foo.en`)
 
 `.File.Ext`
-: the file extension of the content file (e.g., `md`); this can also be called using `.File.Extension` as well. Note that it is *only* the extension without `.`.
+: l'extension de fichier du fichier de contenu (par ex., `md`) ; ce peut être aussi appelé en utilisant `.File.Extension`. Notez que c'est *seulement* l'extension sans `.`.
 
 `.File.Lang`
-: the language associated with the given file if Hugo's [Multilingual features][multilingual] are enabled (e.g., `en`)
+: la langue associé au fichier doné si les [Fonctionnalités Multilingues][multilingual] sont activées (par ex., `en`)
 
 `.File.Dir`
-: given the path `content/posts/dir1/dir2/`, the relative directory path of the content file will be returned (e.g., `posts/dir1/dir2/`)
+: sur le chemin `content/posts/dir1/dir2/`, le chemin relatif du dossier du fichier de contenu sera renvoyé (par ex., `posts/dir1/dir2/`)
 
-[Multilingual]: /content-management/multilingual/
+[Multilingual]: /gestion-contenu/multilingue/

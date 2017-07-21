@@ -1,5 +1,5 @@
-baseURL = "https://dochugo.christopheducamp.com"
-languageCode = "fr-fr"
+baseURL = "/"
+languageCode = "en-en"
 DefaultContentLanguage = "fr-fr"
 
 title = "Une documentation en français pour Hugo"
@@ -11,7 +11,7 @@ theme = "docdock"
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-editURL = "https://github.com/ChristopheDucamp/Doc-Hugo/edit/master/content/"
+editURL = "https://github.com/ChristopheDucamp/Doc-DocDock-Hugo/edit/master/content/"
 noHomeIcon = false # default is false
 noSearch = false # default is false
 showVisitedLinks = true # default is false
@@ -22,7 +22,7 @@ themeVariant = "blue" # choisir la variante du theme "green", "gold" , "gray", "
 pre = "<h3>Plus</h3>"
 name = "<i class='fa fa-github'></i> Repo Github"
 identifier = "ds"
-url = "https://github.com/ChristopheDucamp/Doc-Hugo"
+url = "https://github.com/ChristopheDucamp/Doc-DocDock-Hugo"
 weight = 10
 
 [[menu.shortcuts]]

@@ -1,9 +1,13 @@
-+++
+---
 
-title = "Hugo QuickStart"
-description = "Avant de vous lancer dans la construction d'une documentation, un guide simple pour créer une bibliothèque en ligne. Une occasion de taper dans ligne de commande Hugo, la structure du répertoire, la configuration et l'installation d'un thème."
-weight = 2
-+++
+title: Hugo QuickStart
+linktitle: Démarrage rapide
+description: Avant de vous lancer dans la construction d'une documentation, un guide simple pour créer une bibliothèque en ligne. Une occasion de taper dans ligne de commande Hugo, la structure du répertoire, la configuration et l'installation d'un thème.
+date: 2017-07-07
+lastmod: 2017-07-21
+weight: 2
+aliases: [demarrage/quick-start,getting-started/quick-start]
+---
 
 [Source originale](https://gohugo.io/getting-started/quick-start/)
 
@@ -11,7 +15,7 @@ weight = 2
 
 ## Construire une Bibliothèque
 
-Dans ce guide de démarrage, nous allons construire une bibliothèque qui listera les livres et leurs critiques.
+Dans ce guide de démarrage, nous allons construire une bibliothèque qui listera des livres et leurs critiques.
 
 
 ## Étape 1. Installez Hugo
@@ -19,11 +23,11 @@ Dans ce guide de démarrage, nous allons construire une bibliothèque qui lister
 [Installez Hugo](/installer-hugo). Si vous installez à partir des [Versions Hugo][2], vous devrez sauvegarder l'exécutable principal sous `hugo`(ou `hugo.exe` sur Windows) quelque part dans votre `PATH`. Vous aurez besoin de la commande `hugo`pour les étapes suivantes.
 
 
-{{% note "Utilisateurs Windows et Git Bash" %}} Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash][3] (aussi connu comme Git pour Windows). Par conséquent, toutes les commandes démarreront avec le caractère d'invitation Bash (qui est `$`).{{% /note %}}
+{{% panel theme="info" header="Utilisateurs Windows et Git Bash" %}} Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash][3] (aussi connu comme Git pour Windows). Par conséquent, toutes les commandes démarreront avec le caractère d'invitation Bash (qui est `$`).{{% /panel %}}
 
 Une fois `hugo` intallé, assurez-vous de lancer la commande `help` pour vérifier l'installation de `hugo`. Ci-dessous, vous pouvez voir une partie traduite de l'output de la commande `help`.
     
-    
+    ```bash
     $ hugo help
     
     hugo c'est la commande principale, utilisée pour construire votre site Hugo.
@@ -37,7 +41,7 @@ Vous pouvez vérifier la version de  `hugo` en utilisant la commande en dessous.
     $ hugo version
     
     Hugo Static Site Generator v0.25 darwin/amd64 BuildDate: 2017-07-07T19:09:03+02:00
-    
+    ```bash
 
 ## Étape 2. Échafaudez le site de la Bibliothèque avec Hugo 
 
@@ -71,8 +75,8 @@ Vous verrez le dossier `bibliotheque` qui comprend 6 sous-dossiers et 2 fichiers
 * **archetypes** : [Archetypes][archetypes] vous permet de pré-configurer le front-matter pour les fichiers de contenu dans Hugo pour un meilleur échafaudage du contenu en utilisant la commande `hugo new`. 
 * **config.toml** : Hugo utilise `.toml`pour son propre format de configuration. mais il accepte aussi bien les formats `.yml` ou `.json`. Les réglages de configuration mentionnés dans le fichier `config.toml`s'appliquent à l'ensemble du site web et comprennent des variables globales importantes telles que la `baseURL` et le `title` de votre site web. (Voir [configuration](configurer-hugo.md))
 * **content** : Ce dossier unique abrite tous les contenus de votre site web. Chaque sous-répertoire dans content s'appelle une section. Si votre site web dispose de sections pour les articles, événements et tutoriels, vous pourriez créer `content/posts`, `content/events` et `content/tutoriels`.
-* **data** : Ce dossier est utilisé pour stocker les fichiers de données en séries (YAML, JSON, ou TOML) qui peuvent être utilisés dans les [data templates](https://gohugo.io/templates/data-templates/) et votre [menu de site web](https://gohugo.io/content-management/menus/).
-* **layouts** : C'est le carrefour pour tous vos [modèles](https://gohugo.io/templates/introduction/), incluant les [modèles de listes et sections](https://gohugo.io/templates/lists/) et [shortcodes](https://gohugo.io/templates/shortcode-templates/).
+* **data** : Ce dossier est utilisé pour stocker les fichiers de données en séries (YAML, JSON, ou TOML) qui peuvent être utilisés dans les [data templates](templates/data-templates/) et votre [menu de site web](/gestion-contenu/menus/).
+* **layouts** : C'est le carrefour pour tous vos [modèles](templates/introduction/), incluant les [modèles de listes et sections](templates/lists/) et [shortcodes](/templates/shortcode-templates/).
 * **static** : Ce dossier accueille tout le contenu statique ; par exemple les images, JavaScript et CSS. Tout ce qui est dans `/static` est copié tel quel vers votre site web fini.
 * **themes** : C'est l'endroit où vous stockerez les thèmes Hugo. Vous pouvez voir une galrie de tous les thèmes sur [http://themes.gohugo.io](https://themes.gohugo.io)
 
@@ -80,9 +84,9 @@ Vous verrez le dossier `bibliotheque` qui comprend 6 sous-dossiers et 2 fichiers
 
 Ajoutons maintenant un article à notre   `bibliotheque`. Nous utiliserons la commande `hugo new` pour ajouter un article. Ce premier post sera sur le livre [Good To Great][6]. **Assurez-vous de bien être dans le dossier `bibliotheque`.** Et lancez la commande : 
 
-
+```bash
     $ hugo new post/good-to-great.md
-    
+```
     
 Vous devriez voir s'afficher ce qui suit : 
 
@@ -191,7 +195,7 @@ Bien, maintenant nous avons notre page unique "build", mais noue ne voyons rien 
 
 ## Étape 5. Ajoutez un thème
 
-Les [thèmes](https://gohugo.io/themes/) fournissent à Hugo la mise en page et les modèles pour produire votre site Web. Vous pouvez voir la sélection complète de thèmes open source sur <https://themes.gohugo.io/>.
+Les [thèmes](/themes/) fournissent à Hugo la mise en page et les modèles pour produire votre site Web. Vous pouvez voir la sélection complète de thèmes open source sur <https://themes.gohugo.io/>.
 
 > **Hugo n'est toujours pas livré à ce jour avec un thème par défaut, permettant ainsi à l'utilisateur de choisir le thème qui conviendra le mieux à son projet.**
 
@@ -531,7 +535,7 @@ Ce tutoriel rapide a été initialement écrit par [Shekhar Gulati][16] dans sa 
 [archetypes][/gestion-contenu/archetypes/]
 [2]: https://github.com/gohugoio/hugo/releases
 [3]: https://git-for-windows.github.io/
-[4]: https://gohugo.io/content/archetypes/
+[4]: /archetypes/
 [5]: https://github.com/toml-lang/toml
 [6]: http://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996/
 [7]: https://d1ro8r1rbfn3jf.cloudfront.net/ms_35590/CPzNqsm7sTlNQvQkjipd39Nr8Sfxap/My%2BNew%2BHugo%2BSite-theme-robust.png?Expires=1499000968&Signature=hn3OOZ4lAQcizvR-NXOnJUVuift1Lchg2RGP4zrl9XUzQFKEjGcPtW6JZOFhlZCGM1w4~A2tBJSzU2se8JiuWoEv46sMPZU9Am7UGzxXV2eyemeVFng0Nze9bq~FNDCAQt920Khpk7tM5lGCzjc3MmTckVp4qkSsxA1l-lCjelJKoRExP5dttNIp84Z7BzZUaP23shWEF40hcfSYkfbTRv4LRwJ6-eQeCqHOml4l9Cd~btaJ4oTRkOXk6YNH13lbQe~~FwwYbCMnVUhzIld2jOuFcPOpQTR16KzWgrMd0kHsC18q3nQzW1lh9CA-p8ZOSKy1FrgjeQ0wFAJo8npgLg__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA

@@ -3,6 +3,7 @@ date: 2017-07-16T23:23:14+02:00
 title: "hugo"
 slug: hugo
 url: /commands/hugo/
+lastmod : 2017-07-21
 
 ---
 ## hugo
@@ -12,7 +13,7 @@ hugo construit votre site
 ### Synopsis
 
 
-hugo est la commande princpale, utilisée pour construire votre site Hugo.
+hugo est la commande principale, utilisée pour construire votre site Hugo.
 
 Hugo is a Fast and Flexible Static Site Generator
 built with love by spf13 and friends in Go.
@@ -64,18 +65,18 @@ hugo [flags]
   -w, --watch                      watch filesystem for changes and recreate as needed
 ```
 
-### SEE ALSO
-* [hugo benchmark](/commands/hugo_benchmark/)	 - Benchmark Hugo by building a site a number of times.
-* [hugo check](/commands/hugo_check/)	 - Contains some verification checks
-* [hugo config](/commands/hugo_config/)	 - Print the site configuration
-* [hugo convert](/commands/hugo_convert/)	 - Convert your content to different formats
-* [hugo env](/commands/hugo_env/)	 - Print Hugo version and environment info
-* [hugo gen](/commands/hugo_gen/)	 - A collection of several useful generators.
-* [hugo import](/commands/hugo_import/)	 - Import your site from others.
-* [hugo list](/commands/hugo_list/)	 - Listing out various types of content
-* [hugo new](/commands/hugo_new/)	 - Create new content for your site
-* [hugo server](/commands/hugo_server/)	 - A high performance webserver
-* [hugo undraft](/commands/hugo_undraft/)	 - Undraft resets the content's draft status
-* [hugo version](/commands/hugo_version/)	 - Print the version number of Hugo
+### Voir aussi
+* [hugo benchmark](/commands/hugo_benchmark/)	 - Benchmark Hugo en construisant un site un certain nombre de fois.
+* [hugo check](/commands/hugo_check/)	 - Contient quelques points de vérification
+* [hugo config](/commands/hugo_config/)	 - Imrpime la configuration du site
+* [hugo convert](/commands/hugo_convert/)	 - Convertit votre contenu en différents formats
+* [hugo env](/commands/hugo_env/)	 - Imprime la version Hugo et l'info d'environnemnt
+* [hugo gen](/commands/hugo_gen/)	 - Une collection de plusieurs générateurs utiles.
+* [hugo import](/commands/hugo_import/)	 - Importe votre site à partir d'autres.
+* [hugo list](/commands/hugo_list/)	 - Liste différents types de contenus
+* [hugo new](/commands/hugo_new/)	 - Crée un nouveau contenu pour votre site
+* [hugo server](/commands/hugo_server/)	 - Un serveur web de haute performance
+* [hugo undraft](/commands/hugo_undraft/)	 - Undraft réinitialise le statut draft du contenu
+* [hugo version](/commands/hugo_version/)	 - Affiche le numéro de version d'Hugo
 
 ###### Auto généré par spf13/cobra le 16-Jul-2017

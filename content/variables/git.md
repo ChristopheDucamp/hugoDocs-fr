@@ -1,11 +1,11 @@
 ---
-title: Git Info Variables
-linktitle: Git Variables
-description: Get the last Git revision information for every content file.
+title: Git
+linktitle: Variables d'Info Git
+description: Recevoir la dernière information de révision pour chaque contenu de fichier.
 date: 2017-03-12
 publishdate: 2017-03-12
-lastmod: 2017-03-12
-categories: [variables and params]
+lastmod: 2017-07-21
+categories: [variables and params, variables et params]
 #tags: [git]
 draft: false
 menu:
@@ -19,36 +19,36 @@ toc: false
 wip: false
 ---
 
-{{% note "`.GitInfo` Performance Considerations"  %}}
-Hugo's Git integrations should be fairly performant but *can* increase your build time. This will depend on the size of your Git history.
-{{% /note %}}
+{{% panel header="Considérations de Performance `.GitInfo`"  %}}
+Les intégration de Git de Hugo devraient être très performantes, mais elle peuvent accroître votre temps de build. Ceci dépendra de la taille de votre historique Git.
+{{% /panel %}}
 
-## `.GitInfo` Prerequisites
+## Pré-Requis `.GitInfo`
 
-1. The Hugo site must be in a Git-enabled directory.
-2. The Git executable must be installed and in your system `PATH`.
-3. The `.GitInfo` feature must be enabled in your Hugo project by passing `--enableGitInfo` flag on the command line or by setting `enableGitInfo` to `true` in your [site's configuration file][configuration].
+1. Le site Hugo doit être un dossier activé-Git.
+2. L'exécutable Git doit être installé dans votre `PATH` de système.
+3. La focntonnalité `.GitInfo` doit être activée dans votre projet Hugo en passant le flag `--enableGitInfo` à la ligne de commande ou en réglant `enableGitInfo` sur `true` dans votre [fichier de configuration de site][configuration].
 
-## The `.GitInfo` Object
+## L'Objets `.GitInfo`
 
-The `GitInfo` object contains the following fields:
+L'objet `GitInfo` contient les champs suivants :
 
 `.AbbreviatedHash`
-: the abbreviated commit hash (e.g., `866cbcc`)
+: le hash de commit abrégé (par ex., `866cbcc`)
 
 `.AuthorName`
-: the author's name, respecting `.mailmap`
+: le nom de l'auteur, respectant `.mailmap`
 
 `.AuthorEmail`
-: the author's email address, respecting `.mailmap`
+: l'adresse email de l'auteur, respectant `.mailmap`
 
 `.AuthorDate`
-: the author date
+: la date de l'auteur
 
 `.Hash`
-: the commit hash (e.g., `866cbccdab588b9908887ffd3b4f2667e94090c3`)
+: le hash de commit (par ex., `866cbccdab588b9908887ffd3b4f2667e94090c3`)
 
 `.Subject`
-: commit message subject (e.g., `tpl: Add custom index function`)
+: le sujet du message de commit (par ex., `tpl: Add custom index function`)
 
-[configuration]: /getting-started/configuration/
+[configuration]: /demarrage/configuration/

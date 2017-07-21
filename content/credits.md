@@ -1,10 +1,13 @@
 +++
 title = "Crédits"
-description = "contributeurs et packages utilisés par le thème hugo-theme-docdock"
+description = "contributeurs documentations Hugo et packages utilisés par le thème hugo-theme-docdock"
 +++
 
+## auteurs Hugo
 
-## contributeurs github
+{{%ghcontributors "https://api.github.com/repos/gohugoio/hugo/contributors?per_page=100" %}}
+
+## thème hugo docdock
 {{%ghcontributors "https://api.github.com/repos/vjeantet/hugo-theme-docdock/contributors?per_page=100" %}}
 
 ### autres contributeurs

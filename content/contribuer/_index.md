@@ -1,15 +1,15 @@
 ---
-title: Contribuer au Projet Hugo
-linktitle: Contribuer à Hugo
+title: Contribuer
+linktitle: Contribuer au Projet Hugo
 description: Contribuer au développement d'Hugo et à sa documentation.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
+lastmod: 2017-07-21
 categories: [contribute, contribuer]
 #tags: []
 menu:
   docs:
-    parent: "contribute"
+    parent: "contribuer"
     weight: 01
 weight: 01	#rem
 draft: false
@@ -20,3 +20,5 @@ toc: false
 Hugo s'appuie fortement sur l'enthousiasme et la participation de la communauté open source. Nous avons besoin de votre soutien pour son développement et sa documentation.
 
 Les directives de contribution de Hugo sont [détaillées dans un fichier 'CONTRIBUTING.md`](https://github.com/gohugoio/hugo/blob/master/CONTRIBUTING.md) dans le dépôt source Hugo sur GitHub.
+
+{{% children style="h2" depth="1" description="true" %}}

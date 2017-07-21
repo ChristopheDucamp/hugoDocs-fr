@@ -1,11 +1,11 @@
 ---
-title: Sitemap Variables
-linktitle: Sitemap Variables
+title: Sitemap
+linktitle: Variables Sitemap
 description:
 date: 2017-03-12
 publishdate: 2017-03-12
-lastmod: 2017-03-12
-categories: [variables and params]
+lastmod: 2017-07-21
+categories: [variables and params, variables et params]
 #tags: [sitemap]
 draft: false
 menu:
@@ -18,15 +18,15 @@ aliases: []
 toc: false
 ---
 
-A sitemap is a `Page` and therefore has all the [page variables][pagevars] available to use sitemap templates. They also have the following sitemap-specific variables available to them:
+Une sitemap est une `Page` et par conséquent, elle a toutes les  [variables de page][pagevars] disponibles pour utiliser les modèles de sitemap. Elles ont aussi les variables suivantes spécifiques-à-sitemap : 
 
 `.Sitemap.ChangeFreq`
-: the page change frequency
+: la fréquence de modification de page
 
 `.Sitemap.Priority`
-: the priority of the page
+: la priorité de la page
 
 `.Sitemap.Filename`
-: the sitemap filename
+: le nom de fichier sitemap
 
 [pagevars]: /variables/page/
