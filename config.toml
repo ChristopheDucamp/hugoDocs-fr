@@ -1,5 +1,5 @@
-baseURL = "/"
-languageCode = "en-en"
+baseURL = "https://hugo-docs-fr.netlify.com/"
+languageCode = "fr-fr"
 DefaultContentLanguage = "fr-fr"
 
 title = "Une documentation en français pour Hugo"
