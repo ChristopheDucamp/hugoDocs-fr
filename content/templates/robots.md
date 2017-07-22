@@ -31,9 +31,9 @@ The [lookup order][lookup] for the `robots.txt` template is as follows:
 * `/layouts/robots.txt`
 * `/themes/<THEME>/layout/robots.txt`
 
-{{% notice note %}}
+{{% note %}}
 If you do not want Hugo to create a default `robots.txt` or leverage the `robots.txt` template, you can hand code your own and place the file in `static`. Remember that everything in the [static directory](/getting-started/directory-structure/) is copied over as-is when Hugo builds your site.
-{{% /notice %}}
+{{% /note %}}
 
 ## Exemple de Modèle Robots.txt 
 

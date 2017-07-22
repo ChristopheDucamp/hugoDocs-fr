@@ -2,10 +2,21 @@
 
 title: "Structure de Dossier"
 description: "La CLI Hugo échafaude une structure de projet en dossiers et puis prend cet unique dossier et l'utilise comme l'input pour créer un site web complet."
-weight: 8
+date: 2017-01-02
+publishdate: 2017-02-01
+lastmod: 2017-07-21
+categories: [getting started,fundamentals]
+#tags: [source, organization, directories]
+menu:
+  docs:
+    parent: "demarrage"
+    weight: 50
+weight: 50
+sections_weight: 50
+draft: false
 aliases: [/démarrage/directory-structure]
 toc: true
-lastmod: 2017-07-21
+
 
 ---
 
@@ -52,9 +63,9 @@ Stocke les modèles sous la forme de fichiers `.html` qui spécifient comment le
 
 stocke tout le contenu statique pour votre futur site : images, CSS, JavaScript, etc. Lorsque Hugo construit votre site, tous les actifs de votre dossier statique sont copiés au moment où cela se produit. Un bon exemple d'utilisation du dossier `static` est pour [vérifier la propriété du site sur Google Search Console](https://support.google.com/analytics/answer/1142414?hl=fr), où vous souhaitez que Hugo copie un fichier HTML complet sans modifier son contenu.
 
-{{% notice note %}}
+{{% note %}}
 Hugo n'est actuellement pas livré avec un pipeline d'asset ([#3207](https://github.com/gohugoio/hugo/issues/3207)). Vous pouvez solliciter la communauté dans les [forums Hugo](https://discourse.gohugo.io) ou regarder quelques [starter kits Hugo](/outils/starter-kits/) pour des exemples sur la façon dont les développeurs gèrent des assets statiques.  
-{{% /notice %}}
+{{% /note %}}
 
 
 

@@ -20,9 +20,9 @@ toc: true
 
 Voici une liste des variables au niveau de la page. Beaucoup d'entre elles seront définies dans le front matter, dérivées à partir de l'emplacement du fichier ou extraites du contenu lui-même.
 
-{{% notice note "`.Scratch`" %}}
+{{% note "`.Scratch`" %}}
 Voir [`.Scratch`](/fonctions/scratch/) pour des variables inscriptibles à l'échelle de la page.
-{{% /notice %}}
+{{% /note %}}
 
 ## Variables Page
 
@@ -187,9 +187,9 @@ Avec le front matter ci-dessus, les taxonomies `tags` et `categories` sont acces
 * `.Params.tags`
 * `.Params.categories`
 
-{{% panel theme="warning" header="Casse des Params" %}}
+{{% note "Casse des Params" %}}
 Les `.Params` niveau-page sont *uniquement* accessibles en bas de casse.
-{{% /panel %}}
+{{% /note %}}
 
 La variable `.Params` est particulièrement utile pour l'introduction de champs du front matter définis par l'utilisateur dans les fichiers de contenu. Par exemple, site web Hugo de critiques de livres pourrait avoir le front matter suivant dans `/content/review/livre01.md`:
 

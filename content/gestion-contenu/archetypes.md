@@ -4,12 +4,12 @@ linktitle: Archétypes
 description: Les archétypes vous permettent de créer de nouvelles instances de types de contenu et de définir les paramètres par défaut à partir de la ligne de commande.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-20
-#tags: [archetypes,generators,metadata,front matter]
-categories: ["content management", gestion de contenu]
+lastmod: 2017-07-21
+#tags: [archetypes,archétypes, génératerus, métadonnées,front matter]
+categories: [gestion de contenu]
 menu:
   docs:
-    parent: "content-management"
+    parent: "gestion-contenu"
     weight: 70
   quicklinks:
 weight: 70	#rem
@@ -18,9 +18,9 @@ aliases: [/content/archetypes/]
 toc: true
 ---
 
-{{% notice warning %}}
+{{% note %}}
 Cette section est dépréciée, voir https://github.com/gohugoio/hugoDocs/issues/11
-{{% /notice %}}
+{{% /note %}}
 {{% todo %}}
 Voir au-dessus
 {{% /todo %}}

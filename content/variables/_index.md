@@ -20,6 +20,4 @@ toc: false
 
 Les [modèles Hugo](templates/introduction) sont conscients du contexte et mettent à votre disposition un grand nombre de valeurs pendant que vous créez des vues pour votre site.
 
-{{% children style="h2" description="true" %}}
-
 [modèles d'Hugo]: /templates/introduction/ "Comprendre le contexte dans les modèles Go en apprenant les fonctions de modélisation fondamentales du langage."

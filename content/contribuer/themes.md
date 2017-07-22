@@ -1,16 +1,16 @@
 ---
-title: Add Your Hugo Theme to the Showcase
-linktitle: Themes
-description: If you've built a Hugo theme and want to contribute back to the Hugo Community, add your theme to the Hugo Showcase.
+title: Ajoutez votre Thème Hugo à la Galerie
+linktitle: Thèmes
+description: Vous avez construit un thème Hugo et vous voulez contribuer en retour dans la communauté. Ajoutez votre thème à la Galerie Hugo.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-27
-categories: [contribute]
-#tags: [contribute,themes,design]
+lastmod: 2017-07-22
+categories: [contribuer]
+#tags: [contribuer,themes,design]
 authors: [digitalcraftsman]
 menu:
   docs:
-    parent: "contribute"
+    parent: "contribuer"
     weight: 30
 weight: 30
 sections_weight: 30
@@ -20,52 +20,53 @@ wip: true
 toc: true
 ---
 
-A collection of all themes created by the Hugo community, including screenshots and demos, can be found at <https://themes.gohugo.io>. Every theme in this list will automatically be added to the theme site. Theme updates aren't scheduled but usually happen at least once a week.
+Une collection de tous les thèmes créés par la communauté Hugo, y compris des captures d'écran et des démos, se trouve à l'adresse <https://themes.gohugo.io>. Chaque thème de cette liste sera automatiquement ajouté au site des thèmes. Les mises à jour de thèmes ne sont pas programmées, mais elles se produisent généralement au moins une fois par semaine.
 
 ## tl;dr
 
-1. Create your theme using `hugo new theme <THEMENAME>`;
-2. Test your theme against <https://github.com/spf13/HugoBasicExample> \*
-3. Add a `theme.toml` file to the root of the theme with all required metadata
-4. Add a descriptive `README.md` to the root of the theme source
-5. Add `/images/screenshot.png` and `/images/tn.png`
+1. Créez votre thème en utilisant `hugo new theme <NOMTHEME>` ;
+2. Testez votre thème contre <https://github.com/spf13/HugoBasicExample> \*
+3. Ajoutez un fichier `theme.toml` à la racine de votre thème avec toutes métadonnées requises
+4. Ajoutez un `README.md` descriptif à la racine du thème source
+5. Ajoutez `/images/screenshot.png` et `/images/tn.png`
 
-\* If your theme doesn't fit into the `Hugo Basic Example` site, we encourage theme authors to supply a self-contained Hugo site in `/exampleSite`.
-
-{{% note %}}
-The folder name here---`exampleSite`---is important, as this folder will be picked up and used by the script that generates the Hugo Theme Site. It mirrors the root directory of a Hugo website and allows you to add custom content, assets, and a `config` file with preset values.
-{{% /note %}}
-
-See the [Hugo Artist theme's exampleSite][artistexample] for a good example.
+\* Si votre thème ne correspond pas au site `Hugo Basic Example`, nous encourageons les auteurs de thème à fournit un site Hugo auto-contenu dans `/exampleSite`.
 
 {{% note %}}
-Please make your example site's content is as neutral as possible. We hope this goes without saying.
+
+Le nom du dossier ici ---`exampleSite`--- est important, car ce dossier sera repris et utilisé par le script qui génère le site de Thèmes Hugo. Il reflète le répertoire racine d'un site Web Hugo et vous permet d'y ajouter du contenu personnalisé, des assets et un fichier `config` avec des valeurs présélectionnées.
 {{% /note %}}
 
-## Theme Requirements
+Regardez l'[exampleSite du thème Hugo Artist][artistexample] pour un bon exemple.
 
-In order to add your theme to the Hugo Themes Showcase, the following requirements need to be met:
+{{% note %}}
+SVP faites en sorte que le contenu dans l'exemple de votre site soit aussi neutre que possible. Nous espérons que cela va sans dire.
+{{% /note %}}
 
-1. `theme.toml` with all required fields
-2. Images for thumbnail and screenshot
-3. A good README file instructions for users
-4. Addition to the hugoThemes GitHub repository
+## Exigences du Thème
 
-### Add Your Theme to the Repo
+Afin d'ajouter votre thème à la Galerie (Showcase), les exigences suivantes doivent être satisfaites : 
 
-The easiest way to add your theme is to [open up a new issue in the theme repository][themeissuenew] with a link to the theme's repository on GitHub.
+1. `theme.toml` avec tous les champs requis
+2. Images miniature et capture-écran
+3. Un bon fichier README d'instructions pour les utilisateurs
+4. Ajout au repo GitHub hugoThemes
 
-### Create a `theme.toml` File
+### Ajoutez Votre Thème au Repo
 
-`theme.toml` contains metadata about the theme and its creator and should be created automatically when running the `hugo new theme`. The auto-generated file is provided here as well for easy downloading:
+Le moyen le plus facile d'ajouter votre thème est d'[ouvrir un nouvel "issue" dans le repo du thème][themeissuenew] avec un lien vers le repo de votre thème sur GitHub.
+
+### Créez un fichier `theme.toml`
+
+`theme.toml` contient des métadonnées sur le thème et son créateur et devrait être créée automatiquement lors du lancement   de la commande `hugo new theme`. Le fichier généré automatiquement est fourni ici aussi pour un téléchargement facile :
 
 {{% code file="theme.toml" download="theme.toml" %}}
 ```toml
 name = ""
 license = "MIT"
-licenselink = "https://github.com/<YOURNAME>/<YOURTHEME>/blob/master/LICENSE.md"
+licenselink = "https://github.com/<VOTRENOM>/<VOTRETHEME>/blob/master/LICENSE.md"
 description = ""
-homepage = "http://yoursite.com/"
+homepage = "http://votresite.com/"
 tags = []
 features = []
 min_version = 0.19
@@ -74,7 +75,7 @@ min_version = 0.19
   name = ""
   homepage = ""
 
-# If porting an existing theme
+# Si portage d'un thème existant
 [original]
   name = ""
   homepage = ""
@@ -82,7 +83,7 @@ min_version = 0.19
 ```
 {{% /code %}}
 
-The following fields are required:
+Les champs suivant sont obligatoires :
 
 ```toml
 name = "Hyde"
@@ -98,7 +99,7 @@ min_version = 0.13
     name = "spf13"
     homepage = "http://spf13.com/"
 
-# If porting an existing theme
+# Si portage d'un thème existant
 [original]
     author = "mdo"
     homepage = "http://hyde.getpoole.com/"
@@ -106,32 +107,34 @@ min_version = 0.13
 ```
 
 {{% note %}}
-1. This is different from the `theme.toml` file created by `hugo new theme` in Hugo versions before v0.14.
-2. Only `theme.toml` is accepted; ie. not `theme.yaml` andnot `theme.json`.
+1. Ceci est différent du fichier `theme.toml` créé par `hugo new theme` dans les versions d'Hugo avant la v0.14.
+2. Seul `theme.toml` est accepté ; c'est à dire pas de `theme.yaml` et pas de `theme.json`.
 {{% /note %}}
 
 ### Images
 
-Screenshots are used for previews in the Hugo Theme Gallery. Make sure that they have the right dimensions:
+Les captures d'écran sont utilisées pour des aperçus dans la galerie de thème Hugo. Assurez-vous qu'elles aient les bonnes dimensions :
 
-* Thumbnail should be 900px × 600px
-* Screenshot should be 1500px × 1000px
-* Media must be located in
-    * <THEMEDIR>/images/screenshot.png</code>
-    * <THEMEDIR>/images/tn.png</code>
+* La miniature devrait être de 900px × 600px
+* La capture d'écran devrait être de 1500px × 1000px
+* Les médias doivent être posés dans 
+     * <THEMEDIR>/images/screenshot.png</ code>
+     * <THEMEDIR>/images/tn.png</ code>
 
-Additional media may be provided in the same directory.
+Des médias supplémentaires peuvent être fournis dans le même répertoire.
 
-### Create a README File
 
-Your theme's README file should be written in markdown and saved at the root of your theme's directory structure. Your `README.md` serves as
+### Créer un fichier README 
 
-1. Content for your theme's details page at <https://themes.gohugo.io>
-2. General information about the theme in your GitHub repository (i.e., it's usual purpose)
+Le fichier README de votre thème doit être écrit en markdown et sauvegardé à la racine de la structure de répertoire de votre thème. Votre `README.md` sert de
 
-#### Example `README.md`
+1. Contenu pour la page de détails de votre thème sur <https://themes.gohugo.io>
+2. Informations générales sur le thème dans votre dépôt GitHub
 
-You can download the following `README.md` as an outline:
+
+#### Exemple `README.md`
+
+Vous pouvez télécharger le `README.md` suivant comme un aperçu :
 
 {{% code file="README.md" download="README.md" %}}
 ```markdown
@@ -146,8 +149,9 @@ You can download the following `README.md` as an outline:
 ```
 {{% /code %}}
 
-{{% note "Screenshots in your `README.md`"%}}
-If you add screenshots to the README, please make use of absolute file paths instead of relative ones like `/images/screenshot.png`. Relative paths work great on GitHub but they don't correspond to the directory structure of [themes.gohugo.io](http://themes.gohugo.io/). Therefore, browsers will not be able to display screenshots on the theme site under the given (relative) path.
+{{% note "Captures-écran dans votre `README.md`"%}}
+
+Si vous ajoutez des captures d'écran au README, utilisez les chemins de fichiers absolus au lieu des images relatives `/images/screenshot.png`. Les chemins relatifs fonctionnent bien sur GitHub mais ils ne correspondent pas à la structure de répertoire de [themes.gohugo.io](http://themes.gohugo.io/). Par conséquent, les navigateurs ne pourront pas afficher les captures d'écran sur le site thématique sous le chemin donné (relatif).
 {{% /note %}}
 
 [artistexample]: https://github.com/digitalcraftsman/hugo-artists-theme/tree/master/exampleSite

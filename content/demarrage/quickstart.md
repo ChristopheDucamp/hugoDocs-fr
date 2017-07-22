@@ -23,7 +23,7 @@ Dans ce guide de démarrage, nous allons construire une bibliothèque qui lister
 [Installez Hugo](/installer-hugo). Si vous installez à partir des [Versions Hugo][2], vous devrez sauvegarder l'exécutable principal sous `hugo`(ou `hugo.exe` sur Windows) quelque part dans votre `PATH`. Vous aurez besoin de la commande `hugo`pour les étapes suivantes.
 
 
-{{% panel theme="info" header="Utilisateurs Windows et Git Bash" %}} Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash][3] (aussi connu comme Git pour Windows). Par conséquent, toutes les commandes démarreront avec le caractère d'invitation Bash (qui est `$`).{{% /panel %}}
+{{% note "Utilisateurs Windows et Git Bash" %}} Si vous êtes sous Windows, ce guide de démarrage suppose que vous utilisez [Git Bash][3] (aussi connu comme Git pour Windows). Par conséquent, toutes les commandes démarreront avec le caractère d'invitation Bash (qui est `$`).{{% /note %}}
 
 Une fois `hugo` intallé, assurez-vous de lancer la commande `help` pour vérifier l'installation de `hugo`. Ci-dessous, vous pouvez voir une partie traduite de l'output de la commande `help`.
     

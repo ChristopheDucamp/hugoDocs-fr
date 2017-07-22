@@ -5,8 +5,8 @@ description: Hugo supporte les sections de contenus, qui selon le comportement p
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-20
-categories: [content management, gestion de contenu]
-#tags: [lists,sections,content types,organization, listes, sections, types de contenus, organisation]
+categories: [gestion de contenu]
+#tags: [listes,sections, types de contenus, organisation]
 menu:
   docs:
     parent: "gestion-contenu"
@@ -17,9 +17,9 @@ aliases: [/content/sections/, /gestion-de-contenu/section/]
 toc: true
 ---
 
-{{% notice warning %}}
+{{% note %}}
 Cette section n'est pas mise à jour avec le support des sections imbriquées dans Hugo 0.24, voir https://github.com/gohugoio/hugoDocs/issues/36
-{{% /notice %}}
+{{% /note %}}
 {{% todo %}}
 Voir au-dessus
 {{% /todo %}}

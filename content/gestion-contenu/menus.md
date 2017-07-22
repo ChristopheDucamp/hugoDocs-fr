@@ -17,9 +17,9 @@ aliases: []
 toc: true
 ---
 
-{{% notice "note" %}}
+{{% note %}}
 Si tout ce que vous voulez est un simple menu pour vos sections, regardez la ["Section Menu pour Blogueurs Paresseux" dans les Modèles de Menu](/templates/menu-templates/#section-menu-pour-blogueurs-paresseux).
-{{% /notice %}}
+{{% /note %}}
 
 Vous pouvez faire ça :
 
@@ -33,9 +33,9 @@ Vous pouvez faire ça :
 
 Un **menu** est une liste nommée d'entrées de menu accessible par nom via la [variable site `.Site.Menus`][sitevars]. Par exemple, vous pouvez accéder à votre menu principal de site `main` via `.Site.Menus.main`.
 
-{{% notice note %}}
+{{% note %}}
 Si vous utilisez la [fonctionnalité multilingue](/gestion-contenu/multilingual/), vous pouvez définir des menus indépendants de la langue.
-{{% /notice %}}
+{{% /note %}}
 
 Une entrée de menu a les propriétés suivantes (c.a.d. des variables) disponibles pour lui :
 

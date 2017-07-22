@@ -20,9 +20,9 @@ toc: true
 
 La page d'accueil est une `Page` et par conséquent elle dispose de toutes les [variables de page][pagevars] et [variables de site][sitevars] disponibles pour utilisation.
 
-{{% panel theme="primary" header="Le Seul Modèle Requis" %}}
+{{% note "Le Seul Modèle Requis" %}}
 Le modèle de la page d'accueil est le *seul* modèle requis pour la construction d'un site et donc utile lors du démarrage d'un nouveau site et d'un nouveau modèle. Il est également le seul modèle requis si vous développez un site Web à page unique.
-{{% /panel %}}
+{{% /note %}}
 
 ## Ordre de Recherche du Modèle de Page d'Accueil
 

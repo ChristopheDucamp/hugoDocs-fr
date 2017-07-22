@@ -99,6 +99,6 @@ Ce qui précède est tout ce qu'il faut. Mais si vous voulez des éléments de m
     url = "/blog/"
 ```
 
-{{% notice note %}}
+{{% note %}}
 L'`identifier` *doit* correspondre au nom de la section.
-{{% /notice %}}
+{{% /note %}}

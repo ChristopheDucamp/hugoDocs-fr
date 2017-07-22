@@ -5,11 +5,11 @@ description: La documentation fait partie intégrante de tout projet open source
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
-categories: [contribute, contribuer]
-#tags: [docs,documentation,community, contribute, contribuer]
+categories: [contribuer]
+#tags: [docs,documentation,communauté]
 menu:
   docs:
-    parent: "contribute"
+    parent: "contribuer"
     weight: 20
 weight: 20
 sections_weight: 20
@@ -20,12 +20,12 @@ toc: true
 
 ## Créez votre Fork
 
-Il est préférable d'apporter des modifications aux documents Hugo sur votre machine locale pour vérifier la cohérence du style visuel. Assurez-vous que vous avez créé une bifurcation de [hugoDocs](https://github.com/gohugoio/hugoDocs) sur GitHub et cloné le dépôt localement sur votre machine. Pour plus d'informations, vous pouvez voir [la documentation de GitHub sur "forking"][ghforking] ou suivre avec [le guide de contribution au développement de Hugo][hugodev].
+Il est préférable d'apporter des modifications aux documents Hugo sur votre machine locale pour vérifier la cohérence du style visuel. Assurez-vous d'avoir créé un fork d'[hugoDocs](https://github.com/gohugoio/hugoDocs) sur GitHub et cloné le dépôt localement sur votre machine. Pour plus d'informations, vous pouvez regarder [la documentation de GitHub sur "forking"][ghforking] ou suivre [le guide de contribution au développement de Hugo][hugodev].
 
 Vous pouvez ensuite créer une branche distincte pour vos ajouts. Assurez-vous de choisir un nom de branche descriptif qui correspond le mieux au type de contenu. Voici un exemple de nom de branche que vous pourriez utiliser pour ajouter un nouveau site Web à la vitrine : 
 
 ```git
-git checkout -b jean-dupont-showcase-addition
+git checkout -b jean-dupont-ajout-galerie-sites-hugo
 ```
 
 ## Ajouter du Nouveau Contenu
@@ -38,10 +38,10 @@ L'ajout de nouveaux contenus aux documents Hugo suit le même modèle, quelle qu
 hugo new <DOCS-SECTION>/<nouveau-contenu-basdecasse>.md
 ```
 
-{{% panel theme="success" header="`title:`, `date:`, et Ordre des Champs" %}}
+{{% note "`title:`, `date:`, et Ordre des Champs" %}}
 Les champs `title` et `date` sont ajoutés automatiquement lors de l'utilisation d'archétypes via `hugo new`. Ne vous inquiétez pas si l'ordre des champs d'entrée du nouveau fichier sur votre machine locale est différent de celui des exemples fournis dans les documents Hugo.
 C'est un problème connu [(#452)](https://github.com/gohugoio/hugo/issues/452).
-{{% /panel %}}
+{{% /note %}}
 
 ### Ajouter une Nouvelle Fonction
 
@@ -51,7 +51,7 @@ Une fois que vous avez cloné le dépôt Hugo, vous pouvez créer une nouvelle f
 hugo new functions/nouvellefonction.md
 ```
 
-L'archetype pour `functions` selon le thème Hugo est comme suit : 
+L'archétype pour `functions` selon le thème Hugo est comme suit : 
 
 {{% code file="archetypes/functions.md" %}}
 ```yaml
@@ -70,7 +70,7 @@ Voici une analyse des champs de front matter générés automatiquement pour vou
 : la casse réelle de la fonction (par exemple, `replaceRE` plutôt que` replacere`).
 
 ***`description`***
-: Une brève description utilisée pour remplir la [Référence rapide des fonctions](/functions/).
+: Une brève description utilisée pour remplir la [Référence rapide des fonctions](/fonctions/).
 
 `categories`
 : actuellement auto-remplie avec `functions` pour des raisons d'avenir et de portabilité seulement ; ignorez ce champ.
@@ -79,19 +79,19 @@ Voici une analyse des champs de front matter générés automatiquement pour vou
 : seulement si vous pensez que cela aidera les utilisateurs finaux à trouver d'autres fonctions connexes
 
 `signature`
-: this is a signature/syntax definition for calling the function (e.g., `apply SEQUENCE FUNCTION [PARAM...]`).
+: ceci est une définition de signature/syntaxe pour l'appel de fonction (par ex., `apply SEQUENCE FUNCTION [PARAM...]`).
 
 `workson`
-: acceptable values include `lists`,`taxonomies`, `terms`, `groups`, and `files`.
+: les valeurs acceptables  sont composées de  `listes`,`taxonomies`, `termes`, `groupes`, et `fichiers`.
 
 `hugoversion`
-: the version of Hugo that will ship with this new function.
+: la version d'Hugo qui sera livré avec cette nouvelle fonction.
 
 `relatedfuncs`
-: other [templating functions][] you feel are related to your new function to help fellow Hugo users.
+: autres [fonctions de modélisation][] que vous pressentez en rapport avec vos nouvelles fonctions pour aider les utilisateurs  collègues Hugo.
 
 `{{.Content}}`
-: an extended description of the new function; examples are not only welcomed but encouraged.
+: une description augmentée de la nouvelle fonction ; les exemples ne sont pas seulement bienvenus mais vivement encouragés.
 
 Dans le corps de votre fonction, développez la courte description utilisée dans le front matter. Incluez le plus grand nombre d'exemples possibles et tirez parti de Hugo docs [`code` shortcode](#adding-code-blocks). Si vous ne parvenez pas à ajouter des exemples, mais souhaitez solliciter l'aide de la communauté Hugo, ajoutez `needsexample: true` à votre front matter.
 
@@ -357,11 +357,11 @@ This is a warning, which should be reserved for *important* information like bre
 
 #### Exemple d'Affichage `warning` 
 
-{{% notice warning %}}
+{{% note %}}
 Ceci est un warning, qui devrait être réservé, pour de l'information *importante* comme des modifications de rupture.
-{{% /notice %}}
+{{% /note %}}
 
-{{% panel header="Pull Requests et Branches" %}}
+{{% note "Pull Requests et Branches" %}}
 Tout comme les principes de [contributions au développement d'Hugo](/contribuer/developpement/), l'équipe Hugo s'attend à ce que vous créiez une branche ou un fork séparé quand vous produisez vos contributions sur la documentation Hugo.
 {{% /note %}}
 
@@ -374,4 +374,4 @@ Tout comme les principes de [contributions au développement d'Hugo](/contribuer
 [hugodev]: /contribuer/development/
 [shortcodeparams]: gestion-contenu/shortcodes/#shortcodes-sans-markdown
 [sourceforge]: http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions
-[templating function]: /fonctions/
+[fonctions de modélisation]: /fonctions/

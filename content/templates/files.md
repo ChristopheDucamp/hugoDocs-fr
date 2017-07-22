@@ -54,9 +54,9 @@ Le shortcode au-dessus [fait partie du code pour les docs Hugo][dirindex]. Ici i
 
 **Attention :**
 
-{{% panel theme="warning" header="Les Slashes sont Importants" %}}
+{{% note "Les Slashes sont Importants" %}}
 Le slash initial `/` dans `pathURL` est important dans le shortcode `directoryindex`. Autrement, `pathURL` devient relatif à la page web en cours.
-{{% /panel %}}
+{{% /note %}}
 
 ## Utilisez `readFile`
 
@@ -76,9 +76,9 @@ Comme `readFile` est une fonction, il n'est disponible que dans vos modèles et 
 {{</* readfile file="/path/to/local/file.txt" markdown="true" */>}}
 ```
 
-{{% notice warning %}}
+{{% note %}}
 Si vous comptez créer des [shortcodes personnalisés](/templates/shortcode-templates/) avec `readFile` pour un thème, notez que l'usage du shortcode fra référence à la racine du projet et *non* votre répertoire `themes`.
-{{% /notice %}}
+{{% /note %}}
 
 Voici la modélisation pour notre nouveau shortcode `readfile` :
 

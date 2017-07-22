@@ -1,26 +1,41 @@
-+++
+---
+title: Installer Hugo
+linktitle: Installer Hugo
+description: Installer Hugo sur macOS, Windows, Linux, FreeBSD et sur toute machine où peut tourner l'outil de compilation Go.
+date: 2016-11-01
+publishdate: 2016-11-01
+lastmod: 2017-07-21
+categories: [démarrage, fondamentaux]
+authors: ["Michael Henderson"]
+#tags: [installer,pc,windows,linux,macos,binary,tarball,installation]
+menu:
+  docs:
+    parent: "demarrage"
+    weight: 30
+weight: 30
+sections_weight: 30
+draft: false
+aliases: []
+toc: true
+---
 
-title = "Installer Hugo"
-description = "Installer Hugo sur macOS, Windows, Linux, FreeBSD et sur toute machine où peut tourner l'outil de compilation Go."
-weight = 3
-+++
 
 ## Installer Hugo sur macOS, Windows, Linux, FreeBSD et sur toute machine où peut tourner l'outil de compilation Go.
 
-{{% notice note %}}
-[Source "Install Hugo](https://gohugo.io/getting-started/installing/) - documentation officielle Hugo, *demeurant le seul lien de référence*. Traduction en cours.
-
-Il y a beaucoup de discussions concernant "Hugo écrit en Go", mais vous n'avez pas besoin d'installer Go pour apprécier Hugo. Prenez juste une binaire précompilée !
-{{% /notice %}}
+{{% note %}}
+Beaucoup de discussions à propos d'"Hugo being written in Go", mais vous n'avez pas besoin d'installer Go pour apprécier Hugo. Piquez juste une binaire précompilée !
+{{% /note %}}
 
 Hugo est écrit en [Go][1] avec le support de nombreuses plates-formes. La dernière version peut être trouvée sur [Hugo Releases][2].
 
-Hugo fournit actuellement des binaires pré-construites pour
+Hugo currently provides pre-built binaries for the following:
 
-* {{<icon fa-apple>}}OS X (Darwin) pour les architectures x64, i386 et ARM
-* {{<icon fa-windows>}}Windows
-* {{<icon fa-linux>}}Linux
-* FreeBSD
+Hugo fournit actuellement des binaires pré-construites pour : 
+
+* <i class="icon-apple"></i> macOS (Darwin) for x64, i386, and ARM architectures
+* <i class="icon-windows"></i> Windows
+* <i class="icon-linux"></i> Linux
+* <i class="icon-freebsd"></i> FreeBSD
 
 Hugo peut également être compilé à partir de la source partout où la chaîne d'outils du compilateur Go peut s'exécuter, par ex. pour d'autres systèmes d'exploitation comme DragonFly BSD, OpenBSD, Plan 9 et Solaris. Voir <http://golang.org/doc/install/source> pour l'ensemble complet des combinaisons prises en charge des systèmes d'exploitation cibles et des architectures de compilation.
 
@@ -101,9 +116,9 @@ Il y a des pours et contres pour chacune des méthodes mentionnées au-dessus :
   3. **Construire à partir de la source.** Construire à partir de la source demande le plus de travail. L'avantage de construire à partir de la source est que vous n'avez pas à attendre une version pour ajouter des fonctionnalités ou des réparations de bugs. L'inconvénient est que vous devez passer plus de temps à gérer l'installation, ce qui est faisable mais demande plus de temps que les deux options précédentes.
 
 
-{{% notice note %}}
+{{% note %}}
 Étant donné que la construction à partir de la source est attrayante pour les utilisateurs de ligne de commande plus expérimentés, ce guide se concentrera davantage sur l'installation de Hugo via Homebrew et Tarball.
-{{% /notice %}}
+{{% /note %}}
 
 ### Installer Hugo avec Brew
 
@@ -430,9 +445,6 @@ Sur macOS, si vous avez [Homebrew][3], mettre à jour est encore plus facile : l
 L'exécutable Hugo a une dépendance externe _facultative_ pour l'enluminure du code source ([Pygments](https://pygments.org)).
 
 Si vous voulez disposer de la mise en beauté du code source en utilisant le [racccourci-code hightlight][4], vous devrez installer le programme Pygments basé sur Python. La procédure est décrite sur la [page d'accueil Pygments][5].
-
-
-
 
 
 [1]: http://golang.org/

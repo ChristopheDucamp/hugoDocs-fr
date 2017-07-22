@@ -1,18 +1,14 @@
 ---
 
-title: "Configurer Hugo"
-description: "Souvent les réglages par défaut sont suffisamment bons, mais le fichier de configuration peut fournir un haut niveau de contrôle sur la façon dont votre site est rendu."
+title: Configurer Hugo"
+description: Souvent les réglages par défaut sont suffisamment bons, mais le fichier de configuration peut fournir un haut niveau de contrôle sur la façon dont votre site est rendu.
 weight: 5
-aliases: [/demarrage/configuration, ]
+aliases: [/demarrage/configuration]
 ---
-
-{{% notice note %}}
-[Source "Configuring Hugo](https://gohugo.io/getting-started/configuration/) - documentation officielle Hugo, demeurant le seul lien de référence.
-{{% /notice %}}
 
 La [structure de répertoire](https://gohugo.io/getting-started/directory-structure) d'un site Web Hugo - ou plus précisément, l'organisation source des fichiers contenant le contenu du site web et ses modèles - fournit la plupart des informations de configuration dont Hugo a besoin pour générer un site web fini. 
 
-Ce qui fait que par essence, de nombreux sites Web n'auraient pas besoin d'un tel fichier de configuration. Et ceci parce que Hugo est conçu pour reconnaître certains modèles d'utilisation typiques (et il les attend par défaut).
+Ce qui fait que par essence, de nombreux sites Web n'auraient pas besoin d'un tel fichier de configuration. Et ceci parce qu'Hugo est conçu pour reconnaître certains modèles d'utilisation typiques (et il les attend par défaut).
 
 ### Ordre de recherche de configuration
 

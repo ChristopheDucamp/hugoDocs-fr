@@ -4,12 +4,12 @@ linktitle: Résumés
 description: Hugo génère des résumés de votre contenu. 
 date: 2017-01-10
 publishdate: 2017-01-10
-lastmod: 2017-07-19
-categories: [content management, gestion de contenu]
-#tags: [summaries,abstracts,read more]
+lastmod: 2017-07-21
+categories: [gestion de contenu]
+#tags: [résumés,abstracts,read more, en savoir plus]
 menu:
   docs:
-    parent: "content-management"
+    parent: "gestion-contenu"
     weight: 90
 weight: 90	#rem
 draft: false
@@ -26,7 +26,7 @@ Avec l'usage de la [variable de page][pagevariables] `.Summary`, Hugo génère d
 
 Il est naturel d'accompagner le résumé avec des liens vers le contenu d'origine, et un modèle de conception commun est de voir ce lien sous la forme d'un bouton "Lire la suite ...". Voir les [variables de page][pages variables] `.RelPermalink`, `.Permalink` et `.Truncated`.
 
-### Défini-par-Hugo : Le Franctionnement de Résumé Automatique
+### Défini-par-Hugo : Le Fractionnement de Résumé Automatique
 
 Par défaut, Hugo prend automatiquement les 70 premiers mots de votre contenu en tant que résumé et le stocke dans la variable de page `.Summary` à utiliser dans vos modèles. Prendre l'approche définie par Hugo pour les résumés peut faire gagner du temps, mais il y a des avantages et des inconvénients :
 

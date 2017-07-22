@@ -3,20 +3,19 @@ title: Références Croisées
 description: Hugo facilite le lien entre les documents.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
-categories: [content management, gestion de contenu]
-#tags: ["cross references","references", "anchors", "urls", ancres, références]
+lastmod: 2017-07-21
+categories: [gestion de contenu]
+#tags: [ancre, urls,références]
 menu:
   docs:
-    parent: "content-management"
+    parent: "gestion-contenu"
     weight: 100
 weight: 100	#rem
-aliases: [/extras/crossreferences/]
+aliases: []
 toc: true
 ---
 
-
-Les shortcodes `ref` et `relref` lient ensemble les documents, ceux qui sont en [shortcodes intégrés Hugo][built-in Hugo shortcodes]. Ces shortcodes sont utilisés pour fournir des liens vers les titres à l'intérieur de votre contenu, que ce soit entre les documents ou dans un document. La seule différence entre `ref` et `relref` est respectivement si l'URL résultante est absolue (`http://1.com/about/`) ou relative (`/about/`).
+Les shortcodes `ref` et `relref` lient ensemble les documents, ceux qui sont en [raccourcis de codes intégrés dans Hugo][built-in Hugo shortcodes]. Ces shortcodes sont utilisés pour fournir des liens vers les titres à l'intérieur de votre contenu, que ce soit entre les documents ou dans un document. La seule différence entre `ref` et `relref` est respectivement si l'URL résultante est absolue (`http://1.com/a-propos/`) ou relative (`/a-propos/`).
 
 ## Utilisez `ref` et `relref`
 

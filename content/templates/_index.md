@@ -17,5 +17,3 @@ aliases: [/templates/overview/,/templates/content]
 toc: false
 notesforauthors:
 ---
-
-{{% children style="h2" depth="1" description="true" %}}

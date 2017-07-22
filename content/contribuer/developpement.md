@@ -30,9 +30,9 @@ Ce guide de contribution est une approche étape-par-étape avec l'espoir de pou
 * Vous êtes nouveau sur Git ou les projets open source en général
 * Vous êtes un fan d'Hugo et enthousiaste sur le projet
 
-{{% panel header="Questions supplémentaires ?" %}}
+{{% note "Questions supplémentaires ?" %}}
 Si vous êtes en train de lutter à n'importe quelle étape dans ce guide de contribution, rejoignez la communauté de Hugo dans le  [forum de discussion d'Hugo](https://discourse.gohugo.io).
-{{% /panel %}}
+{{% /note %}}
 
 ## Installer Go
 

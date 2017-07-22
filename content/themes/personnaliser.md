@@ -6,7 +6,7 @@ date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
 categories: [themes, thèmes]
-#tags: [themes, source, organization, directories, organisation, dossiers, thèmes]
+#tags: [source, organization, dossiers, organisation, thèmes]
 menu:
   docs:
     parent: "themes"
@@ -21,9 +21,9 @@ wip: true
 
 Voici les concepts clés pour la personnalisation d'un site Hugo avec des thèmes. Hugo vous permet de compléter *ou* remplacer tout modèle de thème ou fichier statique par des fichiers dans votre répertoire de travail.
 
-{{% notice note %}}
+{{% note %}}
 Lorsque vous utilisez un thème cloné à partir de son dépôt git, ne modifiez pas directement les fichiers du thème. Au lieu de cela, la personnalisation du thème dans Hugo est une question de *remplacer* les modèles mis à votre disposition dans un thème. Cela offre la flexibilité supplémentaire de peaufiner un thème pour répondre à vos besoins tout en restant à jour avec le thème en amont.
-{{% /notice %}}
+{{% /note %}}
 
 ## Remplacer les Fichiers Statiques
 Il y a des moments où vous souhaitez inclure des actifs statiques qui diffèrent des versions du même élément livré avec un thème.

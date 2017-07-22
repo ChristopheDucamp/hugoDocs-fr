@@ -19,9 +19,9 @@ aliases: [/templates/introduction/,/layouts/introduction/,/layout/introduction/,
 toc: true
 ---
 
-{{% notice note %}}
+{{% note %}}
 Ce qui suit n'est qu'une version simplifiée des modèles Go. Pour un examen approfondi des modèles Go, consultez le document officiel [Go docs](http://golang.org/pkg/html/template/).
-{{% /notice %}}
+{{% /note %}}
 
 Les modèles Go fournissent un langage de modèle extrêmement simple respectant la conviction que seule la logique la plus élémentaire appartient au modèle ou à la couche vue.
 
@@ -72,12 +72,12 @@ Les valeurs peuvent être aussi stockées dans des variables personnalisées et 
 {{ $address }}
 ```
 
-{{% notice warning %}}
+{{% note %}}
 Les variables définies dans les conditionnels `if` et similaires ne sont pas visibles de l'extérieur. Voir [https://github.com/golang/go/issues/10608](https://github.com/golang/go/issues/10608).
 
 Hugo a créé un contournement pour ce problème dans [Scratch](/functions/scratch).
 
-{{% /notice %}}
+{{% /note %}}
 
 ## Fonctions
 

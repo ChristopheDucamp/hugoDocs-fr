@@ -48,4 +48,4 @@ description = "contributeurs documentations Hugo et packages utilisés par le th
 ## Outillage
 
 * [Netlify](https://www.netlify.com) - Déploiement continu et hébergement de cette documentation. Sans oublier le support humain de Chris & Gérald.
-* [Hugo](https://gohugo.io/) {{%icon "fa-smile-o"%}}
+* [Hugo](https://gohugo.io/) :-)

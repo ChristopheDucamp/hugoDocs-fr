@@ -29,9 +29,9 @@ GitHub fournit un hébergement statique gratuit et rapide sur SSL pour les perso
 
 Si vous travaillez dans un compte Organisation ou si vous voulez régler un site web d'utilisateur sur GitHub et souhaiteriez plus d'informations, visitez la [documentation GitHub Pages][ghorgs].
 
-{{% notice note %}}
+{{% note %}}
 Assurez-vous que votre valeur-clé `baseURL` dans votre [fichier de configuration de site](/demarrage/configuration/) soit l'URL complète de votre repository GitHub Page si vous utilisez l'URL par défaut GH Pages (par ex. `votrenomutilisateur.github.io/monnomprojet/`) et non un domaine personnalisé.
-{{% /notice %}}
+{{% /note %}}
 
 ## Déploiement via le dossier `/docs` sur la Branche Master
 
@@ -50,9 +50,9 @@ Après avoir lancé `hugo`, poussez votre branche master vers le repo distant et
 1. Allez sur **Settings** &rarr; **GitHub Pages**
 2. À partir de **Source**,  sélectionnez "master branch /docs folder". Si l'option n'est pas activée, vous n'avez probablement pas de dossier `docs/` à la racine de votre projet.
 
-{{% notice note %}}
+{{% note %}}
 L'option `docs/` est l'approche la plus simple mais requiert que vous réglez un répertoire de publication dans votre configuration de site. Vous ne pouvez actuellement pas configurer GitHub pages pour publier à partir d'un autre répertoire sur master, et tout le monde et tout le monde n'apprécie pas d'avoir le site de sortie en même temps que les fichiers source dans le contrôle de la version.
-{{% /notice %}}
+{{% /note %}}
 
 ## Déploiement à partir de votre Branche `gh-pages` 
 

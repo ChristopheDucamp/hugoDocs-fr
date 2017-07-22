@@ -22,5 +22,3 @@ Hugo fournit un système de thème robuste facile à mettre en œuvre mais avec 
 
 Les thèmes Hugo sont alimentés par l'excellente [bibliothèque de modèles Go](/templates/introduction/) et sont conçus pour réduire la duplication de code. Ils sont faciles à personnaliser et à synchroniser avec le thème en amont.
 
-{{% children style="h2" description="true" %}}
-

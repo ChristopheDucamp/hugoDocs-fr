@@ -6,7 +6,7 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
-categories: [templates,fundamentals, modèles,fondamentaux]
+categories: [modèles,fondamentaux]
 #tags: [lookup]
 menu:
   docs:
@@ -82,9 +82,9 @@ L'ordre de recherche est mieux illustré par des exemples. Ce qui suit vous mont
 
 Maintenant nous pouvons regarder le front matter pour les trois fichiers de contenu (à savoir `.md`).
 
-{{% notice note  %}}
+{{% note  %}}
 Seuls trois des quatre fichiers markdown dans le projet ci-dessus sont soumis à l'ordre de recherche de page *unique*. `_index.md` est un type `kind` spécifique à Hugo. Alors que `my-first-post.md`, `my-second-post.md` et `my-first-event.md` sont tous les trois de type `page`, tous les fichiers `_index.md` dans un projet Hugo sont utilisés pour ajouter du contenu et un front matter pour des [listes de pages](/templates/lists/). Dans cet exemple, `events/_index.md` produira en fonction de son [modèle de section](/templates/section-templates/) et de l'ordre de recherche respectif.
-{{% /notice %}}
+{{% /note %}}
 
 ### Exemple : `mon-premier-post.md`
 
@@ -146,9 +146,9 @@ Voici le moyen avec lequel Hugo traverse l'odre de recherche de page-unique pour
 
 Le front matter dans `mon-second-post.md` spécifie le contenu `type` (c'est-à-dire `review`) ainsi que le `layout` (c'est-à-dire `reviewarticle`). Hugo trouve la mise en page dont il a besoin au niveau supérieur de la recherche (#1) et ne continue pas à rechercher dans les autres modèles.
 
-{{%  notice note "Type et pas de Types"%}}
+{{% note "Type et pas de Types"%}}
 Notez que le répertoire du modèle pour `mon-second-post.md` est `review` et non `reviews`. Ceci parce que *type est toujours singulier lorsqu'il est défini dans le front matter*.
-{{% /notice %}}
+{{% /note %}}
 
 
 ### Exemple : `my-first-event.md`

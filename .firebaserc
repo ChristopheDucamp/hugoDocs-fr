@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "dochugo-edf58"
+    "default": "dochugo-edf58",
+    "dev": "dochugo-edf58"
   }
 }

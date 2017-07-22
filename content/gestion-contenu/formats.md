@@ -140,12 +140,12 @@ MathJax est une bibliothèque stable open-source avec de nombreuses fonctionnali
 
 ### Problèmes avec Markdown
 
-{{% notice note%}}
+{{% note%}}
 
 Les problèmes suivants avec Markdown supposent que vous utilisez `.md` pour le contenu et BlackFriday pour l'analyse. En utilisant [Mmark](#mmark), car votre format de contenu évitera la nécessité des solutions de contournement suivantes.
 
 Si vous utilisez Mmark avec MathJax, utilisez `displayMath: [['$$','$$'], ['\\[','\\]']]`. Voir le [Mmark `README.md`](https://github.com/miekg/mmark/wiki/Syntax#math-blocks) pour plus d'informations. En plus de MathJax, Mmark fonctionne bien avec [KaTeX](https://github.com/Khan/KaTeX). Voir cet [article de blog d'un utilisateur Hugo](http://nosubstance.me/post/a-great-toolset-for-static-blogging/).
-{{% /notice %}}
+{{% /note %}}
 
 Après avoir activé MathJax, toutes les entrées mathématiques  entre les marqueurs appropriés (voir la [documentation MathJax] [mathjaxdocs]) seront traitées et restranscrites dans la page Web. Un problème se pose cependant avec Markdown : le caractère de soulignement (`_`) est interprété par Markdown comme un moyen d'envelopper du texte dans des blocs `emph` tandis que LaTeX (MathJax) interprète le trait de soulignement comme un moyen de créer un sous-titre . Ce «double parler» du trait de soulignement peut entraîner des comportements inattendus et indésirables.
 

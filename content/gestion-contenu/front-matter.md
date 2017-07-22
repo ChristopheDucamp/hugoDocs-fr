@@ -5,8 +5,8 @@ description: Hugo vous permet d'ajouter un front matter en yaml, toml, ou json �
 date: 2017-01-09
 publishdate: 2017-01-09
 lastmod: 2017-07-19
-categories: [content management, gestion de contenu]
-#tags: ["front matter", "yaml", "toml", "json", "metadata", "archetypes"]
+categories: [gestion de contenu]
+#tags: [front matter, yaml, "toml", "json", "metadata", archetypes]
 menu:
   docs:
     parent: "gestion-contenu"
@@ -144,9 +144,9 @@ Il existe quelques variables prédéfinies reconnues par Hugo. Voir [Variables d
 `weight`
 : utilisé pour [ordonner votre contenu en listes][trier].
 
-{{% notice note "URL de destination par défaut dans Hugo" %}}
-Si ni le `slug` ni `url` n'est présent et que les [permalinks ne sont  pas configurés autrement dans votre fichier `config` de site](/gestion-contenu/urls/#permalinks), Hugo utilisera le nom de fichier de votre contenu pour créer l'output URL. Voir [Organisation du Contenu](/gestion-contenu/organisation) pour une explication des chemins dans Hugo et la [Gestion d'URL](/gestion-contenu/urls/) sur les moyens de personnaliser les comportements par défaut d'Hugo.
-{{% /notice %}}
+{{% note "URL de destination par défaut dans Hugo" %}}
+Si ni le `slug` ni `url` ne sont présents et que les [permalinks ne sont pas configurés autrement dans votre fichier `config` de site](/gestion-contenu/urls/#permalinks), Hugo utilisera le nom de fichier de votre contenu pour créer l'output URL. Voir [Organisation du Contenu](/gestion-contenu/organisation) pour une explication des chemins dans Hugo et la [Gestion d'URL](/gestion-contenu/urls/) sur les moyens de personnaliser les comportements par défaut d'Hugo.
+{{% /note %}}
 
 ### Définies par l'Utilisateur
 

@@ -20,5 +20,3 @@ toc: false
 Hugo s'appuie fortement sur l'enthousiasme et la participation de la communauté open source. Nous avons besoin de votre soutien pour son développement et sa documentation.
 
 Les directives de contribution de Hugo sont [détaillées dans un fichier 'CONTRIBUTING.md`](https://github.com/gohugoio/hugo/blob/master/CONTRIBUTING.md) dans le dépôt source Hugo sur GitHub.
-
-{{% children style="h2" depth="1" description="true" %}}

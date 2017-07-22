@@ -73,9 +73,9 @@ firebase login:ci
 
 Vous pouvez aussi paramétrer votre CI (par ex., avec [Wercker][]) et ajouter le token vers une variable privée comme  `$FIREBASE_DEPLOY_TOKEN`.
 
-{{% notice warning %}}
+{{% note %}}
 Ceci est le seccret privé et ça ne devrait pas apparaître dans un repository public. Assurez)vous de bien comprendre votre CI choisi et qu'il ne soit pas visible pour les autres.
-{{% /notice %}}
+{{% /note %}}
 
 Vous pouvez alors ajouter une étape dans votre build pour faire le déploiemnet en utilisant le token : 
 

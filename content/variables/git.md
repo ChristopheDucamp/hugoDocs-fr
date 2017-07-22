@@ -5,7 +5,7 @@ description: Recevoir la dernière information de révision pour chaque contenu 
 date: 2017-03-12
 publishdate: 2017-03-12
 lastmod: 2017-07-21
-categories: [variables and params, variables et params]
+categories: [variables et params]
 #tags: [git]
 draft: false
 menu:
@@ -19,9 +19,9 @@ toc: false
 wip: false
 ---
 
-{{% panel header="Considérations de Performance `.GitInfo`"  %}}
+{{% note "Considérations de Performance `.GitInfo`"  %}}
 Les intégration de Git de Hugo devraient être très performantes, mais elle peuvent accroître votre temps de build. Ceci dépendra de la taille de votre historique Git.
-{{% /panel %}}
+{{% /note %}}
 
 ## Pré-Requis `.GitInfo`
 

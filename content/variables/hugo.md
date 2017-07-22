@@ -33,7 +33,7 @@ Elle contient les champs suivants :
 `.Hugo.BuildDate`
 : la date de compilation de la binaire actuellle Hugo formaté aec la RFC 3339 par ex. `2002-10-02T10:00:00-05:00`<br>
 
-{{% panel header="Utilisation du Tag Hugo Generator" %}}
+{{% note "Utilisation du Tag Hugo Generator" %}}
 Nous recommandons fortement d'utiliser `.Hugo.Generator` dans le `<head>` de votre site web. `.Hugo.Generator` est inclus par défaut dans tous les thèmes hébergés sur [themes.gohugo.io](http://themes.gohugo.io). La balise generator permet à l'équipe Hugo de suivre l'usage et la popularité d'Hugo.
-{{% /panel %}}
+{{% /note %}}
 

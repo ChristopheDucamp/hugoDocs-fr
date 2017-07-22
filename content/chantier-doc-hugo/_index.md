@@ -37,7 +37,8 @@ content
 ```
 
 
-{{%alert info %}} **_index.md** est requis dans chaque dossier, c'est votre "page d'accueil de dossier"{{%/alert%}}
+{{%note %}} **_index.md** est requis dans chaque dossier, c'est votre "page d'accueil de dossier"
+{{%/note%}}
 
 
 ### Ajoutez une icône à une entrée de menu
@@ -76,7 +77,7 @@ Ajoutez un paramètre `url` à côté de `[menu.main]`
 	url = "/shortcode/image/"
 	+++
 
-{{%alert info%}}Look at the menu "Create Page/About images" which redirects to "Shortcodes/image{{%/alert%}}
+{{%note%}}Look at the menu "Create Page/About images" which redirects to "Shortcodes/image{{%/note%}}
  -->
 ### Ordre des entrées groupées de menu/page
 

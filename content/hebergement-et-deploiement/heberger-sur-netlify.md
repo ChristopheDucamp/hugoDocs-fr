@@ -87,14 +87,14 @@ Une fois la construction terminée --- cela ne devrait prendre que quelques seco
 
 Maintenant à chaque fois que vous pousserez des modifications sur votre repo git hébergé, Netlify reconstruira et re-déploira votre site.
 
-{{% notice warning %}}
+{{% note %}}
 
 Si votre build venait à échouer, vous pouvez aussi accéder à la section avancée "Advanced build settings" et renseigner respectivement les "Key" et "Value" à `HUGO_VERSION`et `0.25`.
 
 
 ![capture-écran dess réglages de déploiement avancés pour spécifier une version Hugo](/images/hosting-and-deployment/hosting-on-netlify/netlify-deploying-hugo-0.25.png)
 
-{{%/notice%}}
+{{%/note%}}
 
 
 ## Utilisez les Thèmes Hugo avec Netlify

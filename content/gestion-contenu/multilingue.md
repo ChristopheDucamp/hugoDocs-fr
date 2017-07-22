@@ -116,10 +116,10 @@ slug: "a-propos"
 
 Au rendu, Hugo construira à la fois `/about/` et `/a-propos/` comme pages traduites proprement reliées.
 
-{{% notice note %}}
+{{% note %}}
 Hugo utilise actuellment le nom de fichier de base comme la clé de traduction, ce qui peut être un problème avec des noms de fichiers identiques dans différentes sections. 
 Nous réparerons cela dans https://github.com/gohugoio/hugo/issues/2699
-{{% /notice %}}
+{{% /note %}}
 {{< todo >}}Récrire/retirer le problème quand ce sera réparér.{{< /todo >}}
 
 ## Lier vers du Contenu Traduit
@@ -271,9 +271,9 @@ If a string does not have a translation for the current language, Hugo will use 
 
 While translating a Hugo website, it can be handy to have a visual indicator of missing translations. The [`enableMissingTranslationPlaceholders` configuration option][config] will flag all untranslated strings with the placeholder `[i18n] identifier`, where `identifier` is the id of the missing translation.
 
-{{% notice note %}}
+{{% note %}}
 Hugo générera votre site web avec ces gardiens de place de traduction manquants. Cela pourrait ne pas être adapté à des environnements de production.
-{{% /notice %}}
+{{% /note %}}
 
 ## Support de Thèmes Multilingue
 

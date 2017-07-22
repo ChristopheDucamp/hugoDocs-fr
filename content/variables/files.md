@@ -5,8 +5,8 @@ description: "Vous pouvez accéder aux données relatives-au-système-de-fichier
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
-categories: [variables and params,variables et params]
-#tags: [files]
+categories: [variables et params]
+#tags: [files, fichiers]
 draft: false
 menu:
   docs:
@@ -18,9 +18,9 @@ aliases: [/variables/file-variables/]
 toc: false
 ---
 
-{{% notice note %}}
+{{% note %}}
 Pour plus d'informations sur la création de shortcodes et de modèles qui utilisent le jeu de fonctionnalités liées aux fichiers de Hugo, voir [Modèles de fichiers locaux](/templates/files/).
-{{% /notice %}}
+{{% /note %}}
 
 L'objet `.File` contient les champs suivants :
 

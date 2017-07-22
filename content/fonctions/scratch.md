@@ -5,11 +5,11 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
-#tags: [iteration]
-categories: [functions, fonctions]
+#tags: [iteration, itération]
+categories: [fonctions]
 menu:
   docs:
-    parent: "fonctions"
+    parent: "functions"
 toc:
 signature: []
 workson: []
@@ -67,9 +67,8 @@ L'usage s'illustre mieux avec quelques échantillons
 {{ $.Scratch.GetSortedMapValues "a3" }} {{/* => []interface {}{"AA", "BB", "CC"} */}}
 ```
 
-{{% notice note %}}
-
+{{%note %}}
 Les exemples ci-dessus utilisent la variable spéciale `$`, qui fait référence au noeud de niveau supérieur. C'est le comportement que vous voudrez le plus rapidement et aidera à supprimer une certaine confusion lors de l'utilisation des boucles de la gamme de pages `Scratch` -- et si vous commencez par appeler par inadvertance le `Scratch`. Mais il peut y avoir des cas d'utilisation pour `{{ .Scratch.Add "key" "some value" }}`.
-{{% /notice %}}
+{{% /note %}}
 
 [pagevars]: /variables/page/
