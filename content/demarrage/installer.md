@@ -4,9 +4,9 @@ linktitle: Installer Hugo
 description: Installer Hugo sur macOS, Windows, Linux, FreeBSD et sur toute machine où peut tourner l'outil de compilation Go.
 date: 2016-11-01
 publishdate: 2016-11-01
-lastmod: 2017-07-21
+lastmod: 2017-07-22
 categories: [démarrage, fondamentaux]
-authors: ["Michael Henderson"]
+authors: [Michael Henderson]
 #tags: [installer,pc,windows,linux,macos,binary,tarball,installation]
 menu:
   docs:
@@ -15,29 +15,24 @@ menu:
 weight: 30
 sections_weight: 30
 draft: false
-aliases: []
+aliases: [/demarrage/installer-hugo/]
 toc: true
 ---
 
-
-## Installer Hugo sur macOS, Windows, Linux, FreeBSD et sur toute machine où peut tourner l'outil de compilation Go.
-
 {{% note %}}
-Beaucoup de discussions à propos d'"Hugo being written in Go", mais vous n'avez pas besoin d'installer Go pour apprécier Hugo. Piquez juste une binaire précompilée !
+I y a eu beaucoup de discussions à propos d'Hugo étant écrit en Go, mais vous n'avez pas besoin d'installer Go pour apprécier Hugo. Piquez juste une binaire précompilée !
 {{% /note %}}
 
 Hugo est écrit en [Go][1] avec le support de nombreuses plates-formes. La dernière version peut être trouvée sur [Hugo Releases][2].
 
-Hugo currently provides pre-built binaries for the following:
-
 Hugo fournit actuellement des binaires pré-construites pour : 
 
-* <i class="icon-apple"></i> macOS (Darwin) for x64, i386, and ARM architectures
+* <i class="icon-apple"></i> macOS (Darwin) for x64, i386, et les architectures ARM
 * <i class="icon-windows"></i> Windows
 * <i class="icon-linux"></i> Linux
 * <i class="icon-freebsd"></i> FreeBSD
 
-Hugo peut également être compilé à partir de la source partout où la chaîne d'outils du compilateur Go peut s'exécuter, par ex. pour d'autres systèmes d'exploitation comme DragonFly BSD, OpenBSD, Plan 9 et Solaris. Voir <http://golang.org/doc/install/source> pour l'ensemble complet des combinaisons prises en charge des systèmes d'exploitation cibles et des architectures de compilation.
+Hugo peut également être compilé à partir de la source partout où la chaîne d'outils du compilateur Go peut s'exécuter; par ex. pour d'autres systèmes d'exploitation comme DragonFly BSD, OpenBSD, Plan 9, Solaris et d'autres. Regardez <http://golang.org/doc/install/source> pour accéder ) l'ensemble complet des combinaisons prises en charge des systèmes d'exploitation cibles et des architectures de compilation.
 
 ## Installation rapide
 
@@ -51,17 +46,20 @@ Idéalement, vous devriez l'installer quelque part dans votre `PATH` pour une ut
 ### Homebrew (macOS)
 
 Si vous êtes sur MacOS et si vous utilisez [Homebrew][3],  vous pouvez installer Hugo avec la commande qui suit :
-
+```bash
 `brew install hugo`.
-
+```
 Pour des explications plus détaillées, suivez les guides d'installation en-dessous pour installer sur macOS et Windows.
 
 ### Chocolatey (Windows)
 
 Si vous êtes sur une machine Windows machine et si vous utilisez [Chocolatey](https://chocolatey.org/) pour le gestionnaire de packages, vous pouvez installez Hugo avec la commande suivante :
 
-    choco install hugo -confirm
-
+{{% code file="install-with-chocolatey.ps1" %}}
+```powershell
+choco install hugo -confirm
+```
+{{% /code %}}
 
 ### Source
 
@@ -71,28 +69,32 @@ Si vous êtes sur une machine Windows machine et si vous utilisez [Chocolatey](h
   * [Go 1.5+](https://golang.org/dl/)
   * [govendor](https://github.com/kardianos/govendor)
 
-#### Dépendances de vendeurs
+#### Dépendances Fournisseurs
 
-Hugo utilise [govendor][16] pour les dépendances de vendeurs, mais nous ne committons pas les packages des vendeurs vers le repo git Hugo. Par conséquent, un simple `go get` n'est pas supporté. Vous **devez utiliser govendor** pour récupérer les dépendances d'Hugo.
+Hugo utilise [govendor][16] pour les dépendances de fournisseurs, mais nous ne committons pas les packages des fournisseurs vers le repo git Hugo. Par conséquent, un simple `go get` n'est pas supporté. Vous **devez utiliser govendor** pour récupérer les dépendances d'Hugo.
 
-#### Récupérez à partir de GitHub
-
-    go get github.com/kardianos/govendor
-    govendor get github.com/gohugoio/hugo
-    go install github.com/gohugoio/hugo
-
+#### Récupérer à partir de GitHub
+{{% code file="from-gh.sh" %}}
+```sh
+go get github.com/kardianos/govendor
+govendor get github.com/gohugoio/hugo
+go install github.com/gohugoio/hugo
+```
+{{% /code %}}
 
 `govendor get` récupéra Hugo et toutes ses bibliothèques dépendantes vers `$GOPATH/src/github.com/gohugoio/hugo`, et `go install` compile  tout à l'itnérieur d'un exécutable final `hugo` (ou `hugo.exe`) executable à l'intérieur de `$GOPATH/bin/`.
 
+{{% note %}}
 Si vous êtes utilisateur Windows, substituez la variable d'environnement `$HOME` ci-dessus par `%USERPROFILE%`.
+{{% /note %}}
 
-## macOS
+## <i class="icon-apple"></i>macOS
 
 ### Hypothèses
 
   1. Vous savez ouvrir le terminal macOS.
-  2. Vous disposez d'un Mac moderne tournant sur 64-bit.
-  3. Vous utiliserez `~/Sites` comme point de départ pour votre. (`~/Sites` est utilisé pour des objectifs d'exemple. Si vous êtes suffisamment à l'aise avec la ligne de commande et le système de fichiers, vous ne devriez pas avoir de problèmes à suivre les instructions.)
+  2. Vous tournez sur un Mac moderne 64-bit.
+  3. Vous utiliserez `~/Sites` comme point de départ pour votre. (`~/Sites` est utilisé à des fins d'exemple. Si vous êtes suffisamment à l'aise avec la ligne de commande et le système de fichiers, vous ne devriez pas avoir de problèmes à suivre les instructions.)
 
 ### Choisissez votre méthode
 
@@ -126,16 +128,21 @@ Il y a des pours et contres pour chacune des méthodes mentionnées au-dessus :
 
 Allez sur le site web de `brew` website, [https://brew.sh/](https://brew.sh/), et suivez les directions. L'étape la plus importante est l'installation à partir de la ligne de commande : 
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+{{% code file="install-brew.sh" %}}
+```bash
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+{{% /code %}}
 
 #### Étape 2 : Lancez la commande `brew` pour installer  `hugo`
 
 Installer Hugo en utilisant `brew` est aussi facile que ce qui suit :
 
-    brew install hugo
-
-
+{{% code file="install-brew.sh" %}}
+```bash
+brew install hugo
+```
+{{% /code %}}
 Si Homebrew fonctionne bien, vous devriez voir quelque chose de similaire à ce qui suit : 
 
     ==> Downloading https://homebrew.bintray.com/bottles/hugo-0.21.sierra.bottle.tar.gz
@@ -143,23 +150,25 @@ Si Homebrew fonctionne bien, vous devriez voir quelque chose de similaire à ce 
     ==> Pouring hugo-0.21.sierra.bottle.tar.gz
     🍺  /usr/local/Cellar/hugo/0.21: 32 files, 17.4MB
 
-
+{{% note "Installer la Dernière Version Hugo avec Brew" %}}
 Remplacez `brew install hugo` par `brew install hugo --HEAD` si vous voulez la dernière version "in-development".
+{{% /note %}}
 
 `brew` devrait avoir mis à jour votre chemin pour inclure Hugo. Vous pouvez confirmer en ouvrant une nouvelle fenêtre de terminal et en lançant quelques commandes :
 
-    $ # show the location of the hugo executable
-    which hugo
-    /usr/local/bin/hugo
+```bash
+$ # show the location of the hugo executable
+which hugo
+/usr/local/bin/hugo
 
-    # show the installed version
-    ls -l $( which hugo )
-    lrwxr-xr-x  1 mdhender admin  30 Mar 28 22:19 /usr/local/bin/hugo -> ../Cellar/hugo/0.13_1/bin/hugo
+# show the installed version
+ls -l $( which hugo )
+lrwxr-xr-x  1 mdhender admin  30 Mar 28 22:19 /usr/local/bin/hugo -> ../Cellar/hugo/0.13_1/bin/hugo
 
-    # verify that hugo runs correctly
-    hugo version
-    Hugo Static Site Generator v0.13 BuildDate: 2015-03-09T21:34:47-05:00
-
+# verify that hugo runs correctly
+hugo version
+Hugo Static Site Generator v0.13 BuildDate: 2015-03-09T21:34:47-05:00
+```
 
 ### Installer Hugo à partir de la Tarball
 
@@ -169,7 +178,7 @@ Lors de l'installation à partir du tarball, vous devez décider si vous install
 
   1. Installez dans `/usr/local/bin` afin que tous les utilisateurs sur votre système puissent y avoir accès. C'est une bonne idée car c'est un endroit assez standard pour les exécutables. L'inconvénient est que vous pourriez avoir besoin de privilèges élevés pour mettre le logiciel dans cet endroit. En outre, s'il y a plusieurs utilisateurs sur votre système, tous exécuteront la même version. Parfois, cela peut être un problème si vous voulez essayer une nouvelle version.
 
-  2. Installez-le dans `~ / bin` pour que vous seul vous puissiez l'exécuter. C'est une bonne idée car c'est facile à faire, facile à entretenir et ne nécessite pas de privilèges élevés. L'inconvénient est que seul vous pouvez exécuter Hugo. S'il y a d'autres utilisateurs sur votre site, ils doivent conserver leurs propres copies. Cela peut conduire à des personnes qui utilisent différentes versions. Bien sûr, cela vous permet d'expérimenter différentes versions.
+  2. Installez-le dans `~/bin` pour que vous seul vous puissiez l'exécuter. C'est une bonne idée car c'est facile à faire, facile à entretenir et ne nécessite pas de privilèges élevés. L'inconvénient est que seul vous pouvez exécuter Hugo. S'il y a d'autres utilisateurs sur votre site, ils doivent conserver leurs propres copies. Cela peut conduire à des personnes qui utilisent différentes versions. Bien sûr, cela vous permet d'expérimenter différentes versions.
 
   3. Installez-le dans votre répertoire `Sites`. Ce n'est pas une mauvaise idée si vous avez un seul site que vous construisez. Cela garde tout dans un seul endroit. Si vous souhaitez essayer de nouvelles versions, vous pouvez faire une copie de l'intégralité du site et mettre à jour l'exécutable Hugo.
 
@@ -177,7 +186,7 @@ Les trois emplacements fonctionneront pour vous. Dans l'intérêt de la brièvet
 
 #### Étape 2 : Téléchargez la Tarball
 
-  1. Ouvrez [https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases) dans votre navigateur.
+  1. Ouvrez <https://github.com/gohugoio/hugo/releases> dans votre navigateur.
 
   2. Trouvez la version actuelle en faisant défiler vers le bas et en recherchant la balise verte qui lit "Latest release".
 
@@ -185,7 +194,7 @@ Les trois emplacements fonctionneront pour vous. Dans l'intérêt de la brièvet
 
    4. Par défaut, le tarball sera enregistré dans votre répertoire `~/Downloads`. Si vous choisissez d'utiliser un emplacement différent, vous devrez changer cela dans les étapes suivantes.
 
-#### Étape 3: Confirmez votre téléchargement
+#### Étape 3 : Confirmez votre téléchargement
 
 Vérifiez que la tarball n'a pas été corrompue durant le téléchargement : 
 
@@ -199,38 +208,45 @@ Les fichiers `.md` sont la  documentation pour Hugo. L'autre fichier est l'exéc
 
 #### Étape 4 : Installez Dans votre Répertoire `bin` 
 
-    # create the directory if needed
-    mkdir -p ~/bin
+```bash
+# create the directory if needed
+mkdir -p ~/bin
 
-    # make it the working directory
-    cd ~/bin
+# make it the working directory
+cd ~/bin
 
-    # extract the tarball
-    tar -xvzf ~/Downloads/hugo_X.Y_osx-64bit.tgz
-    Archive:  hugo_X.Y_osx-64bit.tgz
-      x ./
-      x ./hugo
-      x ./LICENSE.md
-      x ./README.md
+# extract the tarball
+tar -xvzf ~/Downloads/hugo_X.Y_osx-64bit.tgz
+Archive:  hugo_X.Y_osx-64bit.tgz
+  x ./
+  x ./hugo
+  x ./LICENSE.md
+  x ./README.md
 
-    # verify that it runs
-    ./hugo version
-    Hugo Static Site Generator v0.13 BuildDate: 2015-02-22T04:02:30-06:00
+# verify that it runs
+./hugo version
+Hugo Static Site Generator v0.13 BuildDate: 2015-02-22T04:02:30-06:00
+
+```
 
 Vous devrez peut-être ajouter votre répertoire bin à votre variable `PATH`. La commande `which`  vérifiera pour nous. Si elle peut trouver `hugo`, elle imprimera le chemin complet. Sinon, elle n'imprimera rien.
 
-    # check if hugo is in the path
-    which hugo
-    /Users/USERNAME/bin/hugo
-
+```bash
+# check if hugo is in the path
+which hugo
+/Users/USERNAME/bin/hugo
+```
 
 Si `hugo` n'est pas dans votre `PATH`, ajoutez-le en mettant à jour votre fichier  `~/.bash_profile`. Démarrez un éditeur :
 
-    nano ~/.bash_profile
+```bash
+nano ~/.bash_profile
+```
 
 Ajoutez une ligne pour mettre à jour votre variable `PATH` :
-
-    export PATH=$PATH:$HOME/bin
+```bash
+export PATH=$PATH:$HOME/bin
+```
 
 Ensuite, enregistrez le fichier en appuyant sur Control-X, puis sur Y pour enregistrer le fichier et revenir à l'invite.
 
@@ -242,39 +258,46 @@ Vous avez installé Hugo avec succès.
 
 Si vous souhaitez compiler Hugo vous-même, vous devrez installer Go (aka Golang). Vous pouvez [installer Go directement à partir du site Web Go] (https://golang.org/dl/) ou via Homebrew en utilisant la commande suivante:
 
-    brew install go
-
+```bash
+brew install go
+```
 
 #### Étape 1 : Récupérez la Source
 
 If you want to compile a specific version of Hugo, go to [https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases) and download the source code for the version of your choice. If you want to compile Hugo with all the latest changes (which might include bugs), clone the Hugo repository:
 
-    git clone https://github.com/gohugoio/hugo
-
-
+```bash
+git clone https://github.com/gohugoio/hugo
+```
+{{% warning "Sometimes \"Latest\" = \"Bugs\""%}}
 Cloning the Hugo repository directly means taking the good with the bad. By using the bleeding-edge version of Hugo, you make your development susceptible to the latest features, as well as the latest bugs. Your feedback is appreciated. If you find a bug in the latest release, [please create an issue on GitHub](https://github.com/gohugoio/hugo/issues/new).
-
-#### Étape 2 : Compilation
-
-Make the directory containing the source your working directory and then fetch Hugo’s dependencies:
-
-    mkdir -p src/github.com/gohugoio
-    ln -sf $(pwd) src/github.com/gohugoio/hugo
-
-    # set the build path for Go
-    export GOPATH=$(pwd)
-
-    go get
+{{% /warning %}}
 
 
-This will fetch the absolute latest version of the dependencies. If Hugo fails to build, it may be the result of a dependency’s author introducing a breaking change.
+#### Step 2: Compiling
+
+Make the directory containing the source your working directory and then fetch Hugo's dependencies:
+
+```bash
+mkdir -p src/github.com/gohugoio
+ln -sf $(pwd) src/github.com/gohugoio/hugo
+
+# set the build path for Go
+export GOPATH=$(pwd)
+
+go get
+```
+
+This will fetch the absolute latest version of the dependencies. If Hugo fails to build, it may be the result of a dependency's author introducing a breaking change.
 
 Once you have properly configured your directory, you can compile Hugo using the following command:
 
-    go build -o hugo main.go
+```bash
+go build -o hugo main.go
+```
 
+Then place the `hugo` executable somewhere in your `$PATH`. You're now ready to start using Hugo.
 
-Then place the `hugo` executable somewhere in your `$PATH`. You’re now ready to start using Hugo.
 
 ## Windows
 

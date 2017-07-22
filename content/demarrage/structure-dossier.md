@@ -1,6 +1,6 @@
 ---
 title: Structure de Dossier
-linktitle: Directory Structure
+linktitle: Stucture de Dossier
 description: L'interface de ligne de commande (CLI) d'Hugo échafaude une structure de projet en dossiers et l'utilise ensuite comme l'input pour créer un site web complet.
 date: 2017-01-02
 publishdate: 2017-02-01

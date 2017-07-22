@@ -1,9 +1,22 @@
-+++
+---
 
-title = "C'est quoi Hugo ?"
-description = "Une rapide introduction à Hugo par son auteur"
-weight = 1
-+++
+title: C'est quoi Hugo ?
+linktitle: C'est quoi Hugo ?
+description: Une rapide introduction à Hugo par son authors: [steve francia]
+date: 
+lastmod: 2017-07-22
+categories: [démarrage]
+#tags: []
+menu:
+  docs:
+    parent: "demarrage"
+    weight: 30
+weight:30
+sections_weight:30
+draft: false
+aliases: [/demarrage/intro/]
+toc: true
+---
 {{% note %}}
 [Source "Introduction to Hugo" par Steve Francia (auteur d'Hugo)](https://gohugo.io/overview/introduction/) - traduction en cours ouverte à toutes vos améliorations.
 {{% /note %}}
@@ -58,11 +71,11 @@ Hugo a les caractéristiques suivantes :
 
 ### Organisation
 
-* [Organisation du contenu](https://gohugo.io/content/organization/) immédiate
-* Support pour les [sections de sites web](https://gohugo.io/content/sections/)
-* [URLs](https://gohugo.io/extras/urls/) complètement personnalisables
-* Support pour [taxonomies](https://gohugo.io/taxonomies/overview/) configurables qui comprennent les catégories et tags. Créez votre propre organisation de contenu.
-* Capacité à [trier le contenu](https://gohugo.io/content/ordering/) comme vous le désirez
+* [Organisation du contenu](/gestion-contenu/organisation/) immédiate
+* Support pour les [sections de sites web](/gestion-contenu/sections/)
+* [URLs](/gestion-contenu/urls/) complètement personnalisables
+* Support pour [taxonomies](/gestion-contenu/taxonomies/) configurables qui comprennent les catégories et tags. Créez votre propre organisation de contenu.
+* Capacité à [trier le contenu](/gestion-contenu/ordering/) comme vous le désirez
 * Génération de [tables des matières](https://gohugo.io/extras/toc/) automatique 
 * Création dynamique des menus
 * Support pour de [Jolies URLs](https://gohugo.io/extras/urls/) 
@@ -96,13 +109,13 @@ Regardez ce qui arrive bientôt dans la [roadmap][15].
 
 Hugo est conçu pour les personnes qui préfèrent écrire dans un éditeur de texte plutôt qu’un navigateur. 
 
-Hugo est conçu pour les personnes qui veulent colder à la main leur propre site web sans se soucier de runtimes, dépendances et bases de données compliquées.
+Hugo est conçu pour les personnes qui veulent coder à la main leur propre site web sans se soucier de runtimes, dépendances et bases de données compliquées.
 
 Hugo est conçu pour les personnes qui veulent construire un blog, un portfolio, un tumblog, une documentation, un site avec une page unique ou un site avec des milliers de pages.
 
 ## Pourquoi avoir écrit Hugo ?
 
-J'ai écrit Hugo en fin de compte pour plusieurs raisons. Tout d'abord, j'ai été déçu par WordPress, ma solution de site Web d’alors. Avec WordPress, je ne pouvais pas créer de contenu aussi efficace que je le voulais. Il était trop lent en production. Il m’obligeait à être en ligne pour écrire des messages : en outre, ses mises à jour de sécurité constantes et les histoires horribles de blogs piratés  !  Je détestais comment le contenu pour WordPress n’était écrit qu'en HTML, au lieu du Markdown beaucoup plus simple. Dans l'ensemble, j'avais l'impression que WordPress me barrait plus le chemin qu’il ne m’aidait. Il m'a empêché d'écrire du contenu formidable.
+En fin de compte, J'ai écrit Hugo pour plusieurs raisons. Tout d'abord, j'ai été déçu par WordPress, ma solution de site Web d’alors. Avec WordPress, je ne pouvais pas créer de contenu aussi efficace que je le voulais. Il était trop lent en production. Il m’obligeait à être en ligne pour écrire des messages : en outre, ses mises à jour de sécurité constantes et les histoires horribles de blogs piratés  !  Je détestais comment le contenu pour WordPress n’était écrit qu'en HTML, au lieu du Markdown beaucoup plus simple. Dans l'ensemble, j'avais l'impression que WordPress me barrait plus le chemin qu’il ne m’aidait. Il m'a empêché d'écrire du contenu formidable.
 
 J'ai regardé les générateurs de sites statiques existants comme [Jekyll][16], [Middleman][17] et [Nanoc][18]. Tous avaient des dépendances d'installation compliquées et prenaient bien plus de temps pour produire mon blog avec ses centaines de messages que ce que je sentais comme acceptable. Je voulais un framework  capable de me donner des feedbacks rapides tout en produisant des modifications aux modèles, et les temps de rendu de 5 minutes et + étaient tout simplement beaucoup trop lents. En général, WordPress était très orienté blog et n’avait pas la capacité de fournir d'autres types de contenu et des URL flexibles.
 

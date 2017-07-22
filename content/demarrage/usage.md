@@ -4,7 +4,7 @@ linktitle: Usage Basique
 description: La CLI d'Hugo est pleine de fonctionnalités mais simple à utiliser, même pour ceux qui n'ont qu'une expérience très limitée de travail à partir de la ligne de commande.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-21
+lastmod: 2017-07-22
 categories: [demarrage]
 #tags: [/demarrage/utiliser-hugo,usage,livereload,command line,flags, ligne de commande]
 menu:
@@ -16,10 +16,8 @@ sections_weight: 40
 draft: false
 aliases: [/overview/usage/,/extras/livereload/,/doc/usage/,/usage/]
 toc: true
-
 ---
-
-Voici une description des commandes les plus communes que vous utiliserez pendant le développement de votre projet Hugo. Regardez les [Command Line Reference][commandes] pour une vision globale de la CLI d'Hugo.
+Voici une description des commandes les plus communes que vous utiliserez pendant le développement de votre projet Hugo. Regardez la [Référence ligne de commande][commandes] pour une vision globale de la CLI d'Hugo.
 
 ## Test Installation
 
@@ -103,9 +101,9 @@ Flags:
 
 L'utilisation la plus commune est probablement de lancer `hugo` avec votre répertoire en cours étant le répertoire d'input.
 
-Ceci génère par défaut votre site web vers le dossier `public/`, bien que vous puissiez personnaliser le dossier output dans votre [site configuration][config] en modifiant le champ  `publishDir`.
+Ceci génère par défaut votre site web vers le dossier `public/`, bien que vous puissiez personnaliser le dossier output dans votre fichier de [configuraiton de site][config] en modifiant le champ  `publishDir`.
 
-Le site Hugo sort à l'intérieur de `public/` et il est prêt à être déployé sur votre serveur web : 
+Le site Hugo est produit à l'intérieur de `public/` et il est prêt à être déployé sur votre serveur web : 
 
 ```bash
 hugo
@@ -152,7 +150,7 @@ Web Server is available at http://localhost:1313/
 Press Ctrl+C to stop
 ```
 
-Ceci fera fonctionner un serveur web totalement fonctionnel tout en regardant simultanéement votre système de fichier pour l'ajout, l'effacement ou les modificatons dans les aires suivantes de votre projet [project organization][dirs] :
+Ceci fera fonctionner un serveur web totalement fonctionnel tout en regardant simultanément votre système de fichier pour l'ajout, l'effacement ou les modificatons dans les aires suivantes de votre  [organisation de projet][dirs] :
 
 * `/static/*`
 * `/content/*`
@@ -200,13 +198,7 @@ disableLiveReload: true
 
 Après avoir lancé `hugo server` pour du développement web en local, vous devez lancer une commande finale  `hugo` *sans la partie `server` de la commande* pour reconstruire le site. Vous pouvez alors déployer votre site en copiant le répertoire `public/` vers votre serveur de production web.
 
-Étant donné que Hugo génère un site Web statique, votre site peut être hébergé sur n'importe quel serveu web. Voit [Hébergement et déploiement][hosting] pour des méthodes d'hébergement et d'automatisation des déploiements utilisées par la communauté Hugo. [Heroku](https://www.heroku.com/), [GoDaddy](https://www.godaddy.com/), [DreamHost](http://www.dreamhost.com/), [GitHub Pages](https://pages.github.com/), [Amazon S3](http://aws.amazon.com/s3/) with [CloudFront](http://aws.amazon.com/cloudfront/), [Firebase Hosting](https://firebase.google.com/docs/hosting/), ou tout autre service d'hébergement Web statique pas cher (ou même gratuit).
-
-
-[Apache](http://httpd.apache.org/), [nginx](http://nginx.org/), [IIS](http://www.iis.net/)… N'importe quel logiciel de serveur web le fera !
-
-## Déployez votre site web 
-
+Étant donné que Hugo génère un site Web statique, votre site peut être hébergé *n'importe où* en utilisant n'importe quel serveur web. Voir  [Hébergement et déploiement][hosting] pour des méthodes d'hébergement et d'automatisation des déploiements utilisées par la communauté Hugo. 
 
 {{% warning "Les Fichiers Générés ne sont **PAS** Retirés sur le  Build" %}}
 Lancer `hugo` *ne retire pas* les fichiers générés avant la construction. Ceci veut dire que vous devriez effacer votre dossiers `public/` (ou le dossier de publication que vous avez spécifié par le flag ou le fichier de configuration) avant de lancer la commande `hugo`. Si vous ne retirer pas ces fichiers, vous courez le risque d'avoir de mauvais fichiers (par ex. des brouillons ou posts à venir) ayant été laissé dans le site généré.
@@ -230,9 +222,9 @@ hugo -s ~/Code/hugo/docs
 
 Ceci évite que du contenu à l'état d'ébauche ne devienne accidentellement disponible.
 
-[commands]: /commands/
-[config]: /getting-started/configuration/
-[dirs]: /getting-started/directory-structure/
-[front matter]: /content-management/front-matter/
-[hosting]: /hosting-and-deployment/
-[install]: /getting-started/installing/
+[commandes]: /commandes/
+[config]: /demarrage/configuration/
+[dirs]: /demarrage/structure-dossier/
+[front matter]: /gestion-contenu/front-matter/
+[hosting]: /hebergement-et-deploiement/
+[install]: /demarrage/installer/
