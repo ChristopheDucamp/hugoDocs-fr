@@ -9,5 +9,5 @@ categories: [showcase]
 tags: []
 image: ""
 toc: false
-notesforauthors: "Allez sur gohugo.io/contribute/documentation pour plus d'infos"
+notesforauthors: "Go to gohugo.io/contribute/documentation for more info"
 ---

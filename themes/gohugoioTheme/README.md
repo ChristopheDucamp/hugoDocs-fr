@@ -1,1 +1,1 @@
-Thème pour les sites gohugo.io. Plus d'infos à venir.
+Theme for gohugo.io sites. More info to come.

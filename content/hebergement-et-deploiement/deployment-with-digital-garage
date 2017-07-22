@@ -1,0 +1,142 @@
+---
+title: Déploiement avec Digital Garage (payant)
+linktitle: Déployer avec Digital Garage
+
+description: Ce tutoriel vous présente les fondamentaux pour déployer votre site Hugo sur Digital Garage.
+date: 2017-07-22T09:36:44+02:00
+draft: true
+publishdate: 2017-07-21
+lastmod: 2017-02-22
+categories: [heberement et deploiement]
+#tags: [rysnc,deploiement]
+authors: [Noel Cothren]
+menu:
+  docs:
+    parent: "hebergement-et-deploiement"
+    weight: 70
+weight: 70
+sections_weight: 70
+draft: false
+aliases: []
+toc: true
+notesforauthors:
+
+---
+
+[Source](http://community.thedigitalgarage.io/fast-fun-site-creation-with-hugo-and-digital-garage/ "Permalink to Fast & Fun Site Creation with Digital Garage")
+
+# Fast & Fun Site Creation with Digital Garage
+
+## Overview
+
+This tutorial walks you through the basics of deploying a Hugo-powered site on the Digital Garage. If you've never used Hugo before, you're in for a treat - it's fast and fun! 
+
+[Hugo][1] is a static site generator based on Golang's template package.
+
+According to Hugo's authors: 
+
+> "We think of Hugo as the ideal website creation tool. With nearly instant build times and the ability to rebuild whenever a change is made, Hugo provides a very fast feedback loop. This is essential when you are designing websites, but also very useful when creating content."
+
+Development with Hugo on your local machine is fast. After you're happy with your site's basic template, you can put it on Digital Garage for further development with peers, or for a quick and easy way to show it the world. 
+
+## Pré-requis
+
+This tutorial assumes you have :   
+
+- a [Digital Garage][2] account
+- a [GitHub][3] account 
+- Git installed locally 
+- [Hugo installed][4] locally (I used [Homebrew][5].)
+
+## Begin Development Locally with Hugo
+
+Since Hugo's built-in server and small footprint make development so easy, we will build on our local machines first, then deploy to Digital Garage. You'll need to have a basic site built. You can always add, update, and make changes later — [Digital Garage][2] makes creating automatic updates with GitHub Webhooks easy.
+
+There are three options covered here:
+
+1. If you've never used Hugo, I recommend trying out their [Quickstart Guide][6]. In less than 30 minutes you can have a 'bookshelf' site to deploy to Digital Garage using the instructions below. 
+
+2. You can also create a brand new site to deploy in minutes using the process outlined in Hugo's documentation.
+
+3. The fastest way to get going is to fork and clone the Digital Garage's [Hugo example site][7]. 
+
+* On GitHub, navigate to [thedigitalgarage/hugo-ex][7] repository. 
+* In the top-right corner of the page, click "Fork". 
+* Next, execute the following commands on your local machine to clone the sample application and change to the new directory: `$ git clone https://github.com/<your_github_username>/hugo-ex` `$ cd hugo-ex`
+
+## Déployer Votre Site sur Digital Garage
+
+Once you have a Hugo site in your own public repository, you can use the link to deploy it on Digital Garage. 
+
+Login to your Digital Garage account, and go into the project workspace you'll be using. 
+
+Click `Add to Project`, and search for Hugo. Choose the Hugo Quickstart.
+
+![Catalog Search][8]
+
+Change the name and enter the git repository URL of your own Hugo project. Change any other parameters you see fit. You can apply your own labels, override the default labels, or even set the branch/relative path of your repository — check out the [Digital Garage documentation][9] for more information.
+
+Click `Create` and your site will begin building itself.
+
+View your site by clicking on the route in the Web Console's overview page. 
+
+![App Overview][10]
+
+(Site not there? You probably need to update the baseURL in Hugo's config.toml file - we'll do that next)
+
+## Ajouter les Webhooks
+
+Before changing your site's baseURL, let's set up a Webhook to automatically update the site whenever you push new code to GitHub. 
+
+First, go to the Web Console. Under Builds, click on your site name and go to Configuration. Copy the GitHub Webhook URL on the right-hand side.
+
+![webhook url][11]
+
+In your GitHub repository, click `Settings` then `Webhooks` then `Add webhook`. 
+
+Paste in the payload URL, change `Content Type` to `application/json`, click `Disable SSL`, and `Create`. 
+
+![github webhook add][12]
+
+From now on, all pushes to your GitHub repository will trigger a new build and deployment!
+
+## Configure the Routes
+
+Digital Garage automatically made a route for you, but it needs to be updated in the Hugo config file. 
+
+First find the route on the Web Console's Overview page, next to your site title toward the top. 
+
+![route][13]
+
+Copy that link, go into your Hugo site's config.toml file, and paste it into the `baseURL` parameter. If you want to route to a different domain name, you can create a new route. See [the Digital Garage documentation][14] to learn more.
+
+Now, push your changes to GitHub and go back to the Web Console to see your site automatically re-build itself. 
+
+## Final Thoughts
+
+In development, you'll probably want to work on your local machine with Hugo server running, then push changes to GitHub once satisfied. 
+
+Adding content is as easy as adding a new markdown file to the content directory, and pushing it to GitHub to publish!   
+Enjoy! 
+
+## Liens de référence  
+[Hugo]: <https://gohugo.io> "Hugo" 
+[Digital Garage]: <https://thedigitalgarage.io> "Digital Garage" 
+[GitHub]: <https://github.com/> "GitHub" [Homebrew]: <https://brew.sh/> "Homebrew" 
+[Digital Garage documentation]: <http://docs.thedigitalgarage.io/> "Digital Garage Docs"
+
+[1]: https://gohugo.io
+[2]: https://thedigitalgarage.io
+[3]: https://github.com/
+[4]: https://gohugo.io/getting-started/installing/
+[5]: https://brew.sh/
+[6]: https://gohugo.io/getting-started/quick-start/
+[7]: https://github.com/thedigitalgarage/hugo-ex
+[8]: http://assets-digitalgarage-infra.apps.thedigitalgarage.io/images/screenshots/console-catalog.png
+[9]: https://docs.thedigitalgarage.io
+[10]: http://assets-digitalgarage-infra.apps.thedigitalgarage.io/images/screenshots/console-overview.png
+[11]: http://assets-digitalgarage-infra.apps.thedigitalgarage.io/images/screenshots/webhook-url.png
+[12]: http://assets-digitalgarage-infra.apps.thedigitalgarage.io/images/screenshots/github-webhooks.png
+[13]: http://assets-digitalgarage-infra.apps.thedigitalgarage.io/images/screenshots/console-route.png
+[14]: http://docs.thedigitalgarage.io/architecture/core_concepts/routes.html
+

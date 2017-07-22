@@ -1,43 +1,45 @@
 ---
-title: Deployment with Rysnc
-linktitle: Deployment with Rysnc
-description: If you have access to your web host with SSH, you can use a simple rsync one-liner to incrementally deploy your entire Hugo website.
+title: Déploiement avec Rysnc
+linktitle: Déploiement avec Rysnc
+description: Si vous avez accès à votre hébergeur web avec SSH, vous pouvez utiliser une simple commande rsync en une ligne pour déployer incrémentalement la totalité de votre site web Hugo.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [hosting and deployment]
-#tags: [rysnc,deployment]
+lastmod: 2017-07-22
+categories: [hébergement et déploiement]
+#tags: [tutoriel, rysnc,déploiement]
 authors: [Adrien Poupin]
 menu:
   docs:
-    parent: "hosting-and-deployment"
+    parent: "hebergement-et-deploiement"
     weight: 70
 weight: 70
 sections_weight: 70
 draft: false
-aliases: [/tutorials/deployment-with-rsync/]
+aliases: []
 toc: true
 notesforauthors:
 ---
 
-## Assumptions
+## Hypothèses
 
-* Access to your web host with SSH
-* A functional static website built with Hugo
+* Accéder à votre hébergeur web avec SSH
+* Un site web fonctionnel construit avec Hugo
 
-The spoiler is that you can deploy your entire website with a command that looks like the following:
+Le spoiler est que vous pouvez déployer la totalité de votre site web avec une ligne de commande qui ressemble à ce qui suit :
 
 ```bash
 hugo && rsync -avz --delete public/ www-data@ftp.topologix.fr:~/www/
 ```
 
-As you will see, we put it in a shell script file, which makes building and deployment as easy as executing `./deploy`.
+Comme vous le verrez, nous As you will see, we put it in a shell script file, which makes building and deployment as easy as executing `./deploy`.
 
-## Install SSH Key
+Comme vous le verrez, nous l'avons placé dans un fichier de script shell, ce qui rend le développement et le déploiement aussi simple que d'exécuter `./deploy`.
 
-If it is not done yet, we will make an automated way to SSH to your server. If you have already installed an SSH key, switch to the next section.
+## Installer la Clé SSH
 
-First, install the ssh client. On Debian/Ubuntu/derivates, use the following command:
+Si ce n'est pas encore fait, nous allons créer un moyen automatisé de SSH vers votre serveur. Si vous avez déjà installé une clé SSH, passez à la section suivante.
+
+D'abord, installez le client ssh. Sur Debian/Ubuntu/ et dérivés, utilisez la commande suivante :
 
 {{% code file="install-openssh.sh" %}}
 ```bash
@@ -45,7 +47,7 @@ sudo apt-get install openssh-client
 ```
 {{% /code %}}
 
-Then generate your ssh key by entering the following commands:
+Puis générez votre clé en entrant les commandes suivantes :
 
 ```bash
 ~$ cd && mkdir .ssh & cd .ssh
@@ -59,30 +61,30 @@ Host HOST
 EOF
 ```
 
-Don't forget to replace the `HOST` and `USER` values with your own ones. Then copy your ssh public key to the remote server:
+N'oubliez pas de remplacer les valeurs `HOST` et `USER` par les vôtres. Puis copiez votre clé publique ssh sur le serveur distant : 
 
 ```bash
 ~/.ssh/$ ssh-copy-id -i rsa_id.pub USER@HOST.com
 ```
 
-Now you can easily connect to the remote server:
+Maintenant vous pouvez facilement vous connecter vers le serveur distant :
 
 ```
 ~$ ssh user@host
 Enter passphrase for key '/home/mylogin/.ssh/rsa_id':
 ```
 
-And you've done it!
+Et vous avez terminé !
 
-## Shell Script
+## Script Shell
 
-We will put the first command in a script at the root of your Hugo tree:
+Nous mettrons la première commande dans un script à la racine de votre arbre Hugo:
 
 ```bash
 ~/websites/topologix.fr$ editor deploy
 ```
 
-Here you put the following content. Replace the `USER`, `HOST`, and `DIR` values with your own:
+Ici vous mettez le contenu suivant. Remplacez les valeurs `USER`,` HOST` et `DIR` par les vôtres :
 
 ```bash
 #!/bin/sh
@@ -95,15 +97,15 @@ hugo && rsync -avz --delete public/ ${USER}@${HOST}:~/${DIR}
 exit 0
 ```
 
-Note that `DIR` is the relative path from the remote user's home. If you have to specify a full path (for instance `/var/www/mysite/`) you must change `~/${DIR}` to `${DIR}` inside the command line. For most cases you should not have to.
+Notez que `DIR` est le chemin relatif de la home de l'utilisateur distant. Si vous devez spécifier un chemin complet (par exemple `/var/www/monsite/`), vous devez modifier `~/${DIR}` par `${DIR}` dans la ligne de commande. Dans la plupart des cas, vous ne devriez pas le faire.
 
-Save and close, and make the `deploy` file executable:
+Enregistrez et fermez et créez le fichier exécutable `deploy` :
 
 ```
 ~/websites/topologix.fr$ chmod +x deploy
 ```
 
-Now you only have to enter the following command to deploy and update your website:
+Maintenant vous n'avez qu'à entrer la commande suivante pour déployer et mettre à jour votre site web 
 
 ```
 ~/websites/topologix.fr$ ./deploy

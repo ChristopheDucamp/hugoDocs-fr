@@ -5,13 +5,13 @@
     <div class="dn db-l flex-ns flex-wrap w-80 center mw9 justify-between">
       <div class="w-third pv3 dn db-l">
          <div class="mb3 gray tc nested-links">
-           Par les <a href="https://github.com/gohugoio/hugo/contributors" class="link">Auteurs Hugo</a><br />
+           By the <a href="https://github.com/gohugoio/hugo/contributors" class="link">Hugo Authors</a><br />
          </div>
           <div class="w4 center">
             {{ partialCached "svg/hugo-logo-wide.svg" (dict "size" "100") }}
           </div>
-          <p class="f6 gray tc w-70 center">Les logos Hugo sont copyright © Steve Francia 2013–{{ now.Year }}.</p>
-          <p class="f6 gray tc w-70 center">Le Gopher Hugo Gopher est basé sur un travail original de Renée French.</p>
+          <p class="f6 gray tc w-70 center">The Hugo logos are copyright © Steve Francia 2013–{{ now.Year }}.</p>
+          <p class="f6 gray tc w-70 center">The Hugo Gopher is based on an original work by Renée French.</p>
           {{ with  getenv "REPOSITORY_URL" -}}
           <p class="f6 tc w-70 center"><a href="https://www.netlify.com"><img src="https://www.netlify.com/img/global/badges/netlify-dark.svg"/></a></p>
           {{- end }}
@@ -19,9 +19,9 @@
 
       <div class="w-third pv3 dn db-l">
         <ul class="list ma0 pa0 w-50 center">
-          <li><a href="{{ .Site.Params.github_repo }}" class="link white dim pv2 db">Remontez une Question</a></li>
-          <li><a href="{{ .Site.Params.forum }}" class="link white dim pv2 db">Demandez de l'Aide</a></li>
-          <li><a href="{{ .Site.Params.gitter }}" class="link white dim pv2 db">Discutez du Code Source</a></li>
+          <li><a href="{{ .Site.Params.github_repo }}" class="link white dim pv2 db">File an Issue</a></li>
+          <li><a href="{{ .Site.Params.forum }}" class="link white dim pv2 db">Get Help</a></li>
+          <li><a href="{{ .Site.Params.gitter }}" class="link white dim pv2 db">Discuss the Source Code</a></li>
         </ul>
       </div>
 

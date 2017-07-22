@@ -4,7 +4,7 @@ linktitle: Aperçu des Thèmes
 description: Installer, utiliser et créer des thèmes Hugo.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
+lastmod: 2017-07-22
 menu:
   docs:
     parent: "themes"
@@ -12,9 +12,9 @@ menu:
 weight: 01
 sections_weight: 01
 categories: [themes, thèmes]
-#tags: [themes,introduction,overview]
+#tags: [themes,introduction,aperçu,overview]
 draft: false
-aliases: [/themes/overview/]
+aliases: []
 toc: false
 ---
 
