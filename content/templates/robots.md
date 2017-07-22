@@ -9,7 +9,7 @@ categories: [templates]
 #tags: [robots,search engines]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 165
 weight: 165
 sections_weight: 165
@@ -18,7 +18,7 @@ aliases: [/extras/robots-txt/]
 toc: false
 ---
 
-To create your robots.txt as a template, first set the `enableRobotsTXT` value to `true` in your [configuration file][config]. By default, this option generates a robots.txt with the following content, which tells search engines that they are allowed to crawl everything:
+Pour créer votre robots.txt comme un modèle, réglez d'abord la valeur `enableRobotsTXT` sur `true` dans votre [configuration file][config]. Par défaut, cette option génère un robots.txt avec le contenu suivant, qui indique aux moteurs de recherche qu'ils sont autorisés à tout crawler :
 
 ```http
 User-agent: *
@@ -26,7 +26,7 @@ User-agent: *
 
 ## Ordre de Recherche du Modèle Robots.txt
 
-The [lookup order][lookup] for the `robots.txt` template is as follows:
+L'[ordre de recherche][lookup] pour le modèle `robots.txt` est le suivant :
 
 * `/layouts/robots.txt`
 * `/themes/<THEME>/layout/robots.txt`
@@ -51,6 +51,6 @@ Disallow: {{.RelPermalink}}
 
 This template disallows all the pages of the site by creating one `Disallow` entry for each page.
 
-[config]: /getting-started/configuration/
+[config]: /demarrage/configuration/
 [lookup]: /templates/lookup-order/
 [robots]: http://www.robotstxt.org/

@@ -4,14 +4,9 @@ linktitle: Aperçu
 description: Hugo - les fonctionnalités, le plan de route, la licence et la motivation.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-21
+lastmod: 2017-07-22
 categories: []
 #tags: []
-menu:
-  docs:
-    parent: "a-propos"
-    weight: 1
-weight: 1
 draft: false
 aliases: [/about-hugo/,/docs/]
 toc: false

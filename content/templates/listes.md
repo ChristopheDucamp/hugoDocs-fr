@@ -5,11 +5,11 @@ description: Les listes ont un sens et un usage spécifique dans Hugo quand elle
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
-categories: [templates, modèles, à relire]
-#tags: [lists,sections,rss,taxonomies,terms, termes, listes]
+categories: [Templates, modèles]
+#tags: [sections,rss,taxonomies,terms, termes, listes]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 22
 weight: 22
 sections_weight: 22
@@ -37,7 +37,7 @@ L'idée d'une page de liste provient du  [modèle mental hiérarchique du web][m
 
 ### Modèles par Défaut
 
-Puisque les listes de sections et les listes de taxonomie (N.B. *pas* les [listes de termes de taxonomie][taxterms]) sont à la fois des *listes* en ce qui concerne leurs modèles, les deux ont la même terminaison par défaut `_default/list.html` ou `themes/<THEME>/layouts/_default/list.html` dans leur ordre de recherche. En outre, tant les [listes de sections][sectiontemps]  et les [listes de taxonomie][taxlists] disposent de leurs propres modèles de liste par défaut dans `_default` :
+Puisque les listes de sections et les listes de taxonomie (N.B. *pas* les [listes de termes de taxonomie][taxterms]) sont à la fois des *listes* en ce qui concerne leurs modèles, les deux ont la même terminaison par défaut `_default/list.html` ou `themes/<THEME>/layouts/_default/list.html` dans leur ordre de recherche. En outre, les [listes de sections][sectiontemps]  et les [listes de taxonomie][taxlists] disposent de leurs propres modèles de liste par défaut dans `_default` :
 
 #### Modèles de Section par Défaut
 
@@ -51,9 +51,9 @@ Puisque les listes de sections et les listes de taxonomie (N.B. *pas* les [liste
 
 ## Ajouter du Contenu et un Front Matter aux Pages de Liste
 
-Depuis la v0.18, [tout dans Hugo est une `Page`][bepsays]. Cela signifie que les pages de liste et la page d'accueil peuvent contenir des fichiers de contenu associés (c'est-à-dire `_index.md`) qui contiennent des métadonnées de page (c'est-à-dire le front matter) et le contenu.
+Depuis la v0.18, [tout dans Hugo est une `Page`][bepsays]. Ce qui veut dire que les pages de liste et la page d'accueil peuvent contenir des fichiers de contenu associés (c'est-à-dire `_index.md`) qui contiennent des métadonnées de page (c'est-à-dire le front matter) et le contenu.
 
-Ce nouveau modèle vous permet d'inclure des informations frontales spécifiques à la liste via `.Params` et signifie également que les modèles de liste (par exemple,` layouts / _default / list.html`) ont accès à toutes [variables de page] [pagevars].
+Ce nouveau modèle vous permet d'inclure des informations de front matter spécifiques aux listes via `.Params` et signifie également que les modèles de liste (par exemple,`layouts/_default/list.html`) ont accès à toutes [variables de page][pagevars].
 
 {{% note %}}
 Il est important de noter que tous les fichiers de contenu `_index.md` seront rendus en fonction d'un modèle *list* et non selon un [modèle de page unique](/templates/single-page-templates/).
@@ -77,7 +77,7 @@ Ce qui suit est un exemple d'un contenu de dossier typique de projet Hugo :
 ...
 ```
 
-En utilisant l'exemple au-dessus, supposons que nous ayons ce qui suit dans `content/post/_index.md`:
+Dans l'exemple au-dessus, supposons que nous ayons ce qui suit dans `content/post/_index.md`:
 
 {{% code file="content/post/_index.md" %}}
 ```yaml
@@ -103,7 +103,7 @@ Vous pouvez désormais accéder à ce contenu des `_index.md` dans votre modèle
         <header>
             <h1>{{.Title}}</h1>
         </header>
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+        <!-- "{{.Content}}" extrait le contenu markdown du _index.md correspondant -->
         {{.Content}}
     </article>
     <ul>
@@ -143,7 +143,7 @@ Ceci au-dessus sortira le HTML qui suit :
 
 ### Liste de Pages Sans `_index.md`
 
-Vous ne devez *pas* créer un fichier `_index.md` pour chaque liste de pages (c-a-d. section, taxonomie, termes de taxonomie, etc) ou la page d'accueil. Si Hugo ne trouve pas un `_index.md` dans la section de contenu respective au moment de produire un modèle de liste, la page sera créée sans le `{{.Content}}` et seulemetn avec les valeurs par défaut pour le `.Title` etc.
+Vous ne devez *pas* créer un fichier `_index.md` pour chaque liste de pages (c-a-d. section, taxonomie, termes de taxonomie, etc) ou la page d'accueil. Si Hugo ne trouve pas un `_index.md` dans la section de contenu respective au moment de produire un modèle de liste, la page sera créée sans le `{{.Content}}` et seulement avec les valeurs par défaut pour le `.Title` etc.
 
 L'utilisation de ce même modèle `layouts/_default/list.html` et l'application à la section `quotes` ci-dessus rendra la sortie suivante. Notez que `quotes` n'a pas de fichier` _index.md` à extraire de :
 
@@ -172,7 +172,7 @@ Le comportement par défaut de Hugo est de plurieliser les titres de liste ; d'o
 
 ## Exemple de Modèles de Liste
 
-### Modèle Section
+### Modèle de Section
 
 Ce modèle de liste a été légèrement modifié à partir d'un modèle utilisé à l'origine dans [spf13.com](http://spf13.com/). Il utilise les [modèles partiels][partials] pour le chrome de la page rendue plutôt que d'utiliser un [modèle de base][base]. Les exemples qui suivent utilisent également les [modèles de vue de contenu][views] `li.html` ou `summary.html`.
 
@@ -215,7 +215,7 @@ Ce modèle de liste a été légèrement modifié à partir d'un modèle utilis�
 
 ## Ordre du Contenu
 
-Les listes Hugo rendent le contenu en fonction des métadonnées que vous fournissez dans [front matter][]. En plus des valeurs par défaut correctes, Hugo est également livré avec de multiples méthodes pour faire un travail rapide de tri du contenu dans les modèles de liste :
+Les listes Hugo rendent le contenu en fonction des métadonnées que vous fournissez dans le [front matter][]. En plus des valeurs par défaut correctes, Hugo est également livré avec de multiples méthodes pour faire un travail rapide de tri du contenu dans les modèles de liste :
 
 ### Liste Ordonnée par Défaut : Weight > Date
 

@@ -8,12 +8,6 @@ lastmod: 2017-03-21
 categories: [hébergement et déploiement]
 #tags: [hébergement,firebase]
 authors: [Michel Racic]
-menu:
-  docs:
-    parent: "hebergement-et-deploiement"
-    weight: 20
-weight: 20
-sections_weight: 20
 draft: false
 toc: true
 aliases: [/hebergement-et-deploiement/hosting-on-firebase/]

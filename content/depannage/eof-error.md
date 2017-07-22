@@ -1,14 +1,14 @@
 ---
 title: Erreur EOF
 linktitle: Erreur EOF
-description: If you find yourself seeing an EOF error in the console whenever you create a new content file from Hugo's archetype feature.
+description: Si vous vous retrouvez face à une erreur EOF dans la console à chaque fois que vous créez un nouveau fichier de contenu à partir de la fonctionnalité archetype.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [troubleshooting]
+categories: [Dépannage]
 menu:
   docs:
-    parent: "troubleshooting"
+    parent: "depannage"
 #tags: [eof, end of file, error, faqs]
 draft: false
 weight:
@@ -16,7 +16,7 @@ aliases: [/troubleshooting/strange-eof-error/]
 toc: true
 ---
 
-## Trouble: `hugo new` Aborts with EOF error
+## Problème : `hugo new` abandonne avec une erreur EOF
 
 > I'm running into an issue where I cannot get archetypes working, when running `hugo new showcase/test.md`, for example, I see an `EOF` error thrown by Hugo.
 >

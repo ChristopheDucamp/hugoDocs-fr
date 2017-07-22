@@ -5,11 +5,11 @@ description: Hugo est livré avec un fichier modèle natif observant la v0.9 du 
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-21
-categories: [templates]
+categories: [modèles]
 #tags: [sitemap, xml]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 160
 weight: 160
 sections_weight: 160
@@ -18,11 +18,10 @@ aliases: [/layout/sitemap/,/templates/sitemap/]
 toc: false
 ---
 
-A single Sitemap template is used to generate the `sitemap.xml` file.
-Hugo automatically comes with this template file. *No work is needed on
-the users' part unless they want to customize `sitemap.xml`.*
+Un modèle unique Sitemap est uitlisé pour générer le fichier `sitemap.xml`.
+Hugo vient automatiquement avec ce fichier modèle. *Aucun travail n'est demandé de la part de l'utilisateur à moins qu'il ne veuille personnaliser `sitemap.xml`.*
 
-A sitemap is a `Page` and therefore has all the [page variables][pagevars] available to use in this template along with Sitemap-specific ones:
+Un sitemap est une `Page` et par consésquent, elle a toutes les [variables de page][pagevars] disponibles à utiliser dans ce modèle aux côté de ceux spécifiques-Sitemap :
 
 `.Sitemap.ChangeFreq`
 : The page change frequency

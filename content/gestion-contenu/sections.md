@@ -4,14 +4,9 @@ linktitle: Sections
 description: Hugo supporte les sections de contenus, qui selon le comportement par défaut d'Hugo, reflètent la structure du site web rendu.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-20
+lastmod: 2017-07-22
 categories: [gestion de contenu]
 #tags: [listes,sections, types de contenus, organisation]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 50
-weight: 50	#rem
 draft: false
 aliases: [/content/sections/, /gestion-de-contenu/section/]
 toc: true

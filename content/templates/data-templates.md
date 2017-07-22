@@ -4,12 +4,12 @@ linktitle:
 description: En plus des variables intégrées de Hugo, vous pouvez spécifier vos propres données personnalisées dans des modèles ou shortcodes qui extraient des sources locales et dynamiques.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
-categories: [templates]
+lastmod: 2017-07-22
+categories: [modèles]
 #tags: [data,dynamic,csv,json,toml,yaml]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 80
 weight: 80
 sections_weight: 80
@@ -239,13 +239,13 @@ Si vous modifiez un fichier local et que LiveReload est déclenché, Hugo lira l
 * [JSON Spec][json]
 * [CSV Spec][csv]
 
-[config]: /getting-started/configuration/
+[config]: /demarrage/configuration/
 [csv]: https://tools.ietf.org/html/rfc4180
-[customize]: /themes/customizing/
+[customize]: /themes/personnaliser/
 [json]: /documents/ecma-404-json-spec.pdf
-[LiveReload]: /getting-started/usage/#livereload
-[lookup]: /templates/lookup-order/
-[markdownify]: /functions/markdownify/
+[LiveReload]: /demarrage/usage/#livereload
+[lookup]: /templates/ordre-recherche/
+[markdownify]: /fonctions/markdownify/
 [OAuth]: http://en.wikipedia.org/wiki/OAuth
 [partials]: /templates/partials/
 [themes]: /themes/

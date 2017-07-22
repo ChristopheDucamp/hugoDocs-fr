@@ -7,12 +7,6 @@ publishdate: 2016-02-01
 lastmod: 2017-07-21
 categories: [à propos d'hugo]
 tags: [Licence,apache]
-menu:
-  docs:
-    parent: "a-propos"
-    weight: 60
-weight: 60
-sections_weight: 60
 aliases: [/meta/license]
 toc: true
 ---

@@ -1,18 +1,12 @@
 ---
 title: Roadmap
-linktitle: Roadmap
+linktitle: Plan de Route
 description: Jetez un oeil à ce qu'il y a dans le pipeline pour les futures versions du projet Hugo.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
 categories: [à propos d'hugo]
 #tags: [about,contribute,roadmap]
-menu:
-  docs:
-    parent: "a-propos"
-    weight: 50
-weight: 50
-sections_weight: 50
 draft: false
 aliases: [/meta/roadmap]
 toc: false
@@ -38,13 +32,12 @@ Sentez-vous libre de [contribuer au développement d'Hugo][devcontribute], d'[am
 [#1014]: https://github.com/gohugoio/hugo/issues/1014
 [#1435]: https://github.com/gohugoio/hugo/issues/1435
 [#1436]: https://github.com/gohugoio/hugo/issues/1436
-[devcontribute]: /contribute/development/
-[doccontribute]: /contribute/documentation/
+[devcontribute]: /contribuer/developpement/
+[doccontribute]: /contribuer/documentation/
 [hébergement et déploiement]: /hebergement-et-deploiement/
 [migration]: /outils/migrations/
 [milestones]: https://github.com/gohugoio/hugo/milestone/14
 [newissue]: https://github.com/gohugoio/hugo/issues/
 [themes]: /themes/
-[themescontrib]: /contribute/themes/
-[tutorials]: /tutorials
-[***vos*** meilleures idées !]: /contribute/
+[themescontrib]: /contribuer/themes/
+[***vos*** meilleures idées !]: /contribuer/

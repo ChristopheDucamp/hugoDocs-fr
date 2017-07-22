@@ -1,8 +1,22 @@
-+++
-title = "Crédits"
-description = "contributeurs documentations Hugo et packages utilisés par le thème hugo-theme-docdock"
-+++
+---
+title: Crédits
 
+description: "contributeurs documentations Hugo et packages utilisés"
+lastmod: 2017-07-21
+categories: []
+#tags: []
+menu:
+  docs:
+    parent: "chantier"
+    weight: 200
+weight: 200
+sections_weight: 200
+draft: false
+aliases: [hcard]
+toc: true
+wip: true
+
+---
 ## auteurs Hugo
 
 {{%ghcontributors "https://api.github.com/repos/gohugoio/hugo/contributors?per_page=100" %}}

@@ -7,11 +7,6 @@ publishdate: 2017-02-01
 lastmod: 2017-07-20
 #tags: [taxonomies,metadata,front matter,terms, termes, métadonnées]
 categories: [content management, gestion de contenu]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 80
-weight: 80	#rem
 draft: false
 aliases: [/taxonomies/overview/,/taxonomies/usage/,/indexes/overview/,/doc/indexes/,/extras/indexes]
 toc: true

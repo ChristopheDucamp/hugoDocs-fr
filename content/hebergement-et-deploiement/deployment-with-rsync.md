@@ -8,12 +8,6 @@ lastmod: 2017-07-22
 categories: [hébergement et déploiement]
 #tags: [tutoriel, rysnc,déploiement]
 authors: [Adrien Poupin]
-menu:
-  docs:
-    parent: "hebergement-et-deploiement"
-    weight: 70
-weight: 70
-sections_weight: 70
 draft: false
 aliases: []
 toc: true

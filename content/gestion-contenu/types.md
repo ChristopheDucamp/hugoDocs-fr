@@ -7,11 +7,7 @@ publishdate: 2017-02-01
 lastmod: 2017-07-20
 categories: [gestion de contenu]
 #tags: [listes,sections,types de contenu,types,organisation, sections, contenu]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 60
-weight: 60	#rem
+
 draft: false
 aliases: [/content/types]
 toc: true

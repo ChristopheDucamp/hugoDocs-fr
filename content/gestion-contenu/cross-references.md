@@ -6,11 +6,6 @@ publishdate: 2017-02-01
 lastmod: 2017-07-21
 categories: [gestion de contenu]
 #tags: [ancre, urls,références]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 100
-weight: 100	#rem
 aliases: []
 toc: true
 ---

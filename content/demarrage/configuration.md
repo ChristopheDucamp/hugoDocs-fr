@@ -8,7 +8,7 @@ categories: [démarrage, fondamentaux]
 #tags: [configuration,toml,yaml,json]
 menu:
   docs:
-    parent: "demarrage"
+    parent: "Démarrage"
     weight: 60
 weight: 60
 sections_weight: 60

@@ -4,13 +4,15 @@ linktitle: Caractères Accentués dans les URLs
 description: Si vous rencontrez des problèmes avec des caractères spéciaux dans vos taxonomies ou les titres ajoutant des caractères étranges à vos URLs.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
-#tags: [urls,multilingual,multilingue,special characters]
-categories: [troubleshooting]
+lastmod: 2017-07-22
+#tags: [multilingue,special characters]
+categories: [dépannage]
 menu:
   docs:
-    parent: "troubleshooting"
-weight:
+    parent: "depannage"
+    weight: 200
+weight: 200
+sections_weight: 200
 draft: false
 slug:
 aliases: [/troubleshooting/categories-with-accented-characters/]

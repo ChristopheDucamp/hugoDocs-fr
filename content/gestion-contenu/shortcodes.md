@@ -6,11 +6,6 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 35
-weight: 35	#rem
 categories: [gestion de contenu]
 #tags: [markdown,shortcodes, contenu]
 draft: false

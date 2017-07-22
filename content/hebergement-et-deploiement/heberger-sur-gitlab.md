@@ -8,13 +8,6 @@ lastmod: 2016-06-23
 categories: [hosting and deployment, hébergement et déploiement]
 #tags: [hosting,deployment,git,gitlab]
 authors: [Riku-Pekka Silvola]
-menu:
-  docs:
-    parent: "hebergement-et-deploiement"
-    weight: 40
-weight: 40
-sections_weight: 40
-draft: false
 toc: true
 wip: false
 aliases: [/tutorials/hosting-on-gitlab/,/hebergement-et-deploiement/hosting-on-gitlab]

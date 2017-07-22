@@ -9,7 +9,7 @@ categories: [templates, modèles]
 #tags: [lists,sections]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 40
 weight: 40
 sections_weight: 40
@@ -22,7 +22,7 @@ toc: true
 
 Pour tirer parti efficacement des modèles de page de section, vous devez d'abord comprendre l'[organisation de contenu](/gestion-contenu/organisation/) et en particulier, le but de `_index.md` pour ajouter du contenu et un front matter à la section et aux autres pages de la liste.
 
-## Odre de Recherche du Modèle de Section
+## Ordre de Recherche du Modèle de Section
 
 Voici l'[ordre de recherche][lookup] pour les modèles de section 
 
@@ -37,17 +37,17 @@ Voici l'[ordre de recherche][lookup] pour les modèles de section
 
 ## `.Site.GetPage` avec Sections
 
-Every `Page` in Hugo has a `.Kind` attribute. `Kind` can easily be combined with the [`where` function][where] in your templates to create kind-specific lists of content. This method is ideal for creating lists, but there are times where you may want to fetch just the index page of a single section via the section's path.
+Chaque `Page` dans Hugo possède un attribut  `.Kind`. `Kind` peut facilement être combiné dans vos modèles avec la fonction [`where`][where] pour créer des listes de contenu spécifiques. Cette méthode est idéale pour créer des listes, mais il y a des fois où vous souhaitez récupérer uniquement la page d'index d'une seule section via le chemin de la section.
 
-The [`.GetPage` function][getpage] looks up an index page of a given `Kind` and `path`.
+La fonction [`.GetPage`][getpage] recherche une page d'index d'un `Kind` et d'un `path` donnés.
 
-{{% note %}}
-`.GetPage` is not currently supported to grab single content files but *may* be supported in the future.
-{{% /note %}}
+{{% Remarque %}}
+`.GetPage` n'est actuellement pas supporter pour saisir les fichiers de contenu unique, mais *pourra* le devennir.
+{{% /Remarque %}}
 
-You can call `.Site.GetPage` with two arguments: `kind` and `kind value`.
+Vous pouvez appeler `.Site.GetPage` avec deux arguments : `kind` et `kind value`.
 
-These are the valid values for 'kind':
+Ce sont les valeurs valides pour 'kind' :
 
 1. `home`
 2. `section`
@@ -79,40 +79,40 @@ These are the valid values for 'kind':
 
 ### Exemple : Utiliser `.Site.GetPage`
 
-The `.Site.GetPage` example that follows assumes the following project directory structure:
+L'exemple `.Site.GetPage` qui suit suppose la structure de dossiers du projet suivante :
 
 ```bash
 .
 └── content
     ├── blog
-    │   ├── _index.md # "title: My Hugo Blog" in the front matter
+    │   ├── _index.md # "title: Mon Blog Hugo" dans le  front matter
     │   ├── post-1.md
     │   ├── post-2.md
     │   └── post-3.md
-    └── events #Note there is no _index.md file in "events"
+    └── events #Note : pas de fichier _index.md file dans  "events"
         ├── event-1.md
         └── event-2.md
 ```
 
-`.Site.GetPage` will return `nil` if no `_index.md` page is found. Therefore, if `content/blog/_index.md` does not exist, the template will output the section name:
+`.Site.GetPage` renverra `nil` si aucune page `_index.md` n'est trouvée. Par conséquent, si `content/blog/_index.md` n'existe pas, le modèle sortira le nom de section : 
 
 ```html
 <h1>{{ with .Site.GetPage "section" "blog" }}{{ .Title }}{{ end }}</h1>
 ```
 
-Since `blog` has a section index page with front matter at `content/blog/_index.md`, the above code will return the following result:
+Parce que `blog` a une page index de section avec front matter sur `content/blog/_index.md`, le code au-dessus renverra le résultat suivant : 
 
 ```html
-<h1>My Hugo Blog</h1>
+<h1>Mon Blog Hugo</h1>
 ```
 
-If we try the same code with the `events` section, however, Hugo will default to the section title because there is no `content/events/_index.md` from which to pull content and front matter:
+Si nous essayons le même code avec la section `events`, Hugo ira par défaut au titre de la section parce qu'il n'y a pas de `content/events/_index.md` à partir duquel tirer du contenu et un front matter : 
 
 ```html
 <h1>{{ with .Site.GetPage "section" "events" }}{{ .Title }}{{ end }}</h1>
 ```
 
-Which then returns the following:
+qui renverra alors ce qui suit : 
 
 ```html
 <h1>Events</h1>

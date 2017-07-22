@@ -4,13 +4,8 @@ linktitle: Dépannage
 description: Les questions fréquemment posées et les problèmes connus tirés du forum de Discussion Hugo.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
-menu:
-  docs:
-    parent: "troubleshooting"
-    weight: 01
-weight: 01	#rem
-draft: false
+lastmod: 2017-07-22
+sections_weight: 01
 hidesectioncontents: false
 slug:
 aliases: [/troubleshooting/faqs/,/faqs/]

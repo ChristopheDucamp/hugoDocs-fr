@@ -6,7 +6,7 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-03-12
-categories: [functions,fundamentals]
+categories: [fonctions,fondamentaux]
 menu:
   docs:
     parent: "functions"
@@ -18,9 +18,9 @@ relatedfuncs: []
 deprecated: false
 ---
 
-An alternative way of writing an `if` statement and then referencing the same value is to use `with` instead. `with` rebinds the context (`.`) within its scope and skips the block if the variable is absent or unset.
+Une autre façon d'écrire une instruction `if` puis de référencer la même valeur est d'utiliser `with` à la place. `with` renvoie le contexte (`.`) dans sa portée et ignore le bloc si la variable est absente ou désactivée.
 
-The following example checks for a [user-defined site variable](/variables/site/) called `twitteruser`. If the key-value is not set, the following will render nothing:
+L'exemple suivant vérifie une [variable du site définie par l'utilisateur](/variables/site/) appelée «twitteruser». Si la valeur-clé n'est pas définie, ce qui suit ne rendra rien :
 
 {{% code file="layouts/partials/twitter.html" %}}
 ```html

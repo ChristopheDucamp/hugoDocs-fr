@@ -5,10 +5,10 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [functions]
+categories: [Fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [urls]
 signature: ["absURL INPUT"]
 workson: []
@@ -47,7 +47,7 @@ The above uses the [apply function][] and also exposes how the Go template parse
 `absURL` and `relURL` are smart about missing slashes, but they will *not* add a closing slash to a URL if it is not present.
 {{% /note %}}
 
-[apply function]: /functions/apply/
-[configuration]: /getting-started/configuration/
+[apply function]: /fonctions/apply/
+[configuration]: /demarrage/configuration/
 [jsonld]: https://developers.google.com/search/docs/guides/intro-structured-data
-[safejs]: /functions/safejs
+[safejs]: /fonctions/safejs

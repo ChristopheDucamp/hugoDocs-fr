@@ -5,12 +5,12 @@ description: Les fonctions `readerDir` et `readFile` de Hugo permettent de parco
 godocref: https://golang.org/pkg/os/#FileInfo
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-21
-categories: [templates]
+lastmod: 2017-07-23
+categories: [Templates]
 #tags: [files,directories,ébauche]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 110
 weight: 110
 sections_weight: 110
@@ -114,8 +114,8 @@ Et voici le résultat tel qu'[appelé directement dans les docs Hugo][] et rendu
 [appelé directement dans les docs Hugo]: https://github.com/gohugoio/hugo/blob/master/docs/content/templates/files.md
 [dirindex]: https://github.com/gohugoio/hugo/blob/master/docs/layouts/shortcodes/directoryindex.html
 [osfileinfo]: https://golang.org/pkg/os/#FileInfo
-[reads]: /functions/readfile/
-[sc]: /content-management/shortcodes/
+[reads]: /fonctions/readfile/
+[sc]: /gestion-contenu/shortcodes/
 [sct]: /templates/shortcode-templates/
 [readfilesource]: https://github.com/gohugoio/hugo/blob/master/
 [testfile]: https://github.com/gohugoio/hugo/blob/master/docs/testfile

@@ -4,20 +4,14 @@ linktitle: C'est quoi Hugo
 description: Hugo est un générateur de site statique, rapide et moderne écrit en Go, et conçu pour faire en sorte que la création de site web redevienne amusante.
 date: 2017-02-01
 publishdate: 2017-07-20
-lastmod: 2017-07-19
-layout: single
-menu:
-  main:
-    parent: "about"
-    weight: 10
-weight: 10
-sections_weight: 10
+lastmod: 2017-07-22
 draft: false
-aliases: []
+aliases: [/a-propos/intro/]
 toc: true
+#layout: single
 ---
 
-Hugo est un framework généraliste de site Web. Techniquement parlant, Hugo est un **générateur de site statique**. Contrairement aux systèmes qui créent dynamiquement une page à chaque requête de visiteur, Hugo construit des pages lorsque vous créez ou mettez à jour votre contenu. Étant donné que les sites Web sont consultés bien plus souvent qu'ils ne sont modifiés, Hugo est conçu pour fournir une expérience de visualisation optimale pour les utilisateurs finaux de votre site et une expérience d'écriture idéale pour les auteurs de sites.
+Hugo est un framework généraliste de site Web. Techniquement parlant, Hugo est un [générateur de site statique][]. Contrairement aux systèmes qui créent dynamiquement une page à chaque requête de visiteur, Hugo construit des pages lorsque vous créez ou mettez à jour votre contenu. Étant donné que les sites Web sont consultés bien plus souvent qu'ils ne sont modifiés, Hugo est conçu pour fournir une expérience de visualisation optimale pour les utilisateurs finaux de votre site et une expérience d'écriture idéale pour les auteurs de sites.
 
 Les sites Web construits avec Hugo sont extrêmement rapides et sécurisés. Les sites Hugo peuvent être hébergés n'importe où, y compris [Netlify][], [Heroku][], [GoDaddy][], [DreamHost][], [GitHub Pages][], [Surge][], [Aerobatic][] , [Firebase][], [Google Cloud Storage][], [Amazon S3][], [Rackspace][], [Azure][] et [CloudFront][] et ils fonctionnent bien avec les CDN. Les sites Hugo sont exécutés sans avoir besoin d'une base de données ou de dépendances sur des runtimes coûteuses comme Ruby, Python ou PHP.
 
@@ -39,7 +33,7 @@ Hugo s'adresse à des personnes qui souhaitent coder leur propre site Web à la 
 
 Hugo est destiné aux personnes qui créent un blog, un site d'entreprise, un site de portfolio, une documentation, une landing page unique ou un site Web avec des milliers de pages.
 
-
+[générateur de site statique]: /a-propos/avantages/
 [@spf13]: https://twitter.com/@spf13
 [Aerobatic]: https://www.aerobatic.com/
 [Amazon S3]: http://aws.amazon.com/s3/

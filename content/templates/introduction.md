@@ -6,14 +6,8 @@ godocref: https://golang.org/pkg/html/template/
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-20
-categories: [templates,fundamentals,fondamentaux, modèles, à relire]
+categories: [fondamentaux, modèles]
 #tags: [go]
-menu:
-  docs:
-    parent: "templates"
-    weight: 10
-weight: 10
-sections_weight: 10
 draft: false
 aliases: [/templates/introduction/,/layouts/introduction/,/layout/introduction/, /templates/go-templates/]
 toc: true
@@ -474,9 +468,9 @@ Voici un exemple de [modèle partiel][partials] :
 
 
 [`where` function]: /fonctions/where/
-[config]: /demarage/configuration/
+[config]: /demarrage/configuration/
 [dotdoc]: http://golang.org/pkg/text/template/#hdr-Variables
-[first]: /functions/first/
+[first]: /fonctions/first/
 [front matter]: /gestion-contenu/front-matter/
 [fonctions]: /fonctions/ "Voir la liste complète des fonctions de modélisation d'Hugo avec un guide de référence rapide et des exemples basiques et avancés."
 [Go html/template]: http://golang.org/pkg/html/template/ "Godocs references for Golang's html templating"

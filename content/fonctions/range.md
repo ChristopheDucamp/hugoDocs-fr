@@ -6,10 +6,10 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [functions,fundamentals]
+categories: [fonctions,fondamentaux]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [iteration]
 signature: ["range COLLECTION"]
 workson: []
@@ -20,6 +20,6 @@ draft: false
 aliases: []
 ---
 
-Just like in the Go programming language, Go and Hugo templates make heavy use of `range` to iterate over a map, array or slice.
+Tout comme dans le langage de programmation, Go et les modèles Hugo font un large usage de `range`pour itérer sur une map, array ou slice.
 
-`range` is fundamental to templating in Hugo. (See the [Introduction to Hugo Templates](/templates/introduction/) for more examples.
+`range` est fondamental pour modéliser dans Hugo. (Voir l'[Introduction aux Modèles Hugo](/templates/introduction/) pour plus d'exemples.)

@@ -5,12 +5,12 @@ description: L'ordre de recherche est une liste prioritaire utilisée par Hugo c
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
+lastmod: 2017-07-22
 categories: [modèles,fondamentaux]
 #tags: [lookup]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 15
   quicklinks:
 weight: 15
@@ -26,15 +26,15 @@ Hugo utilise une liste prioritaire appelée **ordre de recherche** car elle trav
 
 L'ordre de recherche de modèle est une cascade inversée : si le modèle A n'est pas présent ou spécifié, Hugo se tournera vers le modèle B. Si le modèle B n'est pas présent ou spécifié, Hugo recherchera le modèle C ... et ainsi de suite jusqu'à ce qu'il atteigne le dossier `_default/` pour votre projet ou votre thème. À bien des égards, l'ordre de recherche est similaire au concept de programmation d'une [instruction de commutation sans décalage][switch].
 
-La puissance de l'ordre de recherche est qu'elle vous permet d'élaborer des mises en page spécifiques et de garder votre modélisation [DRY][].
+La puissance de l'ordre de recherche est de vous permettre de concevoir des mises en page spécifiques et de garder votre modélisation [DRY][].
 
 {{% note %}}
-La plupart des sites web Hugo n'auront besoin que des fichiers de modèles par défaut à la fin de l'ordre de recherche (à savoir `_default/*.html`).
+La plupart des sites web Hugo n'auront besoin que de  fichiers de modèles par défaut à la fin de l'ordre de recherche (à savoir `_default/*.html`).
 {{% /note %}}
 
 ## Ordres de Recherche
 
-L'odre de recherche respectif pour chacun des modèles de Hugo a été défini dans la documentation d'Hugo :
+L'odre de recherche respectif pour chacun des modèles d'Hugo a été défini dans la documentation d'Hugo :
 
 * [Modèle de Page d'Accueil][home]
 * [Modèles Base][base]
@@ -49,7 +49,7 @@ L'odre de recherche respectif pour chacun des modèles de Hugo a été défini d
 
 L'ordre de recherche est mieux illustré par des exemples. Ce qui suit vous montre le processus utilisé par Hugo pour trouver le modèle approprié pour rendre vos [modèles de page unique][single page templates], mais le concept est vrai pour tous les modèles de Hugo.
 
-1. Le projet utilise la thèse `mytheme` (spécifié dans la [configuration][config] du projet).
+1. Le projet utilise le thème `montheme` (spécifié dans la [configuration][config] du projet).
 2. Les layouts et les dossiers de contenu du projet sont les suivants :
 
 ```bash
@@ -69,7 +69,7 @@ L'ordre de recherche est mieux illustré par des exemples. Ce qui suit vous mont
 │   └── reviews
 │       └── reviewarticle.html
 └── themes
-    └── mytheme
+    └── montheme
         └── layouts
             ├── _default
             │   ├── list.html

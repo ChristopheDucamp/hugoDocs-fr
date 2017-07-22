@@ -7,11 +7,6 @@ publishdate: 2017-02-01
 lastmod: 2017-07-21
 categories: [commandes]
 #tags: [cli,command line, ligne de commande]
-menu:
-  docs:
-    parent: "commandes"
-    weight: 1
-weight: 01	#rem
 draft: false
 aliases: [/cli/,/commands/]
 ---

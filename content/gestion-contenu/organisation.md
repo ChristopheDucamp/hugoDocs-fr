@@ -7,11 +7,6 @@ publishdate: 2017-02-01
 lastmod: 2017-07-19
 categories: [fondamentaux, gestion de contenu]
 #tags: [sections,contenu, organisation]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 10
-weight: 10	#rem
 draft: false
 aliases: []
 toc: true

@@ -6,13 +6,7 @@ date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
 #tags: [highlighting,pygments,code blocks,syntax, syntaxe, surbrillance]
-categories: [developer tools, outils du développeur]
-menu:
-  docs:
-    parent: "tools"
-    weight: 20
-weight: 20
-sections_weight: 20
+categories: [outils du développeur]
 draft: false
 aliases: [/extras/highlighting/,/extras/highlight/]
 toc: true
@@ -21,29 +15,29 @@ Hugo peut mettre en surbrillance le code source de _deux manières différentes_
 
 ## Côté-serveur
 
-For the pre-processed approach, highlighting is performed by an external Python-based program called [Pygments](http://pygments.org/) and is triggered via an embedded Hugo shortcode (see [example](#example-highlight-shortcode-input) below). If Pygments is absent from the path, it will silently simply pass the content along without highlighting.
+Pour l'approche prétraitée, la mise en surbrillance est effectuée par un programme externe basé sur Python appelé [Pygments](http://pygments.org/) et déclenchée via un shortcode intégré Hugo (voir [exemple](#exemple-input-shortcode-highlight) ci-dessous). Si Pygments est absent du chemin, il passera silencieusement le contenu sans souligner.
 
 ### Avantages côté-serveur
 
-The advantages of server-side syntax highlighting are that it doesn’t depend on a JavaScript library and, consequently, works very well when read from an RSS feed.
+Les avantages de la syntaxe de mise en surbrillance côté serveur sont de ne pas dépednre d'une bibliothèque JavaScript et, par conséquent, cela fonctionne très bien lorsqu'elle est lue à partir d'un flux RSS.
 
 ### Pygments
 
-If you have never worked with Pygments before, here is a brief primer:
+Si vous n'avez jamais travaillé avec Pygments avant, voici une brève introduction:
 
-+ Install Python from [python.org](https://www.python.org/downloads/). Version 2.7.x is already sufficient.
-+ Run `pip install Pygments` in order to install Pygments. Once installed, Pygments gives you a command `pygmentize`. Make sure it sits in your PATH; otherwise, Hugo will not be able to find and use it.
++ Installez Python à partir de [python.org](https://www.python.org/downloads/). La version 2.7.x est déjà suffisante.
++ Exécuter `pip install Pigments` afin d'installer Pygments. Une fois installé, Pygments vous donne une commande `pygmentize`. Assurez-vous qu'elle soit bien dans votre PATH ; sinon, Hugo ne pourra pas le trouver et l'utiliser.
 
-On Debian and Ubuntu systems, you may also install Pygments by running `sudo apt-get install python3-pygments`.
+Sur les systèmes Debian et Ubuntu, vous pouvez également installer Pygments en exécutant `sudo apt-get install python3-pygments`.
 
-Hugo gives you two options that you can set with the variable `pygmentsuseclasses` (default `false`) in your [site configuration](/getting-started/configuration/).
+Hugo vous offre deux options que vous pouvez configurer avec la variable `pygmentsuseclasses` (par défaut `false`) dans votre [configuration de site][/demarrage/configuration).
 
-1. Color codes for highlighting keywords are directly inserted if `pygmentsuseclasses = false` (default). The color codes depend on your choice of the `pygmentsstyle` (default = `"monokai"`). You can explore the different color styles on [pygments.org](http://pygments.org/) after inserting some example code.
-2. If you choose `pygmentsuseclasses = true`, Hugo includes class names in your code instead of color codes. For class-names to be meaningful, you need to include a `.css` file in your website representing your color scheme. You can either generate this `.css` files according to the [description from the Pygments documentation](http://pygments.org/docs/cmdline/) or download the one of the many pre-built color schemes from [Pygment's GitHub css repository](https://github.com/richleland/pygments-css).
+1. Les codes de couleur pour les mots clés en surbrillance sont directement insérés si `pygmentsuseclasses=false` (par défaut). Les codes de couleur dépendent de votre choix de `pygmentsstyle` (par défaut =`"monokai"`). Vous pouvez explorer les différents styles de couleurs sur [pygments.org](http://pygments.org/) après avoir inséré un exemple de code.
+2. Si vous choisissez `pygmentsuseclasses=true`, Hugo inclut les noms de classe dans votre code au lieu des codes de couleurs. Pour que les noms de classe soient significatifs, vous devez inclure un fichier `.css` dans votre site Web représentant votre système de couleurs. Vous pouvez soit générer ces fichiers `.css` en fonction de [la description de la documentation Pygments](http://pygments.org/docs/cmdline/) ou télécharger l'un des nombreux modèles de couleurs pré-construits du [repo GitHub CSS de Pygments](https://github.com/richleland/pygments-css).
 
 ### Usage côté-serveur
 
-Highlighting is carried out via the [built-in shortcode](/content-management/shortcodes/) `highlight`. `highlight` takes exactly one required parameter for the programming language to be highlighted and requires a closing shortcode. Note that `highlight` is *not* used for client-side javascript highlighting.
+La mise en surbrillance s'effectue via le [shortcode intégré](/gestion-contenu/shortcodes/) `highlight`. `highlight` prend exactement un paramètre requis pour que le langage de programmation soit en surbrillance et nécessite un shortcode de fermeture. Notez que `highlight` n'est pas utilisé pour la mise en surbrillance javascript côté client.
 
 ### Exemple Input Shortcode `highlight` 
 
@@ -79,6 +73,8 @@ Highlighting is carried out via the [built-in shortcode](/content-management/sho
 
 ### Options
 
+Les options de contrôle de la mise en surbrillance peuvent être ajoutées dans le deuxième argument en tant que liste de valeurs-clés séparées par des virgules. L'exemple ci-dessous mettra en surbrillance dans `go` avec des numéros de ligne et les numéros de ligne 2 et 3 surlignés.
+
 Options for controlling highlighting can be added in the second argument as a quoted, comma-separated key-value list. The example below will syntax highlight in `go` with inline line numbers and line numbers 2 and 3 highlighted.
 
 ```
@@ -90,7 +86,7 @@ var d string
 {{</* / highlight */>}}
 ```
 
-The `highlight` shortcode includes the following supported keywords:
+Le shortcode `highlight` inclut les mots-clés supportés suivants: 
 
 * `style`
 * `encoding`
@@ -98,15 +94,15 @@ The `highlight` shortcode includes the following supported keywords:
 * `hl_lines`
 * `linenos`
 
-Note that `style` and `noclasses` will override the similar setting in the [global config](/getting-started/configuration/).
+Notez que `style` et` noclasses` remplacent le paramètre similaire dans [configuration globale][config]
 
-The keywords in the `highlight` shortcode mirror those of Pygments from the command line. See the [Pygments documentation](http://pygments.org/docs/) for more information.
+Les mots-clés du shortcode `highlight` reflètent ceux de Pygments à partir de la ligne de commande. Consultez la [documentation Pygments](http://pygments.org/docs/) pour plus d'informations.
+
 
 ### Code Fences
 
-It is also possible to add syntax highlighting with GitHub flavored code fences. To enable this, set the `PygmentsCodeFences` to `true` in Hugo's [configuration file](/getting-started/configuration/);
+Il est également possible d'ajouter une mise en surbrillance de syntaxe avec des "clôtures de code enrichies de GitHub". Pour activer cela, définissez `PygmentsCodeFences` sur `true` dans votre [fichier de configuration][config] Hugo :
 
-````
 ```html
 <section id="main">
   <div>
@@ -117,20 +113,19 @@ It is also possible to add syntax highlighting with GitHub flavored code fences.
   </div>
 </section>
 ```
-````
+
 
 {{% note "Disclaimers on Pygments" %}}
-* Pygments is relatively slow and _causes a performance hit when building your site_, but Hugo has been designed to cache the results to disk.
-* The caching can be turned off by setting the `--ignoreCache` flag to `true`.
-* The languages available for highlighting depend on your Pygments installation.
+* Pygments est relativement lent et _provoque une baisse de  performance lors de la construction de votre site_, mais Hugo a été conçu pour mettre en cache les résultats sur le disque.
+* La mise en cache peut être désactivée en réglant l'option `--ignoreCache` sur `true`.
+* Les langages disponibles pour la mise en surbrillance dépendent de votre installation Pygments.
 {{% /note %}}
 
-## Client-side
+## Côté Client
 
-Alternatively, code highlighting can be applied to your code blocks in client-side JavaScript.
+Alternativement, la mise en surbrillance de code peut être appliquée à vos blocs de code dans JavaScript côté client.
 
-Client-side syntax highlighting is very simple to add. You'll need to pick
-a library and a corresponding theme. Some popular libraries are:
+La mise en surbrillance de la syntaxe côté client est très simple à ajouter. Vous devrez choisir une bibliothèque et un thème correspondants. Certaines bibliothèques populaires sont :
 
 - [Highlight.js]
 - [Prism]
@@ -138,15 +133,15 @@ a library and a corresponding theme. Some popular libraries are:
 - [Syntax Highlighter]
 - [Google Prettify]
 
-### Client-side Advantages
+### Avantages côté client
 
-The advantages of client-side syntax highlighting are that it doesn’t cost anything when building your site, and some of the highlighting scripts available cover more languages than Pygments does.
+Les avantages de la mise en surbrillance de la syntaxe côté client sont que cela ne coûte rien lors de la construction de votre site, et que certains des scripts de mise en surbrillance disponibles couvrent plus de langues que Pygments.
 
-### Highlight.js Example
+### Exemple Highlight.js
 
-This example uses the popular [Highlight.js] library, hosted by [Yandex], a popular Russian search engine.
+Cet exemple utilise la populaire bibliothèque [Highlight.js], hébergée par [Yandex], un moteur de recherche russe populaire.
 
-In your `./layouts/partials/` (or `./layouts/chrome/`) folder, depending on your specific theme, there will be a snippet that will be included in every generated HTML page, such as `header.html` or `header.includes.html`. Simply add the css and js to initialize [Highlight.js]:
+Dans votre dossier `./layouts/partials /` (ou `./layouts/chrome/`), selon votre thème spécifique, il y aura un extrait qui sera inclus dans chaque page HTML générée, comme `header.html` ou `header.includes.html`. Ajoutez simplement css et js pour initialiser [Highlight.js] :
 
 ```
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
@@ -154,12 +149,12 @@ In your `./layouts/partials/` (or `./layouts/chrome/`) folder, depending on your
 <script>hljs.initHighlightingOnLoad();</script>
 ```
 
-### Prism example
+### Exemple Prism
 
-Prism is another popular highlighter library and is used on some major sites.
-The [download section of the prism.js website][prismdownload] is simple to use and affords you a high degree of customization to pick only the languages you'll be using on your site.
+Prism est une autre bibliothèque populaire de surligneur et elle est utilisée sur certains sites importants.
+La section [téléchargement du site web prism.js][prismdownload] est simple à utiliser et vous offre un haut degré de personnalisation pour ne choisir que les langages que vous utiliserez sur votre site.
 
-Similar to Highlight.js, you simply load `prism.css` in your `<head>` via whatever Hugo partial template is creating that part of your pages:
+Similaire à Highlight.js, vous chargez simplement `prism.css` dans votre `<head>` avec n'importe quel modèle partiel de Hugo qui crée cette partie de vos pages :
 
 ```html
 ...
@@ -167,7 +162,7 @@ Similar to Highlight.js, you simply load `prism.css` in your `<head>` via whatev
 ...
 ```
 
-Add `prism.js` near the bottom of your `<body>` tag in whatever Hugo partial template is appropriate for your site or theme.
+Ajoutez `prism.js` près du bas de votre balise `<body>` dans tout modèle de partiel approprié pour votre site ou thème.
 
 ```html
 ...
@@ -175,13 +170,13 @@ Add `prism.js` near the bottom of your `<body>` tag in whatever Hugo partial tem
 </body>
 ```
 
-In this example, the local paths indicate that your downloaded copy of these files are being added to the site, typically under `./static/css/` and `./static/js/`, respectively.
+Dans cet exemple, les chemin local, indique que votre copie téléchargée de ces fichiers a été ajoutée au site, typiquement sous `./static/css/` et `./static/js/`, respectivement.
 
 ### Usage côté-client
 
-To use client-side highlighting, most of these javascript libraries expect your code to be wrapped in semantically correct `<code>` elements with language-specific class attributes. For example, a code block for HTML would have `class="language-html"`.
+Pour utiliser la mise en surbrillance côté client, la plupart de ces bibliothèques javascript s'attendent à ce que votre code soit enveloppé dans des éléments `<code>` sémantiquement corrects avec des attributs de classe spécifiques au langage. Par exemple, un bloc de code pour HTML aurait `class="language-html "`.
 
-The client-side highlighting script therefore looks for programming language classes according to this convention: `language-go`, `language-html`, `language-css`, `language-bash`, etc. If you look at the page's source, you might see something like the following:
+Le script de mise en surbrillance côté client recherche donc des classes de langage de programmation selon cette convention : `language-go`,` language-html`, `language-css`,` language-bash`, etc. Si vous regardez la source de la page, vous pouvez voir quelque chose comme suit :
 
 ```html
 <pre>
@@ -193,7 +188,8 @@ The client-side highlighting script therefore looks for programming language cla
 </pre>
 ```
 
-If you are using markdown, your content pages needs to use the following syntax, with the name of the language to be highlighted entered directly after the first "fence." A fenced code block can be noted by opening and closing triple tilde <kbd>~</kbd> or triple back ticks <kbd>`</kbd>:
+Si vous utilisez le markdown, vos pages de contenu doivent utiliser la syntaxe suivante, avec le nom de langage à mettre en surbrillance directement après la première "fence". Un bloc de code clôturé peut être noté en ouvrant et en fermant trois tildes <kbd>~</ kbd> ou trois "back ticks" <kbd>`</ kbd> :
+
 
 {{< nohighlight >}}
 ~~~css
@@ -203,7 +199,7 @@ body {
 ~~~
 {{< /nohighlight >}}
 
-Here is the same example but with triple back ticks to denote the fenced code block:
+Voici le même exemple avec trois backticks pour indiquer le bloc code clôturé :
 
 {{< nohighlight >}}
 ```css
@@ -213,7 +209,7 @@ body {
 ```
 {{< /nohighlight >}}
 
-Passing the above examples through the highlighter script would yield the following markup:
+Passer les exemples ci-dessus à travers le script du surligneur donnerait le balisage suivant :
 
 {{< nohighlight >}}
 &lt;pre&gt;&lt;code class="language-css hljs"&gt;;&lt;span class="hljs-selector-tag"&gt;body&lt;/span&gt; {
@@ -221,7 +217,7 @@ Passing the above examples through the highlighter script would yield the follow
 }
 {{< /nohighlight >}}
 
-In the case of the coding color scheme used by the Hugo docs, the resulting output would then look like the following to the website's end users:
+Dans le cas du schéma de couleurs de codage utilisé par les docs Hugo, la sortie résultante ressemblerait à celle des utilisateurs finaux du site Web:
 
 ```css
 body {
@@ -229,8 +225,9 @@ body {
 }
 ```
 
-Please see individual libraries' documentation for how to implement each of the JavaScript-based libraries.
+Consultez la documentation des bibliothèques individuelles pour savoir comment mettre en œuvre chacune des bibliothèques basées sur JavaScript.
 
+[config]: /demarrage/configuration
 [Prism]: http://prismjs.com
 [prismdownload]: http://prismjs.com/download.html
 [Highlight.js]: http://highlightjs.org/

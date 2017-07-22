@@ -7,12 +7,6 @@ publishdate: 2016-11-01
 lastmod: 2017-07-21
 categories: [hébergement et déploiement]
 #tags: [hébergement]
-menu:
-  docs:
-    parent: "hebergement-et-deploiement"
-    weight: 01
-weight: 01	#rem
-draft: false
 aliases: []
 toc: false
 ---

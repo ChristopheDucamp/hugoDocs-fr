@@ -8,11 +8,6 @@ lastmod: 2017-07-21
 categories: [content management, gestion de contenu]
 #tags: [menus]
 draft: false
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 120
-weight: 120	#rem
 aliases: []
 toc: true
 ---

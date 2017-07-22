@@ -7,11 +7,6 @@ publishdate: 2017-01-10
 lastmod: 2017-07-20
 categories: [content management, gestion de contenu]
 #tags: [multilingual,i18n, internationalization, internationalisation, multilinguisme, ébauche]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 150
-weight: 150	#rem
 draft: false
 aliases: [/content/multilingual/,/content-management/multilingual/]
 toc: true

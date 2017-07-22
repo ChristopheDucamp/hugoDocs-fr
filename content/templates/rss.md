@@ -1,15 +1,15 @@
 ---
 title: RSS
 linktitle: Modèles RSS
-description: Hugo ships with its own RSS 2.0 template that requires almost no configuration, or you can create your own RSS templates.
+description: Hugo est livré avec son propre modèle RSS 2.0 qui ne requiert presque aucune configuration, ou vous pouvez aussi créer vos propres modèles RSS.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
+lastmod: 2017-02-22
 #tags: [rss, xml]
 categories: [templates]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 150
 weight: 150
 sections_weight: 150
@@ -18,7 +18,7 @@ aliases: [/templates/rss/]
 toc: true
 ---
 
-## Odre de Recherche du Modèle RSS
+## Ordre de Recherche du Modèle RSS
 
 You can use a single RSS template to generate all of your RSS feeds or create a specific template for each individual feed.
 
@@ -136,7 +136,7 @@ If you reference your RSS link, be sure to specify the MIME type with `type="app
 <a href="{{ .URL }}" type="application/rss+xml" target="_blank">{{ .SomeText }}</a>
 ```
 
-[config]: /getting-started/configuration/
+[config]: /demarrage/configuration/
 [embedded]: #the-embedded-rss-xml
 [RSS 2.0]: http://cyber.law.harvard.edu/rss/rss.html "RSS 2.0 Specification"
-[section]: /content-management/sections/
+[section]: /gestion-contenu/sections/

@@ -7,11 +7,6 @@ publishdate: 2017-01-10
 lastmod: 2017-07-21
 categories: [gestion de contenu]
 #tags: [markdown,asciidoc,mmark,content format,contenu, format de contenu]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 20
-weight: 20	#rem
 draft: false
 aliases: []
 toc: true

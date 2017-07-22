@@ -8,12 +8,6 @@ lastmod: 2017-07-21
 categories: [hébergement et déploiement]
 #tags: [netlify,hébergement, déploiement]
 authors: [Ryan Watters, Seth MacLeod, Christophe Ducamp]
-menu:
-  docs:
-    parent: "hebergement-et-deploiement"
-    weight: 10
-weight: 10
-sections_weight: 10
 draft: false
 aliases: [/hebergement-et-deploiement/hosting-on-netlify/]
 toc: true

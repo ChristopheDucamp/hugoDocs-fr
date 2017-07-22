@@ -1,12 +1,12 @@
 ---
-title: Debuguer les Modèles
+title: Débuguer les Modèles
 # linktitle: Template Debugging
 description: Vous pouvez utiliser la fonction `printf` des modèles Go pour debuguer vos modèles Hugo. Ces fragments fournissent une visualisation rapoide et facile des variables disponibles dans différents contextes.
 godocref: http://golang.org/pkg/fmt/
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [templates]
+categories: [Templates]
 #tags: [debugging,troubleshooting]
 menu:
   docs:

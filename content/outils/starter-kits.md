@@ -1,17 +1,11 @@
 ---
 title: Starter Kits
 linktitle: Starter Kits
-description: A list of community-developed projects designed to help you get up and running with Hugo.
+description: Une liste de projets développés par la communauté pour vous aider à installer et évoluer avec Hugo.
 date: 2017-02-22
-publishdate: 2017-02-01
-lastmod: 2017-02-22
+publishdate: 2017-02-01 
+lastmod: 2017-02-22 
 #tags: [starters,assets,pipeline]
-menu:
-  docs:
-    parent: "tools"
-    weight: 30
-weight: 30
-sections_weight: 30
 draft: false
 aliases: [/developer-tools/migrations/,/developer-tools/migrated/]
 toc: false

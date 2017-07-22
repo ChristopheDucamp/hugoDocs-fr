@@ -7,11 +7,7 @@ publishdate: 2017-02-01
 lastmod: 2017-07-21
 categories: [gestion de contenu]
 #tags: [table des matières, table of contents, toc]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 130
-weight: 130	#rem
+
 draft: false
 aliases: []
 toc: true

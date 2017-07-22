@@ -9,7 +9,7 @@ categories: [templates, modèles]
 #tags: [views]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 70
 weight: 70
 sections_weight: 70
@@ -113,14 +113,14 @@ Suite à l'exemple précédent, nous pouvons modifier notre fonction de rendu po
 ```
 {{% /code %}}
 
-[lists]: /templates/lists/
-[lookup]: /templates/lookup-order/
+[lists]: /templates/listes/
+[lookup]: /templates/ordre-recherche/
 [pagevars]: /variables/page/
-[render]: /functions/render/
+[render]: /fonctions/render/
 [single]: /templates/single-page-templates/
 [spf]: http://spf13.com
 [spfsourceli]: https://github.com/spf13/spf13.com/blob/master/layouts/_default/li.html
 [spfsourcesection]: https://github.com/spf13/spf13.com/blob/master/layouts/_default/section.html
 [spfsourcesummary]: https://github.com/spf13/spf13.com/blob/master/layouts/_default/summary.html
-[summaries]: /content-management/summaries/
+[summaries]: /gestion-contenu/summaries/
 [taxonomylists]: /templates/taxonomy-templates/

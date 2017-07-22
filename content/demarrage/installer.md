@@ -8,10 +8,6 @@ lastmod: 2017-07-22
 categories: [démarrage, fondamentaux]
 authors: [Michael Henderson]
 #tags: [installer,pc,windows,linux,macos,binary,tarball,installation]
-menu:
-  docs:
-    parent: "demarrage"
-    weight: 30
 weight: 30
 sections_weight: 30
 draft: false

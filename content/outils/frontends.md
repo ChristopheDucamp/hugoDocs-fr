@@ -1,18 +1,12 @@
 ---
-title: Frontend Interfaces with Hugo
+title: Interfaces Frontend avec Hugo
 linktitle: Frontends
-description: Do you prefer a graphical user interface over a text editor? Give these frontends a try.
+description: Si vous préférez une interface-utilisagteur graphique à un éditeur de texte ? Essayez ces frontends.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [developer tools]
+lastmod: 2017-07-22
+categories: [outils développeur]
 #tags: [frontend,gui]
-menu:
-  docs:
-    parent: "tools"
-    weight: 40
-weight: 40
-sections_weight: 40
 draft: false
 aliases: []
 toc: false

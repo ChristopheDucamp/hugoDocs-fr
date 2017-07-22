@@ -4,12 +4,12 @@ linktitle:
 description: La vue primaire du contenu dans Hugo est la vue unique. Hugo rendra chaque fichier Markdown fourni avec un modèle unique correspondant.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-18
+lastmod: 2017-07-22
 categories: [templates, modèles]
 #tags: [page]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 60
 weight: 60
 sections_weight: 60
@@ -20,7 +20,7 @@ toc: true
 
 ## Ordre de Recherche de Modèle de Page Unique
 
-Vous pouvez spécifier le [type de contenu][content type]  et le `layout` dans un fichier de contenu [front matter][]. Toutefois, vous ne pouvez pas spécifier `section` car cela est déterminé en fonction de l'emplacement du fichier (voir [section contenu] [section]).
+Vous pouvez spécifier le [type de contenu][content type] et le `layout` dans un fichier de contenu [front matter][]. Toutefois, vous ne pouvez pas spécifier `section` car cela est déterminé en fonction de l'emplacement du fichier (voir [section contenu] [section]).
 
 Hugo suppose que votre section de contenu et le type de contenu sont les mêmes, à moins que vous ne le dites à Hugo en fournissant un `type` directement dans le front matter d'un fichier de contenu. C'est pourquoi #1 et #3 arrivent avant #2 et #4, respectivement, dans la commande de recherche suivante. Les valeurs entre crochets (`<>`) sont variables.
 
@@ -90,18 +90,18 @@ Ce modèle de page unique utilise  les [modèles de base][base templates] de Hug
 
 Pour générer facilement de nouvelles instances d'un type de contenu (par exemple, les nouveaux fichiers `.md` dans une section comme `project/`) avec un front matter préconfiguré, utilisez les [archétypes de contenu][archetypes].
 
-[archetypes]: /content-management/archetypes/
+[archetypes]: /gestion-contenu/archetypes/
 [base templates]: /templates/base/
-[config]: /getting-started/configuration/
-[content type]: /content-management/types/
-[directory structure]: /getting-started/directory-structure/
+[config]: /demarrage/configuration/
+[content type]: /gestion-contenu/types/
+[directory structure]: /demarrage/structure-dossier/
 [dry]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
-[`.Format` function]: /functions/format/
-[front matter]: /content-management/front-matter/
-[pagetaxonomy]: /templates/taxonomy-templates/#displaying-a-single-piece-of-content-s-taxonomies
+[`.Format` function]: /fonctions/format/
+[front matter]: /gestion-contenu/front-matter/
+[pagetaxonomy]: /templates/taxonomie-templates/#displaying-a-single-piece-of-content-s-taxonomies
 [pagevars]: /variables/page/
 [partials]: /templates/partials/
-[section]: /content-management/sections/
+[section]: /gestion-contenu/sections/
 [site variables]: /variables/site/
 [spf13]: http://spf13.com/
-[`with`]: /functions/with/
+[`with`]: /fonctions/with/

@@ -4,12 +4,12 @@ linktitle: Modèle Page Accueil
 description: La page d'accueil d'un site web est souvent mise en page différemment des autres pages. Pour cette raison, Hugo facilite la définition de votre page d'accueil de nouveau site comme un modèle unique.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
+lastmod: 2017-07-22
 categories: [templates, modèles]
 #tags: [homepage, page d'accueil]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 30
 weight: 30
 sections_weight: 30

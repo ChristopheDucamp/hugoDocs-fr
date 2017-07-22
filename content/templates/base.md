@@ -6,11 +6,11 @@ godocref: https://golang.org/pkg/text/template/#example_Template_block
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
-categories: [templates,fundamentals, fondamentaux, modèles]
+categories: [fondamentaux, modèles]
 #tags: [blocks,base, blocs]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 20
 weight: 20
 sections_weight: 20
@@ -36,24 +36,24 @@ L'[ordre de recherche][lookup] pour les modèles de base se fait comme suit :
 9. `/layouts/_default/baseof.html`
 10. `/themes/<THEME>/layouts/_default/baseof.html`
 
-Les variables sont indiquées par un texte en majuscule défini dans `<>`. Notez que le comportement par défaut de Hugo est pour le `type` d'hériter de `section` sauf indication contraire.
+Les variables sont indiquées par un texte en majuscules défini dans `<>`. Notez que le comportement par défaut d'Hugo pour le `type` est d'hériter de la `section` sauf indication contraire.
 
 ### Exemple d'Ordre de Recherche du Modèle de Base
 
-À titre d'exemple, supposons que votre site utilise un thème appelé "mytheme" lors du rendu de la liste des sections pour une section `post`. Hugo choisit `layout/section/post.html` comme modèle pour [restituer la section][section]. Le bloc `{{define}}` dans ce modèle indique à Hugo que le modèle est une extension d'un modèle de base.
+À titre d'exemple, supposons que votre site utilise un thème appelé "montheme" lors du rendu de la liste de sections pour une section `post`. Hugo prendra pour modèle  `layout/section/post.html` pour [restituer la section][section]. Le bloc `{{define}}` dans ce modèle indique à Hugo que le modèle est une extension d'un modèle de base.
 
 Voici l'ordre de recherche pour le modèle de base `post` :
 
 1. `/layouts/section/post-baseof.html`
-2. `/themes/mytheme/layouts/section/post-baseof.html`
+2. `/themes/montheme/layouts/section/post-baseof.html`
 3. `/layouts/post/baseof.html`
-4. `/themes/mytheme/layouts/post/baseof.html`
+4. `/themes/montheme/layouts/post/baseof.html`
 5. `/layouts/section/baseof.html`
-6. `/themes/mytheme/layouts/section/baseof.html`
+6. `/themes/montheme/layouts/section/baseof.html`
 7. `/layouts/_default/post-baseof.html`
-8. `/themes/mytheme/layouts/_default/post-baseof.html`
+8. `/themes/montheme/layouts/_default/post-baseof.html`
 9. `/layouts/_default/baseof.html`
-10. `/themes/mytheme/layouts/_default/baseof.html`
+10. `/themes/montheme/layouts/_default/baseof.html`
 
 ## Définir le Modèle de Base
 
@@ -66,17 +66,17 @@ Ce qui suit définit un modèle de base simple sur `_default/baseof.html`. Parce
   <head>
     <meta charset="utf-8">
     <title>{{ block "title" . }}
-      <!-- Blocks may include default content. -->
+      <!-- les blocks peuvent inclure le contenu par defaut. -->
       {{ .Site.Title }}
     {{ end }}</title>
   </head>
   <body>
-    <!-- Code that all your templates share, like a header -->
+    <!-- Code que partagent tous vos templates, comme un header -->
     {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
+      <!-- la partie de la page qui commence a differer entre les modeles -->
     {{ end }}
     {{ block "footer" . }}
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    <!-- plus de code partage ici, peut-etre un pied de page mais qui peut etre annule si besoin  -->
     {{ end }}
   </body>
 </html>
@@ -101,16 +101,16 @@ Ce qui suit définit un modèle de base simple sur `_default/baseof.html`. Parce
 ```
 {{% /code %}}
 
-Ceci remplace les contenus de notre bloc (vide à la base) "main" avec quelque chose d'utile pour le modèle liste. Dans ce cas,  nous n'avons pas défini un bloc `"title"`, par conséquent les contenus de notre modèle de base demeurent inchangés dans les listes.
+Ceci remplace les contenus de notre bloc "main" (vide à la base) avec quelque chose d'utile pour le modèle liste. Dans ce cas,  nous n'avons pas défini un bloc `"title"`, par conséquent les contenus de notre modèle de base demeurent inchangés dans les listes.
 
 {{% warning %}}
 Le code que vous posez en dehors des définitions du bloc peut briser votre layout. Ceci concerne même les commentaires HTML. Par exemple :
 
 
 ```html
-<!-- Seemingly harmless HTML comment..that will break your layout at build -->
+<!-- un commentaire HTML apparemment inoffensif ... qui va briser votre mise en page lors de la construction -->
 {{ define "main" }}
-...your code here
+...votre code ici
 {{ end }}
 ```
 [Voir cette discussion extraite des forums de discussion Hugo.](https://discourse.gohugo.io/t/baseof-html-block-templates-and-list-types-results-in-empty-pages/5612/6)
@@ -131,7 +131,7 @@ Voici un exemple pour vous montrer comment vous pouvez remplacer à la fois les 
 ```
 {{% /code %}}
 
-[hugolists]: /templates/lists
+[hugolists]: /templates/listes
 [lookup]: /templates/ordre-recherche/
 [section]: /templates/section-templates/
 [singletemplate]: /templates/single-page-templates/

@@ -7,11 +7,6 @@ publishdate: 2017-01-10
 lastmod: 2017-07-21
 categories: [gestion de contenu]
 #tags: [résumés,abstracts,read more, en savoir plus]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 90
-weight: 90	#rem
 draft: false
 aliases: [/gestion-contenu/summaries, /content/summaries/,/content-management/content-summaries/]
 toc: true

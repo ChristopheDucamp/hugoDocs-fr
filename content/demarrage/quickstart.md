@@ -10,11 +10,7 @@ categories: [démarrage]
 #tags: [quick start,usage]
 authors: [Shekhar Gulati, Ryan Watters]
 menu:
-  docs:
-    parent: "demarrage"
-    weight: 10
 weight: 10
-sections_weight: 10
 draft: false
 aliases: [demarrage/quick-start,getting-started/quick-start]
 toc: true

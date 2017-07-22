@@ -4,17 +4,17 @@ linktitle: Modèles Internes
 description: Hugo est livré avec un groupe de modèles  boilerplate qui couvrent les cas d'utilisation les plus courants pour les sites web statiques.
 date: 2017-03-06
 publishdate: 2017-03-06
-lastmod: 2017-07-21
+lastmod: 2017-07-22
 categories: [templates]
 #tags: [internal, analytics,]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 168
 weight: 168
 sections_weight: 168
 draft: false
-aliases: []
+aliases: [/templates/internal/]
 toc: true
 wip: true
 ---
@@ -22,12 +22,12 @@ wip: true
 code: https://github.com/gohugoio/hugo/blob/e445c35d6a0c7f5fc2f90f31226cd1d46e048bbc/tpl/template_embedded.go#L147 -->
 
 {{% warning %}}
-While the following internal templates are called similar to partials, they do *not* observe the partial template lookup order.
+Bien que les modèles internes suivants soient appelés comme les partiels, ils n'observent *pas* l'ordre de recherche du modèle partiel.
 {{% /warning %}}
 
 ## Google Analytics
 
-Hugo ships with internal templates for Google Analytics tracking, including both synchronous and asynchronous tracking codes.
+Hugo est livré avec des modèles internes pour le suivi de  Google Analytics, à la fois pour les codes tracker synchrones et asynchrones.
 
 ### Configurer Google Analytics
 

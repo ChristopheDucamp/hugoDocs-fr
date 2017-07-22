@@ -8,11 +8,6 @@ lastmod: 2017-07-21
 #tags: [archetypes,archétypes, génératerus, métadonnées,front matter]
 categories: [gestion de contenu]
 menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 70
-  quicklinks:
-weight: 70	#rem
 draft: false
 aliases: [/content/archetypes/]
 toc: true

@@ -5,15 +5,9 @@ description: Déployer Hugo en tant que projet GitHub Pages ou site personnel/or
 date: 2014-03-21
 publishdate: 2014-03-21
 lastmod: 2017-07-21
-categories: [hosting and deployment, hébergement et déploiement]
-#tags: [github,git,deployment,hosting, hébergement, déploiement, git]
+categories: [hébergement et déploiement]
+#tags: [hosting, hébergement, déploiement, git]
 authors: [Spencer Lyon, Gunnar Morling, Christophe Ducamp]
-menu:
-  docs:
-    parent: "hebergement-et-deploiement"
-    weight: 30
-weight: 30
-sections_weight: 30
 draft: false
 toc: true
 aliases: [/hebergement-et-deploiement/hosting-on-github/,/tutorials/github-pages-blog/]

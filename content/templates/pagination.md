@@ -4,12 +4,12 @@ linktitle: Pagination
 description: Hugo supporte la pagination pour vos pages d'accueil, pages de section et taxonomies.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-20
-categories: [templates, modèles]
+lastmod: 2017-07-22
+categories: [modèles]
 #tags: [lists,sections,pagination, listes]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 140
 weight: 140
 sections_weight: 140

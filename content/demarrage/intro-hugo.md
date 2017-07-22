@@ -1,22 +1,18 @@
 ---
-
 title: C'est quoi Hugo ?
 linktitle: C'est quoi Hugo ?
-description: Une rapide introduction à Hugo par son authors: [steve francia]
-date: 
+description: Une rapide introduction à Hugo par son auteur
+date: 2017-07-22 
 lastmod: 2017-07-22
-categories: [démarrage]
+categories: []
 #tags: []
-menu:
-  docs:
-    parent: "demarrage"
-    weight: 30
-weight:30
-sections_weight:30
-draft: false
+
+weight: 30
+draft: true
 aliases: [/demarrage/intro/]
 toc: true
 ---
+
 {{% note %}}
 [Source "Introduction to Hugo" par Steve Francia (auteur d'Hugo)](https://gohugo.io/overview/introduction/) - traduction en cours ouverte à toutes vos améliorations.
 {{% /note %}}

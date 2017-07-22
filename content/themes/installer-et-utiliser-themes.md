@@ -5,11 +5,11 @@ description: Installer et utiliser facilement un thème à partir de la galerie 
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
-categories: [themes, thèmes]
+categories: [thèmes]
 #tags: [install, themes, source, organization, organisation, directories,usage]
 menu:
   docs:
-    parent: "themes"
+    parent: "Themes"
     weight: 10
 weight: 10
 sections_weight: 10

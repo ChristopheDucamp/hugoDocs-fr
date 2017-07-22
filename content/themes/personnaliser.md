@@ -9,7 +9,7 @@ categories: [themes, thèmes]
 #tags: [source, organization, dossiers, organisation, thèmes]
 menu:
   docs:
-    parent: "themes"
+    parent: "Themes"
     weight: 20
 weight: 20
 sections_weight: 20

@@ -7,10 +7,6 @@ publishdate: 2017-02-01
 lastmod: 2017-07-22
 categories: [démarrage,fondamentaux]
 #tags: [source, organisation, dossiers]
-menu:
-  docs:
-    parent: "demarrage"
-    weight: 50
 weight: 50
 sections_weight: 50
 draft: false
@@ -53,7 +49,7 @@ Par défaut, hugo créera de nouveaux fichiers de contenu avec au moins `date`,`
 : Stocke les modèles sous la forme de fichiers `.html` qui spécifient comment les vues de votre contenu seront rendues dans un site web statique. Les modèles incluent des [pages de listes][], votre [page d'accueil][], des [modèles de taxonomie](/templates/taxonomy-templates/), des [partiels](/templates/partials/), des [modèles de page unique](/templates/single-page-templates/), et plus encore.
 
 `static` 
-: stocke tout le contenu statique pour votre futur site : images, CSS, JavaScript, etc. Lorsque Hugo construit votre site, tous les actifs de votre dossier statique sont copiés tels quels. Un bon exemple d'utilisation du dossier `static` est pour [vérifier la propriété du site sur la Consle de Recherche Google][searchconsole], où vous voulez que Hugo copie un fichier HTML complet sans modifier son contenu.
+: stocke tout le contenu statique pour votre futur site : images, CSS, JavaScript, etc. Lorsque Hugo construit votre site, tous les actifs de votre dossier statique sont copiés tels quels. Un bon exemple d'utilisation du dossier `static` est la [vérification de la propriété du site sur la Console de Recherche Google][searchconsole], où vous voulez que Hugo copie un fichier HTML complet sans modifier son contenu.
 
 {{% note %}}
 Hugo n'est actuellement pas livré avec un pipeline d'asset ([#3207](https://github.com/gohugoio/hugo/issues/3207)). Vous pouvez solliciter la communauté dans les [forums Hugo](https://discourse.gohugo.io) ou regarder quelques [starter kits Hugo](/outils/starter-kits/) pour des exemples sur la façon dont les développeurs gèrent des assets statiques.  

@@ -1,17 +1,11 @@
 ---
-title: Migrate to Hugo
+title: Migrer vers Hugo
 linktitle: Migrations
-description: A list of community-developed tools for migrating from your existing static site generator or content management system to Hugo.
+description: Une liste des outils développés par la communauté pour migrer à partir de votre générateur de site statique existant ou à partir de votre système de gestion de contenu vers Hugo.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
+lastmod: 2017-07-22
 #tags: [migrations,jekyll,wordpress,drupal,ghost,contentful]
-menu:
-  docs:
-    parent: "tools"
-    weight: 10
-weight: 10
-sections_weight: 10
 draft: false
 aliases: [/developer-tools/migrations/,/developer-tools/migrated/]
 toc: true

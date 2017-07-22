@@ -1,21 +1,15 @@
 ---
-title: Deployment with Wercker
-linktitle: Deployment with Wercker
-description: You can use a free tool called Wercker to automate deployments between your GitHub-hosted source and final website on GitHub pages.
+title: Déploiement avec Wercker
+linktitle: Déploiement avec Wercker
+description: Vous pouvez utiliser un outil gratuit appelé Wercker pour automatiser les déploiements entre votre source-hébergée-sur-GitHub et le site web final sur GitHub pages.
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [hosting and deployment]
-#tags: [wercker,deployment,github,git]
+categories: [Hébergement et Déploiement]
+#tags: [wercker,github,git]
 authors: [Arjen Schwarz, Samuel Debruyn]
-menu:
-  docs:
-    parent: "hosting-and-deployment"
-    weight: 60
-weight: 60
-sections_weight: 60
 draft: false
-aliases: [/tutorials/automated-deployments/]
+aliases: []
 toc: true
 wip: false
 notesforauthors:

@@ -4,14 +4,8 @@ linktitle: Les Avantages du Statique
 description: Performance accrue, sécurité et facilité d'utilisation sont juste quelques-unes des raisons pour lesquelles les générateurs de site statique sont si tentants.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-18
-#tags: [ssg,static,performance,security, sécurité, statique, gss]
-menu:
-  docs:
-    parent: "a-propos"
-    weight: 30
-weight: 30
-sections_weight: 30
+lastmod: 2017-07-22
+#tags: [ssg,statique,performance,sécurité, statique, gss]
 draft: false
 aliases: []
 toc: false
@@ -25,7 +19,7 @@ Hugo prend la mise en cache un peu plus loin et tous les fichiers HTML sont rend
 Il y a de nombreux avantages à cela, le plus remarquable étant la performance. Les serveurs HTTP sont *très* bons pour envoyer des fichiers ---donc bon, en fait vous pouvez servir avec efficacité le même nombre de pages avec une fraction de la mémoire et la CPU nécessaires pour un site dynamique.
 
 ## Plus sur les Générateurs de Site Statiques
-
+* [Passer au Statique: 5 raisons de tester la JAMstarck sur votre prochain projet, Frank Taillandier](https://jamstatic.fr/2017/03/16/5-raisons-de-tester-la-jamstack/)
 * ["An Introduction to Static Site Generators", David Walsh][]
 * ["Hugo vs. Wordpress page load speed comparison: Hugo leaves WordPress in its dust", GettingThingsTech][hugovwordpress]
 * ["Static Site Generators", O-Reilly][]

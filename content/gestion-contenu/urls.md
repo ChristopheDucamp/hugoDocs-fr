@@ -7,11 +7,7 @@ publishdate: 2017-02-01
 lastmod: 2017-07-20
 #tags: [aliases,redirects,permalinks,urls]
 categories: [content management, gestion de contenu]
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 110
-weight: 110	#rem
+
 draft: false
 aliases: [/extras/permalinks/,/extras/aliases/,/extras/urls/,/doc/redirects/,/doc/alias/,/doc/aliases/]
 toc: true

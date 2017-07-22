@@ -1,8 +1,20 @@
-+++
-title = "Chantier Doc Hugo : Organisation"
-description = "organiser, organiser"
-weight = 200
-+++
+---
+title: Organisation Chantier
+linktitle: Chantier traduction
+description: organiser, organiser
+date: 2017-02-01
+publishdate: 2017-02-01
+lastmod: 2017-07-21
+categories: [chantier]
+#tags: []
+menu:
+  docs:
+    parent: "chantier"
+    weight:
+weight:
+aliases: [/chantier-doc-hugo/]
+toc: false
+---
 
 Avec **Hugo**, les pages sont le coeur de votre site. Organisez votre site comme tout autre projet Hugo. **La magie opère avec l'implémentation des sections réalisée dans la v0.22 de Hugo (bravo @bep)**.
 

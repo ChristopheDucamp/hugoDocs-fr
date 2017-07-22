@@ -9,7 +9,7 @@ categories: [templates, modèles]
 #tags: ["amp","outputs","rss"]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 18
 weight: 18
 sections_weight: 18

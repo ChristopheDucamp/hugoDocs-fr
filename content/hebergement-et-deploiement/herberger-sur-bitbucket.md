@@ -8,15 +8,9 @@ lastmod: 2017-07-21
 categories: [héberement et déploiement]
 #tags: [hébergement,bitbucket,déploiement,aerobatic]
 authors: [Jason Gowans]
-menu:
-  docs:
-    parent: "hébergement et déploiement"
-    weight: 50
-weight: 50
-sections_weight: 50
 draft: false
 toc: true
-aliases: [/tutorials/hosting-on-bitbucket/]
+aliases: [/hebergement-et-deploiement/hosting-on-bitbucket/]
 ---
 
 Vous pouvez utiliser [Bitbucket](https://bitbucket.org/) et [Aerobatic](https://www.aerobatic.com) construire, déployer et héberger un site web Hugo. Aerobatic est un service d'hébergement statique qui s'intègre avec Bitbucket et fournit un hébergement gratuit.

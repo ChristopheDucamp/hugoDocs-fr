@@ -1,10 +1,10 @@
 ---
-title: Release Notes
-linktitle: Release Notes
-description: See the full list of Hugo release notes since v0.05 in June 2015.
+title: Notes de Version
+linktitle: Notes de version
+description: Regardez la liste complète des notes de version depuis la v0.05 en juin 2015.
 date: 2016-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
+lastmod: 2017-07-02
 categories: [releases]
 draft: false
 aliases: [/meta/release-notes/]
@@ -13,7 +13,7 @@ toc: true
 
 ## **0.20.2** April 16th 2017
 
-Hugo `0.20.2` adds support for plain text partials included into `HTML` templates. This was a side-effect of the big new [Custom Output Format](/templates/output-formats/) feature in `0.20`, and while the change was intentional and there was an ongoing discussion about fixing it in {{< gh 3273  >}}, it did break some themes. There were valid workarounds for these themes, but we might as well get it right.
+Hugo `0.20.2` ajoute la prise en charge de partiels plein texte y compris dans les modèles `HTML`. C'est un effet de bord de la toute nouvelle fonctionnalité de [Format d'Output Personnalisé](/templates/output-formats/) de la  `0.20`, et même si la modification était voulue et s'il y a eu une discussion continue pour la réparer dans la  {{< gh 3273  >}}, elle a brisé quelques thèmes. Il existe des contournements valides pour ces thèmes.
 
 The most obvious use case for this is inline `CSS` styles,  which you now can do without having to name your partials with a `html` suffix.
 

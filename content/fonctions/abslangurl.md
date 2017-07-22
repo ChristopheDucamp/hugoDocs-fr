@@ -5,10 +5,10 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [functions]
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [multilingual,i18n,urls]
 signature: ["absLangURL INPUT"]
 workson: []

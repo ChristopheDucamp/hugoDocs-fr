@@ -9,13 +9,14 @@ categories: [templates, modèles, à relire]
 #tags: [taxonomies,metadata,front matter,terms, termes, métadonnées]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 50
 weight: 50
 sections_weight: 50
 draft: false
 aliases: [templates/taxonomy-templates/,/taxonomies/displaying/,/templates/terms/,/indexes/displaying/,/taxonomies/templates/,/indexes/ordering/, /templates/taxonomies/, /templates/taxonomy/]
 toc: true
+wip: true
 ---
 
 <!-- NOTE! Regardez https://github.com/gohugoio/hugo/issues/2826 pour la migration des pages de termes vers .Data.Pages ET 
@@ -27,7 +28,7 @@ Hugo offre de multiples façons d'utiliser des taxonomies tout au long de vos mo
 
 * Ordonne la manière dont les termes d'une taxonomie sont affichés dans un [modèle de termes de taxonomie](#modele-termes-taxonomie)
 * Trier la manière dont le contenu associé à un terme de taxonomie est affiché dans un [modèle de liste de taxonomie](#modèles-de-liste-taxonomique)
-* Liste les termes de la taxonomie d'un seul contenu dans un [modèle de page unique][single page template]
+* Liste les termes de la taxonomie d'un seul contenu dans un [modèle de page unique][]
 
 ## Modèles de Liste Taxonomique 
 
@@ -334,5 +335,5 @@ Parce que les taxonomies sont des listes, la fonction [`.GetPage`][getpage] peut
 [getpage]: /fonctions/getpage/
 [lists]: /templates/lists/
 [renderlists]: /templates/lists/
-[single page template]: /templates/single-page-templates/
+[modèle de page unique]: /templates/single-page-templates/
 [sitevars]: /variables/site/

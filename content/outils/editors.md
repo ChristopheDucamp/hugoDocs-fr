@@ -1,18 +1,12 @@
 ---
-title: Editor Plug-ins for Hugo
-linktitle: Editor Plug-ins
-description: The Hugo community uses a wide range of preferred tools and has developed plug-ins for some of the most popular text editors to help automate parts of your workflow.
+title: Plugins d'Éditeur pour Hugo
+linktitle: Plug-ins Éditeur
+description: La communauté Hugo utilise une large gamme d'outils préférés et a développé des plug-ins pour quelques-uns des étidteurs de texte les plus populaires afin de vous aider à automatiser des parties de votre workflow.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [developer tools]
+lastmod: 2017-02-22
+categories: [outils dévelppeurs]
 #tags: [editor, plug-ins]
-menu:
-  docs:
-    parent: "tools"
-    weight: 50
-weight: 50
-sections_weight: 50
 draft: false
 aliases: []
 toc: false

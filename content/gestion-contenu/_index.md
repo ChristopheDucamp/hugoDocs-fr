@@ -5,13 +5,8 @@ description: Hugo facilite la gestion de grands sites statiques avec un support 
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-21
-menu:
-  docs:
-    parent: "gestion-contenu"
-    weight: 1
 #tags: [source, organisation]
 categories: [gestion de contenu]
-weight: 01	#rem
 draft: false
 aliases: [/content/,/content/organization]
 toc: false

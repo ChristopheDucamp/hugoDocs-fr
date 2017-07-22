@@ -7,11 +7,11 @@ publishdate: 2017-02-01
 lastmod: 2017-07-22
 menu:
   docs:
-    parent: "themes"
+    parent: "Themes"
     weight: 01
 weight: 01
 sections_weight: 01
-categories: [themes, thèmes]
+categories: [thèmes]
 #tags: [themes,introduction,aperçu,overview]
 draft: false
 aliases: []

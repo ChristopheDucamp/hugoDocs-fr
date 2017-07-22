@@ -1,15 +1,15 @@
 ---
-title: Créer Vos Propres Shortcodes
+title: Créer vos Propres Shortcodes
 linktitle: Modèles de Shortcode
 description: Vous pouvez augmenter les shortcodes intégrés à Hugo en créant les vôtres en utilisant la même syntaxe de modélisation que celle utilisée pour les pages uniques et pages de listes.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-18
-categories: [templates, modèles]
+lastmod: 2017-07-22
+categories: [modèles]
 #tags: [shortcodes]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 100
 weight: 100
 sections_weight: 100
@@ -17,19 +17,19 @@ draft: false
 aliases: []
 toc: true
 ---
-Les codes courts sont un moyen de consolider les modèles en petits fragments réutilisables que vous pouvez intégrer directement dans votre contenu. Dans ce sens, vous pouvez considérer les codes courts comme l'intermédiaire entre des [modèles de page et de liste][templates] et des [fichiers de contenu de base][basic content files].
+Les shortcodes sont un moyen de consolider les modèles en petits fragments réutilisables que vous pouvez intégrer directement dans votre contenu. Dans ce sens, vous pouvez considérer les codes courts comme l'intermédiaire entre des [modèles de page et de liste][templates] et des [fichiers de contenu de base][basic content files].
 
 {{% note %}}
-Hugo est également livré avec des codes courts intégrés pour les cas d'usage courant. (Voir [Gestion du contenu : Shortcodes](/content-management/shortcodes/).)
+Hugo est également livré avec des codes courts intégrés pour les cas d'usage courant. (Voir [Gestion du contenu : Shortcodes](/gestion-contenu/shortcodes/).)
 {{% /note %}}
 
 ## Créer des Shortcodes Personnalisés
 
-Les codes courts intégrés de Hugo couvrent beaucoup de cas communs, mais pas tous. Heureusement, Hugo offre la possibilité de créer facilement des codes courts personnalisés pour répondre aux besoins de votre site.
+Les shortcodes intégrés de Hugo couvrent beaucoup de cas communs, mais pas tous. Heureusement, Hugo offre la possibilité de créer facilement des codes courts personnalisés pour répondre aux besoins de votre site.
 
 ### Placement de Fichier
 
-Pour créer un code court, placez un modèle HTML dans le dossier  `layouts/shortcodes` de votre [organisation source][source organization]. Considérez attentivement le nom du fichier car le nom du shortcode reflète celui du fichier mais sans l'extension `.html`. Par exemple, `layouts/shortcodes/monshortcode.html` sera appelé avec soit `{{</* monshortcode /*/>}}` or `{{%/* monshortcode /*/%}}` selon le type de paramètres que vous choisissez.
+Pour créer un shortcode, placez un modèle HTML dans le dossier  `layouts/shortcodes` de votre [organisation source][source organization]. Considérez attentivement le nom du fichier car le nom du shortcode reflète celui du fichier mais sans l'extension `.html`. Par exemple, `layouts/shortcodes/monshortcode.html` sera appelé avec soit `{{</* monshortcode /*/>}}` or `{{%/* monshortcode /*/%}}` selon le type de paramètres que vous choisissez.
 
 ### Ordre de Recherche de Modèle Shortcode
 
@@ -356,14 +356,14 @@ This will output the following HTML. Note how the first two `image` shortcodes i
 
 Vous trouverez encore plus d'exemples dans le [dossier shortcodes de spf13.com][spfscs] et le [dossier shortcodes de la documentation Hugo][docsshortcodes].
 
-[basic content files]: /content-management/formats/ "See how Hugo leverages markdown--and other supported formats--to create content for your website."
-[built-in shortcode]: /content-management/shortcodes/
+[basic content files]: /gestion-contenu/formats/ "See how Hugo leverages markdown--and other supported formats--to create content for your website."
+[built-in shortcode]: /gestion-contenu/shortcodes/
 [config]: /getting-started/configuration/ "Learn more about Hugo's built-in configuration variables as well as how to us your site's configuration file to include global key-values that can be used throughout your rendered website."
-[Content Management: Shortcodes]: /content-management/shortcodes/#using-hugo-s-built-in-shortcodes "Check this section if you are not familiar with the definition of what a shortcode is or if you are unfamiliar with how to use Hugo's built-in shortcodes in your content files."
+[Content Management: Shortcodes]: /gestion-contenu/shortcodes/#using-hugo-s-built-in-shortcodes "Check this section if you are not familiar with the definition of what a shortcode is or if you are unfamiliar with how to use Hugo's built-in shortcodes in your content files."
 [source organization]: /getting-started/directory-structure/#directory-structure-explained "Learn how Hugo scaffolds new sites and what it expects to find in each of your directories."
 [docsshortcodes]: https://github.com/gohugoio/hugo/tree/master/docs/layouts/shortcodes "See the shortcode source directory for the documentation site you're currently reading."
-[figure]: /content-management/shortcodes/#figure
-[hugosc]: /content-management/shortcodes/#using-hugo-s-built-in-shortcodes
+[figure]: /gestion-contenu/shortcodes/#figure
+[hugosc]: /gestion-contenu/shortcodes/#using-hugo-s-built-in-shortcodes
 [lookup order]: /templates/lookup-order/ "See the order in which Hugo traverses your template files to decide where and how to render your content at build time"
 [pagevars]: /variables/page/ "See which variables you can leverage in your templating for page vs list templates."
 [parent]: /variables/shortcodes/
@@ -371,4 +371,4 @@ Vous trouverez encore plus d'exemples dans le [dossier shortcodes de spf13.com][
 [spfscs]: https://github.com/spf13/spf13.com/tree/master/layouts/shortcodes "See more examples of shortcodes by visiting the shortcode directory of the source for spf13.com, the blog of Hugo's creator, Steve Francia."
 [templates]: /templates/ "The templates section of the Hugo docs."
 [vimeoexample]: #single-flexible-example-vimeo
-[youtubeshortcode]: /content-management/shortcodes/#youtube "See how to use Hugo's built-in YouTube shortcode."
+[youtubeshortcode]: /gestion-contenu/shortcodes/#youtube "See how to use Hugo's built-in YouTube shortcode."

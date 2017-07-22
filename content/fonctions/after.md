@@ -5,10 +5,10 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [functions]
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [iteration]
 signature: ["after INDEX COLLECTION"]
 workson: []
@@ -18,7 +18,7 @@ deprecated: false
 aliases: []
 ---
 
-The following shows `after` being used in conjunction with the [`slice` function][slice]:
+The following shows `after` being used in conjunction with the [fonction `slice`][slice]:
 
 ```html
 {{ $data := slice "one" "two" "three" "four" }}
@@ -62,7 +62,7 @@ You can use `after` in combination with the [`first` function][] and Hugo's [pow
 ```
 {{% /code %}}
 
-[`first` function]: /functions/first/
+[`first` function]: /fonctions/first/
 [list/section page]: /templates/section-templates/
-[lists]: /lists/
-[slice]: /functions/slice/
+[lists]: /listes/
+[slice]: /fonctions/slice/

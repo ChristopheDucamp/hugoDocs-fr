@@ -5,13 +5,7 @@ description: Hugo bénéficie d'une vitesse hallucinante, d'une gestion de conte
 
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
-menu:
-  docs:
-    parent: "a-propos"
-    weight: 20
-weight: 20
-sections_weight: 20
+lastmod: 2017-07-22
 draft: false
 aliases: [/about/features]
 toc: true
@@ -33,8 +27,8 @@ toc: true
 * Génération automatique [table des matières][table of contents]
 * Création de [menus dynamiques][Dynamic menu]
 * Support des [Pretty URLs][]
-* Suppor du modèle de [Lien permanent][Permalink]
-* Redirection via [aliases][]
+* Support du modèle de [Lien permanent][Permalink]
+* Redirection via [alias][]
  
 
 ## Contenu
@@ -59,7 +53,7 @@ toc: true
 Regardez ce qui arrive bientôt dans la [roadmap Hugo][].
 
 [Ace]: /templates/alternatives/
-[aliases]: /gestion-contenu/urls/#aliases
+[aliases]: /gestion-contenu/urls/#alias
 [Amber]: https://github.com/eknkc/amber
 [content summaries]: /gestion-contenu/summaries/
 [content types]: /gestion-contenu/types/

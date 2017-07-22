@@ -5,12 +5,7 @@ description: Modéliser avec Go, types de modèles et ordre de recherche, shortc
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-20
-menu:
-  docs:
-    parent: "templates"
-    weight: 01
-weight: 01	#rem
-categories: [templates]
+categories: [Modèles]
 #tags: []
 draft: false
 aliases: [/templates/overview/,/templates/content]

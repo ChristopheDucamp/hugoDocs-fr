@@ -7,10 +7,6 @@ publishdate: 2017-02-01
 lastmod: 2017-07-22
 categories: [demarrage]
 #tags: [/demarrage/utiliser-hugo,usage,livereload,command line,flags, ligne de commande]
-menu:
-  docs:
-    parent: "demarrage"
-    weight: 40
 weight: 40
 sections_weight: 40
 draft: false

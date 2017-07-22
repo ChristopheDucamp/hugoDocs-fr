@@ -6,10 +6,10 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [functions]
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [filtering]
 signature: ["where COLLECTION KEY [OPERATOR] MATCH"]
 workson: [lists,taxonomies,terms,groups]
@@ -138,4 +138,4 @@ Only the following operators are available for `nil`
 {{ end }}
 ```
 
-[intersect]: /functions/intersect/
+[intersect]: /fonctions/intersect/

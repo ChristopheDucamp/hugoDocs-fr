@@ -10,12 +10,6 @@ lastmod: 2017-02-22
 categories: [heberement et deploiement]
 #tags: [rysnc,deploiement]
 authors: [Noel Cothren]
-menu:
-  docs:
-    parent: "hebergement-et-deploiement"
-    weight: 70
-weight: 70
-sections_weight: 70
 draft: false
 aliases: []
 toc: true

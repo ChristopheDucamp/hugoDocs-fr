@@ -9,7 +9,7 @@ categories: [indieweb]
 #tags: [indieweb, h-card]
 menu:
   docs:
-    parent: "chantier-doc-hugo"
+    parent: "chantier"
     weight: 200
 weight: 200
 sections_weight: 200

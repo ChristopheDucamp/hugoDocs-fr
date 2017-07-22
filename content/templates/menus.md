@@ -9,7 +9,7 @@ categories: [templates, modèles]
 #tags: [lists,sections,menus, listes]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 130
 weight: 130
 sections_weight: 130
@@ -63,7 +63,7 @@ Voici un exemple :
 {{% /code %}}
 
 {{% note "`absLangURL` et `relLangURL`" %}}
-Utilisez les fonctions [`absLangUrl`](/functions/abslangurl) ou [`relLangUrl`](/functions/rellangurl) si votre thème utilise la [fonctionnalité multilingue](/content-management/multilingual/). À la différence de `absURL` et `relURL`, ces deux fonctions ajoutent le préfixe correct de langue à l'url.
+Utilisez les fonctions [`absLangUrl`](/fonctions/abslangurl) ou [`relLangUrl`](/fonctions/rellangurl) si votre thème utilise la [fonctionnalité multilingue](/gestion-contenu/multilingue/). À la différence de `absURL` et `relURL`, ces deux fonctions ajoutent le préfixe correct de langue à l'url.
 {{% /note %}}
 
 ## Section Menu pour Blogueurs Paresseux
