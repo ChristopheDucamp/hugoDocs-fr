@@ -18,7 +18,7 @@ toc: false
 notesforauthors:
 ---
 
-La section Dépannage comprend des problèmes connus, des solutions de contournement récentes et des FAQ tirées du [Forum de discussion Hugo][forum].
+La section Dépannage contient des problèmes connus, des solutions de contournement récentes et des FAQ extraites du [Forum de discussion Hugo][forum].
 
 
 
