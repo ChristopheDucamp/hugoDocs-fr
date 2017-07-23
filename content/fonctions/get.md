@@ -1,14 +1,14 @@
 ---
 title: .Get
-description: Accesses positional and ordered parameters in shortcode declaration.
+description: Accèsde aux paramètres positonnel et ordonné dans une déclaration shortcode.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [functions]
+lastmod: 2017-02-22
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [shortcodes]
 signature: ["Get INDEX", "Get KEY"]
 workson: []
@@ -20,7 +20,7 @@ needsexample: true
 ---
 
 
-`.Get` is specifically used when creating your own [shortcode template][sc].
+`.Get` est spécifiquement utilisé au moment de créer vos propres   [modèles de shortcode][sc].
 
 
 

@@ -16,4 +16,4 @@ aliases: []
 toc: false
 layout: documentation-home
 ---
-Hugo est le **moteur de site web statique le plus rapide du monde.** Il est écrit en Go (aka Golang) et développé par [bep](https://github.com/bep), [spf13](https://github.com/spf13) et leurs  [amis](https://github.com/gohugoio/hugo/graphs/contributors). Vous trouverez en dessous quelques-unes des pages les plus communes et utiles extraites de notre documentation.
+Hugo est le **moteur de site web statique le plus rapide du monde.** Il est écrit en Go (aka Golang) et développé par [bep](https://github.com/bep), [spf13](https://github.com/spf13) et leurs [amis](https://github.com/gohugoio/hugo/graphs/contributors). Vous trouverez en dessous quelques-unes des pages les plus communes et utiles extraites de notre documentation.

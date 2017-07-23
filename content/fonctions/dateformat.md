@@ -24,7 +24,7 @@ deprecated: false
 ```
 
 {{% warning %}}
-À partir de la v0.19 de Hugo, la fonction `dateFormat` n'est pas supporté comme partie de la [fonctionnalité multilingue](/gestion-contenu/multilingue/).
+À partir de la v0.19 de Hugo, la fonction `dateFormat` n'est pas supportée comme partie de la [fonctionnalité multilingue](/gestion-contenu/multilingue/).
 {{% /warning %}}
 
 Voir la [fonction `Format`](/fonctions/format/) pour une liste plus complète des options de mise en forme des dates dans vos modèles.

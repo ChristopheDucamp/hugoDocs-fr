@@ -1,15 +1,15 @@
 ---
 title: countwords
-description: Counts the number of words in a string.
+description: Compte le nombre de mots dans une chaîne.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [functions]
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
-#tags: [counting, word count]
+    parent: "Fonctions"
+#tags: [comptage, compteur de mot]
 signature: ["countwords INPUT"]
 workson: []
 hugoversion:
@@ -18,11 +18,11 @@ deprecated: false
 aliases: [/functions/countrunes/,/functions/countwords/]
 ---
 
-The template function works similar to the [.WordCount page variable][pagevars].
+La fonction pour le modèle fonctionne de manière similaire à la  [variable de page .WordCount][pagevars].
 
 ```html
-{{ "Hugo is a static site generator." | countwords }}
-<!-- outputs a content length of 6 words.  -->
+{{ "Hugo est un générateur de site statique." | countwords }}
+<!-- sort une longueur de contenu de 6 mots.  -->
 ```
 
 

@@ -1,6 +1,10 @@
 <h6 class="f4 dark-gray mb2">
-  <a href="{{ .Permalink }}" class="hide-child link primary-color">
+  La page <a href="{{ .Permalink }}" class="hide-child link primary-color">
   <span class="nl3 child">{{ partial "svg/link-permalink.svg" (dict "size" "14px") }}</span>
-    Cette page {{ .Title }}
-  </a> a été mise à jour le : {{ .Lastmod.Format "January 2, 2006" }}{{ with .GitInfo }}: <a class="hide-child link primary-color" href="{{$.Site.Params.ghrepo}}/commit/{{ .Hash }}">{{ .Subject }} ({{ .AbbreviatedHash }})</a>{{end }}
+    “{{ .Title }}”
+    </a> a été mise à jour le <time class="dt-updated" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}</time>{{ with .GitInfo }} 
+<a class="hide-child link primary-color" href="{{$.Site.Params.ghrepo}}/commit/{{ .Hash }}">{{ .Subject }} ({{ .AbbreviatedHash }})</a>
+{{end }}
 </h6>
+
+

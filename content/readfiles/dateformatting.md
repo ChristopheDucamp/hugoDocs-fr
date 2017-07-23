@@ -1,17 +1,23 @@
-Go templates [format your dates][time] according to a single reference time:
+Les modèles Go [formatent vos dates][time] selon une référence unique :
 
 ```
 Mon Jan 2 15:04:05 MST 2006
 ```
 
-You can think of `MST` as `07`, thus making the reference format string a sequence of numbers. The following is [taken directly from the Go docs][gdex]:
+Vous pouvez penser à `MST` comme `07`, par conséquent la chaîne de référence pour le format est une séquence de chiffres. Ce qui suit est [extrait directement de la documentation Go][gdex] :
 
 ```
 Jan 2 15:04:05 2006 MST
   1 2  3  4  5    6  -7
 ```
 
-### Hugo Date Templating Reference
+### Référence Modélisation de Date avec Hugo
+
+Chacun des exemples suivants montre la chaîne de formatage de référence suivie de la chaîne que produira Hugo dans votre code HTML.
+
+Notez que les exemples ont été rendus et testés dans [CST] [] et tirez d'un seul exemple de date que vous pourriez avoir dans le front de votre contenu:
+
+
 
 Each of the following examples show the reference formatting string followed by the string Hugo will output in your HTML.
 
@@ -54,17 +60,17 @@ date: 2017-03-03T14:15:59-06:00
 `"Mon, 02 Jan 2006 15:04:05 -0700"` (RFC339)
 : **Returns**: `Fri, 03 Mar 2017 14:15:59 -0600`
 
-### Cardinal Numbers and Ordinal Abbreviations
+### Nombres Cardinaux et Abréviations Ordinales
 
 Spelled-out cardinal numbers (e.g. "one", "two", and "three") and ordinal abbreviations (e.g. "1st", "2nd", and "3rd") are not currently supported.
 
-To continue with the example above:
+Pour continuer avec l'exemple du dessus : 
 
 ```
 {{.Date.Format "Jan 2nd 2006"}}
 ```
 
-Hugo assumes you want to append `nd` as a string to the day of the month and outputs the following:
+Hugo suppose que vous voulez ajouter `nd` comme une chaîne au jour du mois et sort ce qui suit :
 
 ```
 Mar 3nd 2017
@@ -72,7 +78,7 @@ Mar 3nd 2017
 
 ### Use `.Local` and `.UTC`
 
-In conjunction with the [`dateFormat` function][dateFormat], you can also convert your dates to `UTC` or to local timezones:
+En conjonction avec la [fonction `dateFormat`][dateFormat], vous pouvez aussi convertir vos dates en `UTC` ou vers des timezones locales :
 
 `{{ dateFormat "02 Jan 06 15:04 MST" .Date.UTC }}`
 : **Returns**: `03 Mar 17 20:15 UTC`
@@ -80,8 +86,8 @@ In conjunction with the [`dateFormat` function][dateFormat], you can also conver
 `{{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}`
 : **Returns**: `03 Mar 17 14:15 CST`
 
-[CST]: https://en.wikipedia.org/wiki/Central_Time_Zone
-[dateFormat]: /functions/dateformat/
+[CST]: https://fr.wikipedia.org/wiki/Heure_du_Centre
+[dateFormat]: /fonctions/dateformat/
 [gdex]: https://golang.org/pkg/time/#example_Time_Format
 [pagevars]: /variables/page/
 [time]: https://golang.org/pkg/time/

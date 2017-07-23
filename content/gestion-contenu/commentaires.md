@@ -1,12 +1,12 @@
 ---
 title: Commentaires
 linktitle: Commentaires
-description: Hugo est livré avec un modyle interne Disqus, mais ce n'est pas le seul système de commentaire qui fonctionnera avec votre nouveau site web Hugo.
+description: Hugo est livré avec un module interne Disqus, mais ce n'est pas le seul système de commentaire qui fonctionnera avec votre nouveau site web Hugo.
 date: 2017-02-01
-publishdate: 2017-02-01
-lastmod: 2017-07-20
-#tags: [sections,content,organization, organisation]
-categories: [project organization, fundamentals, organisation de projet, fondamentaux]
+publishdate: 2017-02-22
+lastmod: 2017-07-23
+#tags: [sections,contenu,organisation]
+categories: [organisation de projet, fondamentaux, fundamentals]
 draft: false
 aliases: [/gestion-contenu/comments,/extras/comments/]
 toc: true

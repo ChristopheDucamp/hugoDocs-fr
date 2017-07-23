@@ -1,14 +1,14 @@
 ---
 title: .GetPage
-description: "Gets a `Page` of a given `Kind` and `path`."
+description: "Reçoit une `Page` d'un `Kind` et d'un `path` donnés."
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
+lastmod: 2017-07-23
 categories: [functions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [sections,lists,indexes]
 signature: [".GetPage TYPE PATH"]
 workson: []
@@ -18,38 +18,39 @@ deprecated: false
 aliases: []
 ---
 
-Every `Page` has a `Kind` attribute that shows what kind of page it is. While this attribute can be used to list pages of a certain `kind` using `where`, often it can be useful to fetch a single page by its path.
+Chaque `Page` a un attribut `Kind` qui affiche quel type de page c'est. Bien que cet attribut puisse être utilisé pour lister des pages d'un certain `Kind` en utilisant `where`, il peut être souvent utile d'extraire une seule page par son chemin.
 
-`.GetPage` looks up a page of a given `Kind` and `path`.
+`.GetPage` recherche une page d'un `Kind` et d'un `path` donnés.
 
 ```
 {{ with .Site.GetPage "section" "blog" }}{{ .Title }}{{ end }}
 ```
 
-This method wil return `nil` when no page could be found, so the above will not print anything if the blog section isn't found.
+Cette méthode renverra `nil` quand aucune page ne pourra être trouvée, ainsi ce qui est au-dessus n'imprimera rien si la section blog n'est pas trouvée.
 
-For a regular page:
-
-```
-{{ with .Site.GetPage "page" "blog" "my-post.md" }}{{ .Title }}{{ end }}
-```
-
-Note that the path can also be supplied like this:
+Pour une page régulière : 
 
 ```
-{{ with .Site.GetPage "page" "blog/my-post.md" }}{{ .Title }}{{ end }}
+{{ with .Site.GetPage "page" "blog" "mon-post.md" }}{{ .Title }}{{ end }}
 ```
 
-The valid page kinds are: *page, home, section, taxonomy and taxonomyTerm.*
+Notez que le chemin peut aussi être fournie comme ceci : 
 
-## `.GetPage` Example
+```
+{{ with .Site.GetPage "page" "blog/mon-post.md" }}{{ .Title }}{{ end }}
+```
 
-This code snippet---in the form of a [partial template][partials]---allows you to do the following:
+Les types valides (`kind`) sont: *page, home, section, taxonomy et taxonomyTerm.*
 
-1. Grab the index object of your `tags` [taxonomy][].
-2. Assign this object to a variable, `$t`
-3. Sort the terms associated with the taxonomy by popularity.
-4. Grab the top two most popular terms in the taxonomy (i.e., the two most popular tags assigned to content.
+## Exemple `.GetPage`
+
+Cet extrait de code ---sous la forme d'un [modèle partiel][partials]--- vous permettra de faire ce qui suit : 
+
+
+1. Prendre l'objet index de votre [taxonomie][] `tags`
+2. Assigner cet objet à une variable, `$t`
+3. Trier les termes associés à la taxonomie par popularité.
+4. Prendre les deux termes les plus populaires dans la taxonomie (c'est-à-dire les deux balises les plus populaires attribuées au contenu.)
 
 {{% code file="grab-top-two-tags.html" %}}
 ```html
@@ -63,5 +64,5 @@ This code snippet---in the form of a [partial template][partials]---allows you t
 {{% /code %}}
 
 
-[partials]: /templates/partials/
-[taxonomy]: /content-management/taxonomies/
+[partials]: /templates/partiels/
+[taxonomie]: /gestion-contenu/taxonomies/

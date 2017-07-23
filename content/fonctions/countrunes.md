@@ -1,15 +1,15 @@
 ---
 title: countrunes
-description: Determines the number of runes in a string excluding any whitespace.
+description: Détermine le nombre de rune dans une chaîne en excluant tout espace-blanc.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [functions]
+lastmod: 2017-07-22
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
-#tags: [counting, word count]
+    parent: "Fonctions"
+#tags: [compteur, mots, comptage]
 signature: ["countrunes INPUT"]
 workson: []
 hugoversion:
@@ -18,11 +18,11 @@ deprecated: false
 aliases: [/functions/countrunes/,/functions/countwords/]
 ---
 
-In contrast with `countwords` function, which counts every word in a string, the `countrunes` function determines the number of runes in the content and excludes any whitespace. This has specific utility if you are dealing with CJK-like languages.
+Contrairement à la fonction `countwords`, qui compte chaque mot dans une chaîne, la fonction `countrunes` détermine le nombre de runes dans le contenu et exclut tout espace blanc. Cela a une utilité spécifique si vous rencontrez des langages similaires au CJK.
 
 ```html
 {{ "Hello, 世界" | countrunes }}
-<!-- outputs a content length of 8 runes. -->
+<!-- sort une longueur de contenu de 8 runes. -->
 ```
 
 [pagevars]: /variables/page/

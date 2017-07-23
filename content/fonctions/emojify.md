@@ -8,7 +8,7 @@ lastmod: 2017-07-18
 categories: [functions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [strings,emojis]
 signature: ["emojify INPUT"]
 workson: []
@@ -16,7 +16,7 @@ hugoversion:
 relatedfuncs: []
 deprecated: false
 ---
-`emoji` exécute une chaîne passée à travers le processeur d'émoticônes Emoji.
+`emoji` exécute une chaîne passée dans le processeur d'émoticônes Emoji.
 
 Voir l'[anti-sèche Emoji][emojis] pour les émoticônes disponibles.
 
@@ -28,7 +28,7 @@ I :heart: Hugo !
 
 
 
-[config]: /getting-started/configuration/
+[config]: /demarrage/configuration/
 [emojis]: http://www.emoji-cheat-sheet.com/
 [sc]: /templates/shortcode-templates/
 [scsource]: https://github.com/gohugoio/hugo/tree/master/docs/layouts/shortcodes

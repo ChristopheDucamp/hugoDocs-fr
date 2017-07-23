@@ -33,4 +33,4 @@ Après quelques années d'errances dans la motorisation web, voici les fonctionn
 ![source @bepsays](http://bepsays.com/assets/img/hugotree.jpg)
 
 
-L'exploration est en cours.
+L'exploration est en cours. Premier objectif, parvenir aujourd'hui à poser un pied de page avec un modèle de date en français.

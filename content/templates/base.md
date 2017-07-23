@@ -6,7 +6,7 @@ godocref: https://golang.org/pkg/text/template/#example_Template_block
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
-categories: [fondamentaux, modèles]
+categories: [fondamentaux, modèles, fundamentals]
 #tags: [blocks,base, blocs]
 menu:
   docs:

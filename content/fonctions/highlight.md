@@ -1,15 +1,15 @@
 ---
 title: highlight
 linktitle: highlight
-description: Takes a string of code and language declaration and uses Pygments to return syntax-highlighted HTML with inline-styles.
+description: Prend une chaîne de déclaration de chaîne et de langage, et utilise Pygments pour renvoyer un HTML avec syntaxe-en-surbrillance avec des styles dans-la-ligne.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [functions]
+lastmod: 2017-07-23
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [highlighting,pygments,code blocks,syntax]
 signature: ["highlight INPUT"]
 workson: []
@@ -18,11 +18,11 @@ relatedfuncs: []
 deprecated: false
 ---
 
-[`highlight` is used in Hugo's built-in `highlight` shortcode][highlight].
+[`highlight` est utilisé dans le shortcode intégré d'Hugo  `highlight`][highlight].
 
-See [Installing Hugo][installpygments] for more information on Pygments or [Syntax Highlighting][syntax] for more options on how to add syntax highlighting to your code blocks with Hugo.
+Voir [Installer Hugo][installpygments] pour plus d'informations sur Pygments ou la [mise en Surbrillance de Syntaxe][syntax] pour plus d'options sur la manière d'ajouter de la mise en surbrillance de syntaxe à vos blocs de code avec Hugo.
 
 
-[highlight]: /content-management/shortcodes/#highlight
-[installpygments]: /getting-started/installing/#installing-pygments-optional
+[highlight]: /gestion-contenu/shortcodes/#highlight
+[installpygments]: /demarrage/installer/#installer-pygments-optional
 [syntax]: /tools/syntax-highlighting/

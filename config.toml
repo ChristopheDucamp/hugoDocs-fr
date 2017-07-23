@@ -147,8 +147,8 @@ twitter = "xtof_party"
   [[menu.quicklinks]]
     name = "Fondamentaux"
     weight = 1
-    identifier = "fondamentals"
-    url = "/tags/fundamentals/"
+    identifier = "fondamentaux"
+    url = "/tags/fondamentaux/"
 
 
 

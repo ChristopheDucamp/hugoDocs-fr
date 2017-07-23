@@ -5,7 +5,7 @@ godocref: https://golang.org/pkg/time/#example_Time_Format
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-23
-categories: [fonctions]
+categories: [Fonctions]
 menu:
   docs:
     parent: "Fonctions"
@@ -50,7 +50,7 @@ Voici une explication visuelle [prise directement dans la documentation Go][gdex
 => 1 2  3  4  5    6  -7
 ```
 
-### Hugo Date and Time Templating Reference
+### Référence de Modélisation Hugo Date et Horaire
 
 Les exemples suivants montrent la chaîne de mise en page suivie de la sortie rendue.
 
@@ -93,15 +93,15 @@ date: 2017-03-03T14:15:59-06:00
 `"Mon, 02 Jan 2006 15:04:05 -0700"` (RFC339)
 : **Renvoie**: `Fri, 03 Mar 2017 14:15:59 -0600`
 
-### Numéros cardinaux et abréviations ordinales
+### Nombres Cardinaux et Abréviations Ordinales
 
-Les numéros cardinaux étalés (par exemple «un», «deux» et «trois») et les abréviations ordinales (c'est-à-dire avec des suffixes raccourcis comme "1st", "2n" et "3rd") ne sont actuellement pas supportés :
+Les nombres cardinaux étalés (par exemple "un", "deux" et "trois") et les abréviations ordinales (c'est-à-dire avec des suffixes raccourcis comme "1st", "2nd" et "3rd") ne sont actuellement pas supportés :
 
 ```
 {{.Date.Format "Jan 2nd 2006"}}
 ```
 
-Hugo suppose que vous souhaitez ajouter `nd` en tant que chaîne au jour du mois et produit ce qui suit:
+Hugo supposera que vous souhaitez ajouter `nd` en tant que chaîne au jour du mois et produit ce qui suit:
 
 ```
 Mar 3nd 2017

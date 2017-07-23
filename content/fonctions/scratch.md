@@ -1,15 +1,15 @@
 ---
 title: .Scratch
-description: Agis comme un "scratchpad" pour autoriser les variables pouvant être écrites dans la page ou le shortcode.
+description: Agit comme un "scratchpad" pour autoriser les variables pouvant être écrites dans la page ou le shortcode.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-21
+lastmod: 2017-07-22
 #tags: [iteration, itération]
-categories: [fonctions]
+categories: [Fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 toc:
 signature: []
 workson: []
@@ -22,16 +22,16 @@ aliases: [/extras/scratch/,/doc/scratch/]
 
 Dans la plupart des cas, vous pouvez bien fonctionner sans `Scratch`, mais il existe des cas d'utilisation qui ne sont pas résolus avec les modèles de Go sans l'aide de `Scratch` en raison de problèmes de portée.
 
-`Scratch` est ajouté à la fois à `Page` et `Shortcode` -- avec les méthodes suivantes :
+`Scratch` est ajoutée à la fois à `Page` et `Shortcode` -- avec les méthodes suivantes :
 
-* `Set` and `Add` takes a `key` and the `value` to add.
-* `Get` returns the `value` for the `key` given.
-* `SetInMap` takes a `key`, `mapKey` and `value`
-* `GetSortedMapValues` returns array of values from `key` sorted by `mapKey`
+* `Set` et `Add` prennent une `key` et la `value` à ajouter.
+* `Get` renvoie la `value` pour la `key` donnée.
+* `SetInMap` prend une `key`, `mapKey` et une `value`
+* `GetSortedMapValues` renvoie une array de valeurs à partir des  `key` triées par `mapKey`
 
-`Set` and `SetInMap` can store values of any type.
+`Set` et `SetInMap` peuvent stocker des valeurs de n'importe quel type.
 
-For single values, `Add` accepts values that support Go's `+` operator. If the first `Add` for a key is an array or slice, the following adds will be appended to that list.
+Pour des valeurs uniques, `Add` accepte des valeurs qui supportent l'opérateur `+` de Go. Si le premier `Add` pour une clé est une "array" ou "slice", les ajouts suivants seront ajoutés à cette liste..
 
 The scope of the backing data is global for the given `Page` or `Shortcode`, and spans partial and shortcode includes.
 

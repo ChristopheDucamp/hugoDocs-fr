@@ -1,15 +1,15 @@
 ---
 title: time
 linktitle:
-description: Converts a timestamp string into a `time.Time` structure.
+description: Convertit une chaîne de temps en une structure  `time.Time`.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [functions]
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [dates,time]
 signature: ["time INPUT"]
 workson: []
@@ -19,19 +19,19 @@ deprecated: false
 aliases: []
 ---
 
-`time` converts a timestamp string into a [`time.Time`](https://godoc.org/time#Time) structure so you can access its fields:
+`time` convertit une chaîne de temps en une structure  [`time.Time`](https://godoc.org/time#Time) afin que vous puissiez accéder à ses champs :
 
 ```
 {{ time "2016-05-28" }} → "2016-05-28T00:00:00Z"
 {{ (time "2016-05-28").YearDay }} → 149
-{{ mul 1000 (time "2016-05-28T10:30:00.00+10:00").Unix }} → 1464395400000, or Unix time in milliseconds
+{{ mul 1000 (time "2016-05-28T10:30:00.00+10:00").Unix }} → 1464395400000, ou temps Unix en millisecondes
 ```
 
-## Example: Using `time` to get Month Index
+## Exemple : Utiliser `time` pour récupérer l'Index du Mois
 
-The following example takes a UNIX timestamp---set as `utimestamp: "1489276800"` in a content's front matter---converts the timestamp (string) to an integer using the [`int` function][int], and then uses [`printf`][] to convert the `Month` property of `time` into an index. 
+L'exemple suivant prend une chaîne de temps UNIX ---réglée sous  `utimestamp: "1489276800"` dans le front matter d'un contenu---convertit le timestamp (chaîne) dans un nombre en utilisant la  [fonction `int`][int], et puis utilise [`printf`][] pour convertir la propriété `Month` du `time` à l'intérieur d'un  index. 
 
-The following example may be useful when setting up [multilingual sites][multilingual]:
+L'exemple suivant peut être utile au moment de paramétrer des  [sites multilingues][multilingual] :
 
 {{% code file="unix-to-month-integer.html" %}}
 ```html
@@ -45,6 +45,6 @@ The following example may be useful when setting up [multilingual sites][multili
 {{% /code %}}
 
 
-[int]: /functions/int/
-[multilingual]: /content-management/multilingual/
-[`printf`]: /functions/printf/
+[int]: /fonctions/int/
+[multilingue]: /gestion-contenu/multilingue/
+[`printf`]: /fonctions/printf/
