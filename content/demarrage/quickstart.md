@@ -1,7 +1,7 @@
 ---
 title: Quick Start
 linktitle: Quick Start
-description: Créez un site Hugo utilisant le magnifique thème Ananke.
+description: Créez un site Hugo en utilisant le magnifique thème Ananke.
 date: 2013-07-01
 publishdate: 2013-07-24
 categories: [démarrage]

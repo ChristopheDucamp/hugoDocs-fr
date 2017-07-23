@@ -450,9 +450,9 @@ Dans n'importe lesquelles des [distributions Linux qui supporent snap][10]:
     snap install hugo
 
 
-{{% note %}}
+{{% note %}} 
 Hugo-as-a-snap ne peut écrire qu'à l'intérieur du répertoire `$HOME` de l'utilisateur—et des répertoire montés-gvfs possédés par l'utilisateur—du fait du confinement de Snap et de son modèle de sécurité. Plus d'infos disponibles [dans cette issue en rapport sur GitHub][11].
-{{%/note}}
+{{% /note %}}
 
 ## Mettre à jour Hugo
 
