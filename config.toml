@@ -3,7 +3,7 @@ paginate = 100
 defaultContentLanguage = "fr"
 
 enableEmoji = true
-# Set the unicode character used for the "return" link in page footnotes.
+# Regle le caractere unicode utilise pour le lien "return" dans les notes de pied de page des pages.
 footnotereturnlinkcontents = "↩"
 languageCode = "fr-fr"
 metaDataFormat = "yaml"
@@ -54,18 +54,18 @@ twitter = "xtof_party"
   release = "Hugo-Next"
   ## Setting this to true will add a "noindex" to *EVERY* page on the site
   removefromexternalsearch = false
-  ## Gh repo for site footer (include trailing slash)
-  ghrepo = "https://github.com/ChristopheDucamp/Docs-Hugo-fr"
-  ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
+  ## repo Gh pour le pied de page (inclure un slash à la fin)
+  ghrepo = "https://github.com/ChristopheDucamp/Docs-Hugo-fr/"
+  ### Editez le repo de contenu (regle pour entrer automatiquement le mode "edit" ;  bien pour des liens "ameliorer cette page")
   ghdocsrepo = "https://github.com/ChristopheDucamp/Docs-Hugo-fr/tree/master/docs"
   #Gitter URL
   gitter = "https://gitter.im/spf13/hugo"
   ## Discuss Forum URL
   forum = "https://discourse.gohugo.io/"
-  ## Google Tag Manager
+  ## Gestionnaire de Tags google
   gtmid = ""
 
-  # First one is picked as the Twitter card image if not set on page.
+  # La première est prise comme l'image card Twitter si elle n'est pas reglee sur la page.
   images = ["images/gohugoio-card.png"]
 
   flex_box_interior_classes = "flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height"
@@ -73,14 +73,14 @@ twitter = "xtof_party"
   #sidebar_direction = "sidebar_left"
 
 # MARKDOWN
-## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+## Configuration pour le parseur mardown BlackFriday : https://github.com/russross/blackfriday
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
   angledQuotes = false
   latexDashes = true
 
-## As of v0.20, all content files include a default "categories" value that's the same as the section. This was a cheap future-proofing method and should/could be changed accordingly.
+## a partir de la v 0.20, tous les fichiers de contenu incluent une valeur par defaut "categories" qui est la meme que la section. This was a cheap future-proofing method and should/could be changed accordingly.
 [taxonomies]
   category = "categories"
 
@@ -188,4 +188,4 @@ twitter = "xtof_party"
     weight = 200
     identifier = "github"
     post = "external"
-    url = "https://github.com/gohugoio/hugo"
+    url = "https://github.com/ChristopheDucamp/hugoDocs-fr"

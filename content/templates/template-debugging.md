@@ -5,12 +5,12 @@ description: Vous pouvez utiliser la fonction `printf` des modèles Go pour debu
 godocref: http://golang.org/pkg/fmt/
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [Templates]
+lastmod: 2017-02-22
+categories: [Modèles]
 #tags: [debugging,troubleshooting]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 180
 weight: 180
 sections_weight: 180
@@ -19,13 +19,13 @@ aliases: []
 toc: false
 ---
 
-Here are some snippets you can add to your template to answer some common questions.
+Voici quelques fragments que vous pouvez ajouter à votre modèle pour répondre à quelques questions communes.
 
-These snippets use the `printf` function available in all Go templates.  This function is an alias to the Go function, [fmt.Printf](http://golang.org/pkg/fmt/).
+Ces fragments utilisent la fonction `printf` disponible dans tous les modèles Go.  Cette fonction est un alias de la fonction Go, [fmt.Printf](http://golang.org/pkg/fmt/).
 
 ## Quelles Variables sont Disponibles dans ce Contexte ?
 
-You can use the template syntax, `$.`, to get the top-level template context from anywhere in your template. This will print out all the values under, `.Site`.
+Vous pouvez utiliser la syntaxe de modèle, `$.`, pour récupérer le contexte top-level du modèle à partir de n'importe où dans votre modèle. Ceci imprimera toutes les valeurs sous `.Site`.
 
 ```html
 {{ printf "%#v" $.Site }}

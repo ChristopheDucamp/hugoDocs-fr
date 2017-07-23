@@ -10,7 +10,7 @@ categories: [templates, modèles]
 #tags: [amber,ace,templating languages]
 menu:
   docs:
-    parent: "templates"
+    parent: "Templates"
     weight: 170
 weight: 170
 sections_weight: 170
@@ -21,7 +21,7 @@ toc: true
 
 ## Modèles Ace
 
-For template documentation, follow the links from the [Ace project](https://github.com/yosssi/ace).
+Pour la documentation du modèle suivez les liens à partir du  [projet Ace](https://github.com/yosssi/ace).
 
 * Ace templates must be named with the ace-suffix; e.g., `list.ace`
 * It's possible to use both Go templates and Ace templates side by side and even include one into the other
@@ -63,7 +63,7 @@ In most cases, one `baseof.ace` in `_default` will suffice. An Ace template with
 
 ## Modèles Amber
 
-For Amber template documentation, follow the links from the [Amber project][].
+Pour la documentation des modèles Amber, suivez les liens à partir du [projet Amber][].
 
 * Amber templates must be named with the Amber suffix; e.g., `list.amber`
 * Partials in Amber or HTML can be included with the Amber template syntax:
@@ -71,7 +71,7 @@ For Amber template documentation, follow the links from the [Amber project][].
     * `import ../partials/test_a.amber `
 
 [aceinheritance]: https://github.com/yosssi/ace/tree/master/examples/base_inner_template
-[Amber Project]: https://github.com/eknkc/amber
-[template functions]: /functions/
+[projet Amber]: https://github.com/eknkc/amber
+[template functions]: /fonctions/
 [Go templates]: /templates/introduction/
 [Go base templates]: /templates/base/

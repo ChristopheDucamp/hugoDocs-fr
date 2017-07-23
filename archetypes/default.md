@@ -1,4 +1,5 @@
 ---
+title: ""
 linktitle: ""
 description: ""
 godocref: ""
@@ -10,4 +11,10 @@ weight: 00
 slug: ""
 aliases: []
 toc: false
+
+menu:
+  docs:
+    parent: "chantier"
+    weight: ""
+
 ---

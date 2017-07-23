@@ -2,8 +2,10 @@
 title = "Emplacement du Logo Hugo"
 description = ""
 date = "2017-04-24T18:36:24+02:00"
-draft = false
+draft = true
 +++
+
+<!--ceci concerne la personnalisation du thème docdock -->
 
 Créez une page `_header.md` dans le dossier `content`. Son contenu est ce que vous obtiendrez à l'emplacement du logo (tout en haut à gauche de l'écran).
 
