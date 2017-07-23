@@ -1,14 +1,14 @@
 ---
 title: .Format
-description: Formats built-in Hugo dates---`.Date`, `.PublishDate`, and `.LastMod`---according to Go's layout string.
+description: Les formats natifs dans Hugo dates---`.Date`, `.PublishDate`, et `.LastMod`---selon la chaîne layout de Go.
 godocref: https://golang.org/pkg/time/#example_Time_Format
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [functions]
+lastmod: 2017-07-23
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: [dates,time]
 signature: [".Format FORMAT"]
 workson: [times]
@@ -16,34 +16,34 @@ hugoversion:
 relatedfuncs: [dateFormat,now,Unix,time]
 deprecated: false
 aliases: []
-toc: true
+toc: false
 ---
 
-`.Format` will format date values defined in your front matter and can be used as a property on the following [page variables][pagevars]:
+`.Format` formatera les valeurs de date définies dans votre front matter et peut être utilisé comme une propriété sur les [variables de page][pagevars] suivantes :
 
 * `.PublishDate`
 * `.Date`
 * `.LastMod`
 
-Assuming a key-value of `date: 2017-03-03` in a content file's front matter, your can run the date through `.Format` followed by a layout string for your desired output at build time:
+En supposant une valeur-clé de `date: 2017-03-03` dans un front matter de fichier de contenu, vous pouvez lancer la date à travers `.Format` suivie par une chaîne de layout pour votre output désiré au moment du build :
 
 ```golang
-{{ .PublishDate.Format "January 2, 2006" }} => March 3, 2017
+{{ .PublishDate.Format "January 2, 2007" }} => March 3, 2017
 ```
 
-For formatting *any* string representations of dates defined in your front matter, see the [`dateFormat` function][dateFormat], which will still leverage the Golang layout string explained below but uses a slightly different syntax.
+Pour mettre en forme *toutes* toutes les représentations de chaînes de dates définies dans votre front matter, regardez la  [fonction `dateFormat`][dateFormat], qui tire encore parti de la chaîne de layout Golang expliquée en-dessous mais qui utilise une syntaxe légèrement différente.
 
-## Go's Layout String
+## Chaîne de Layout de Go
 
-Hugo templates [format your dates][time] via layout strings that point to a specific reference time:
+Les modèles Hugo [mettent en forme vos dates][time] via les chaînes de layout qui pointent vers une référence "time" spécifque :
 
 ```
 Mon Jan 2 15:04:05 MST 2006
 ```
 
-While this may seem arbitrary, the numerical value of `MST` is `07`, thus making the layout string a sequence of numbers.
+Bien que cela puisse sembler arbitraire, la valeur numérique de  `MST` est `07`, produisant par conséquent la chaîne de layout d'une séquence de nombres.
 
-Here is a visual explanation [taken directly from the Go docs][gdex]:
+Voici une explication visuelle [prise directement dans la documentation Go][gdex] :
 
 ```
  Jan 2 15:04:05 2006 MST
@@ -52,75 +52,77 @@ Here is a visual explanation [taken directly from the Go docs][gdex]:
 
 ### Hugo Date and Time Templating Reference
 
-The following examples show the layout string followed by the rendered output.
+Les exemples suivants montrent la chaîne de mise en page suivie de la sortie rendue.
 
-The examples were rendered and tested in [CST][] and all point to the same field in a content file's front matter:
+Les exemples ont été rendus et testés dans [CST][] et tous indiquent le même champ dans le front matter d'un fichier de contenu :
 
 ```
 date: 2017-03-03T14:15:59-06:00
 ```
 
-`.Date` (i.e. called via [page variable][pagevars])
-: **Returns**: `2017-03-03 14:15:59 -0600 CST`
+`.Date` (i.e. appelé via [page variable][pagevars])
+: **Renvoie**: `2017-03-03 14:15:59 -0600 CST`
 
 `"Monday, January 2, 2006"`
-: **Returns**: `Friday, March 3, 2017`
+: **Renvoie**: `Friday, March 3, 2017`
 
 `"Mon Jan 2 2006"`
-: **Returns**: `Fri Mar 3 2017`
+: **Renvoie**: `Fri Mar 3 2017`
 
 `"January 2nd"`
-: **Returns**: `March 3rd`
+: **Renvoie**: `March 3rd`
 
 `"January 2006"`
-: **Returns**: `March 2017`
+: **Renvoie**: `March 2017`
 
 `"2006-01-02"`
-: **Returns**: `2017-03-03`
+: **Renvoie**: `2017-03-03`
 
 `"Monday"`
-: **Returns**: `Friday`
+: **Renvoie**: `Friday`
 
 `"02 Jan 06 15:04 MST"` (RFC822)
-: **Returns**: `03 Mar 17 14:15 CST`
+: **Renvoie**: `03 Mar 17 14:15 CST`
 
 `"02 Jan 06 15:04 -0700"` (RFC822Z)
-: **Returns**: `03 Mar 17 14:15 -0600`
+: **Renvoie**: `03 Mar 17 14:15 -0600`
 
 `"Mon, 02 Jan 2006 15:04:05 MST"` (RFC1123)
-: **Returns**: `Fri, 03 Mar 2017 14:15:59 CST`
+: **Renvoie**: `Fri, 03 Mar 2017 14:15:59 CST`
 
 `"Mon, 02 Jan 2006 15:04:05 -0700"` (RFC339)
-: **Returns**: `Fri, 03 Mar 2017 14:15:59 -0600`
+: **Renvoie**: `Fri, 03 Mar 2017 14:15:59 -0600`
 
-### Cardinal Numbers and Ordinal Abbreviations
+### Numéros cardinaux et abréviations ordinales
 
-Spelled-out cardinal numbers (e.g. "one", "two", and "three") and ordinal abbreviations (i.e., with shorted suffixes like "1st", "2nd", and "3rd") are not currently supported:
+Les numéros cardinaux étalés (par exemple «un», «deux» et «trois») et les abréviations ordinales (c'est-à-dire avec des suffixes raccourcis comme "1st", "2n" et "3rd") ne sont actuellement pas supportés :
 
 ```
 {{.Date.Format "Jan 2nd 2006"}}
 ```
 
-Hugo assumes you want to append `nd` as a string to the day of the month and outputs the following:
+Hugo suppose que vous souhaitez ajouter `nd` en tant que chaîne au jour du mois et produit ce qui suit:
 
 ```
 Mar 3nd 2017
 ```
 
-<!-- Content idea: see https://discourse.gohugo.io/t/formatting-a-date-with-suffix-2nd/5701 -->
+{{% note %}} 
+todo : étudier la solution de contournement posée sur <https://discourse.gohugo.io/t/formatting-a-date-with-suffix-2nd/5701> et localiser un exemple de date en français (1er janvier)
+{{% /note %}}
 
-### Use `.Local` and `.UTC`
+### Utiliser `.Local` et `.UTC`
 
-In conjunction with the [`dateFormat` function][dateFormat], you can also convert your dates to `UTC` or to local timezones:
+En conjonction avec la [fonction `dateFormat`][dateFormat], vous pouvez aussi convertir vos dates en `UTC` ou vers des timezones locales :
 
 `{{ dateFormat "02 Jan 06 15:04 MST" .Date.UTC }}`
-: **Returns**: `03 Mar 17 20:15 UTC`
+: **Renvoie**: `03 Mar 17 20:15 UTC`
 
 `{{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}`
-: **Returns**: `03 Mar 17 14:15 CST`
+: **Renvoie**: `03 Mar 17 14:15 CST`
 
-[CST]: https://en.wikipedia.org/wiki/Central_Time_Zone
-[dateFormat]: /functions/dateformat/
+[CST]: https://fr.wikipedia.org/wiki/Heure_du_Centre
+[dateFormat]: /fonctions/dateformat/
 [gdex]: https://golang.org/pkg/time/#example_Time_Format
 [pagevars]: /variables/page/
 [time]: https://golang.org/pkg/time/

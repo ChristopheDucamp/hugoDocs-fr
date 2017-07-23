@@ -4,11 +4,12 @@ linktitle: Les Avantages du Statique
 description: Performance accrue, sécurité et facilité d'utilisation sont juste quelques-unes des raisons pour lesquelles les générateurs de site statique sont si tentants.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-22
+lastmod: 2017-07-23
 #tags: [ssg,statique,performance,sécurité, statique, gss]
 draft: false
 aliases: []
 toc: false
+
 ---
 Le but des générateurs de sites Web est de transformer le contenu en fichiers HTML. La plupart sont des "générateurs de sites dynamiques". Cela signifie que le serveur HTTP ---c'est-à-dire le programme qui envoie des fichiers à afficher dans le navigateur--- exécute le générateur pour créer un nouveau fichier HTML chaque fois qu'un utilisateur final demande une page.
 
