@@ -1,20 +1,26 @@
 ---
 title: Introduction à la Modélisation Hugo
 linktitle: Introduction
-description: Hugo utilise les bibliothèques de Go `html/template` et `text/template` comme base pour la modélisation.
+description: Hugo utilise les bibliothèques `html/template` et `text/template` de Go comme base pour la modélisation.
 godocref: https://golang.org/pkg/html/template/
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-20
-categories: [fondamentaux, modèles]
+lastmod: 2017-07-23
+categories: [fondamentaux, modèles, fundamentals]
 #tags: [go]
+menu:
+  docs:
+    parent: "templates"
+    weight: 10
+weight: 10
+sections_weight: 10
 draft: false
 aliases: [/templates/introduction/,/layouts/introduction/,/layout/introduction/, /templates/go-templates/]
 toc: true
 ---
 
 {{% note %}}
-Ce qui suit n'est qu'une version simplifiée des modèles Go. Pour un examen approfondi des modèles Go, consultez le document officiel [Go docs](http://golang.org/pkg/html/template/).
+Ce qui suit n'est qu'une version simplifiée des modèles Go. Pour un examen approfondi des modèles Go, consultez la documentation  officielle [Go docs](http://golang.org/pkg/html/template/).
 {{% /note %}}
 
 Les modèles Go fournissent un langage de modèle extrêmement simple respectant la conviction que seule la logique la plus élémentaire appartient au modèle ou à la couche vue.
@@ -62,7 +68,7 @@ Voici comment accéder à une variable `Page` à partir d'un modèle :
 Les valeurs peuvent être aussi stockées dans des variables personnalisées et référencées plus tard : 
 
 ```golang
-{{ $address := "123 Rue Principale."}}
+{{ $address := "123 rue Principale."}}
 {{ $address }}
 ```
 
@@ -262,7 +268,7 @@ Alternativement, vous pouvez utiliser le backtick (`` ` ``) pour citer les comme
 {{ `<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->` | safeHTML }}
 ```
 
-## Contexte (aka "the dot")
+## Contexte (aussi appelé "le point")
 
 Le concept le plus facilement négligé pour comprendre les modèles Go est que `{{ . }}` fait toujours référence au contexte actuel. Dans le niveau supérieur de votre modèle, ce sera le jeu de données mis à sa disposition. À l'intérieur d'une itération, cependant, il aura la valeur de l'élément actuel dans la boucle ; c'est-à-dire que `{{ . }}` ne se référera plus aux données disponibles sur la page entière. Si vous devez accéder aux données au niveau de la page (par exemple, les paramètres de page définis en avant) à partir de la boucle, vous voudrez probablement effectuer l'une des opérations suivantes :
 
@@ -473,15 +479,15 @@ Voici un exemple de [modèle partiel][partials] :
 [first]: /fonctions/first/
 [front matter]: /gestion-contenu/front-matter/
 [fonctions]: /fonctions/ "Voir la liste complète des fonctions de modélisation d'Hugo avec un guide de référence rapide et des exemples basiques et avancés."
-[Go html/template]: http://golang.org/pkg/html/template/ "Godocs references for Golang's html templating"
-[gohtmltemplate]: http://golang.org/pkg/html/template/ "Godocs references for Golang's html templating"
+[Go html/template]: http://golang.org/pkg/html/template/ "références Godocs pour la modélisation html de Golang"
+[gohtmltemplate]: http://golang.org/pkg/html/template/ "références Godocs pour la modélisation html en Golang"
 [index]: /fonctions/index/
 [math functions]: /fonctions/math/
-[partials]: /templates/partials/ "Link to the partial templates page inside of the templating section of the Hugo docs"
+[partials]: /templates/partials/ "Lien vers la page de modèles de partiel dans la section de modélisation de la docs Hugo"
 [relpermalink]: /variables/page/
 [safehtml]: /fonctions/safehtml/
 [sitevars]: /variables/site/
 [variables]: /variables/ "See the full extent of page-, site-, and other variables that Hugo make available to you in your templates."
 [where]: /fonctions/where/
 [with]: /fonctions/with/
-[godocsindex]: http://golang.org/pkg/text/template/ "Godocs page for index function"
+[godocsindex]: http://golang.org/pkg/text/template/ "page Godocs  pour la fonction index"

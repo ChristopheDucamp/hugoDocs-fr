@@ -109,11 +109,6 @@ twitter = "xtof_party"
 # ITEMS de Bas niveau
 
 
-[[menu.docs]]
-  name = "Dépannage"
-  weight = 60
-  identifier = "depannage"
-  url = "/depannage/"
 
 [[menu.docs]]
   name = "Outils"
@@ -150,6 +145,11 @@ twitter = "xtof_party"
     identifier = "fondamentaux"
     url = "/tags/fondamentaux/"
 
+[[menu.quicklinks]]
+  name = "Dépannage"
+  weight = 400
+  identifier = "depannage"
+  url = "/depannage/"
 
 
 

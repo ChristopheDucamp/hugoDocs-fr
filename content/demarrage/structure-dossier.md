@@ -1,12 +1,18 @@
 ---
 title: Structure de Dossier
 linktitle: Stucture de Dossier
-description: L'interface de ligne de commande (CLI) d'Hugo échafaude une structure de projet en dossiers et l'utilise ensuite comme l'input pour créer un site web complet.
+description: L'interface de ligne de commande (CLI) d'Hugo échafaude une structure de dossier projet, puis prend cet unique dossier et l'utilise ensuite comme input pour créer un site web complet.
 date: 2017-01-02
 publishdate: 2017-02-01
-lastmod: 2017-07-22
-categories: [démarrage,fondamentaux]
+lastmod: 2017-07-23
+categories: [démarrage,fondamentaux,fundamentals]
 #tags: [source, organisation, dossiers]
+categories: [getting started,fundamentals]
+#tags: [source, organization, directories]
+menu:
+  docs:
+    parent: "Démarrage"
+    weight: 50
 weight: 50
 sections_weight: 50
 draft: false
@@ -15,7 +21,7 @@ toc: true
 ---
 
 ## Échafaudage de Nouveau Site
-Le lancement du générateur `hugo new site` à partir de la ligne de commande créera une structure de répertoire avec les éléments suivants :  
+Le lancement du générateur `hugo new site` à partir de la ligne de commande créera une structure de dossier avec les éléments suivants :  
 
  ```bash
 .
@@ -28,7 +34,7 @@ Le lancement du générateur `hugo new site` à partir de la ligne de commande c
 └── themes
 ```
 
-## La Structure des Dossiers Expliquée
+## Explication de la Structure du Dossier
 
 Ce qui suit est un survol de chacun des dossiers avec les liens vers leurs sections respectives dans la documentation Hugo.
 

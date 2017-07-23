@@ -1,10 +1,10 @@
 ---
 title: Configurer Hugo
-description: Souvent les réglages par défaut sont suffisamment bons, mais le fichier de configuration peut fournir un haut niveau de contrôle sur la façon dont votre site est rendu.
+description: Souvent les réglages par défaut sont suffisamment bons, mais le fichier de configuration peut fournir un haut niveau de contrôle de granularité sur le rendu de votre site web.
 date: 2013-07-01
 publishdate: 2017-01-02
-lastmod: 2017-07-22
-categories: [démarrage, fondamentaux]
+lastmod: 2017-07-23
+categories: [démarrage, fondamentaux, fundamentals]
 #tags: [configuration,toml,yaml,json]
 menu:
   docs:

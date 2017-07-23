@@ -5,7 +5,7 @@ description: Installer Hugo sur macOS, Windows, Linux, FreeBSD et sur toute mach
 date: 2016-11-01
 publishdate: 2016-11-01
 lastmod: 2017-07-22
-categories: [démarrage, fondamentaux]
+categories: [démarrage, fondamentaux,fundamentals]
 authors: [Michael Henderson]
 #tags: [installer,pc,windows,linux,macos,binary,tarball,installation]
 weight: 30
@@ -16,7 +16,7 @@ toc: true
 ---
 
 {{% note %}}
-I y a eu beaucoup de discussions à propos d'Hugo étant écrit en Go, mais vous n'avez pas besoin d'installer Go pour apprécier Hugo. Piquez juste une binaire précompilée !
+Il y a eu beaucoup de discussions à propos d'Hugo étant écrit en Go, mais vous n'avez pas besoin d'installer Go pour apprécier Hugo. Piquez juste une binaire précompilée !
 {{% /note %}}
 
 Hugo est écrit en [Go][1] avec le support de nombreuses plates-formes. La dernière version peut être trouvée sur [Hugo Releases][2].

@@ -7,6 +7,11 @@ publishdate: 2017-02-22
 lastmod: 2017-07-23
 #tags: [sections,contenu,organisation]
 categories: [organisation de projet, fondamentaux, fundamentals]
+menu:
+  docs:
+    parent: "Gestion de Contenu"
+    weight: 140
+weight: 140	#rem
 draft: false
 aliases: [/gestion-contenu/comments,/extras/comments/]
 toc: true

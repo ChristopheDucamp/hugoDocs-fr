@@ -1,31 +1,31 @@
 ---
-title: Ordering and Grouping Hugo Lists
-linktitle: List Ordering and Grouping
-description: You can group or order your content in both your templating and content front matter.
+title: Trier et Grouper les Listes Hugo
+linktitle: Trier et Grouper les Listes
+description: Vous pouvez regrouper ou trier votre contenu à la fois dans votre modélisation et dans le front matter du contenu.
 date: 2017-02-01
-publishdate: 2017-02-01
-lastmod: 2017-02-01
-categories: [templates]
+publishdate: 2017-07-23
+lastmod: 2017-07-23
+categories: [templates, modèles]
 #tags: []
 menu:
   docs:
-    parent: "templates"
+    parent: "Modèles"
     weight: 27
 weight: 27
 sections_weight: 27
 draft: true
 aliases: [/templates/ordering/,/templates/grouping/]
 toc: true
-notes: This was originally going to be a separate page on the new docs site but it now makes more sense to keep everything within the templates/lists page. - rdwatters, 2017-03-12.
+notes: Ceci devait être initialement une page séparée sur le nouveau site de la documentation, mais cela a plus de sens de conserver tout dans la page templates/listes. - rdwatters, 2017-03-12.
 ---
 
-In Hugo, A list template is any template that will be used to render multiple pieces of content in a single HTML page.
+Dans Hugo, un modèle de liste est n'importe quel modèle qui sera utilisé pour rendre plusieurs éléments de contenu dans une page unique HTML.
 
-## Example List Templates
+## Exemple de Modèles de Liste
 
-### Section Template
+### Le Modèle de Section
 
-This list template is used for [spf13.com](http://spf13.com/). It makes use of [partial templates][partials]. All examples use a [view](/templates/views/) called either "li" or "summary."
+Ce modèle de liste est utilisé pour [spf13.com](http://spf13.com/). Il fait usage des [modèles de partiel][partials]. Tous les exemples utilisent une [vue](/templates/views/) appelée soit "li" ou "summary."
 
 {{% code file="layouts/section/post.html" %}}
 ```html
@@ -46,7 +46,7 @@ This list template is used for [spf13.com](http://spf13.com/). It makes use of [
 ```
 {{% /code %}}
 
-### Taxonomy Template
+### Le Modèle de Taxonomie
 
 {{% code file="layouts/_default/taxonomies.html" download="taxonomies.html" %}}
 ```html
@@ -63,14 +63,13 @@ This list template is used for [spf13.com](http://spf13.com/). It makes use of [
 ```
 {{% /code %}}
 
-## Order Content
+## Trier le Contenu
 
-Hugo lists render the content based on metadata provided in the [front matter](/content-management/front-matter/)..
+Les listes Hugo rendent le contenu basé sur les métadonnées fournies dans le [front matter](/content-management/front-matter/)..
 
-Here are a variety of different ways you can order the content items in
-your list templates:
+Voci une variété de différentes manières avec lesquelles vous pouvez trier les items de contenu dans vos modèles de listes :
 
-### Default: Weight > Date
+### Par Défaut : Weight > Date
 
 {{% code file="layouts/partials/order-default.html" %}}
 ```html
@@ -85,7 +84,7 @@ your list templates:
 ```
 {{% /code %}}
 
-### By Weight
+### Par Weight
 
 {{% code file="layouts/partials/by-weight.html" %}}
 ```html
@@ -98,7 +97,7 @@ your list templates:
 ```
 {{% /code %}}
 
-### By Date
+### Par Date
 
 {{% code file="layouts/partials/by-date.html" %}}
 ```html
@@ -111,7 +110,7 @@ your list templates:
 ```
 {{% /code %}}
 
-### By Publish Date
+### Par Date de Publication
 
 {{% code file="layouts/partials/by-publish-date.html" %}}
 ```html
@@ -124,7 +123,7 @@ your list templates:
 ```
 {{% /code %}}
 
-### By Expiration Date
+### Par Date d'Expiration 
 
 {{% code file="layouts/partials/by-expiry-date.html" %}}
 ```html
@@ -137,7 +136,7 @@ your list templates:
 ```
 {{% /code %}}
 
-### By Last Modified Date
+### Par Date de Modification
 
 {{% code file="layouts/partials/by-last-mod.html" %}}
 ```html
@@ -150,7 +149,7 @@ your list templates:
 ```
 {{% /code %}}
 
-### By Length
+### Par Longueur Length
 
 {{% code file="layouts/partials/by-length.html" %}}
 ```html
@@ -164,7 +163,7 @@ your list templates:
 {{% /code %}}
 
 
-### By Title
+### Par Titre
 
 {{% code file="layouts/partials/by-title.html" %}}
 ```html
@@ -177,7 +176,7 @@ your list templates:
 ```
 {{% /code %}}
 
-### By Link Title
+### Par Titre de Lien
 
 {{% code file="layouts/partials/by-link-title.html" %}}
 ```html
@@ -190,11 +189,11 @@ your list templates:
 ```
 {{% /code %}}
 
-### By Parameter
+### Par Paramètre
 
-Order based on the specified front matter parameter. Content that does not have the specified front matter field  will use the site's `.Site.Params` default. If the parameter is not found at all in some entries, those entries will appear together at the end of the ordering.
+Le tri basé sur le paramètre spécifié du front matter. Le contenu qui n'a pas le champ front matter spécifié utilisera la valeur par défaut du site `.Site.Params` default.Si le paramètre n'est trouvé nulle part dans les entrées, ces entrées apparaîtront ensemble à la fin du tri.
 
-The below example sorts a list of posts by their rating.
+L'exemple en-dessous trie une liste de posts par leur "rating".
 
 {{% code file="layouts/partials/by-rating.html" %}}
 ```html
@@ -204,8 +203,7 @@ The below example sorts a list of posts by their rating.
 ```
 {{% /code %}}
 
-If the front matter field of interest is nested beneath another field, you can
-also get it:
+Si le champ front matter d'intérêt est embarqué sous un autre champ, vous pouvez aussi l'obtenir : 
 
 {{% code file="layouts/partials/by-nested-param.html" %}}
 ```html
@@ -215,9 +213,9 @@ also get it:
 ```
 {{% /code %}}
 
-### Reverse Order
+### Ordre Inversé
 
-Reversing order can be applied to any of the above methods. The following uses `ByDate` as an example:
+Le tri inversé peut aussi s'appliquer à n'importe lesquelles des autres méthodes au-dessus. Voici des exemples utilisant  `ByDate` :
 
 {{% code file="layouts/partials/by-date-reverse.html" %}}
 ```html
@@ -230,11 +228,11 @@ Reversing order can be applied to any of the above methods. The following uses `
 ```
 {{% /code %}}
 
-## Group Content
+## Groupe de Contenu
 
-Hugo provides some functions for grouping pages by Section, Type, Date, etc.
+Hugo fournit quelques fonctions pour grouper des pages par Section, Section, Type, Date, etc.
 
-### By Page Field
+### Par Champ de Page
 
 {{% code file="layouts/partials/by-page-field.html" %}}
 ```html
@@ -252,7 +250,7 @@ Hugo provides some functions for grouping pages by Section, Type, Date, etc.
 ```
 {{% /code %}}
 
-### By Page date
+### Par date de Page
 
 {{% code file="layouts/partials/by-page-date.html" %}}
 ```html
@@ -270,7 +268,7 @@ Hugo provides some functions for grouping pages by Section, Type, Date, etc.
 ```
 {{% /code %}}
 
-### By Page publish date
+### Par date de publication de Page
 
 {{% code file="layouts/partials/by-page-publish-date.html" %}}
 ```html
@@ -288,7 +286,7 @@ Hugo provides some functions for grouping pages by Section, Type, Date, etc.
 ```
 {{% /code %}}
 
-### By Page Param
+### Par param de Page
 
 {{% code file="layouts/partials/by-page-param.html" %}}
 ```html
@@ -306,7 +304,7 @@ Hugo provides some functions for grouping pages by Section, Type, Date, etc.
 ```
 {{% /code %}}
 
-### By Page Param in Date Format
+### Par Param de Page Param en Format Date
 
 {{% code file="layouts/partials/by-page-param-as-date.html" %}}
 ```html
@@ -324,13 +322,13 @@ Hugo provides some functions for grouping pages by Section, Type, Date, etc.
 ```
 {{% /code %}}
 
-### Reverse Key Order
+### Clé de Tri Inversée
 
-The ordering of the groups is performed by keys in alphanumeric order (A–Z, 1–100) and in reverse chronological order (newest first) for dates.
+Le tri des groupes est exécuté par des clés en ordre alphanumérique (A–Z, 1–100) et en ordre chronologique inversé (les plus récents en premier) pour les dates.
 
-While these are logical defaults, they are not always the desired order. There are two different syntaxes to change the order, both of which work the same way. You can use your preferred syntax.
+Bien que ce soit des valeurs logiques par défaut, ce n'est pas toujours le tri désiré. Voici deux syntaxes différentes pour modifier l'ordre, les deux fonctionnant de la même façon. Vous pouvez utiliser votre syntaxe préférée.
 
-#### Reverse Method
+#### Méthode Inversée
 
 ```html
 {{ range (.Data.Pages.GroupBy "Section").Reverse }}
@@ -341,7 +339,7 @@ While these are logical defaults, they are not always the desired order. There a
 ```
 
 
-#### Provide the Alternate Direction
+#### Fournir la Direction Alternative
 
 ```html
 {{ range .Data.Pages.GroupByDate "2006-01" "asc" }}
@@ -351,7 +349,7 @@ While these are logical defaults, they are not always the desired order. There a
 {{ range .Data.Pages.GroupBy "Section" "desc" }}
 ```
 
-### Order Within Groups
+### Ordre Dans les Groupes
 
 Because Grouping returns a `{{.Key}}` and a slice of pages, all of the ordering methods listed above are available.
 
@@ -374,7 +372,7 @@ within each group is ordered alphabetically by title.
 ```
 {{% /code %}}
 
-## Filter and Limiting Lists
+## Filtre et Limites des Listes
 
 Sometimes you only want to list a subset of the available content. A common request is to only display “Posts” on the homepage. You can accomplish this with the `where` function.
 
@@ -409,7 +407,7 @@ Sometimes you only want to list a subset of the available content. A common requ
 ```
 {{% /code %}}
 
-### `first` and `where` Together
+### `first` et `where` Ensemble
 
 Using `first` and `where` together can be very powerful:
 

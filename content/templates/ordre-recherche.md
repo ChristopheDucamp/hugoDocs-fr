@@ -6,7 +6,7 @@ godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-22
-categories: [modèles,fondamentaux]
+categories: [modèles,fondamentaux,fundamentals]
 #tags: [lookup]
 menu:
   docs:

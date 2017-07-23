@@ -1,7 +1,7 @@
 ---
 title: isset
 linktitle: isset
-description: Returns true if the parameter is set.
+description: Renvoie true si le paramètre est défini.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
@@ -9,7 +9,7 @@ lastmod: 2017-02-01
 categories: [functions]
 menu:
   docs:
-    parent: "functions"
+    parent: "Fonctions"
 #tags: []
 signature: ["isset COLLECTION INDEX", "isset COLLECTION KEY"]
 workson: []
@@ -19,13 +19,13 @@ deprecated: false
 aliases: []
 ---
 
-Takes either a slice, array, or channel and an index or a map and a key as input.
+Prend soit une "slice", "array", ou "channel" et un "index" ou une "map" et une "key" comme input.
 
 ```
 {{ if isset .Params "project_url" }} {{ index .Params "project_url" }}{{ end }}
 ```
 
 {{% warning %}}
-All site-level configuration keys are stored as lower case. Therefore, a `myParam` key-value set in your [site configuration file](/getting-started/configuration/) needs to be accessed with `{{if isset .Site.Params "myparam"}}` and *not* with `{{if isset .Site.Params "myParam"}}`. Note that you can still access the same config key with `.Site.Params.myParam` *or* `.Site.Params.myparam`, for example, when using [`with`](/functions/with).
+Toutes les clés de configuration au niveau du site sont stockées en bas de casse. Par conséquent, une valeur-clé `myParam` définie dans votre [fichier de configuration du site](/demarrage/configuration/) doit être consultée avec `{{if isset .Site.Params "myparam"}}` et *non* pas avec `{{if isset .Site.Params "myParam"}}`. Notez que vous pouvez encore accéder à la même clé de config avec `.Site.Params.myParam` *ou* `.Site.Params.myparam`, par exemple au moment d'utiliser [`with`](/fonctions/with).
 {{% /warning %}}
 

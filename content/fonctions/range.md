@@ -1,12 +1,12 @@
 ---
 title: range
 linktitle:
-description: Iterates over a map, array, or slice.
+description: Itère sur une map, array ou slice.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
-categories: [fonctions,fondamentaux]
+categories: [fonctions,fondamentaux,fundamentals]
 menu:
   docs:
     parent: "Fonctions"
@@ -20,6 +20,6 @@ draft: false
 aliases: []
 ---
 
-Tout comme dans le langage de programmation, Go et les modèles Hugo font un large usage de `range`pour itérer sur une map, array ou slice.
+Tout comme dans le langage de programmation Go, Go et les modèles Hugo font un large usage de `range` pour itérer sur une "map", "array" ou "slice".
 
 `range` est fondamental pour modéliser dans Hugo. (Voir l'[Introduction aux Modèles Hugo](/templates/introduction/) pour plus d'exemples.)

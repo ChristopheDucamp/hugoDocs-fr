@@ -7,7 +7,7 @@ date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-07-19
 categories: [fondamentaux, modèles, fundamentals]
-#tags: [blocks,base, blocs]
+#tags: [blocks,base]
 menu:
   docs:
     parent: "Templates"

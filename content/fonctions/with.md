@@ -10,7 +10,7 @@ categories: [fonctions,fondamentaux]
 menu:
   docs:
     parent: "Fonctions"
-#tags: [conditionals]
+#tags: [conditionnels,conditionals,fondamentaux,fundamentals]
 signature: ["with INPUT"]
 workson: []
 hugoversion:
@@ -18,9 +18,9 @@ relatedfuncs: []
 deprecated: false
 ---
 
-Une autre façon d'écrire une instruction `if` puis de référencer la même valeur est d'utiliser `with` à la place. `with` renvoie le contexte (`.`) dans sa portée et ignore le bloc si la variable est absente ou désactivée.
+Une autre façon d'écrire une instruction `if` et de faire référence ensuite à la même valeur est d'utiliser `with`. `with` renvoie le contexte (`.`) dans sa portée et ignore le bloc si la variable est absente ou désactivée.
 
-L'exemple suivant vérifie une [variable du site définie par l'utilisateur](/variables/site/) appelée «twitteruser». Si la valeur-clé n'est pas définie, ce qui suit ne rendra rien :
+L'exemple suivant vérifie une [variable de site définie par l'utilisateur](/variables/site/) appelée «twitteruser». Si la valeur-clé n'est pas définie, ce qui suit ne rendra rien :
 
 {{% code file="layouts/partials/twitter.html" %}}
 ```html

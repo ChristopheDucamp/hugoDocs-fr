@@ -4,9 +4,14 @@ linktitle: Organisation
 description: Hugo suppose que la même structure qui fonctionne pour organiser votre contenu source est utilisée pour organiser le site rendu.
 date: 2017-02-01
 publishdate: 2017-02-01
-lastmod: 2017-07-19
-categories: [fondamentaux, gestion de contenu]
+lastmod: 2017-07-23
+categories: [fondamentaux, gestion de contenu,fundamentals]
 #tags: [sections,contenu, organisation]
+menu:
+  docs:
+    parent: "Gestion de Contenu"
+    weight: 10
+weight: 10	#rem
 draft: false
 aliases: []
 toc: true

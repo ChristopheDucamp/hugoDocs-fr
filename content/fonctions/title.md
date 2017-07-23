@@ -1,12 +1,12 @@
 ---
 title: title
 # linktitle:
-description: Convertit tous les caractères dans la chaîne fournie en casse du titre.
+description: Convertit tous les caractères dans la chaîne fournie pour la casse du titre.
 godocref:
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-23
-categories: [Fonctions, fondamentaux]
+categories: [Fonctions, fondamentaux,fundamentals]
 menu:
   docs:
     parent: "Fonctions"
