@@ -3,7 +3,7 @@ title: Quick Start
 linktitle: Quick Start
 description: Créez un site Hugo utilisant le magnifique thème Ananke.
 date: 2013-07-01
-publishdate: 2013-07-01
+publishdate: 2013-07-24
 categories: [démarrage]
 #tags: [quick start,usage]
 authors: [Shekhar Gulati, Ryan Watters]
@@ -19,14 +19,13 @@ toc: true
 ---
 
 {{% note %}}
-Ce guide de démarrage rapide utilise `macOS` dans les exemples.  Pour les instructions d'installation d'Hugo sur d'autres systèmes d'exploitation, voir [installer](/demarrage/installer/).
+Ce guide de démarrage rapide utilise `macOS` dans les exemples. Pour les instructions d'installation d'Hugo sur d'autres systèmes d'exploitation, voir [installer](/demarrage/installer/).
 
 Vous aurez aussi besoin d'[avoir installé Git](https://git-scm.com/downloads) pour faire tourner ce tutoriel.
 {{% /note %}}
 
 
-
-## Étape 1. Installer Hugo
+## Étape 1. Installez Hugo
 
 {{% note %}}
 `Homebrew`, un gestionnaire de package pour `macOS`, peut être installé à partir de [brew.sh](https://brew.sh/). Voir [comment installer](/démarrage/installer) si vous tournez sur Windows, etc.
@@ -62,9 +61,10 @@ La commande au-dessus créera un nouveau site Hugo dans un dossier appelé `quic
 Regardez [themes.gohugo.io](https://themes.gohugo.io/) pour une liste de thèmes à envisager. Ce quickstart utilise le magnifique  [thème Ananke](https://themes.gohugo.io/gohugo-theme-ananke/).
 
 ```bash
-cd quickstart;\
-git init;\
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke;\
+
+cd quickstart
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 
 # Editez votre fichier de configuration toml
 # et ajoutez le theme Ananke.
@@ -74,17 +74,21 @@ echo 'theme = "ananke"' >> config.toml
 
 {{< asciicast WJM2LEZQs8VRhNeuZ5NiGPp9I >}}
 
-## Step 4: Ajoutez un peu de Contenu
+## Étape 4 : Ajoutez un peu de Contenu
 
-```
+```bash
 hugo new post/mon-premier-post.md
 ```
 
 
 Editez le nouveau fichier de contenu créé si vous voulez. Maintenant, démarrez le serveur Hugo avec l'activation de  [drafts](/demarrage/usage/#contenus-draft-futurs-et-expire) :
 
+```bash
+hugo server -D
 ```
-▶ hugo server -D
+
+ce qui devrait donner dans la console : 
+```bash
 
 Started building sites ...
 Built site for language en:
@@ -111,18 +115,20 @@ Press Ctrl+C to stop
 
 ## Étape 5 : Personnalisez le Thème
 
-Votre nouveau site a déjà fière allure, mais vous voudrez le tripoter un peu avant de présenter au public.
+Votre nouveau site a déjà fière allure, mais vous voudrez sans doute le tripoter un peu avant de présenter au public.
 
 ### Configuration du Site
 
 Ouvrez `config.toml` dans un éditeur de texte :
 
-```
+{{% code file="config.yml"%}}
+```toml
 baseURL = "http://exemple.org/"
-languageCode = "frn-fr"
-title = "Mon Nouveau Site Hugo"
+languageCode = "fr-fr"
+title = "Le Bossu de Notre Dame"
 theme = "ananke"
 ```
+{{% /code %}}
 
 Remplacez le `title` au-dessus avec quelque chose de plus personnel. Aussi si vous avez déjà un domaine de prêt, paramétrez `baseURL`. Notez que cette valeur n'est pas nécessaire quand votre site tourne sur le serveur de développement local.
 
@@ -133,7 +139,7 @@ Remplacez le `title` au-dessus avec quelque chose de plus personnel. Aussi si vo
 
 Pour les options spécifiques de configuration de thème, voir le  [site du thème](https://github.com/budparr/gohugo-theme-ananke).
 
-**Pour de plus amples personnalisations du thème, regardez  comment [Personnaliser un Thème](/themes/customizing/).**
+**Pour de plus amples personnalisations du thème, regardez comment [Personnaliser un Thème](/themes/personnaliser/).**
 
 
 

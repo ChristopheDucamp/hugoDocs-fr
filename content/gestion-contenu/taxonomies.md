@@ -27,6 +27,8 @@ Hugo prend en charge les groupages de contenu définis par l'utilisateur appelé
 **Valeur**
 : un morceau de contenu assigné à un terme
 
+{{< youtube "-np9GX6cL38" >}}
+
 ## Exemple de Taxonomie : Site Web Cinéma
 
 Supposons que nous produisons un site web sur le cinéma. Vous pourriez vouloir inclure les taxonomies suivantes : 
