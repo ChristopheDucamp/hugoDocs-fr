@@ -13,4 +13,4 @@ Vous pouvez appeler ce shortcode dans les docs comme suit :
 <code>{</code><code>{</code>% readfile file="/path/to/file.txt" markdown="true" %<code>}</code><code>}</code>
 
 
-`markdown="true"` est facultatif (default = `"false"`) et analyse la chaîne à travers le rendu Blacfriday.
+`markdown="true"` est facultatif (default = `"false"`) et analyse la chaîne à travers le rendu Blackfriday.

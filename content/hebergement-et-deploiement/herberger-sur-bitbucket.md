@@ -4,16 +4,22 @@ linktitle: Hébergement sur Bitbucket
 description: Vous pouvez utiliser Bitbucket en conjonction avec Aerobatic pour construire, déployer et héberger un site web Hugo.
 date: 2017-02-04
 publishdate: 2017-02-04
-lastmod: 2017-07-21
-categories: [héberement et déploiement]
+lastmod: 2017-07-23
+categories: [hébergement et déploiement]
 #tags: [hébergement,bitbucket,déploiement,aerobatic]
 authors: [Jason Gowans]
-draft: false
+menu:
+  docs:
+    parent: "hebergement-et-deploiement"
+    weight: 50
+weight: 50
+sections_weight: 50
+draft: true
 toc: true
 aliases: [/hebergement-et-deploiement/hosting-on-bitbucket/]
 ---
 
-Vous pouvez utiliser [Bitbucket](https://bitbucket.org/) et [Aerobatic](https://www.aerobatic.com) construire, déployer et héberger un site web Hugo. Aerobatic est un service d'hébergement statique qui s'intègre avec Bitbucket et fournit un hébergement gratuit.
+Vous pouvez utiliser [Bitbucket](https://bitbucket.org/) et [Aerobatic](https://www.aerobatic.com) pour construire, déployer et héberger un site web Hugo. Aerobatic est un service d'hébergement statique qui s'intègre avec Bitbucket et fournit un hébergement gratuit.
 
 ## Hypothèses
 
@@ -22,7 +28,7 @@ Vous pouvez utiliser [Bitbucket](https://bitbucket.org/) et [Aerobatic](https://
 
 ## Installer l'interface de ligne de commande d'Aerobatic
 
-Si vous n'avez pas déjà utilisé Aerobatic, vous devez d'abord installer l'interface de ligne de commande (CLI) et créer un compte. Pour obtenir la liste de toutes les commandes disponibles, consultez la [doccumentation Aerobic CLI](https://www.aerobatic.com/docs/cli/).
+Si vous n'avez pas déjà utilisé Aerobatic, vous devrez d'abord installer l'interface de ligne de commande (CLI) et créer un compte. Pour obtenir la liste de toutes les commandes disponibles, consultez la [doccumentation Aerobatic CLI](https://www.aerobatic.com/docs/cli/).
 
 ```bash
 npm install aerobatic-cli -g
@@ -37,18 +43,18 @@ cd mon-nouveau-site-hugo
 cd themes; git clone https://github.com/eliasson/liquorice
 hugo -t liquorice
 aero create                                           # create the Aerobatic site
-hugo --baseURL https://my-new-hugo-site.aerobatic.io  # build the site overriding baseURL
+hugo --baseURL https://mon-nouveau-site-hugo.aerobatic.io  # build the site overriding baseURL
 aero deploy -d public                                 # deploy output to Aerobatic
 
 Version v1 deployment complete.
 View now at https://hugo-docs-test.aerobatic.io
 ```
 
-In the rendered page response, the `https://__baseurl__` will be replaced with your actual site url (in this example, `https://my-new-hugo-site.aerobatic.io`). You can always rename your Aerobatic website with the `aero rename` command.
+Dans la réponse de page rendue, la `https://__baseurl__` sera remplacée par votre url de site (dans cet exepmole , `https://mon-nouveau-site-hugo.aerobatic.io`). Vous pouvez toujours renommer votre site Aerobatic avec la commande `aero rename`.
 
 ## Pousser le site Hugo sur Bitbucket
 
-We will now create a git repository and then push our code to Bitbucket. In Bitbucket, create a repository.
+Nous allons créer maintenant un repository git et puis pousser notre code sur Bitbucket. Dans Bitbucket, créez un repository.
 
 ![][1]
 
@@ -71,7 +77,7 @@ git push -u origin master
 
 ## Déploiement Continu avec les Pipelines Bitbucket
 
-In the example above, we pushed the compiled assets in the `/public` folder to Aerobatic. In the following example, we use Bitbucket Pipelines to continuously create and deploy the compiled assets to Aerobatic.
+Dans l'exemple au-dessus, nous avons poussé les assets compilés dans le dossier `/public` vers Aerobatic. Dans l'exemple qui suit, nous utiliserons Bitbucket Pipelines pour créer et déployer en continu les assets compilés vers Aerobatic.
 
 ### Étape 1 : Configurer les Pipelines Bitbucket 
 
@@ -134,4 +140,4 @@ At this point, you can now create and edit blog posts directly in the Bitbucket 
 
 ## Prochaines étapes suggérées 
 
-The code for this example can be found in this Bitbucket [repository](https://bitbucket.org/dundonian/hugo-docs-test). Aerobatic also provides a number of additional [plugins](https://www.aerobatic.com/docs) such as auth and redirects that you can use for your Hugo site.
+Le code de cet exemple peut être trouvé dans ce  [repository Bitbucket](https://bitbucket.org/dundonian/hugo-docs-test). Aerobatic fournit aussi une quantité de  [plugins](https://www.aerobatic.com/docs) supplémentaires tels que auth et les redirections que vous pouvez utiliser pour votre site Hugo.

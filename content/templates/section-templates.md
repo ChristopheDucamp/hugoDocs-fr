@@ -41,9 +41,9 @@ Chaque `Page` dans Hugo possède un attribut  `.Kind`. `Kind` peut facilement ê
 
 La fonction [`.GetPage`][getpage] recherche une page d'index d'un `Kind` et d'un `path` donnés.
 
-{{% Remarque %}}
-`.GetPage` n'est actuellement pas supporter pour saisir les fichiers de contenu unique, mais *pourra* le devennir.
-{{% /Remarque %}}
+{{% note %}}
+`.GetPage` n'est actuellement pas supporté pour saisir les fichiers de contenu unique, mais *pourra* le devenir.
+{{% /note %}}
 
 Vous pouvez appeler `.Site.GetPage` avec deux arguments : `kind` et `kind value`.
 
@@ -121,6 +121,6 @@ qui renverra alors ce qui suit :
 
 [contentorg]: /gestion-contenu/organisation/
 [getpage]: /fonctions/getpage/
-[lists]: /templates/lists/
-[lookup]: /templates/lookup-order/
+[lists]: /templates/listes/
+[lookup]: /templates/ordre-recherche/
 [where]: /fonctions/where/

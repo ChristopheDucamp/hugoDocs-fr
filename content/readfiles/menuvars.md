@@ -25,7 +25,7 @@
 `.Children`
 : Menu
 
-Note that menus also have the following functions available as well:
+Notes que les menus ont aussi les fonctions disponibles suivantes : 
 
 [`.HasChildren`](/functions/haschildren/)
 : boolean

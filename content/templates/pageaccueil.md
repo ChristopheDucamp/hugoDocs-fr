@@ -1,6 +1,6 @@
 ---
 title: Modèle Page Accueil
-linktitle: Modèle Page Accueil
+linktitle: Page Accueil (modèle)
 description: La page d'accueil d'un site web est souvent mise en page différemment des autres pages. Pour cette raison, Hugo facilite la définition de votre page d'accueil de nouveau site comme un modèle unique.
 date: 2017-02-01
 publishdate: 2017-02-01
@@ -35,9 +35,9 @@ L'[ordre de recherche][lookup] pour le modèle de page d'accueil est le suivant 
 
 ## Ajouter du Contenu et un Front Matter à la Page d'Accueil
 
-La page d'accueil, similaire à d'autres [pages de liste dans Hugo][listes], accepte le contenu et le front matter à partir d'un fichier `_index.md`. Ce fichier devrait être à la racine de votre dossier `content` (c'est-à-dire `content/_index.md`). Vous pouvez ensuite ajouter des copies de body et de métadonnées à votre page d'accueil de la façon dont vous le feriez pour tout autre fichier de contenu.
+La page d'accueil, similaire à d'autres [pages de liste dans Hugo][listes], accepte le contenu et le front matter à partir d'un fichier `_index.md`. Ce fichier devrait être à la racine de votre dossier `content` (c'est-à-dire `content/_index.md`). Vous pouvez ensuite ajouter des copies de body et de métadonnées à votre page d'accueil comme le feriez pour tout autre fichier de contenu.
 
-Consultez le modèle de la page d'accueil ci-dessous ou [Organisation de Contenu][contentorg] pour plus d'informations sur le rôle de `_index.md` dans l'ajout de contenu et de front matter pour lister les pages.
+Consultez le modèle de la page d'accueil ci-dessous ou [Organisation de Contenu][contentorg] pour plus d'informations sur le rôle de `_index.md` dans l'ajout de contenu et d'un front matter pour lister les pages.
 
 ## `.Data.Pages` sur la Page d'Accueil
 

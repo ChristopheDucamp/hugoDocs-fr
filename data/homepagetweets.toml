@@ -1,4 +1,15 @@
 [[tweet]]
+name = "Christophe Ducamp"
+twitter_handle = "xtof_party"
+quote ="Apnée dans la doc <a href='https://twitter.com/hashtag/gohugo?src=hash'>#GoHugo</a>. Wow<br><a href='(https://twitter.com/ryandwatters'>@ryandwatters</a> (contenu)<br><a href='https://twitter.com/budparr'>@budparr</a> (design)<br><a href='https://twitter.com/algolia'>@algolias</a> (search)<br><a href='http://twittercard.bepsays.com/gohugoio2'>twittercard.bepsays.com/gohugoio2</a><br>/via <a href='https://twitter.com/jamstatic_fr'>jamstatic_fr</a>"
+
+
+
+
+link = "https://twitter.com/xtof_party/status/887410462106759169"
+date = 2017-07-18T00:00:00Z
+
+[[tweet]]
 name = "STOQE"
 twitter_handle = "@STOQE"
 quote = "I fear <a href='https://twitter.com/gohugoio' target='_blank'>@GoHugoIO</a> v0.22 might be so fast it creates a code vortex that time-warps me back to a time I used Wordpress. <a href='https://twitter.com/hashtag/gasp?src=hash'>#gasp</a>"

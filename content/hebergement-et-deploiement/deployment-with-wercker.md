@@ -11,44 +11,44 @@ authors: [Arjen Schwarz, Samuel Debruyn]
 draft: false
 aliases: []
 toc: true
-wip: false
+wip: true
 notesforauthors:
 ---
 
-## Goals
+## Objectifs
 
-By the end of this guide, you will have completed the following:
+À la fin de ce guide, vous aurez terminé ce qui suit 
 
-* Creating a basic Hugo project and website
-* Version controlling your project with Git
-* Adding your project to GitHub
-* Automating site deployments with a free tool called Wercker
-* Deploying your website to GitHub Pages for free hosting
+* Création d'un projet et d'un site web basés sur Hugo
+* Contrôle de version sur votre projet avec Git
+* Ajout de votre projet à GitHub
+* Automatisation des déploiements de sites avec un outil gratuit appelé Wercker
+* Déploiement de votre site Web sur GitHub Pages pour un hébergement gratuit
 
-## Assumptions
+## Hypothèses
 
-1. You have a working familiarity with using Git for version control
-2. You have a GitHub account
-3. You have already created a basic Hugo project
+1. Vous êtes à l'aise sur l'utilisation de Git pour le contrôle de version
+2. Vous avez un compte GitHub
+3. Vous avez déjà créé un projet Hugo de base
 
-If you do not meet these assumptions, the [GitHub help section][githubhelp] has an explanation of how to install and use git. [Signing up for a GitHub][ghsignup] account is free as well. If you are completely unfamiliar with creating a new Hugo website, visit the [Hugo Quick Start][quickstart].
+Si vous ne respectez pas ces hypothèses, la [section d'aide GitHub][githubhelp] explique comment installer et d'utiliser git. [S'inscrire et créer un compte GitHub] [ghsignup] est également gratuit. Si vous n'êtes pas complètement familiarisé avec la création d'un nouveau site Web Hugo, visitez le [QuickStart Hugo][démarrage rapide].
 
-## Create a Basic Hugo Site
+## Créez un Site Basique Hugo
 
-{{% note "This Guide Uses the Hugo CLI" %}}
-All the work for setting up a Hugo project and using this guide is done via the Hugo CLI's most basic commands. See the [command line reference page](/commands/) for a more exhaustive account of the CLI's features.
+{{% note "Ce Guide Utilise la CLI d'Hugo" %}}
+Tout le travail pour paramétrer un projet Hugo en utilisant ce guide se fait avec les commandes les plus basiques d'Hugo. Voir [page de référence ligne de commande](/commands/) pour une liste plus exhaustive des fonctionnalités de la CLI.
 {{% /note %}}
 
-First, create your new Hugo website using the [`hugo new site` command][basicusage] and change into the newly created directory for the project. In this guide, we are calling our new project `hugo-wercker-example`:
+Tout d'abord, créez votre nouveau site Web Hugo à l'aide de la commande [`hugo new site`][basicusage] et déplacez-vous dans le répertoire créé pour le projet. Dans ce guide, nous appelons notre nouveau projet `hugo-wercker-exemple` :
 
 {{% code file="hugo-new-site.sh" %}}
 ```bash
-hugo new site hugo-wercker-example
-cd hugo-wercker-example
+hugo new site hugo-wercker-exemple
+cd hugo-wercker-exemple
 ```
 {{% /code %}}
 
-We will use the [Herring Cove theme][] by first cloning the theme into the `themes` directory.
+Nous utiliserons le [theme Herring Cove][] en clonant d'abord le thème à l'intérieur du dossier `themes`.
 
 {{% code file="clone-herring-cove-theme.sh" %}}
 ```bash
@@ -57,7 +57,7 @@ git clone https://github.com/spf13/herring-cove.git
 ```
 {{% /code %}}
 
-Cloning the project from the command line will conflict with our own version control. So, we need to remove the external git configuration that came with the clone of Herring Cove:
+Cloner le projet à partir de la ligne de commande provoquera un conflit avec notre propre contrôle de version. Aussi, nous devons retirer la configuration externe git qui vient avec le clone de Herring Cove:
 
 {{% code file="remove-herring-cove-git.sh" %}}
 ```bash
@@ -65,43 +65,42 @@ rm -rf herring-cove/.git
 ```
 {{% /code %}}
 
-We need content for Hugo to build. Let's add a quick `/about` page:
+Nous avons besoin de contenu à construire pour Hugo. Ajoutons une page rapide `/a-propos` :
 
 ```bash
-hugo new about.md
+hugo new a-propos.md
 ```
 
 {{% note %}}
-The preceding example for the about page leverages archetypes to scaffold a new content file with preconfigured front matter. [Find out more about Hugo's archetypes](/content-management/archetypes/).
+L'exemple précédet pour la page "a-propos" tire parti des  archétypes pour structurer un nouveau fichier de contenu avec un front matter pré-configuré. [En savoir plus sur les archétypes Hugo](/gestion-contenu/archetypes/).
 {{% /note %}}
 
-Now you can edit `contents/about.md` in your text editor of choice, but this is not necessary for the purposes of this guide. Running the following command will build your Hugo site into the `public` directory. We have added `undraft` to ensure that the example page is no longer in draft mode:
+Maintenant, vous pouvez modifier `contents/a-propos.md` dans votre éditeur de texte préféré, mais ce n'est pas indispensable pour les besoins de ce guide. Lancer la commande qui suit construira votre site Hugo à l'intérieur du dossier `public`. Nous avons ajouté `undraft` pour nous assurer que la page d'exemple n'est plus en mode draft (brouillon) : 
 
 {{% code file="hugo-build-undraft.sh" %}}
 ```bash
-hugo undraft content/about.md
+hugo undraft content/a-propos.md
 ```
 {{% /code %}}
 
-Once the website is build, t's a good idea to run the following command to start a local server and ensure you're changes have been implemented:
-
+Une fois le site web construit, c'est une bonne idée de lancer la commande suivante pour démarrer un serveur local et vous assurer que vos modifications ont bien été implémentées :
 ```bash
 hugo server --theme=herring-cove
 ```
 
-If everything is fine, you should see something similar to the image below when you go to <http://localhost:1313> in your browser.
+Si tout va bien, vous devriez voir quelque chose de similaire à l'image ci-dessous quand vous allez sur  <http://localhost:1313> dans votre navigateur.
 
 ![][1]
 
-## Set up Version Control in Git
+## Configurer le contrôle de version dans Git
 
-Adding Git to your project is done by running the `git init` command from the root directory of your project.
+L'ajout de Git à votre projet se fait en exécutant la commande `git init` à partir du répertoire racine de votre projet.
 
 ```bash
 git init
 ```
 
-Running `git status` at this point will show you the following entries: the `config.toml` file, the `themes` directory, the `contents` directory, and the `public` directory. However, we don't want the `public` directory version controlled because Wercker is responsible for generating the finished website later on. Therefore, we'll add a `.gitignore` file to our project that will exclude the `/public` directory from being tracked by Git:
+Exécuter `git status` à ce stade vous présentera les entrées suivantes : le fichier `config.toml`, le dossier  `themes`, le dossier `contents` et le dossier `public`. Cependant, nous ne voulons pas que la version du dossier  `public` soit contrôlée car Wercker est responsable de la génération du site Web terminé. Par conséquent, nous ajouterons un fichier `.gitignore` à notre projet pour  exclure le répertoire `/public` d'être suivi par Git :
 
 {{% code file="gitignore.sh" %}}
 ```bash
@@ -109,7 +108,7 @@ echo "/public" >> .gitignore
 ```
 {{% /code %}}
 
-Wercker might complain when we try to build the site later on because we currently do not have any static files outside of the `themes` directory. We simply have to add *any* file to the static folder to prevent Wercker from complaining. To keep this guide simple, let's add a `robots.txt`. The following command creates the file in `/static`. The contents of the `robots.txt` lets search engines know they have full access to crawl the published website:
+Wercker pourrait se plaindre quand nous essaierons plus tard de construire le site, parce que nous n'avons pas à cette heure quelque fichier statique en dehors du dossir `themes`. Nous devons simplement ajouter *n'importe quel fichier* au dossier `static` pour éviter à Wercker de se plaindre. Pour faire que ce guide reste simple, ajoutons un `robots.txt`. La commande qui suit crée le fichier dans  `/static`. Les contenus du fichier `robots.txt` permettent de faire savoir aux moteurs de recherche qu'ils ont un accès complet pour crawler le site web publié :
 
 {{% code file="addrobotstxt.sh" %}}
 ```bash
@@ -117,21 +116,26 @@ echo "User-agent: *\nDisallow:" > static/robots.txt
 ```
 {{% /code %}}
 
-Now we need to add (i.e., [stage [see Git documentation]][gitbasics]) and commit all of our changes in the repository into Git:
+Maintenant, nous devons ajouter (c'est à dire, [stage [voir documentation Git]][gitbasics]) et commit de nos modifications dans le repo à l'intérieur de Git :
 
 ```bash
 git commit -a -m "Initial commit"
 ```
 
-## Add the Project to GitHub
+## Ajouter le Projet à GitHub  the Project to GitHub
 
-Now we need to create a new repository on GitHub. Once you are signed in to GitHub, you can add a new repository by clicking on the **&#43;&#9660;** dropdown at the top right or by going to [https://github.com/new](https://github.com)..
+Maintenant, nous devons créer un nouveau dépôt sur GitHub. Une fois que vous êtes connecté à GitHub, vous pouvez ajouter un nouveau dépôt en cliquant sur le menu déroulant ***&#43;&#9660;** en haut et à droite ou en allant sur  [https://github.com/new](https://github.com) 
 
-We then choose a name for the project (`hugo-wercker-example`). When clicking on create repository GitHub displays the commands for adding an existing project to the site. The commands shown below are the ones used for this site, if you're following along you will need to use the ones shown by GitHub. Once we've run those commands the project is in GitHub and we can move on to setting up the Wercker configuration. Be sure to replace `YourUserName` with your GitHub account/username:
+We then choose a name for the project (`hugo-wercker-exemple`). When clicking on create repository GitHub displays the commands for adding an existing project to the site. The commands shown below are the ones used for this site, if you're following along you will need to use the ones shown by GitHub. Once we've run those commands the project is in GitHub and we can move on to setting up the Wercker configuration. Be sure to replace `YourUserName` with your GitHub account/username:
+
+Nous choisissons ensuite un nom pour le projet (`hugo-wercker-exemple`). Lorsque vous cliquez sur  "create repository", GitHub affiche sur son site les commandes pour ajouter un projet existant. 
+
+Les commandes ci-dessous sont celles utilisées pour ce site, si vous suivez le guide vous devrez utiliser celles indiquées par GitHub. Une fois que nous avons exécuté ces commandes, le projet se trouve dans GitHub et nous pouvons passer à la configuration de Wercker. Assurez-vous de remplacer `VotreNomUtilisateur` par votre compte/identifiant GitHub :
+
 
 {{% code file="setup-gh-repo.sh" %}}
 ```bash
-git remote add origin git@github.com:YourUsername/hugo-wercker-example.git
+git remote add origin git@github.com:VotreNomUtilisateur/hugo-wercker-exemple.git
 git push -u origin master
 ```
 {{% /code %}}
@@ -150,7 +154,7 @@ Sign up for Wercker using your GitHub credentials. If you don't have a GitHub ac
 
 ![][4]
 
-### Connecte GitHub or Bitbucket
+### Connect GitHub or Bitbucket
 
 After you are registered, you will need to link your GitHub or Bitbucket account to Wercker. You can link your account by navigating to your profile settings and then selecting "Git connections."
 
@@ -198,7 +202,7 @@ Now we need to create a *wercker.yml* file in the root of our project. This file
 
 ### Public or Private
 
-This is a personal choice. You can make an app public so that everyone can see more details about it. Keeping it private or public does not provide any overt benefits for you as the creator of the app. That said, [the app we are currently creating has been made public][publicappurl] to facilitate easier usage of this hosting and deployment guide.
+This is a personal choice. You can make an app public so that everyone can see more details a-propos it. Keeping it private or public does not provide any overt benefits for you as the creator of the app. That said, [the app we are currently creating has been made public][publicappurl] to facilitate easier usage of this hosting and deployment guide.
 
 ![][11]
 
@@ -216,7 +220,7 @@ Now we need to add the Wercker steps to our build process. First, we go to the "
 
 ### Use the Hugo-build Step
 
-A summary of very basic usage is available at the top of the details for the Hugo-Build step. Below the basic usage is the contents of the `README.md` file associated with the step's repository. `README.md`'s on Wercker usually contain more details about the advanced options and examples of usage.
+A summary of very basic usage is available at the top of the details for the Hugo-Build step. Below the basic usage is the contents of the `README.md` file associated with the step's repository. `README.md`'s on Wercker usually contain more details a-propos the advanced options and exemples of usage.
 
 We're not going to use any of the advanced features of Hugo-Build in this guide. Let's return to our project and add the first section of details we need to our `wercker.yml`.
 
@@ -245,7 +249,7 @@ git push origin master
 ```
 {{% /code %}}
 
-If completed and successful, a green check mark should appear in the commit column of your first build. However, this is only the build step. We still need to deploy the website to our free hosting on GitHub Pages. If you would like more details about the build, you can click the commit hash.
+If completed and successful, a green check mark should appear in the commit column of your first build. However, this is only the build step. We still need to deploy the website to our free hosting on GitHub Pages. If you would like more details a-propos the build, you can click the commit hash.
 
 ![][14]
 
@@ -307,7 +311,7 @@ Once this workflow is established, you can update your website automatically by 
 
 [The source code for the site used in this guide is available on GitHub][guidesource], as is the [Wercker Hugo Build step][guidestep].
 
-If you want to see an example of how you can deploy to S3 instead of GitHub pages, check [Wercker's documentation][werckerdocs] for guidance on setup.
+If you want to see an exemple of how you can deploy to S3 instead of GitHub pages, check [Wercker's documentation][werckerdocs] for guidance on setup.
 
 [1]: /images/hosting-and-deployment/deployment-with-wercker/creating-a-basic-hugo-site.png
 [2]: /images/hosting-and-deployment/deployment-with-wercker/adding-the-project-to-github.png
@@ -333,7 +337,7 @@ If you want to see an example of how you can deploy to S3 instead of GitHub page
 [ghsignup]: https://github.com/join
 [gitbasics]: https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
 [githubhelp]: https://help.github.com/articles/set-up-git/
-[guidesource]: https://github.com/ArjenSchwarz/hugo-wercker-example
+[guidesource]: https://github.com/ArjenSchwarz/hugo-wercker-exemple
 [guidestep]: https://github.com/ArjenSchwarz/wercker-step-hugo-build
 [Herring Cove theme]: https://github.com/spf13/herring-cove
 [hugoconfig]: /getting-started/configuration/
