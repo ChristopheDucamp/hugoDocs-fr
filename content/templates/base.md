@@ -83,7 +83,7 @@ Ce qui suit définit un modèle de base simple sur `_default/baseof.html`. Parce
 ```
 {{% /code %}}
 
-## Écraser le Modèle de Base
+## Annuler le Modèle de Base
 
 À partir du modèle de base ci-dessus, vous pouvez définir un [modèle de liste par défaut][hugolists]. Le modèle de liste par défaut héritera de tout le code défini ci-dessus et pourra ensuite implémenter son propre bloc `"main"` provenant de :
 

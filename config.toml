@@ -65,7 +65,7 @@ twitter = "xtof_party"
   ## Gestionnaire de Tags google
   gtmid = ""
 
-  # La première est prise comme l'image card Twitter si elle n'est pas reglee sur la page.
+  # La première est prise comme l'image Twitter card si elle n'est pas reglee sur la page.
   images = ["images/gohugoio-card.png"]
 
   flex_box_interior_classes = "flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height"
@@ -173,7 +173,7 @@ twitter = "xtof_party"
     identifier = "themes"
     url = "https://themes.gohugo.io/"
 
-  # Anything with a weight > 100 gets an external icon
+  # Tout ce qui a un weight > 100 reçoit une icône externe
   [[menu.global]]
     name = "Communauté"
     weight = 150

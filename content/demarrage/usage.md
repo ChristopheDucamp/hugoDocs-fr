@@ -112,7 +112,7 @@ hugo
 in 90 ms
 ```
 
-## Contenus Brouillons, Futurs et Expirés
+## Contenus Draft, Futurs et Expirés
 
 Hugo vous permet de régler `draft`, `publishdate` et même `expirydate` dans le [front matter][] de vos contenus. 
 Par défaut, Hugo ne publiera pas :

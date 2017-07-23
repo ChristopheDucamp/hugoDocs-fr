@@ -2,8 +2,9 @@
 
   <div class="bg-white mb2 pa3 pa4-l gray">
     {{ if eq .context.Section "news" }}
+    <!-- date a franciser -->
       <date class="f6 db dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-        {{ .context.Date.Format "January 2, 2006" }}
+        {{ .context.Date.Format "January 2, 2006" }} 
       </date>
     {{ end }}
 
@@ -27,7 +28,6 @@
         <a href="{{ .context.RelPermalink }}" class="f6 mt2 db link primary-color dim">
           en savoir plus &raquo;
         </a>
-
     </div>
 
 
