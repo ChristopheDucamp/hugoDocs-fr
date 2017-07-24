@@ -123,14 +123,14 @@ Ouvrez `config.toml` dans un éditeur de texte :
 
 {{% code file="config.yml"%}}
 ```toml
-baseURL = "http://exemple.org/"
-languageCode = "fr-fr"
-title = "Le Bossu de Notre Dame"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
 theme = "ananke"
 ```
 {{% /code %}}
 
-Remplacez le `title` au-dessus avec quelque chose de plus personnel. Aussi si vous avez déjà un domaine de prêt, paramétrez `baseURL`. Notez que cette valeur n'est pas nécessaire quand votre site tourne sur le serveur de développement local.
+Remplacez le `title` au-dessus par quelque chose de plus personnel. Aussi si vous avez déjà un domaine prêt l'emploi, paramétrez `baseURL`. Notez que cette valeur n'est pas nécessaire quand votre site tourne sur le serveur de développement local.
 
 {{% note %}}
 **Truc :** Faites les modifications de la configuration du site ou tout autre fichier dans votre site pendant que le serveur Hugo est en train de tourner, et vous verrez les modifications directement en live dans le navigateur.
@@ -140,6 +140,11 @@ Remplacez le `title` au-dessus avec quelque chose de plus personnel. Aussi si vo
 Pour les options spécifiques de configuration de thème, voir le  [site du thème](https://github.com/budparr/gohugo-theme-ananke).
 
 **Pour de plus amples personnalisations du thème, regardez comment [Personnaliser un Thème](/themes/personnaliser/).**
+
+## Toutes les Commandes Répétées 
+
+{{< asciicast pWp4uvyAkdWgQllD9RCfeBL5k >}}
+
 
 
 
