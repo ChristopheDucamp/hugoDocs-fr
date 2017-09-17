@@ -27,7 +27,7 @@ Les [shortcodes][shortcodes] ont accès aux paramètres délimités  dans la dé
 : booléen qui renvoie `true` quand le shortcode en question utilise des [paramètres nommés plutôt que positionnels][shortcodes]
 
 `.Inner`
-: represente le contenu entre les balises d'ouverture et de fermeture quand un [shortcode fermant][markdownshortcode] est utilisé.
+: représente le contenu entre les balises d'ouverture et de fermeture quand un [shortcode fermant][markdownshortcode] est utilisé.
 
 [getfunction]: /fonctions/get/
 [markdownshortcode]: /gestion-contenu/shortcodes/#shortcodes-avec-markdown

@@ -18,7 +18,7 @@ aliases: [/extras/robots-txt/]
 toc: false
 ---
 
-Pour créer votre robots.txt comme un modèle, réglez d'abord la valeur `enableRobotsTXT` sur `true` dans votre [configuration file][config]. Par défaut, cette option génère un robots.txt avec le contenu suivant, qui indique aux moteurs de recherche qu'ils sont autorisés à tout crawler :
+Pour créer votre robots.txt comme un modèle, réglez d'abord la valeur `enableRobotsTXT` sur `true` dans votre [fichier de configuration][config]. Par défaut, cette option génère un `robots.txt` avec le contenu suivant, qui indique aux moteurs de recherche qu'ils sont autorisés à tout crawler :
 
 ```http
 User-agent: *
@@ -32,12 +32,12 @@ L'[ordre de recherche][lookup] pour le modèle `robots.txt` est le suivant :
 * `/themes/<THEME>/layout/robots.txt`
 
 {{% note %}}
-If you do not want Hugo to create a default `robots.txt` or leverage the `robots.txt` template, you can hand code your own and place the file in `static`. Remember that everything in the [static directory](/getting-started/directory-structure/) is copied over as-is when Hugo builds your site.
+Si vous ne voulez pas que Hugo crée par défaut un `robots.txt` ou utilise le modèle `robots.txt`, vous pouvez gérer le vôtre et placer le fichier dans  `static`. Souvenez-vous que tout ce qui est dans le [dossier static](/getting-started/directory-structure/) est copié tel quel quand Hugo construit votre site.
 {{% /note %}}
 
 ## Exemple de Modèle Robots.txt 
 
-The following is an example `robots.txt` layout:
+Voic un exemple de layout `robots.txt` :
 
 {{% code file="layouts/robots.txt" download="robots.txt" %}}
 ```http
@@ -49,7 +49,7 @@ Disallow: {{.RelPermalink}}
 ```
 {{% /code %}}
 
-This template disallows all the pages of the site by creating one `Disallow` entry for each page.
+Ce modèle désactive toutes les pages du site en créant une entrée `Disallow` pour chaque page.
 
 [config]: /demarrage/configuration/
 [lookup]: /templates/lookup-order/

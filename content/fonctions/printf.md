@@ -1,15 +1,15 @@
 ---
 title: printf
 linktitle: printf
-description: Formats a string using the standard `fmt.Sprintf` function.
+description: Met en forme une chaîne utilisant la fonction standard `fmt.Sprintf`.
 godocref: https://golang.org/pkg/fmt/
 date: 2017-02-01
-publishdate: 2017-02-01
+publishdate: 2017-06-28
 lastmod: 2017-02-01
-categories: [functions]
+categories: [fonctions]
 menu:
   docs:
-    parent: "functions"
+    parent: "fonctions"
 #tags: [strings]
 signature: ["printf FORMAT INPUT"]
 workson: []
@@ -18,7 +18,7 @@ relatedfuncs: []
 deprecated: false
 ---
 
-See [the go doc](https://golang.org/pkg/fmt/) for additional information.
+Voir la [doc go](https://golang.org/pkg/fmt/) pour des informations supplémentaires.
 
 ```golang
 {{ i18n ( printf "combined_%s" $var ) }}

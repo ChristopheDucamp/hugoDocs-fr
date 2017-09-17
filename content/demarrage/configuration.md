@@ -1,6 +1,7 @@
 ---
 title: Configurer Hugo
-description: Souvent les réglages par défaut sont suffisamment bons, mais le fichier de configuration peut fournir un haut niveau de contrôle de granularité sur le rendu de votre site web.
+linktitle: Configuration 
+description: Souvent les réglages par défaut suffisent, mais le fichier de configuration peut fournir un haut niveau de contrôle de granularité sur le rendu de votre site web.
 date: 2013-07-01
 publishdate: 2017-01-02
 lastmod: 2017-07-23
@@ -16,7 +17,7 @@ draft: false
 aliases: [/demarrage/configurer-hugo]
 toc: true
 ---
-La [structure des dossiers][] d'un site Web Hugo - ou plus précisément, l'organisation source des fichiers contenant le contenu du site web et ses modèles - fournit la plupart des informations de configuration dont Hugo a besoin pour générer un site web fini.
+La [structure des dossiers][] d'un site Web Hugo&mdash;ou plus précisément, l'organisation source des fichiers contenant le contenu du site web et ses modèles&mdash;fournit la plupart des informations de configuration dont Hugo a besoin pour générer un site web fini.
 
 Hugo ayant pré-réglé les valeurs sensibles par défaut, de nombreux sites web n'auront pas besoin d'un tel fichier de configuration. Hugo a été conçu pour reconnaître certains modèles d'utilisation typiques.
 
@@ -61,54 +62,54 @@ Ce qui suit est une liste de variables définies-par-Hugo dans un fichier exempl
 ```yaml
 ---
 archetypeDir:               "archetypes"
-# hostname (and path) to the root, e.g. http://spf13.com/
+# nom hôte (et chemin) vers la racine, par ex. http://spf13.com/
 baseURL:                    ""
-# include content marked as draft
+# inclut le contenu marqué comme draft
 buildDrafts:                false
-# include content with publishdate in the future
+# inclut le contenu avec une publishdate dans le futur
 buildFuture:                false
-# include content already expired
+# inclut le contenu déjà expiré
 buildExpired:               false
-# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs. See the "URL Management" page
+# activer pour produire toutes les URLS relatives au contenu racine. Notez que cela n'affecte pas les URLs absolues. Voir la page "Gestion URL"
 relativeURLs:               false
 canonifyURLs:               false
-# config file (default is path/config.yaml|json|toml)
+# config file (par défaut path/config.yaml|json|toml)
 config:                     "config.toml"
 contentDir:                 "content"
 dataDir:                    "data"
 defaultExtension:           "html"
 defaultLayout:              "post"
-# Missing translations will default to this content language
+# Les traductions manquantes iront par défaut vers cette langue de contenu
 defaultContentLanguage:     "en"
-# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+# Rend la langue par défaut du contenu dans le sous-dossier, par ex. /en/. Le dossier racine / redirigera vers /en/
 defaultContentLanguageInSubdir: false
 disableLiveReload:          false
-# Do not build RSS files
+# Ne pas construire les fichiers RSS
 disableRSS:                 false
-# Do not build Sitemap file
+# Ne pas construire le fichier Sitemap
 disableSitemap:             false
-# Enable GitInfo feature
+# Active la fonctionnalité GitInfo
 enableGitInfo:              false
-# Build robots.txt file
+# Construit le fichier robots.txt
 enableRobotsTXT:            false
-# Do not render 404 page
+# Ne produit pas la page 404 
 disable404:                 false
-# Do not inject generator meta tag on homepage
+# Ne pas injecter le générateur de meta tag sur la page d'accueil
 disableHugoGeneratorInject: false
-# Allows you to disable all page types and will render nothing related to 'kind';
+# Vous permet de désactiver tous les types de page et ne rendra rien en rapport avec 'kind';
 # values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
 disableKinds: []
-# Do not make the url/path to lowercase
+# Ne produit pas le chemin/url en bas de casse
 disablePathToLower:         false                   ""
-# Enable Emoji emoticons support for page content; see emoji-cheat-sheet.com
+# Active le support des émoticônes Emoji pour le contenu de la page ; voir emoji-cheat-sheet.com
 enableEmoji:                false
-# Show a placeholder instead of the default value or an empty string if a translation is missing
+# Affiche un placeholder au lieu de la valeur par défaut ou une chaîne vide si une traduction manque
 enableMissingTranslationPlaceholders: false
 footnoteAnchorPrefix:       ""
 footnoteReturnLinkContents: ""
 # google analytics tracking id
 googleAnalytics:            ""
-# if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
+# si true, auto-detecte les langues Chinese/Japanese/Korean dans le contenu. (.Summary et .WordCount peuvent fonctionner proprement en CJKLanguage)
 hasCJKLanguage:             false
 languageCode:               ""
 layoutDir:                  "layouts"
@@ -151,11 +152,15 @@ source:                     ""
 staticDir:                  "static"
 # display memory and timing of different steps of the program
 stepAnalysis:               false
-# theme to use (located by default in /themes/THEMENAME/)
+# theme a utiliser (situe par defaut dans /themes/NOMTHEME/)
 themesDir:                  "themes"
 theme:                      ""
 title:                      ""
-# if true, use /filename.html instead of /filename/
+# le guide de style pour la Casse du Titre pour la fonction title et autre mise en casse automatique du title dans Hugo.
+// Le valeurs valides sont "AP" (par défaut), "Chicago" et "Go" (qui etait ce que vous aviez dans  Hugo <= 0.25.1).
+// Voir https://www.apstylebook.com/ et http://www.chicagomanualofstyle.org/home.html
+titleCaseStyle:             "AP"
+# si true, utilisez /nomfichier.html au lieu de /nomfichier/
 uglyURLs:                   false
 # verbose output
 verbose:                    false
@@ -179,17 +184,17 @@ contentDir = "content"
 layoutDir = "layouts"
 publishDir = "public"
 buildDrafts = false
-baseURL = "https://yoursite.example.com/"
+baseURL = "https://votresite.example.com/"
 canonifyURLs = true
-title = "My Hugo Site"
+title = "Mon Site Hugo"
 
 [taxonomies]
   category = "categories"
   tag = "tags"
 
 [params]
-  subtitle = "Hugo is Absurdly Fast!"
-  author = "John Doe"
+  subtitle = "Hugo est Vraiment Rapide !"
+  author = "Jean Valjean"
 ```
 
 ### Toutes les Variables, TOML
@@ -320,16 +325,16 @@ enableemoji: true
 
 ## Variables d'environnement
 
-En plus des 3 options de configuration mentionnées au-dessus, les valeurs-clés de configuration peuvent être définies à travers les variables d'environnement de votre OS.
+En plus des 3 options de configuration mentionnées au-dessus, les valeurs-clés de configuration peuvent être définies à travers les variables d'environnement du système d'exploitation.
 
-Par exemple, la commande qui suit réglera le titre d'un site web sur des systèmes Unix
+Par exemple, la commande qui suit réglera le titre d'un site web sur des systèmes de type Unix :
 
 ```bash
 $ env HUGO_TITRE="Un Titre" hugo
 ```    
 
 {{% note "Régler les Variables d'Environment" %}}
-Les noms doivent être précédés par `HUGO_` et la clé de configuration doit être en capitales au moment de régler les variables d'environnement du système d'exploitation.
+Les noms doivent être précédés par `HUGO_` et la clé de configuration doit être réglée en capitales au moment de régler les variables d'environnement du système d'exploitation.
 {{% /note %}}
 
 ## Ignorer des Fichiers lors du Rendu
